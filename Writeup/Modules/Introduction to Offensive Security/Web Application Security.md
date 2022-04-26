@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/165332135-f724c0c5-e2c7-4ad6-bbd3-f00293e50d8a.png)
   
-<h1><a href="https://tryhackme.com/module/introduction-to-offensive-security"> Web Application Security</a></h1>
+<h1><a href="https://tryhackme.com/room/introwebapplicationsecurity"> Web Application Security</a></h1>
 
 </div>
 
