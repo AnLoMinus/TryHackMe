@@ -11,7 +11,7 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/165321005-15b3e841-6b07-4163-b9fb-9f9cf829d5c2.png)
 
-  <br><li> <H3>Hack your first website (legally in a safe environment) and experience an ethical hacker's job. </H3></li>
+  <br> <H3>Hack your first website (legally in a safe environment) and experience an ethical hacker's job. </H3>
   
   <div id="taskContent">
 
@@ -22,11 +22,6 @@
     Task 1  Hacking your first machine
   </summary>
   <div class="card" id="task-1">
-    <div class="card-header task-header collapsed"  href="#collapse1" aria-expanded="false">
-      <a class="card-link">
-      <span class="task-dropdown-title red">Task 1 <span ><i class="far fa-circle text-lgray"></i></span></span> Hacking your first machine
-      </a>
-    </div>
     <div id="collapse1" class="collapse"  style="">
       <div >
         <div >
@@ -117,13 +112,6 @@
     Task 2  What is Offensive Security?
   </summary>
   <div class="card" id="task-2">
-    <div   href="#collapse2">
-      <a class="card-link">
-      <span class="task-dropdown-title red">Task 2 <span ><i class="far fa-circle text-lgray"></i></span></span> What is Offensive Security?
-      <span class="float-right"><i class="fas fa-chevron-down"></i></span>
-      <span class="task-resources"></span>
-      </a>
-    </div>
     <div id="collapse2" class="collapse " >
       <div >
         <div >
@@ -163,13 +151,6 @@
     Task 3  Careers in cyber security
   </summary>
   <div class="card" id="task-3">
-    <div   href="#collapse3">
-      <a class="card-link">
-      <span >Task 3 <span ><i class="far fa-circle text-lgray"></i></span></span> Careers in cyber security
-      <span ><i class="fas fa-chevron-down"></i></span>
-      <span ></span>
-      </a>
-    </div>
     <div  >
       <div >
         <div >
