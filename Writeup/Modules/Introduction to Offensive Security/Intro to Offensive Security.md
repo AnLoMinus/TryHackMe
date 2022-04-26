@@ -4,17 +4,9 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/165332135-f724c0c5-e2c7-4ad6-bbd3-f00293e50d8a.png)
   
-<h1><a href="https://tryhackme.com/module/introduction-to-offensive-security"> Introduction to Offensive Security</a></h1>
+<h1><a href="https://tryhackme.com/module/introduction-to-offensive-security"> Intro to Offensive Security</a></h1>
 
 </div>
-
-<details>
-
-<summary>
-  <a href="https://tryhackme.com/room/introtooffensivesecurity"> Intro to Offensive Security</a>
-</summary>  
-
-![image](https://user-images.githubusercontent.com/51442719/165321005-15b3e841-6b07-4163-b9fb-9f9cf829d5c2.png)
 
   <br> <H3>Hack your first website (legally in a safe environment) and experience an ethical hacker's job. </H3>
   
@@ -22,9 +14,12 @@
 
   <br>
 </div>
+
+---
+  
 <details>
   <summary>
-    Task 1  Hacking your first machine
+    <h1> Task 1  Hacking your first machine </h1>
   </summary>
   <div class="card" id="task-1">
     <div id="collapse1" class="collapse"  style="">
@@ -112,9 +107,12 @@
   </div>
   </div>
 </details>
+
+---
+
 <details>
   <summary>
-    Task 2  What is Offensive Security?
+    <h1> Task 2  What is Offensive Security? </h1>
   </summary>
   <div class="card" id="task-2">
     <div id="collapse2" class="collapse " >
@@ -151,9 +149,12 @@
     </div>
   </div>
 </details>
+
+---
+
 <details>
   <summary>
-    Task 3  Careers in cyber security
+   <h1> Task 3  Careers in cyber security </h1>
   </summary>
   <div class="card" id="task-3">
     <div  >
@@ -187,9 +188,7 @@
         </div>
       </div>
     </div>
-  </div>
-</details>
-  
+  </div>  
 </details>
 
 ---
