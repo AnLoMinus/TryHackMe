@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/165335606-2bc57f7f-fbf7-4eef-876f-6ec5a81bb39a.png)
 
-# Introduction to Offensive Security
+# [Introduction to Offensive Security](https://tryhackme.com/module/introduction-to-offensive-security)
 ## Understand what Offensive Security entails, and practice breaking into computer systems by exploiting applications and networks.
 ### Start by learning the basics of web application security and practice exploiting a vulnerability in an online website. Investigate operating system security and break into a target computer. Finally, you will explore network security and hack into an online server.
 
