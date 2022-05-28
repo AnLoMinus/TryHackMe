@@ -6,7 +6,7 @@
   - Want to be a part of the elite club of CyberHeroes? Prove your merit by finding a way to log in!
 
 - `Answers` 
-  - Start Machine
-  - Copy Machine IP and open it in your Attacking Box Browser: http://{TARGET-IP}/
-  - 
+  - [1] Start Machine Copy Machine IP: 10.10.202.66
+  - [2] Open it in your Attacking Box Browser: http://10.10.202.66/
+  - [3] http://10.10.202.66/login.html
   - 
