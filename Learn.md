@@ -1,35 +1,36 @@
 # [TryHackMe](https://tryhackme.com/) | [Hacktivities](https://tryhackme.com/hacktivities)
 
-# Learn
+# [Learn](https://tryhackme.com/hacktivities)
 ### =====
 
-Hands-on Hacking
+### Hands-on Hacking
 
-The best way to learn, is by doing. Our content is guided with interactive exercises based on real world scenarios, from hacking machines to investigating attacks, we've got you covered.
+- The best way to learn, is by doing. 
+- Our content is guided with interactive exercises based on real world scenarios, from hacking machines to investigating attacks, we've got you covered.
 
-Learn
+[Learn](https://tryhackme.com/hacktivities)
 
 ![](/img/lifecycle/learn.svg)
 
-# Practice
+# [Practice](https://tryhackme.com/hacktivities?tab=practice)
 ### ========
 
 Reinforce what you're learning
 
 Put your knowledge into practice with gamified cyber security challenges.
 
-Practice
+[Practice](https://tryhackme.com/hacktivities?tab=practice)
 
 ![](/img/lifecycle/practice.svg)
 
 ---
 
-# Search
+# [Search](https://tryhackme.com/hacktivities?tab=search)
 ### ======
 
-- Search over 500 rooms
+- [Search](https://tryhackme.com/hacktivities?tab=search) over 500 rooms
 
-Search hundreds of walkthroughs and challenges by security category or difficulty
+[Search](https://tryhackme.com/hacktivities?tab=search) hundreds of walkthroughs and challenges by security category or difficulty
 
 ![](/img/lifecycle/none.svg)
 
