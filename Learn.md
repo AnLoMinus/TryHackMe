@@ -105,7 +105,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/defensivesecurity.png)
 
-## [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
+## 🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
 
 ### Learn how to analyse and defend against real-world cyber threats/attacks
 
@@ -122,7 +122,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
 
-## [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
+## 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
 
 ### Learn the core skills required to start a career in cyber security
 
@@ -139,7 +139,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/offensivepentesting.jpg)
 
-## [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
+## 🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
 
 ### Prepare yourself for real world penetration testing:
 
@@ -156,7 +156,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://i.imgur.com/ijlQ3wZ.jpg)
 
-## [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
+## 🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
 
 ### Complete this pathway and receive 10% off the Pentest+ exam!
 
@@ -171,7 +171,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/web.jpg)
 
-## [Web Fundamentals](https://tryhackme.com/path-action/web/join)
+## 🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
 
 ### A pathway to web application security.
 
@@ -198,7 +198,6 @@ Burp Suite is the industry standard tool for web application hacking, and is ess
 
 
 
-](/module/learn-burp-suite)[
 
 ![](https://assets.tryhackme.com/img/modules/metasploit.png)
 
@@ -208,7 +207,6 @@ Metasploit is the most widely used exploitation framework. Learn how to use it a
 
 
 
-](/module/metasploit)[
 
 ![](https://assets.tryhackme.com/img/modules/walking-the-web.png)
 
@@ -218,7 +216,6 @@ Get hands-on, learn about and exploit some of the most popular web application v
 
 
 
-](/module/intro-to-web-hacking)[
 
 ![](https://assets.tryhackme.com/img/modules/network-security.png)
 
@@ -228,7 +225,6 @@ Learn the basics of passive and active network reconnaissance. Understand how co
 
 
 
-](/module/network-security)[
 
 ![](https://assets.tryhackme.com/img/modules/nmap.png)
 
@@ -238,7 +234,6 @@ Learn how to leverage the Nmap network scanner to discover live hosts and open p
 
 
 
-](/module/nmap)[
 
 ![](https://assets.tryhackme.com/img/modules/initial-access.png)
 
@@ -248,7 +243,6 @@ Explore the different techniques to gain initial access to a target system and n
 
 
 
-](/module/red-team-initial-access)[
 
 ![](https://assets.tryhackme.com/img/modules/phishing.png)
 
@@ -258,7 +252,6 @@ Learn how to analyze and defend against phishing emails. Investigate real-world 
 
 
 
-](/module/phishing)[
 
 ![](https://assets.tryhackme.com/img/modules/red-team-fundamentals.png)
 
@@ -268,7 +261,6 @@ Learn the core components of a red team engagement, from threat intelligence to 
 
 
 
-](/module/red-team-fundamentals)[
 
 ![](https://assets.tryhackme.com/img/modules/intro-to-offensive.png)
 
@@ -278,7 +270,6 @@ Understand what Offensive Security entails, and practice breaking into computer 
 
 
 
-](/module/introduction-to-offensive-security)[
 
 ![](https://assets.tryhackme.com/img/modules/web-vulnerabilities.png)
 
@@ -288,8 +279,6 @@ Learn about the latest industry threats. Get hands-on experience identifying, ex
 
 
 
-](/module/recent-threats)[
-
 ![](https://assets.tryhackme.com/img/modules/intro-to-defensive.png)
 
 Introduction to Defensive Security
@@ -298,7 +287,6 @@ Learn Defensive Security by using digital forensics in an investigation and appl
 
 
 
-](/module/introduction-to-defensive-security)[
 
 ![](https://assets.tryhackme.com/img/modules/linux-fundamentals.png)
 
@@ -308,7 +296,6 @@ Many servers and security tools use Linux. Learn how to use the Linux operating 
 
 
 
-](/module/linux-fundamentals)[
 
 ![](https://assets.tryhackme.com/img/modules/application-vulnerabilities.png)
 
@@ -328,7 +315,6 @@ Understand what a penetration test involves, including testing techniques and me
 
 
 
-](/module/introduction-to-offensive-pentesting)[
 
 ![](https://assets.tryhackme.com/img/modules/privilege-escalation-and-shells.png)
 
@@ -338,7 +324,6 @@ Learn the fundamental techniques that will allow you to elevate account privileg
 
 
 
-](/module/privilege-escalation)[
 
 ![](https://assets.tryhackme.com/img/modules/network-security-evasions.png)
 
@@ -348,7 +333,6 @@ Learn how to bypass and evade different security solutions used in the industry 
 
 
 
-](/module/network-security-evasion)[
 
 ![](https://assets.tryhackme.com/img/modules/intro-to-networking.png)
 
@@ -358,7 +342,6 @@ Understand, enumerate and attack various networking services in real-world envir
 
 
 
-](/module/intro-to-networking)[
 
 ![](https://assets.tryhackme.com/img/modules/vuln-bug-1.png)
 
@@ -368,7 +351,6 @@ Familiarise yourself with the skills, research methods, and resources used to ex
 
 
 
-](/module/vulnerability-research)[
 
 ![](https://assets.tryhackme.com/img/modules/security-awareness.png)
 
@@ -378,7 +360,6 @@ Become cyber aware and protect yourself from common security attacks by working 
 
 
 
-](/module/cyber-security-awareness)[
 
 ![](https://assets.tryhackme.com/img/modules/web-hacking-fundamentals.png)
 
@@ -388,8 +369,6 @@ Understand the core security issues with web applications, and learn how to expl
 
 
 
-](/module/web-hacking-1)[
-
 ![](https://assets.tryhackme.com/img/modules/cryptography.png)
 
 Cryptography
@@ -398,7 +377,6 @@ Cryptography is essential in security. Learn how its used to preserve integrity 
 
 
 
-](/module/cryptography)[
 
 ![](https://assets.tryhackme.com/img/modules/intro-to-security.png)
 
@@ -408,7 +386,6 @@ Understand what is offensive and defensive security, and learn about careers ava
 
 
 
-](/module/introduction-to-cyber-security)[
 
 ![](https://assets.tryhackme.com/img/modules/hacking-windows.png)
 
@@ -418,7 +395,6 @@ Hacking Windows is often daunting. Grasp the fundamentals of core Windows concep
 
 
 
-](/module/hacking-windows-1)[
 
 ![](https://assets.tryhackme.com/img/modules/privilege-escalation-and-shells.png)
 
@@ -428,8 +404,6 @@ Once you have initial access on a machine, learn how to escalate your account pr
 
 
 
-](/module/privilege-escalation-and-shells)[
-
 ![](https://assets.tryhackme.com/img/modules/basic-computer-exploitation.png)
 
 Basic Computer Exploitation
@@ -438,7 +412,6 @@ Strengthen your skills by exploiting a range of different applications and servi
 
 
 
-](/module/basic-computer-exploitation)[
 
 ![](https://assets.tryhackme.com/img/modules/threat-and-vulnerability-management.png)
 
@@ -448,7 +421,6 @@ Identify how attackers are developing their techniques to use in your defensive 
 
 
 
-](/module/threat-and-vulnerability-management)[
 
 ![](https://assets.tryhackme.com/img/modules/security_operations_and_monitoring.png)
 
@@ -458,7 +430,6 @@ Learn how to configure and utilise tooling to ensure that suspicious activity is
 
 
 
-](/module/security-operations-and-monitoring)[
 
 ![](https://assets.tryhackme.com/img/modules/threat-emulation.png)
 
@@ -468,7 +439,6 @@ The best way to understand how attackers work is to get hands on experience with
 
 
 
-](/module/threat-emulation)[
 
 ![](https://assets.tryhackme.com/img/modules/incident-response-and-forensics.png)
 
@@ -478,7 +448,6 @@ Incidents are inevitable. Learn how to identify and respond to them.
 
 
 
-](/module/incident-response-and-forensics)[
 
 ![](https://assets.tryhackme.com/img/modules/malware-analysis.png)
 
@@ -488,7 +457,6 @@ Analyse malicious files to prevent malicious actions and identify attacks.
 
 
 
-](/module/malware-analysis)[
 
 ![](https://assets.tryhackme.com/img/modules/network-vulnerabilities.png)
 
@@ -498,7 +466,6 @@ Learn the core concepts of how computers communicate with each other and types o
 
 
 
-](/module/network-fundamentals)[
 
 ![](https://assets.tryhackme.com/img/modules/hacking-windows2.png)
 
@@ -508,7 +475,6 @@ Get hands-on access to Windows and it's security controls. These basics will hel
 
 
 
-](/module/windows-fundamentals)[
 
 ![](https://assets.tryhackme.com/img/modules/scripting-for-pentesters.png)
 
@@ -518,7 +484,6 @@ Learn to use PowerShell and Python in different stages of a penetration test and
 
 
 
-](/module/scripting-for-pentesters)
 
 ### Networks
 
