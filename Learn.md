@@ -75,6 +75,8 @@ Search hundreds of walkthroughs and challenges by security category or difficult
 
 - [Certificate]()
 
+![image](https://user-images.githubusercontent.com/51442719/171209825-12b4abb7-a748-471c-872b-77f220ceb1ca.png)
+
 ---
 
 
@@ -95,6 +97,8 @@ Search hundreds of walkthroughs and challenges by security category or difficult
 - Easy
 
 - [Certificate]()
+
+![image](https://user-images.githubusercontent.com/51442719/171210073-b2ff63f8-9885-4d0a-ba74-a9aecec5c52e.png)
 
 ---
 
