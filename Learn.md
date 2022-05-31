@@ -456,14 +456,15 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ### Learn to use PowerShell and Python in different stages of a penetration test and take your pentesting craft to the next level.
 
+</div>
 
 ---
-
+    
+    
 # Networks
 
 Content that uses virtual vulnerable networks
 
-[
 
 ## Throwback
 
@@ -494,7 +495,6 @@ Content that uses virtual vulnerable networks
 
 ![](https://tryhackme-images.s3.amazonaws.com/room-icons/ffa81460a5c1487dd7bb43d0ca0735a1.png)
 
-</div>
     
 ---
 
