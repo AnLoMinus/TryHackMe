@@ -1,8 +1,5 @@
 # TryHackMe | Hacktivities
 
-### We uses cookies to ensure you get the best user experience. For more information contact us. [Read more](/terms)
-
-
 # Learn
 ### =====
 
