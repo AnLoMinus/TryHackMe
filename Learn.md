@@ -186,6 +186,8 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ---
 
+<div align="center">
+
 # Modules
 
 Modules are made up of bite-sized labs
@@ -520,6 +522,8 @@ Content that uses virtual vulnerable networks
 
 ![](https://tryhackme-images.s3.amazonaws.com/room-icons/ffa81460a5c1487dd7bb43d0ca0735a1.png)
 
+</div>
+    
 ---
 
 # Topics
