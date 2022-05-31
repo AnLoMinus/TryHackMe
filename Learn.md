@@ -42,7 +42,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/introduction-to-cyber.jpg)
 
-## 🔰 Introduction to Cyber Security
+## 🔰 [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
 
 ### Learn the core skills required to start a career in cyber security
 
@@ -61,7 +61,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/jr-penetration-tester-2.jpg)
 
-## ✅ Jr Penetration Tester
+## ✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
 
 ### Learn the necessary skills to start a career as a penetration tester
 
@@ -83,7 +83,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/cyberfundamentals.png)
 
-## ✅ Pre Security
+## ✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
 
 ### Before hacking something, you first need to understand the basics.
 
@@ -105,7 +105,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/defensivesecurity.png)
 
-## Cyber Defense
+## [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
 
 ### Learn how to analyse and defend against real-world cyber threats/attacks
 
@@ -122,7 +122,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
 
-## Complete Beginner
+## [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
 
 ### Learn the core skills required to start a career in cyber security
 
@@ -139,7 +139,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/offensivepentesting.jpg)
 
-## Offensive Pentesting
+## [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
 
 ### Prepare yourself for real world penetration testing:
 
@@ -156,7 +156,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://i.imgur.com/ijlQ3wZ.jpg)
 
-## CompTIA Pentest+
+## [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
 
 ### Complete this pathway and receive 10% off the Pentest+ exam!
 
@@ -171,7 +171,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/web.jpg)
 
-## Web Fundamentals
+## [Web Fundamentals](https://tryhackme.com/path-action/web/join)
 
 ### A pathway to web application security.
 
