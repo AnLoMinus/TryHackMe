@@ -483,43 +483,44 @@ Scripting for Pentesters
 Learn to use PowerShell and Python in different stages of a penetration test and take your pentesting craft to the next level.
 
 
+---
 
-
-### Networks
+# Networks
 
 Content that uses virtual vulnerable networks
 
 [
 
-Throwback
+## Throwback
 
-An Active Directory lab that teaches the fundamentals and core concepts of attacking a Windows network. The network simulates a realistic corporate environment that has several attack vectors you would expect to find in today’s organisations.
+- An Active Directory lab that teaches the fundamentals and core concepts of attacking a Windows network. 
+- The network simulates a realistic corporate environment that has several attack vectors you would expect to find in today’s organisations.
 
-Paid
+- Paid
 
 ![](https://tryhackme-images.s3.amazonaws.com/room-icons/e1f446aa9a7742df81589fa69a9de919.png)
 
-](/room/throwback)[
 
-Holo
+## Holo
 
-Holo is an Active Directory (AD) and Web-App attack lab that aims to teach core web attack vectors and more advanced AD attack techniques. This network simulates an external penetration test on a corporate network.
+- Holo is an Active Directory (AD) and Web-App attack lab that aims to teach core web attack vectors and more advanced AD attack techniques. 
+- This network simulates an external penetration test on a corporate network.
 
-Subscriber-Only Streak Required: 0
+- Subscriber-Only Streak Required: 0
 
 ![](https://tryhackme-images.s3.amazonaws.com/room-icons/79023e1ed4c207bc52b7dfee208c80a5.png)
 
-](/room/hololive)[
 
-Wreath
+## Wreath
 
-Learn how to pivot through a network by compromising a public facing web machine and tunnelling your traffic to access other machines in Wreath's network. (Streak limitation only for non-subscribed users)
+- Learn how to pivot through a network by compromising a public facing web machine and tunnelling your traffic to access other machines in Wreath's network. 
+- (Streak limitation only for non-subscribed users)
 
-Free Free User Streak Required: 7
+- Free Free User Streak Required: 7
 
 ![](https://tryhackme-images.s3.amazonaws.com/room-icons/ffa81460a5c1487dd7bb43d0ca0735a1.png)
 
-](/room/wreath)
+---
 
 # Topics
 
