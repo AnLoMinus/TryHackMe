@@ -41,7 +41,7 @@ Search hundreds of walkthroughs and challenges by security category or difficult
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/introduction-to-cyber.jpg)
 
-## Introduction to Cyber Security
+## 🔰 Introduction to Cyber Security
 
 ### Learn the core skills required to start a career in cyber security
 
@@ -60,7 +60,7 @@ Search hundreds of walkthroughs and challenges by security category or difficult
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/jr-penetration-tester-2.jpg)
 
-## Jr Penetration Tester
+## ✅ Jr Penetration Tester
 
 ### Learn the necessary skills to start a career as a penetration tester
 
@@ -73,13 +73,14 @@ Search hundreds of walkthroughs and challenges by security category or difficult
 
 - Intermediate
 
+- [Certificate]()
 
 ---
 
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/cyberfundamentals.png)
 
-## Pre Security
+## ✅ Pre Security
 
 ### Before hacking something, you first need to understand the basics.
 
@@ -92,6 +93,8 @@ Search hundreds of walkthroughs and challenges by security category or difficult
 - 40 Hours
 
 - Easy
+
+- [Certificate]()
 
 ---
 
