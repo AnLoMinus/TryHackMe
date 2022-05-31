@@ -1,4 +1,4 @@
-# [TryHackMe](https://tryhackme.com/hacktivities) | Hacktivities
+# [TryHackMe](https://tryhackme.com/) | [Hacktivities](https://tryhackme.com/hacktivities)
 
 # Learn
 ### =====
