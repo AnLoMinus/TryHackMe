@@ -42,7 +42,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/introduction-to-cyber.jpg)
 
-## 🔰 [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
+## ✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
 
 ### Learn the core skills required to start a career in cyber security
 #### Cyber Security is a huge topic, and it can be challenging to know where to start. 
@@ -57,6 +57,11 @@ Put your knowledge into practice with gamified cyber security challenges.
 - 24 Hours
 
 - Easy
+
+- [Certificate]()
+
+![image](https://user-images.githubusercontent.com/51442719/171312538-49b1be06-a7a0-46e5-b2d3-532870ba32de.png)
+
 
 #### Completing this learning path will give you the knowledge to kick start your cyber journey.
 
@@ -82,7 +87,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 - [Certificate]()
 
-![image](https://user-images.githubusercontent.com/51442719/171209825-12b4abb7-a748-471c-872b-77f220ceb1ca.png)
+![image](https://user-images.githubusercontent.com/51442719/171312671-9c08c137-dea8-4142-a481-13a013780968.png)
 
 ---
 
@@ -105,7 +110,7 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 - [Certificate]()
 
-![image](https://user-images.githubusercontent.com/51442719/171210073-b2ff63f8-9885-4d0a-ba74-a9aecec5c52e.png)
+![image](https://user-images.githubusercontent.com/51442719/171312637-401f2896-bc45-4e4a-9925-bfbe871f0a85.png)
 
 ---
 
