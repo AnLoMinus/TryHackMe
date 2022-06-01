@@ -45,6 +45,9 @@ Put your knowledge into practice with gamified cyber security challenges.
 ## 🔰 [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
 
 ### Learn the core skills required to start a career in cyber security
+#### Cyber Security is a huge topic, and it can be challenging to know where to start. 
+#### This path will give you a hands-on introduction to different areas within cyber, including:
+
 
 *   Learn about different careers in cyber
 *   Hack your first application
@@ -54,6 +57,9 @@ Put your knowledge into practice with gamified cyber security challenges.
 - 24 Hours
 
 - Easy
+
+#### Completing this learning path will give you the knowledge to kick start your cyber journey.
+
 
 
 ---
