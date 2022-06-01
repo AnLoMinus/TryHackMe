@@ -5,6 +5,7 @@
 ---
 
 - [TryHackMe-Notes](https://github.com/nargaw/TryHackMe-Notes)
+- [PyWhat](https://github.com/bee-san/pyWhat)
 
 ---
 
