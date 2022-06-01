@@ -8,6 +8,7 @@
 - [PyWhat](https://github.com/bee-san/pyWhat)
 - [TryHackMe CTFs writeups, notes, dratfs, scrabbles, files and solutions.](https://github.com/edoardottt/tryhackme-ctf)
 - [CTF-Writeups](https://github.com/AbdullahRizwan101/CTF-Writeups/tree/master/TryHackMe)
+- Sma-Das/[TryHackMe](https://github.com/Sma-Das/TryHackMe0)
 
 ---
 
