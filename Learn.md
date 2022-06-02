@@ -121,6 +121,10 @@ Put your knowledge into practice with gamified cyber security challenges.
 
 - Intermediate
 
+### Career
+- Use this path to work towards a career in cyber
+    - Penetration Tester
+
 - [Certificate]()
 
 ![image](https://user-images.githubusercontent.com/51442719/171312671-9c08c137-dea8-4142-a481-13a013780968.png)
@@ -181,6 +185,11 @@ Put your knowledge into practice with gamified cyber security challenges.
 - 64 Hours
 
 - Easy
+
+### Career
+- Use this path to work towards a career in cyber
+    - Penetration Tester
+    - Security Analyst
 
 ---
 
