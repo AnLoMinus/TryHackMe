@@ -159,37 +159,53 @@
 
 ### Learn the basics of networking, host-based systems, and active directory. <br> These rooms will give you the foundational knowledge needed to grasp more advanced concepts.
 
-- ✅ Tutorial
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172024424-51253745-fa68-4efe-aae8-799cd5c290f8.png)
+
+- ✅ [Tutorial](https://tryhackme.com/jr/tutorial)
   - Learn how to use a TryHackMe room to start your upskilling in cyber security.
 
 ---
 
-- ✅ Introductory Networking
+![image](https://user-images.githubusercontent.com/51442719/172024427-31916176-eb1a-4607-a70e-61904d3576ba.png)
+
+- ✅ [Introductory Networking](https://tryhackme.com/jr/introtonetworking)
   - An introduction to networking theory and basic networking tools
 
 ---
 
-- ✅ Network Services
+![image](https://user-images.githubusercontent.com/51442719/172024432-99c47551-0a34-44bc-a0b6-dff67fd30659.png)
+
+- ✅ [Network Services](https://tryhackme.com/jr/networkservices)
   - Learn about, then enumerate and exploit a variety of network services and misconfigurations.
 
 ---
 
-- ✅ Network Services 2
+![image](https://user-images.githubusercontent.com/51442719/172024437-ee765965-be1a-4bf8-9c19-1c2b68b0e73d.png)
+
+- ✅ [Network Services 2](https://tryhackme.com/jr/networkservices2)
   - Enumerating and Exploiting More Common Network Services & Misconfigurations
 
 ---
 
-- ✅ Wireshark 101
+![image](https://user-images.githubusercontent.com/51442719/172024440-a6f01ed1-426d-46ed-b6ad-71e352439db9.png)
+
+- ✅ [Wireshark 101](https://tryhackme.com/jr/wireshark)
   - Learn the basics of Wireshark and how to analyze various protocols and PCAPs
 
 ---
 
-- ✅ Windows Fundamentals 1
+![image](https://user-images.githubusercontent.com/51442719/172024443-94b7a3ec-ffef-4612-a862-2a5ee9ba7310.png)
+
+- ✅ [Windows Fundamentals 1](https://tryhackme.com/jr/windowsfundamentals1xbx)
   - In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, the NTFS file system, UAC, the Control Panel, and more..
 
 ---
 
-- ✅ Active Directory Basics
+![image](https://user-images.githubusercontent.com/51442719/172024447-d6002f6a-749c-491b-b5ae-d9c697742205.png)
+
+- ✅ [Active Directory Basics](https://tryhackme.com/jr/activedirectorybasics)
   - Learn the basics of Active Directory and how it is used in the real world today
 
 ---    
