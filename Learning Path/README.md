@@ -67,7 +67,7 @@
 
 #### Completing this learning path will give you the knowledge to kick start your cyber journey.
 
-
+</details>
 
 ---
 
@@ -98,6 +98,8 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/171312671-9c08c137-dea8-4142-a481-13a013780968.png)
 
+</details>
+
 ---
 
 <details align="center">
@@ -123,6 +125,8 @@
 - [Certificate]()
 
 ![image](https://user-images.githubusercontent.com/51442719/171312637-401f2896-bc45-4e4a-9925-bfbe871f0a85.png)
+
+</details>
 
 ---
 
@@ -170,6 +174,8 @@
 - 7️⃣ Active Directory Basics
   - Learn the basics of Active Directory and how it is used in the real world today
 
+</details>
+
 ---
 
 <details align="center">
@@ -196,6 +202,8 @@
     - Penetration Tester
     - Security Analyst
 
+</details>
+
 ---
 
 <details align="center">
@@ -217,8 +225,9 @@
 
 - Intermediate
 
----
+</details>
 
+---
 
 <details align="center">
     <summary>
@@ -236,6 +245,8 @@
 - 51 Hours
 
 - Easy
+
+</details>
 
 ---
 
@@ -257,3 +268,5 @@
 - 32 Hours
 
 - Easy
+
+</details>
