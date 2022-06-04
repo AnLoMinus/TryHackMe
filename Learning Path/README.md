@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/51442719/172026339-6e6f0fd0-e2ca-4ba8-9e56-39f950ad64ba.png)
+
 # Learning Paths
 ## Work your way through a structured learning path
 
