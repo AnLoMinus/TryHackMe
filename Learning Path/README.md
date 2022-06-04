@@ -165,6 +165,7 @@
 
 - ✅ [Tutorial](https://tryhackme.com/jr/tutorial)
   - Learn how to use a TryHackMe room to start your upskilling in cyber security.
+    - Task 1  Starting your first machine
 
 ---
 
@@ -172,6 +173,15 @@
 
 - ✅ [Introductory Networking](https://tryhackme.com/jr/introtonetworking)
   - An introduction to networking theory and basic networking tools
+    - Task 1  Introduction
+    - Task 2  The OSI Model: An Overview
+    - Task 3  Encapsulation
+    - Task 4  The TCP/IP Model
+    - Task 5  `Networking Tools` Ping
+    - Task 6  `Networking Tools` Traceroute
+    - Task 7  `Networking Tools` WHOIS
+    - Task 8  `Networking Tools` Dig
+    - Task 9  Further Reading
 
 ---
 
@@ -179,6 +189,17 @@
 
 - ✅ [Network Services](https://tryhackme.com/jr/networkservices)
   - Learn about, then enumerate and exploit a variety of network services and misconfigurations.
+    - Task 1  Get Connected
+    - Task 2  Understanding SMB
+    - Task 3  Enumerating SMB
+    - Task 4  Exploiting SMB
+    - Task 5  Understanding Telnet
+    - Task 6  Enumerating Telnet
+    - Task 7  Exploiting Telnet
+    - Task 8  Understanding FTP
+    - Task 9  Enumerating FTP
+    - Task 10  Exploiting FTP
+    - Task 11  Expanding Your Knowledge
 
 ---
 
@@ -186,6 +207,17 @@
 
 - ✅ [Network Services 2](https://tryhackme.com/jr/networkservices2)
   - Enumerating and Exploiting More Common Network Services & Misconfigurations
+    - Task 1  Get Connected
+    - Task 2  Understanding NFS
+    - Task 3  Enumerating NFS
+    - Task 4  Exploiting NFS
+    - Task 5  Understanding SMTP
+    - Task 6  Enumerating SMTP
+    - Task 7  Exploiting SMTP
+    - Task 8  Understanding MySQL
+    - Task 9  Enumerating MySQL
+    - Task 10  Exploiting MySQL
+    - Task 11  Further Learning
 
 ---
 
@@ -193,6 +225,20 @@
 
 - ✅ [Wireshark 101](https://tryhackme.com/jr/wireshark)
   - Learn the basics of Wireshark and how to analyze various protocols and PCAPs
+    - Task 1  Introduction
+    - Task 2  Installation
+    - Task 3  Wireshark Overview
+    - Task 4  Collection Methods
+    - Task 5  Filtering Captures
+    - Task 6  Packet Dissection
+    - Task 7  ARP Traffic
+    - Task 8  ICMP Traffic
+    - Task 9  TCP Traffic
+    - Task 10  DNS Traffic
+    - Task 11  HTTP Traffic
+    - Task 12  HTTPS Traffic
+    - Task 13  Analyzing Exploit PCAPs
+    - Task 14  Conclusion    
 
 ---
 
@@ -200,6 +246,16 @@
 
 - ✅ [Windows Fundamentals 1](https://tryhackme.com/jr/windowsfundamentals1xbx)
   - In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, the NTFS file system, UAC, the Control Panel, and more..
+    - Task 1  Introduction to Windows
+    - Task 2  Windows Editions
+    - Task 3  The Desktop (GUI)
+    - Task 4  The File System
+    - Task 5  The Windows\System32 Folders
+    - Task 6  User Accounts, Profiles, and Permissions
+    - Task 7  User Account Control
+    - Task 8  Settings and the Control Panel
+    - Task 9  Task Manager
+    - Task 10  Conclusion
 
 ---
 
@@ -207,6 +263,15 @@
 
 - ✅ [Active Directory Basics](https://tryhackme.com/jr/activedirectorybasics)
   - Learn the basics of Active Directory and how it is used in the real world today
+    - Task 1  Introduction
+    - Task 2  Physical Active Directory
+    - Task 3  The Forest
+    - Task 4  Users + Groups
+    - Task 5  Trusts + Policies
+    - Task 6  Active Directory Domain Services + Authentication
+    - Task 7  AD in the Cloud
+    - Task 8  Hands-On Lab
+    - Task 9  Conclusion
 
 ---    
 
