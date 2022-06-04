@@ -1,9 +1,9 @@
 # Learning Paths
 ## Work your way through a structured learning path
 
-<details align="center">
+<details>
     <summary>
-## ✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
+✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
     </summary>
         
 
@@ -71,9 +71,9 @@
 
 ---
 
-<details align="center">
+<details>
     <summary>
-## ✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
+✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
     </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/jr-penetration-tester-2.jpg)
@@ -102,9 +102,9 @@
 
 ---
 
-<details align="center">
+<details>
     <summary>
-## ✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
+✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
     </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/cyberfundamentals.png)
@@ -130,9 +130,9 @@
 
 ---
 
-<details align="center">
+<details>
     <summary>
-## 🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
+🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
     </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/defensivesecurity.png)
@@ -149,6 +149,7 @@
 
 - Intermediate
 
+    
 
 ## 1️⃣ Cyber Defense Introduction
 ### Learn the basics of networking, host-based systems, and active directory. <br> These rooms will give you the foundational knowledge needed to grasp more advanced concepts.
@@ -174,13 +175,29 @@
 - 7️⃣ Active Directory Basics
   - Learn the basics of Active Directory and how it is used in the real world today
 
+
+- Threat and Vulnerability Management
+  - Identify how attackers are developing their techniques to use in your defensive strategy.
+
+- Security Operations & Monitoring
+  - Learn how to configure and utilise tooling to ensure that suspicious activity is quickly identified and dealt with in your environment.
+
+- Threat Emulation
+  - The best way to understand how attackers work is to get hands on experience with their techniques.
+
+- Incident Response and Forensics
+  - Incidents are inevitable. Learn how to identify and respond to them.
+
+- Malware Analysis
+  - Analyse malicious files to prevent malicious actions and identify attacks.
+    
 </details>
 
 ---
 
-<details align="center">
+<details>
     <summary>
-## 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
+🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
     </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
@@ -206,9 +223,9 @@
 
 ---
 
-<details align="center">
+<details>
     <summary>
-## 🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
+🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
     </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/offensivepentesting.jpg)
@@ -229,9 +246,9 @@
 
 ---
 
-<details align="center">
+<details>
     <summary>
-## 🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
+🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
     </summary>
 
 ![Image not set yet](https://i.imgur.com/ijlQ3wZ.jpg)
@@ -250,9 +267,9 @@
 
 ---
 
-<details align="center">
+<details>
     <summary>
-## 🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
+🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
     </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/web.jpg)
