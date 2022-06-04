@@ -138,7 +138,6 @@
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/defensivesecurity.png)
 
-
 ### Learn how to analyse and defend against real-world cyber threats/attacks
 
 *   Detect threats
@@ -419,6 +418,8 @@
 
 ---
 
+![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
+
 ### Learn the core skills required to start a career in cyber security
 ### The beginner path aims to give a broad introduction to the different areas in Computer Security. <br> 
 - This path will be looking at the following areas:
@@ -444,7 +445,6 @@
 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
     </summary>
 
-![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
     
     
 </details>
