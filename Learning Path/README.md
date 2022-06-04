@@ -3,7 +3,7 @@
 
 ---
 
-# [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security.md)
+# ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security.md)
 > Learn the core skills required to start a career in cyber security
 - Learn about different careers in cyber
 - Hack your first application
@@ -12,7 +12,7 @@
 
 ---
 
-# [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester.md)
+# ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester.md)
 > Learn the necessary skills to start a career as a penetration tester
 - Pentesting methodologies and tactics
 - Enumeration, exploitation and reporting
@@ -21,7 +21,7 @@
 
 ---
 
-# [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security.md)
+# ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security.md)
 > Before hacking something, you first need to understand the basics.
 - Cyber security basics
 - Networking basics and weaknesses
