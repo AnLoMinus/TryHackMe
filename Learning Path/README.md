@@ -131,6 +131,31 @@
 
 - Intermediate
 
+
+## 1️⃣ Cyber Defense Introduction
+### Learn the basics of networking, host-based systems, and active directory. <br> These rooms will give you the foundational knowledge needed to grasp more advanced concepts.
+
+- 1️⃣ Tutorial
+  - Learn how to use a TryHackMe room to start your upskilling in cyber security.
+
+- 2️⃣ Introductory Networking
+  - An introduction to networking theory and basic networking tools
+
+- 3️⃣ Network Services
+  - Learn about, then enumerate and exploit a variety of network services and misconfigurations.
+
+- 4️⃣ Network Services 2
+  - Enumerating and Exploiting More Common Network Services & Misconfigurations
+
+- 5️⃣ Wireshark 101
+  - Learn the basics of Wireshark and how to analyze various protocols and PCAPs
+
+- 6️⃣ Windows Fundamentals 1
+  - In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, the NTFS file system, UAC, the Control Panel, and more..
+
+- 7️⃣ Active Directory Basics
+  - Learn the basics of Active Directory and how it is used in the real world today
+
 ---
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
