@@ -152,6 +152,28 @@
 - 48 Hours
 
 - Intermediate
+
+---
+
+- [x] Cyber Defense Introduction
+  - Learn the basics of networking, host-based systems, and active directory. These rooms will give you the foundational knowledge needed to grasp more advanced concepts.
+
+- [ ] Threat and Vulnerability Management
+  - Identify how attackers are developing their techniques to use in your defensive strategy.
+
+- [ ] Security Operations & Monitoring
+  - Learn how to configure and utilise tooling to ensure that suspicious activity is quickly identified and dealt with in your environment.
+
+- [ ] Threat Emulation
+  - The best way to understand how attackers work is to get hands on experience with their techniques.
+
+- [ ] Incident Response and Forensics
+  - Incidents are inevitable. Learn how to identify and respond to them.
+
+- [ ] Malware Analysis
+  - Analyse malicious files to prevent malicious actions and identify attacks.
+
+---
     
 ## ✅ Cyber Defense Introduction
 
