@@ -3,6 +3,7 @@
 
 <details>
     <summary>
+        
 ✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
     </summary>
         
@@ -73,6 +74,7 @@
 
 <details>
     <summary>
+        
 ✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
     </summary>
 
@@ -104,6 +106,7 @@
 
 <details>
     <summary>
+        
 ✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
     </summary>
 
@@ -132,6 +135,7 @@
 
 <details>
     <summary>
+        
 🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
     </summary>
 
@@ -151,45 +155,68 @@
 
     
 
-## 1️⃣ Cyber Defense Introduction
+## ✅ Cyber Defense Introduction
 ### Learn the basics of networking, host-based systems, and active directory. <br> These rooms will give you the foundational knowledge needed to grasp more advanced concepts.
 
-- 1️⃣ Tutorial
+- ✅ Tutorial
   - Learn how to use a TryHackMe room to start your upskilling in cyber security.
 
-- 2️⃣ Introductory Networking
+---
+
+- ✅ Introductory Networking
   - An introduction to networking theory and basic networking tools
 
-- 3️⃣ Network Services
+---
+
+- ✅ Network Services
   - Learn about, then enumerate and exploit a variety of network services and misconfigurations.
 
-- 4️⃣ Network Services 2
+---
+
+- ✅ Network Services 2
   - Enumerating and Exploiting More Common Network Services & Misconfigurations
 
-- 5️⃣ Wireshark 101
+---
+
+- ✅ Wireshark 101
   - Learn the basics of Wireshark and how to analyze various protocols and PCAPs
 
-- 6️⃣ Windows Fundamentals 1
+---
+
+- ✅ Windows Fundamentals 1
   - In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, the NTFS file system, UAC, the Control Panel, and more..
 
-- 7️⃣ Active Directory Basics
+---
+
+- ✅ Active Directory Basics
   - Learn the basics of Active Directory and how it is used in the real world today
 
+---    
 
-- Threat and Vulnerability Management
-  - Identify how attackers are developing their techniques to use in your defensive strategy.
+## 🔲 Threat and Vulnerability Management
+### Identify how attackers are developing their techniques to use in your defensive strategy.
 
-- Security Operations & Monitoring
-  - Learn how to configure and utilise tooling to ensure that suspicious activity is quickly identified and dealt with in your environment.
+---
 
-- Threat Emulation
-  - The best way to understand how attackers work is to get hands on experience with their techniques.
+## 🔲 Security Operations & Monitoring
+### Learn how to configure and utilise tooling to ensure that suspicious activity is quickly identified and dealt with in your environment.
 
-- Incident Response and Forensics
-  - Incidents are inevitable. Learn how to identify and respond to them.
+---
 
-- Malware Analysis
-  - Analyse malicious files to prevent malicious actions and identify attacks.
+## 🔲 Threat Emulation
+### The best way to understand how attackers work is to get hands on experience with their techniques.
+
+---
+
+## 🔲 Incident Response and Forensics
+### Incidents are inevitable. Learn how to identify and respond to them.
+
+---
+
+## 🔲 Malware Analysis
+### Analyse malicious files to prevent malicious actions and identify attacks.
+
+---
     
 </details>
 
@@ -197,6 +224,7 @@
 
 <details>
     <summary>
+        
 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
     </summary>
 
@@ -225,6 +253,7 @@
 
 <details>
     <summary>
+        
 🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
     </summary>
 
@@ -248,6 +277,7 @@
 
 <details>
     <summary>
+        
 🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
     </summary>
 
@@ -269,6 +299,7 @@
 
 <details>
     <summary>
+        
 🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
     </summary>
 
