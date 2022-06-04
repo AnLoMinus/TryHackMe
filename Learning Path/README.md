@@ -1,12 +1,8 @@
 # Learning Paths
 ## Work your way through a structured learning path
 
-<details>
-    <summary>
-        
-✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
-    </summary>
-        
+---
+
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/introduction-to-cyber.jpg)
 
@@ -25,7 +21,12 @@
 
 - Easy
 
-
+<details>
+    <summary>
+        
+✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
+    </summary>
+        
 
 ## 1️⃣ Introduction to Cyber Security
 ### Understand what is offensive and defensive security, and learn about careers available in cyber.
@@ -72,12 +73,6 @@
 
 ---
 
-<details>
-    <summary>
-        
-✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
-    </summary>
-
 ![Image not set yet](https://assets.tryhackme.com/img/paths/jr-penetration-tester-2.jpg)
 
 
@@ -96,6 +91,13 @@
 - Use this path to work towards a career in cyber
     - Penetration Tester
 
+<details>
+    <summary>
+        
+✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
+    </summary>
+
+
 - [Certificate]()
 
 ![image](https://user-images.githubusercontent.com/51442719/171312671-9c08c137-dea8-4142-a481-13a013780968.png)
@@ -103,12 +105,6 @@
 </details>
 
 ---
-
-<details>
-    <summary>
-        
-✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
-    </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/cyberfundamentals.png)
 
@@ -125,6 +121,13 @@
 
 - Easy
 
+<details>
+    <summary>
+        
+✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
+    </summary>
+
+
 - [Certificate]()
 
 ![image](https://user-images.githubusercontent.com/51442719/171312637-401f2896-bc45-4e4a-9925-bfbe871f0a85.png)
@@ -132,12 +135,6 @@
 </details>
 
 ---
-
-<details>
-    <summary>
-        
-🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
-    </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/defensivesecurity.png)
 
@@ -152,6 +149,13 @@
 - 48 Hours
 
 - Intermediate
+
+<details>
+    <summary>
+        
+🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
+    </summary>
+
 
 ---
 
@@ -415,21 +419,15 @@
 
 ---
 
-<details>
-    <summary>
-        
-🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
-    </summary>
-
-![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
-
-
 ### Learn the core skills required to start a career in cyber security
-
-*   Web application security
-*   Network security
-*   Basic Linux
-*   Scripting
+### The beginner path aims to give a broad introduction to the different areas in Computer Security. <br> 
+- This path will be looking at the following areas:
+  - Basic Linux - Get familiar with the linux command line.
+  - Web Application Security - Learn web application security concepts through the OWASP Top 10
+  - Network Security - Using essential tools like NMAP to enumerate infrastructure.
+  - Scripting Challenges - Using Python and Bash to carry out different tasks.
+  - Privilege Escalation
+> Once you complete the beginner path, you should have learnt the fundamental knowledge for each specific area, and use these core concepts to build your understanding of more complex topics within the area.
 
 - 64 Hours
 
@@ -440,15 +438,18 @@
     - Penetration Tester
     - Security Analyst
 
-</details>
-
----
-
 <details>
     <summary>
         
-🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
+🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
     </summary>
+
+![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
+    
+    
+</details>
+
+---
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/offensivepentesting.jpg)
 
@@ -464,15 +465,16 @@
 
 - Intermediate
 
-</details>
-
----
-
 <details>
     <summary>
         
-🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
+🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
     </summary>
+
+
+</details>
+
+---
 
 ![Image not set yet](https://i.imgur.com/ijlQ3wZ.jpg)
 
@@ -486,15 +488,16 @@
 
 - Easy
 
-</details>
-
----
 
 <details>
     <summary>
         
-🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
+🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
     </summary>
+
+</details>
+
+---
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/web.jpg)
 
@@ -509,5 +512,12 @@
 - 32 Hours
 
 - Easy
+
+<details>
+    <summary>
+        
+🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
+    </summary>
+
 
 </details>
