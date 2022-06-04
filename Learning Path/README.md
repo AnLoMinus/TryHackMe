@@ -1,10 +1,14 @@
 # Learning Paths
 ## Work your way through a structured learning path
 
+<details align="center">
+    <summary>
+## ✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
+    </summary>
+        
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/introduction-to-cyber.jpg)
 
-## ✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
 
 ### Learn the core skills required to start a career in cyber security
 #### Cyber Security is a huge topic, and it can be challenging to know where to start. 
@@ -67,10 +71,13 @@
 
 ---
 
+<details align="center">
+    <summary>
+## ✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
+    </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/jr-penetration-tester-2.jpg)
 
-## ✅ [Jr Penetration Tester](https://tryhackme.com/path-action/jrpenetrationtester/join)
 
 ### Learn the necessary skills to start a career as a penetration tester
 
@@ -93,10 +100,13 @@
 
 ---
 
+<details align="center">
+    <summary>
+## ✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
+    </summary>
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/cyberfundamentals.png)
 
-## ✅ [Pre Security](https://tryhackme.com/path-action/presecurity/join)
 
 ### Before hacking something, you first need to understand the basics.
 
@@ -116,9 +126,13 @@
 
 ---
 
+<details align="center">
+    <summary>
+## 🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
+    </summary>
+
 ![Image not set yet](https://assets.tryhackme.com/img/paths/defensivesecurity.png)
 
-## 🔰 [Cyber Defense](https://tryhackme.com/path-action/blueteam/join)
 
 ### Learn how to analyse and defend against real-world cyber threats/attacks
 
@@ -158,9 +172,13 @@
 
 ---
 
+<details align="center">
+    <summary>
+## 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
+    </summary>
+
 ![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
 
-## 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
 
 ### Learn the core skills required to start a career in cyber security
 
@@ -180,9 +198,13 @@
 
 ---
 
+<details align="center">
+    <summary>
+## 🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
+    </summary>
+
 ![Image not set yet](https://assets.tryhackme.com/img/paths/offensivepentesting.jpg)
 
-## 🔰 [Offensive Pentesting](https://tryhackme.com/path-action/pentesting/join)
 
 ### Prepare yourself for real world penetration testing:
 
@@ -197,9 +219,14 @@
 
 ---
 
+
+<details align="center">
+    <summary>
+## 🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
+    </summary>
+
 ![Image not set yet](https://i.imgur.com/ijlQ3wZ.jpg)
 
-## 🔰 [CompTIA Pentest+](https://tryhackme.com/path-action/pentestplus/join)
 
 ### Complete this pathway and receive 10% off the Pentest+ exam!
 
@@ -212,9 +239,13 @@
 
 ---
 
+<details align="center">
+    <summary>
+## 🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
+    </summary>
+
 ![Image not set yet](https://assets.tryhackme.com/img/paths/web.jpg)
 
-## 🔰 [Web Fundamentals](https://tryhackme.com/path-action/web/join)
 
 ### A pathway to web application security.
 
