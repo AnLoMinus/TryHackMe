@@ -202,6 +202,55 @@
 
 ---
 
+![image](https://user-images.githubusercontent.com/51442719/172024262-15ef5b8b-9089-46d5-ad73-a1e3dc0fff05.png)
+
+- ✅ [Nessus](https://tryhackme.com/jr/rpnessusredux)
+  - Learn how to set up and use Nessus, a popular vulnerability scanner.
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172024288-d8bc9e9f-622a-4d61-8b20-858e3cf5a21f.png)
+
+- ✅ [MITRE](https://tryhackme.com/jr/mitre)
+  - This room will discuss the various resources MITRE has made available for the cybersecurity community.
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172024299-5920c661-dc7c-4a60-9102-277d0708f644.png)
+
+- [Yara](https://tryhackme.com/jr/yara)
+  - Learn the applications and language that is Yara for everything threat intelligence, forensics, and threat hunting!
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172024304-dce0cbfd-86ec-4a80-9e55-d2b7d543218d.png)
+
+- [Intro to ISAC](https://tryhackme.com/jr/introtoisac)
+  - Learn how to utilize Information Sharing and Analysis Centers to gather threat intelligence and collect IOCs.
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172024311-57a2b93c-f33c-4282-885d-c0f4da2e5b87.png)
+
+- [Zero Logon](https://tryhackme.com/jr/zer0logon)
+  - Learn about and exploit the ZeroLogon vulnerability that allows an attacker to go from Zero to Domain Admin without any valid credentials.
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172024320-eb74a2de-9fe2-48c5-8089-7220885415a0.png)
+
+- [OpenVAS](https://tryhackme.com/jr/openvas)
+  - Learn the basics of threat and vulnerability management using Open Vulnerability Assessment Scanning
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172024331-67d8ae95-6304-4bf1-8ad6-376a0c654634.png)
+
+- [MISP](https://tryhackme.com/jr/misp)
+  - Walkthrough on the use of MISP as a Threat Sharing Platform
+
+---
+
 ## 🔲 Security Operations & Monitoring
 
 ![image](https://user-images.githubusercontent.com/51442719/172023625-ab6a3e14-346e-46d1-8b14-fef6a3088456.png)
