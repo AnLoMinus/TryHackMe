@@ -152,10 +152,11 @@
 - 48 Hours
 
 - Intermediate
-
     
-
 ## ✅ Cyber Defense Introduction
+
+![image](https://user-images.githubusercontent.com/51442719/172023605-8ed749f4-a05f-4a7b-b74b-457016872d06.png)
+
 ### Learn the basics of networking, host-based systems, and active directory. <br> These rooms will give you the foundational knowledge needed to grasp more advanced concepts.
 
 - ✅ Tutorial
@@ -194,26 +195,41 @@
 ---    
 
 ## 🔲 Threat and Vulnerability Management
+
+![image](https://user-images.githubusercontent.com/51442719/172023616-fd73eaf3-91b6-4fd0-835f-a6e87e82a8b0.png)
+
 ### Identify how attackers are developing their techniques to use in your defensive strategy.
 
 ---
 
 ## 🔲 Security Operations & Monitoring
+
+![image](https://user-images.githubusercontent.com/51442719/172023625-ab6a3e14-346e-46d1-8b14-fef6a3088456.png)
+
 ### Learn how to configure and utilise tooling to ensure that suspicious activity is quickly identified and dealt with in your environment.
 
 ---
 
 ## 🔲 Threat Emulation
+
+![image](https://user-images.githubusercontent.com/51442719/172023631-d6ae833a-10b1-4454-9d6b-674637867057.png)
+
 ### The best way to understand how attackers work is to get hands on experience with their techniques.
 
 ---
 
 ## 🔲 Incident Response and Forensics
+
+![image](https://user-images.githubusercontent.com/51442719/172023640-664756e6-2726-4d7f-85f2-459610c6c996.png)
+
 ### Incidents are inevitable. Learn how to identify and respond to them.
 
 ---
 
 ## 🔲 Malware Analysis
+
+![image](https://user-images.githubusercontent.com/51442719/172023643-c1880055-4b8b-4243-a0f5-48725dc365ed.png)
+
 ### Analyse malicious files to prevent malicious actions and identify attacks.
 
 ---
