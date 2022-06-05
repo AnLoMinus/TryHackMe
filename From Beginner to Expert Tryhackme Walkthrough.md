@@ -1,28 +1,29 @@
 🦚 From Beginner to Expert Tryhackme Walkthrough 🦚
 
+---
 
 # 🦚 Level 1 - Intro
 
-- [x] OpenVPN https://tryhackme.com/room/openvpn
+- [x] [OpenVPN](https://tryhackme.com/room/openvpn)
     - [x] Task 1  Connecting to our network
     - [x] Task 2  Connecting with Windows
     - [x] Task 3  Connecting with MacOS
     - [x] Task 4  Connecting with Linux
     - [x] Task 5  Using TryHackMe without a VPN
     - [x] Task 6  Check you're connected
-- [x] Welcome https://tryhackme.com/jr/welcome
+- [x] [Welcome](https://tryhackme.com/jr/welcome)
     - [x] Task 1  What are rooms?
     - [x] Task 2  Hackable Machines
     - [x] Task 3  Access your first machine
     - [x] Task 4  Next Steps
-- [x] Intro to Researching https://tryhackme.com/room/introtoresearch
+- [x] [Intro to Researching](https://tryhackme.com/room/introtoresearch)
     - [x] Task 1  Introduction
     - [x] Task 2  Example Research Question
     - [x] Task 3  Vulnerability Searching
     - [x] Task 4  Manual Pages
     - [x] Task 5  Final Thoughts
-- [ ] Learn Linux https://tryhackme.com/room/zthlinux `Private`
-- [ ] Crash Course Pentesting https://tryhackme.com/room/ccpentesting
+- [ ] [Learn Linux](https://tryhackme.com/room/zthlinux) `Private`
+- [ ] [Crash Course Pentesting](https://tryhackme.com/room/ccpentesting)
     - [x] Task 1  Introduction
     - [x] Task 2  [Section 1 - Network Utilities] - nmap
     - [x] Task 3  [Section 1 - Network Utilities] - Netcat
@@ -48,10 +49,25 @@
     - [ ] Task 23  [Miscellaneous]: A note on privilege escalation
     - [ ] Task 24  [Section 7 - Final Exam]: Good Luck :D
 
-- [ ] Introductory CTFs to get your feet wet
-  - [ ] Google Dorking https://tryhackme.com/room/googledorking
-  - [ ] OHsint https://tryhackme.com/room/ohsint
-  - [ ] Shodan.io https://tryhackme.com/room/shodan
+## Introductory CTFs to get your feet wet
+  - [x] [Google Dorking](https://tryhackme.com/room/googledorking)
+    - [x] Task 1  Ye Ol' Search Engine
+    - [x] Task 2  Let's Learn About Crawlers
+    - [x] Task 3  Enter: Search Engine Optimisation
+    - [x] Task 4  Beepboop - Robots.txt
+    - [x] Task 5  Sitemaps
+    - [x] Task 6  What is Google Dorking?
+  - [ ] [OHsint](https://tryhackme.com/room/ohsint)
+  - [ ] [Shodan.io](https://tryhackme.com/room/shodan)
+    - [x] Task 1  Introduction
+    - [x] Task 2  Filters
+    - [ ] Task 3  Google & Filtering
+    - [ ] Task 4  Shodan Monitor
+    - [ ] Task 5  Shodan Dorking
+    - [ ] Task 6  Shodan Extension
+    - [ ] Task 7  Exploring the API & Conclusion
+
+---
 
 # 🦚 Level 2 - Tooling
 
@@ -70,6 +86,8 @@
   - [ ] Simple CTF https://tryhackme.com/room/easyctf
   - [ ] Bounty Hacker https://tryhackme.com/room/cowboyhacker
 
+---
+
 # 🦚 Level 3 - Crypto & Hashes with CTF practice
 
 - [ ] Crack the hash https://tryhackme.com/room/crackthehash
@@ -78,6 +96,8 @@
 - [ ] Ice https://tryhackme.com/room/ice
 - [ ] Lazy Admin https://tryhackme.com/room/lazyadmin
 - [ ] Basic Pentesting https://tryhackme.com/room/basicpentestingjt
+
+---
 
 # 🦚 Level 4 - Web
 
@@ -94,6 +114,8 @@
 - [ ] Jack of all trades https://tryhackme.com/room/jackofalltrades
 - [ ] Bolt https://tryhackme.com/room/bolt
 
+---
+
 # 🦚 Level 5 - Reverse Engineering
 
 - [ ] Intro to x86 64 https://tryhackme.com/room/introtox8664
@@ -103,6 +125,8 @@
 - [ ] Reverse Engineering https://tryhackme.com/room/reverseengineering
 - [ ] Reversing ELF https://tryhackme.com/room/reverselfiles
 - [ ] Dumping Router Firmware https://tryhackme.com/room/rfirmware
+
+---
 
 # 🦚 Level 6 - PrivEsc
 
@@ -116,6 +140,8 @@
 - [ ] Kenobi https://tryhackme.com/room/kenobi
 - [ ] Capture the flag https://tryhackme.com/room/c4ptur3th3fl4g
 - [ ] Pickle Rick https://tryhackme.com/room/picklerick
+
+---
 
 # 🦚 Level 7 - CTF practice
 
