@@ -32,7 +32,7 @@
 
 ---
 
-# [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Complete%20Beginner.md) `Easy`
+# [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) `Easy`
 > Learn the core skills required to start a career in cyber security
 - Web application security
 - Network security
