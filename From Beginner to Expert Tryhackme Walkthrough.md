@@ -90,41 +90,41 @@
 
 ## 🦚 Level 3 - Crypto & Hashes with CTF practice
 
-- [ ] Crack the hash https://tryhackme.com/room/crackthehash
-- [ ] Agent Sudo https://tryhackme.com/room/agentsudoctf
-- [ ] The Cod Caper https://tryhackme.com/room/thecodcaper
-- [ ] Ice https://tryhackme.com/room/ice
-- [ ] Lazy Admin https://tryhackme.com/room/lazyadmin
-- [ ] Basic Pentesting https://tryhackme.com/room/basicpentestingjt
+- [ ] [Crack the hash](https://tryhackme.com/room/crackthehash)
+- [ ] [Agent Sudo](https://tryhackme.com/room/agentsudoctf)
+- [ ] [The Cod Caper](https://tryhackme.com/room/thecodcaper)
+- [ ] [Ice](https://tryhackme.com/room/ice)
+- [ ] [Lazy Admin](https://tryhackme.com/room/lazyadmin)
+- [ ] [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)
 
 ---
 
 ## 🦚 Level 4 - Web
 
-- [ ] OWASP top 10 https://tryhackme.com/room/owasptop10
-- [ ] Inclusion https://tryhackme.com/room/inclusion
-- [ ] Injection https://tryhackme.com/room/injection
-- [ ] Vulnversity https://tryhackme.com/room/vulnversity
-- [ ] Basic Pentesting https://tryhackme.com/room/basicpentestingjt
-- [ ] Juiceshop https://tryhackme.com/room/owaspjuiceshop
-- [ ] Ignite https://tryhackme.com/room/ignite
-- [ ] Overpass https://tryhackme.com/room/overpass
-- [ ] Year of the Rabbit https://tryhackme.com/room/yearoftherabbit
-- [ ] DevelPy https://tryhackme.com/room/bsidesgtdevelpy
-- [ ] Jack of all trades https://tryhackme.com/room/jackofalltrades
-- [ ] Bolt https://tryhackme.com/room/bolt
+- [ ] [OWASP top 10](https://tryhackme.com/room/owasptop10)
+- [ ] [Inclusion](https://tryhackme.com/room/inclusion)
+- [ ] [Injection](https://tryhackme.com/room/injection)
+- [ ] [Vulnversity](https://tryhackme.com/room/vulnversity)
+- [ ] [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)
+- [ ] [Juiceshop](https://tryhackme.com/room/owaspjuiceshop)
+- [ ] [Ignite](https://tryhackme.com/room/ignite)
+- [ ] [Overpass](https://tryhackme.com/room/overpass)
+- [ ] [Year of the Rabbit](https://tryhackme.com/room/yearoftherabbit)
+- [ ] [DevelPy](https://tryhackme.com/room/bsidesgtdevelpy)
+- [ ] [Jack of all trades](https://tryhackme.com/room/jackofalltrades)
+- [ ] [Bolt](https://tryhackme.com/room/bolt)
 
 ---
 
 ## 🦚 Level 5 - Reverse Engineering
 
-- [ ] Intro to x86 64 https://tryhackme.com/room/introtox8664
-- [ ] CC Ghidra https://tryhackme.com/room/ccghidra
-- [ ] CC Radare2 https://tryhackme.com/room/ccradare2
-- [ ] CC Steganography https://tryhackme.com/room/ccstego
-- [ ] Reverse Engineering https://tryhackme.com/room/reverseengineering
-- [ ] Reversing ELF https://tryhackme.com/room/reverselfiles
-- [ ] Dumping Router Firmware https://tryhackme.com/room/rfirmware
+- [ ] [Intro to x86 64](https://tryhackme.com/room/introtox8664)
+- [ ] [CC Ghidra](https://tryhackme.com/room/ccghidra)
+- [ ] [CC Radare2](https://tryhackme.com/room/ccradare2)
+- [ ] [CC Steganography](https://tryhackme.com/room/ccstego)
+- [ ] [Reverse Engineering](https://tryhackme.com/room/reverseengineering)
+- [ ] [Reversing ELF](https://tryhackme.com/room/reverselfiles)
+- [ ] [Dumping Router Firmware](https://tryhackme.com/room/rfirmware)
 
 ---
 
