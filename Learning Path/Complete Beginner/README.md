@@ -261,9 +261,9 @@
   
 - [ ] [OWASP Juice Shop](https://tryhackme.com/room/owaspjuiceshop)
   - This room uses the Juice Shop vulnerable web application to learn how to identify and exploit common web application vulnerabilities.
-    - [ ] Task 1  Open for business!
-    - [ ] Task 2  Let's go on an adventure!
-    - [ ] Task 3  Inject the juice
+    - [x] Task 1  Open for business!
+    - [x] Task 2  Let's go on an adventure!
+    - [x] Task 3  Inject the juice
     - [ ] Task 4  Who broke my lock?!
     - [ ] Task 5  AH! Don't look!
     - [ ] Task 6  Who's flying this thing?
