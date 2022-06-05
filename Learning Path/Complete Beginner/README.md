@@ -37,20 +37,15 @@
 - [ ] Windows Exploitation Basics
   - Hacking Windows is often daunting. Grasp the fundamentals of core Windows concepts and Active Directory vulnerabilities.
 
-- [ ] Shells and Privilege Escalation
+- [x] Shells and Privilege Escalation
   - Once you have initial access on a machine, learn how to escalate your account privileges to root.
 
 - [ ] Basic Computer Exploitation
   - Strengthen your skills by exploiting a range of different applications and services, from networking to web to privilege escalation
 
 ---
-
-
-<details>
-    <summary>
         
-🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
-    </summary>
+# 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
 
 ## Complete Beginner Introduction
 
@@ -522,5 +517,3 @@
 ---
 
     
-    
-</details>
