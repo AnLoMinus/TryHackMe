@@ -1,8 +1,8 @@
-🦚 From Beginner to Expert Tryhackme Walkthrough 🦚
+# 🦚 From Beginner to Expert Tryhackme Walkthrough 🦚
 
 ---
 
-# 🦚 Level 1 - Intro
+## 🦚 Level 1 - Intro
 
 - [x] [OpenVPN](https://tryhackme.com/room/openvpn)
     - [x] Task 1  Connecting to our network
@@ -49,7 +49,7 @@
     - [ ] Task 23  [Miscellaneous]: A note on privilege escalation
     - [ ] Task 24  [Section 7 - Final Exam]: Good Luck :D
 
-## Introductory CTFs to get your feet wet
+### Introductory CTFs to get your feet wet
   - [x] [Google Dorking](https://tryhackme.com/room/googledorking)
     - [x] Task 1  Ye Ol' Search Engine
     - [x] Task 2  Let's Learn About Crawlers
@@ -69,7 +69,7 @@
 
 ---
 
-# 🦚 Level 2 - Tooling
+## 🦚 Level 2 - Tooling
 
 - [ ] Tmux https://tryhackme.com/room/rptmux
 - [ ] Nmap https://tryhackme.com/room/rpnmap
@@ -88,7 +88,7 @@
 
 ---
 
-# 🦚 Level 3 - Crypto & Hashes with CTF practice
+## 🦚 Level 3 - Crypto & Hashes with CTF practice
 
 - [ ] Crack the hash https://tryhackme.com/room/crackthehash
 - [ ] Agent Sudo https://tryhackme.com/room/agentsudoctf
@@ -99,7 +99,7 @@
 
 ---
 
-# 🦚 Level 4 - Web
+## 🦚 Level 4 - Web
 
 - [ ] OWASP top 10 https://tryhackme.com/room/owasptop10
 - [ ] Inclusion https://tryhackme.com/room/inclusion
@@ -116,7 +116,7 @@
 
 ---
 
-# 🦚 Level 5 - Reverse Engineering
+## 🦚 Level 5 - Reverse Engineering
 
 - [ ] Intro to x86 64 https://tryhackme.com/room/introtox8664
 - [ ] CC Ghidra https://tryhackme.com/room/ccghidra
@@ -128,7 +128,7 @@
 
 ---
 
-# 🦚 Level 6 - PrivEsc
+## 🦚 Level 6 - PrivEsc
 
 - [ ] Sudo Security Bypass https://tryhackme.com/room/sudovulnsbypass
 - [ ] Sudo Buffer Overflow https://tryhackme.com/room/sudovulnsbof
@@ -143,7 +143,7 @@
 
 ---
 
-# 🦚 Level 7 - CTF practice
+## 🦚 Level 7 - CTF practice
 
 - [ ] [Post Exploitation Basics](https://tryhackme.com/room/postexploit)
 - [ ] [Smag Grotto](https://tryhackme.com/room/smaggrotto)
