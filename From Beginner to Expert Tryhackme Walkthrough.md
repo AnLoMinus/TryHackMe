@@ -71,20 +71,20 @@
 
 ## 🦚 Level 2 - Tooling
 
-- [ ] Tmux https://tryhackme.com/room/rptmux
-- [ ] Nmap https://tryhackme.com/room/rpnmap
-- [ ] Web Scanning https://tryhackme.com/room/rpwebscanning
-- [ ] Sublist3r https://tryhackme.com/room/rpsublist3r
-- [ ] Metasploit https://tryhackme.com/room/rpmetasploit
-- [ ] Hydra https://tryhackme.com/room/hydra
-- [ ] Linux Privesc https://tryhackme.com/room/linuxprivesc
-- [ ] Web Scanning https://tryhackme.com/room/rpwebscanning
+- [ ] [Tmux](https://tryhackme.com/room/rptmux)
+- [ ] [Nmap](https://tryhackme.com/room/rpnmap)
+- [ ] [Web Scanning](https://tryhackme.com/room/rpwebscanning)
+- [ ] [Sublist3r](https://tryhackme.com/room/rpsublist3r)
+- [ ] [Metasploit](https://tryhackme.com/room/rpmetasploit)
+- [ ] [Hydra](https://tryhackme.com/room/hydra)
+- [ ] [Linux Privesc](https://tryhackme.com/room/linuxprivesc)
+- [ ] [Web Scanning](https://tryhackme.com/room/rpwebscanning)
 
-- [ ] More introductory CTFs
-  - [ ] Vulnversity - https://tryhackme.com/room/vulnversity 
-  - [ ] Blue - https://tryhackme.com/room/blue
-  - [ ] Simple CTF https://tryhackme.com/room/easyctf
-  - [ ] Bounty Hacker https://tryhackme.com/room/cowboyhacker
+### More introductory CTFs
+  - [ ] [Vulnversity](https://tryhackme.com/room/vulnversity)
+  - [ ] [Blue](https://tryhackme.com/room/blue)
+  - [ ] [Simple CTF](https://tryhackme.com/room/easyctf)
+  - [ ] [Bounty Hacker](https://tryhackme.com/room/cowboyhacker)
 
 ---
 
@@ -130,16 +130,16 @@
 
 ## 🦚 Level 6 - PrivEsc
 
-- [ ] Sudo Security Bypass https://tryhackme.com/room/sudovulnsbypass
-- [ ] Sudo Buffer Overflow https://tryhackme.com/room/sudovulnsbof
-- [ ] Windows Privesc Arena https://tryhackme.com/room/windowsprivescarena
-- [ ] Linux Privesc Arena https://tryhackme.com/room/linuxprivescarena
-- [ ] Windows Privesc https://tryhackme.com/room/windows10privesc
-- [ ] Blaster https://tryhackme.com/room/blaster
-- [ ] Ignite https://tryhackme.com/room/ignite
-- [ ] Kenobi https://tryhackme.com/room/kenobi
-- [ ] Capture the flag https://tryhackme.com/room/c4ptur3th3fl4g
-- [ ] Pickle Rick https://tryhackme.com/room/picklerick
+- [ ] [Sudo Security Bypass](https://tryhackme.com/room/sudovulnsbypass)
+- [ ] [Sudo Buffer Overflow](https://tryhackme.com/room/sudovulnsbof)
+- [ ] [Windows Privesc Arena](https://tryhackme.com/room/windowsprivescarena)
+- [ ] [Linux Privesc Arena](https://tryhackme.com/room/linuxprivescarena)
+- [ ] [Windows Privesc](https://tryhackme.com/room/windows10privesc)
+- [ ] [Blaster](https://tryhackme.com/room/blaster)
+- [ ] [Ignite](https://tryhackme.com/room/ignite)
+- [ ] [Kenobi](https://tryhackme.com/room/kenobi)
+- [ ] [Capture the flag](https://tryhackme.com/room/c4ptur3th3fl4g)
+- [ ] [Pickle Rick](https://tryhackme.com/room/picklerick)
 
 ---
 
