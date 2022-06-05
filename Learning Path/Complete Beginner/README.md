@@ -522,7 +522,7 @@
     - [x] Task 4  Privilege Escalation with Path Variable Manipulation
   
 - [ ] [Steel Mountain](https://tryhackme.com/room/steelmountain)
-  - Hack into a Mr. Robot themed Windows machine. Use metasploit for initial access, utilise powershell for Windows privilege escalation enumeration and learn a new technique to get Administrator access.
+  - Hack into a Mr. Robot themed Windows machine. <br> Use metasploit for initial access, utilise powershell for Windows privilege escalation enumeration and learn a new technique to get Administrator access.
     - [ ] Task 1  Introduction
     - [ ] Task 2  Initial Access
     - [ ] Task 3  Privilege Escalation
