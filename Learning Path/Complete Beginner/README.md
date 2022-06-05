@@ -266,7 +266,7 @@
     - [x] Task 3  Inject the juice
     - [x] Task 4  Who broke my lock?!
     - [x] Task 5  AH! Don't look!
-    - [ ] Task 6  Who's flying this thing?
+    - [x] Task 6  Who's flying this thing?
     - [ ] Task 7  Where did that come from?
     - [ ] Task 8  Exploration!
   
