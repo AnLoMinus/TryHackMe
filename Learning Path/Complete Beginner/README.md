@@ -19,28 +19,28 @@
     - Penetration Tester
     - Security Analyst
 
-- [x] Complete Beginner Introduction
+- [x] [Complete Beginner Introduction](#complete-beginner-introduction)
   - This section focuses on introducing you to the TryHackMe platform, and to the cyber security industry. Once you understand the virtual room concept on TryHackMe, you'll start exploring the different careers in cyber security to get a better feel of what you may like to do. After which, you'll learn how to effectively research for complex answer - cyber security is a very broad field and understand how to find relevant information will be extremely useful to you.
 
-- [x] Linux Fundamentals
+- [x] [Linux Fundamentals](#linux-fundamentals)
   - Many servers and security tools use Linux. Learn how to use the Linux operating system, a critical skill in cyber security.
 
-- [x] Network Exploitation Basics
+- [x] [Network Exploitation Basics](#network-exploitation-basics)
   - Understand, enumerate and attack various networking services in real-world environments.
 
-- [ ] Web Hacking Fundamentals
+- [ ] [Web Hacking Fundamentals](#web-hacking-fundamentals)
   - Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
 
-- [ ] Cryptography
+- [ ] [Cryptography](#cryptography)
   - Cryptography is essential in security. Learn how its used to preserve integrity and confidentiality of sensitive information.
 
-- [ ] Windows Exploitation Basics
+- [ ] [Windows Exploitation Basics](#windows-exploitation-basics)
   - Hacking Windows is often daunting. Grasp the fundamentals of core Windows concepts and Active Directory vulnerabilities.
 
-- [x] Shells and Privilege Escalation
+- [x] [Shells and Privilege Escalation](#shells-and-privilege-escalation)
   - Once you have initial access on a machine, learn how to escalate your account privileges to root.
 
-- [ ] Basic Computer Exploitation
+- [ ] [Basic Computer Exploitation](#basic-computer-exploitation)
   - Strengthen your skills by exploiting a range of different applications and services, from networking to web to privilege escalation
 
 ---
