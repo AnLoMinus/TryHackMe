@@ -62,7 +62,7 @@
         - [x] Task 4  Beepboop - Robots.txt
         - [x] Task 5  Sitemaps
         - [x] Task 6  What is Google Dorking?
-  - [ ] [OHsint](https://tryhackme.com/room/ohsint): 
+  - [x] [OHsint](https://tryhackme.com/room/ohsint): 
     - [ ] Are you able to use open source intelligence to solve this challenge?
   - [ ] [Shodan.io](https://tryhackme.com/room/shodan): 
     - [ ] Learn about Shodan.io and how to use it for devices enumeration - is your coffee machine publicly accessible?
