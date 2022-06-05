@@ -351,8 +351,21 @@
   - In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, the NTFS file system, UAC, the Control Panel, and more..
     - [x] Task 1  Introduction to Windows
     - [x] Task 2  Windows Editions
+      - Answer the questions below:
+        - [x] What encryption can you enable on Pro that you can't enable in Home?
+          > `BitLocker`
     - [x] Task 3  The Desktop (GUI)
+      - Answer the questions below
+        - Which selection will hide/disable the Search box?
+          > `Hidden`
+        - Which selection will hide/disable the Task View button?
+          > `Show Task View button`
+        - Besides Clock and Network, what other icon is visible in the Notification Area?
+          > `Action Center`
     - [x] Task 4  The File System
+      - Answer the questions below
+        - What is the meaning of NTFS?
+          > `New Technology File System`
     - [x] Task 5  The Windows\System32 Folders
     - [x] Task 6  User Accounts, Profiles, and Permissions
     - [x] Task 7  User Account Control
