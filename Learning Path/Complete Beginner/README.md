@@ -515,7 +515,7 @@
     - [x] Task 1  Web App Testing and Privilege Escalation
 
 - [x] [Kenobi](https://tryhackme.com/room/kenobi)
-  - Walkthrough on exploiting a Linux machine. Enumerate Samba for shares, manipulate a vulnerable version of proftpd and escalate your privileges with path variable manipulation.
+  - Walkthrough on exploiting a Linux machine. <br> Enumerate Samba for shares, manipulate a vulnerable version of proftpd and escalate your privileges with path variable manipulation.
     - [x] Task 1  Deploy the vulnerable machine
     - [x] Task 2  Enumerating Samba for shares
     - [x] Task 3  Gain initial access with ProFtpd
