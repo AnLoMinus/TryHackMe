@@ -32,30 +32,12 @@
 
 ---
 
-# [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense.md) `Intermediate`
-> Learn how to analyse and defend against real-world cyber threats/attacks
-- Detect threats
-- Gather threat actor intelligence
-- Understand and emulate adversary TTPs
-- Identify and respond to incidents
-
----
-
 # [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Complete%20Beginner.md) `Easy`
 > Learn the core skills required to start a career in cyber security
 - Web application security
 - Network security
 - Basic Linux
 - Scripting
-
----
-
-# [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting.md) `Intermediate`
-> Prepare yourself for real world penetration testing:
-- Utilise industry standard tools
-- Learn realistic attack scenarios
-- Train in offensive security
-- Supporting exercises & resources
 
 ---
 
@@ -72,5 +54,24 @@
 - Major vulnerabilities explained
 - Learn industry-used tools
 - Web application assessments
+
+---
+
+
+# [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting.md) `Intermediate`
+> Prepare yourself for real world penetration testing:
+- Utilise industry standard tools
+- Learn realistic attack scenarios
+- Train in offensive security
+- Supporting exercises & resources
+
+---
+
+# [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense.md) `Intermediate`
+> Learn how to analyse and defend against real-world cyber threats/attacks
+- Detect threats
+- Gather threat actor intelligence
+- Understand and emulate adversary TTPs
+- Identify and respond to incidents
 
 ---
