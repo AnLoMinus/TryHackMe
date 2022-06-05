@@ -264,8 +264,8 @@
     - [x] Task 1  Open for business!
     - [x] Task 2  Let's go on an adventure!
     - [x] Task 3  Inject the juice
-    - [ ] Task 4  Who broke my lock?!
-    - [ ] Task 5  AH! Don't look!
+    - [x] Task 4  Who broke my lock?!
+    - [x] Task 5  AH! Don't look!
     - [ ] Task 6  Who's flying this thing?
     - [ ] Task 7  Where did that come from?
     - [ ] Task 8  Exploration!
