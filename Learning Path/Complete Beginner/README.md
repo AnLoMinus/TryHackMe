@@ -416,11 +416,11 @@
   
 - [ ] [Blue](https://tryhackme.com/room/blue)
   - Deploy & hack into a Windows machine, leveraging common misconfigurations issues.
-    - [ ]Task 1  Recon
-    - [ ]Task 2  Gain Access
-    - [ ]Task 3  Escalate
-    - [ ]Task 4  Cracking
-    - [ ]Task 5  Find flags!
+    - [ ] Task 1  Recon
+    - [ ] Task 2  Gain Access
+    - [ ] Task 3  Escalate
+    - [ ] Task 4  Cracking
+    - [ ] Task 5  Find flags!
     
 ---
 
