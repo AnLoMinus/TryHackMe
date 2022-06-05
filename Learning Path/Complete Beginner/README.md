@@ -48,7 +48,7 @@
         
 # 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
 
-## Complete Beginner Introduction | [The Learning Path](#the-learning-path)
+## Complete Beginner Introduction
 
 ![image](https://user-images.githubusercontent.com/51442719/172025601-131b26f6-7538-4d81-813e-145b2b3b7c02.png)
 
@@ -72,7 +72,7 @@
     
 ---
 
-## Linux Fundamentals | [The Learning Path](#the-learning-path)
+## Linux Fundamentals
 
 ![image](https://user-images.githubusercontent.com/51442719/172025596-21c729fe-e0dd-4315-a00c-dd5b9f84332d.png)
 
@@ -115,7 +115,7 @@
     
 ---
 
-## Network Exploitation Basics | [The Learning Path](#the-learning-path)
+## Network Exploitation Basics
 
 ![image](https://user-images.githubusercontent.com/51442719/172025591-ef80c895-4dce-42ae-b3d8-26237b00a412.png)
 
@@ -181,7 +181,7 @@
 
 ---
 
-## Web Hacking Fundamentals | [The Learning Path](#the-learning-path)
+## Web Hacking Fundamentals
 
 ![image](https://user-images.githubusercontent.com/51442719/172025585-d875817a-e8dd-449a-9c90-e869e090d88e.png)
 
@@ -290,7 +290,7 @@
     - [x] Task 1  Pickle Rick
 ---
 
-## Cryptography | [The Learning Path](#the-learning-path)
+## Cryptography
 
 ![image](https://user-images.githubusercontent.com/51442719/172025579-25ee182c-b123-437e-b257-5596e68ebeb8.png)
 
@@ -339,7 +339,7 @@
 
 ---
 
-## Windows Exploitation Basics | [The Learning Path](#the-learning-path)
+## Windows Exploitation Basics
 
 ![image](https://user-images.githubusercontent.com/51442719/172025577-75004a3d-4f29-4e78-babb-eff02e513856.png)
 
@@ -420,7 +420,7 @@
     
 ---
 
-## Shells and Privilege Escalation | [The Learning Path](#the-learning-path)
+## Shells and Privilege Escalation
 
 ![image](https://user-images.githubusercontent.com/51442719/172025572-856bf3a6-0ee9-4883-8f75-de251f618243.png)
 
@@ -483,7 +483,7 @@
 
 ---
 
-## Basic Computer Exploitation | [The Learning Path](#the-learning-path)
+## Basic Computer Exploitation
 
 ![image](https://user-images.githubusercontent.com/51442719/172025563-62cc34d8-8296-4ab1-af67-4d54b8232410.png)
     
