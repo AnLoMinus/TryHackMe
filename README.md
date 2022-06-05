@@ -1,6 +1,6 @@
 # [TryHackMe](https://tryhackme.com/)
 
-## 🔒 TryHackMe - Writeup's ! 📝
+## 🔒 TryHackMe - My Way ! 📝
 
 ---
 
