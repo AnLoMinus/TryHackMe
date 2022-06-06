@@ -183,31 +183,95 @@
 
 ---
 
-- [ ] https://tryhackme.com/room/bpvolatility  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+
+- [ ] [Volatility](https://tryhackme.com/room/bpvolatility)
+  > Learn how to perform memory forensics with Volatility!
+    - [ ] Task 1  Intro
+    - [ ] Task 2  Obtaining Memory Samples
+    - [ ] Task 3  Examining Our Patient
+    - [ ] Task 4  Post Actions
+    - [ ] Task 5  Extra Credit
 
 ---
 
-- [ ] https://tryhackme.com/room/hackernote  
+![image](https://user-images.githubusercontent.com/51442719/172146883-a392071e-23db-4299-a95c-36d07dfd9ef4.png)
+
+- [ ] [hackerNote](https://tryhackme.com/room/hackernote)
+  > A custom webapp, introducing username enumeration, custom wordlists and a basic privilege escalation exploit.
+    - [ ] Task 1  Reconnaissance
+    - [ ] Task 2  Investigate
+    - [ ] Task 3  Exploit
+    - [ ] Task 4  Attack Passwords
+    - [ ] Task 5  Escalate
+    - [ ] Task 6  Comments on realism and Further Reading
 
 ---
 
-- [ ] https://tryhackme.com/room/shodan  
+![image](https://user-images.githubusercontent.com/51442719/172147088-8493119a-95a6-43fc-8f8c-ad1755eef21c.png)
+
+- [ ] [Shodan.io](https://tryhackme.com/room/shodan)
+  > Learn about Shodan.io and how to use it for devices enumeration - is your coffee machine publicly accessible?
+    - [ ] Task 1  Introduction
+    - [ ] Task 2  Filters
+    - [ ] Task 3  Google & Filtering
+    - [ ] Task 4  Shodan Monitor
+    - [ ] Task 5  Shodan Dorking
+    - [ ] Task 6  Shodan Extension
+    - [ ] Task 7  Exploring the API & Conclusion
 
 ---
 
-- [ ] https://tryhackme.com/room/jupyter101  
+![image](https://user-images.githubusercontent.com/51442719/172147208-299336df-bd16-4a3b-b623-f693fb121c67.png)
+
+- [ ] [Jupyter 101](https://tryhackme.com/room/jupyter101)
+  > A friendly introduction into using the Jupyter Notebook environment. Learn to process and visualise data!
+    - [ ] Task 1  Preface
+    - [ ] Task 2  What is Jupyter?
+    - [ ] Task 3  Deploying Instance & Logging In
+    - [ ] Task 4  Let's Learn More About Jupyter
+    - [ ] Task 5  Understanding how Jupyter Notebooks Run
+    - [ ] Task 6  Interacting With the Filesystem!
+    - [ ] Task 7  Handling Data With Pandas
+    - [ ] Task 8  Visualising Data With Matplotlib
 
 ---
 
-- [ ] https://tryhackme.com/room/rppsempire  
+![image](https://user-images.githubusercontent.com/51442719/172147333-d5f57d13-9826-4149-b092-c411c15f32cf.png)
+
+- [ ] [Empire](https://tryhackme.com/room/rppsempire)
+  > Learn how to use Empire and it's GUI Starkiller, a powerful post-exploitation C2 framework.
+    - [ ] Task 1  Introduction
+    - [ ] Task 2  Deploy!
+    - [ ] Task 3  Installation
+    - [ ] Task 4  Menu Overview
+    - [ ] Task 5  Listeners
+    - [ ] Task 6  Stagers
+    - [ ] Task 7  Agents
+    - [ ] Task 8  Modules
+    - [ ] Task 9  Plugins
+    - [ ] Task 10  Conclusion
 
 ---
 
-- [ ] https://tryhackme.com/room/phishinghiddeneye  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+
+- [ ] [Phishing: HiddenEye](https://tryhackme.com/room/phishinghiddeneye)
+  > A simple guide on how to use a tool known as HiddenEye developed by ANONUD4Y. This tool helps you create a phishing page for different sites such as Gmail, Snapchat, Paypal and more. Including understanding the difference between legit and fake site.
+    - [ ] Task 1  Installation & Creating your first phishing page !
+    - [ ] Task 2  Masking Your Link.
+    - [ ] Task 3  Creating Gmail Phishing Page !
 
 ---
 
-- [ ] https://tryhackme.com/room/rpsublist3r  
+![image](https://user-images.githubusercontent.com/51442719/172147645-8a2ca46d-0dc7-4b23-9c24-a6b5abeea460.png)
+
+- [x] [Sublist3r](https://tryhackme.com/room/rpsublist3r)
+  > Learn how to find subdomains with Sublist3r!
+    - [x] Task 1  Intro
+    - [x] Task 2  Installation
+    - [x] Task 3  Switchboard
+    - [x] Task 4  Scans away!
 
 ---
 
