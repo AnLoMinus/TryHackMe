@@ -136,15 +136,50 @@
 
 ---
 
-- [ ] https://tryhackme.com/room/learnowaspzap  
+![image](https://user-images.githubusercontent.com/51442719/172146036-5177246d-0cef-4760-8a65-71190766bffc.png)
+
+- [ ] [Introduction to OWASP ZAP](https://tryhackme.com/room/learnowaspzap)
+  > Learn how to use OWASP ZAP from the ground up. An alternative to BurpSuite.
+    - [ ] Task 1  Intro to ZAP
+    - [ ] Task 2  Disclaimer
+    - [ ] Task 3  Installation
+    - [ ] Task 4  How to perform an automated scan
+    - [ ] Task 5  Manual Scanning
+    - [ ] Task 6  Scanning an Authenticated Web Application
+    - [ ] Task 7  Brute-force Directories
+    - [ ] Task 8  Bruteforce Web Login
+    - [ ] Task 9  ZAP Extensions
+    - [ ] Task 10  Further Reading
 
 ---
 
-- [ ] https://tryhackme.com/room/rfirmware  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
 
+- [ ] [Dumping Router Firmware](https://tryhackme.com/room/rfirmware)
+  > Have you ever been curious about how your router works? What OS it runs? What makes it tick?
+    - [ ] Task 1  Preparation
+    - [ ] Task 2  Investigating Firmware
+    - [ ] Task 3  Mounting and Analysis of the Router's Filesystem
 ---
 
-- [ ] https://tryhackme.com/room/malmalintroductory  
+![image](https://user-images.githubusercontent.com/51442719/172146399-8b88d65f-eb1a-4fcc-9b45-279a90dce159.png)
+
+- [ ] [MAL: Malware Introductory](https://tryhackme.com/room/malmalintroductory)
+  > The start of a series of rooms covering Malware Analysis...
+    - [ ] Task 1  What is the Purpose of Malware Analysis?
+    - [ ] Task 2  Understanding Malware Campaigns
+    - [ ] Task 3  Identifying if a Malware Attack has Happened
+    - [ ] Task 4  Static Vs. Dynamic Analysis
+    - [ ] Task 5  Discussion of Provided Tools & Their Uses
+    - [ ] Task 6  Connecting to the Windows Analysis Environment (Deploy)
+    - [ ] Task 7  Obtaining MD5 Checksums of Provided Files
+    - [ ] Task 8  Now lets see if the MD5 Checksums have been analysed before
+    - [ ] Task 9  Identifying if the Executables are obfuscated / packed
+    - [ ] Task 10  What is Obfuscation / Packing?
+    - [ ] Task 11  Visualising the Differences Between Packed & Non-Packed Code
+    - [ ] Task 12  Introduction to Strings
+    - [ ] Task 13  Introduction to Imports
+    - [ ] Task 14  Practical Summary
 
 ---
 
