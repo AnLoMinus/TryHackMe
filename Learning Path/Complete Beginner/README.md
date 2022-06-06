@@ -190,6 +190,7 @@
 
 
 - [x] [How websites work](https://tryhackme.com/room/howwebsiteswork)
+![image](https://user-images.githubusercontent.com/51442719/172200960-3ba1ff60-adbe-4342-b6cb-41282f57ec29.png)
   - To exploit a website, you first need to know how they are created.
     - [x] Task 1  How websites work
     - [x] Task 2  HTML
@@ -198,6 +199,7 @@
     - [x] Task 5  HTML Injection
   
 - [x] [HTTP in detail](https://tryhackme.com/room/httpindetail)
+![image](https://user-images.githubusercontent.com/51442719/172201052-0e8cae3c-3373-47aa-9a60-faea8eb0648c.png)
   - Learn about how you request content from a web server using the HTTP protocol
     - [x] Task 1  What is HTTP(S)?
     - [x] Task 2  Requests And Responses
@@ -208,6 +210,7 @@
     - [x] Task 7  Making Requests
 
 - [x] [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
+![image](https://user-images.githubusercontent.com/51442719/172201101-774f8b08-1cf5-47a3-829f-5b3f9943d729.png)
   - An introduction to using Burp Suite for Web Application pentesting
     - [x] Task 1  Introduction Outline
     - [x] Task 2  Getting Started What is Burp Suite?
@@ -226,6 +229,7 @@
     - [x] Task 15  Conclusion Room Conclusion
   
 - [x] [OWASP Top 10](https://tryhackme.com/room/owasptop10)
+![image](https://user-images.githubusercontent.com/51442719/172201137-a53942cd-61dd-461f-be36-914157ff787d.png)
   - Learn about and exploit each of the OWASP Top 10 vulnerabilities; the 10 most critical web security risks.
     - [x] Task 1  Introduction
     - [x] Task 2  Accessing machines
@@ -260,6 +264,7 @@
     - [x] Task 31  What Next?
   
 - [x] [OWASP Juice Shop](https://tryhackme.com/room/owaspjuiceshop)
+![image](https://user-images.githubusercontent.com/51442719/172201182-3d088624-8716-4af0-a443-ddc50f02e2ec.png)
   - This room uses the Juice Shop vulnerable web application to learn how to identify and exploit common web application vulnerabilities.
     - [x] Task 1  Open for business!
     - [x] Task 2  Let's go on an adventure!
@@ -271,6 +276,7 @@
     - [x] Task 8  Exploration!
   
 - [ ] [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns)
+![image](https://user-images.githubusercontent.com/51442719/172201224-9a573c4b-f3e9-411b-9bbc-6379918057f0.png)
   - Tutorial room exploring some basic file-upload vulnerabilities in websites
     - [ ] Task 1  Getting Started
     - [ ] Task 2  Introduction
@@ -286,6 +292,7 @@
     - [ ] Task 12  Conclusion
   
 - [x] [Pickle Rick](https://tryhackme.com/room/picklerick)
+![image](https://user-images.githubusercontent.com/51442719/172201248-2386fd23-a018-4aa9-bb85-511abc2df33d.png)
   - A Rick and Morty CTF. Help turn Rick back into a human!
     - [x] Task 1  Pickle Rick
 ---
