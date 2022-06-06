@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/51442719/172142993-51bf73b5-9792-4609-8a5a-934feda4143a.png)
+
 - [ ] [Badbyte](https://tryhackme.com/room/badbyte)
   > Infiltrate BadByte and help us to take over root.
     - [ ] Task 1  Deploy the machine
@@ -9,12 +11,28 @@
 
 ---
 
-- [ ] https://tryhackme.com/room/physicalsecurityintro  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+
+- [ ] [Physical Security Intro](https://tryhackme.com/room/physicalsecurityintro)
+  > This room is an introduction to physical security methods to bypass locks, doors and other physical barriers.
+    - [ ] Task 1  Introduction
+    - [ ] Task 2  Overt, Covert, and Surreptitious Entry
+    - [ ] Task 3  Lock Picking
+    - [ ] Task 4  Lock Anatomy
+    - [ ] Task 5  Padlock Bypassing
+    - [ ] Task 6  Hardware Bypassing
+    - [ ] Task 7  Credits and More Resources
 
 ---
 
-- [ ] https://tryhackme.com/room/printerhacking101  
+![image](https://user-images.githubusercontent.com/51442719/172142890-ce739a5b-1039-41fa-9a27-2fe45c91cda6.png)
 
+- [ ] [Printer Hacking 101](https://tryhackme.com/room/printerhacking101)
+  > Learn about (and get hands on with) printer hacking and understand the basics of IPP.
+    - [ ] Task 1  Unit 1 - Introduction
+    - [ ] Task 2  Unit 2: IPP Port
+    - [ ] Task 3  Unit 3: Targeting & Exploitation
+    - [ ] Task 4  Unit 4 - Conclusion
 ---
 
 - [ ] https://tryhackme.com/room/malresearching  
