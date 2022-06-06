@@ -275,39 +275,129 @@
 
 ---
 
-- [ ] https://tryhackme.com/room/geolocatingimages  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+
+- [ ] [Geolocating Images](https://tryhackme.com/room/geolocatingimages)
+  > Room to understand how to geolocate images
+    - [ ] Task 1  Getting Started
+    - [ ] Task 2  Getting our feet wet - where is this?
+    - [ ] Task 3  Geolocating Images 101
+    - [ ] Task 4  Now your turn
+    - [ ] Task 5  Helpful tips for geolocating
+    - [ ] Task 6  Your turn, again!
+    - [ ] Task 7  Your turn, what can you see?
+    - [ ] Task 8  You're done!
 
 ---
 
-- [ ] https://tryhackme.com/room/ccghidra  
+![image](https://user-images.githubusercontent.com/51442719/172148094-57fb849b-d8d6-4de2-8967-c338232c69c9.png)
+
+- [x] [Wifi Hacking 101](https://tryhackme.com/room/wifihacking101)
+  > Learn to attack WPA(2) networks! Ideally you'll want a smartphone with you for this, preferably one that supports hosting wifi hotspots so you can follow along.
+    - [x] Task 1  The basics - An Intro to WPA
+    - [x] Task 2  You're being watched - Capturing packets to attack
+    - [x] Task 3  Aircrack-ng - Let's Get Cracking
 
 ---
 
-- [ ] https://tryhackme.com/room/wifihacking101  
+![image](https://user-images.githubusercontent.com/51442719/172148215-940d2003-963f-41bc-8161-0b4be96bf09e.png)
+
+- [x] [DVWA](https://tryhackme.com/room/dvwa) 
+  > Basic room for testing exploits against the Damn Vulnerable Web Application box
+    - [x] Task 1  DVWA
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172148357-93dca9fb-f743-4f4f-8b08-008cb0f0a8a6.png)
+
+- [ ] [CC: Pen Testing](https://tryhackme.com/room/ccpentesting)
+  > A crash course on various topics in penetration testing
+    - [ ] Task 1  Introduction
+    - [ ] Task 2  [Section 1 - Network Utilities] - nmap
+    - [ ] Task 3  [Section 1 - Network Utilities] - Netcat
+    - [ ] Task 4  [Section 2 - Web Enumeration] - gobuster
+    - [ ] Task 5  [Section 2 - Web Enumeration] - nikto
+    - [ ] Task 6  [Section 3 - Metasploit]: Intro
+    - [ ] Task 7  [Section 3 Metasploit]: Setting Up
+    - [ ] Task 8  [Section 3 - Metasploit]: - Selecting a module
+    - [ ] Task 9  [Section 3 - Metasploit]: meterpreter
+    - [ ] Task 10  [Section 3 - Metasploit]: Final Walkthrough
+    - [ ] Task 11  [Section 4 - Hash Cracking]: Intro
+    - [ ] Task 12  [Section 4 - Hash Cracking]: Salting and Formatting
+    - [ ] Task 13  [Section 4 - Hash Cracking]: hashcat
+    - [ ] Task 14  [Section 4 - Hash Cracking]: John The Ripper
+    - [ ] Task 15  [Section 5 - SQL Injection]: Intro
+    - [ ] Task 16  [Section 5 - SQL Injection]: sqlmap
+    - [ ] Task 17  [Section 5 - SQL Injection]: A Note on Manual SQL Injection
+    - [ ] Task 18  [Section 5 - SQL Injection]: Vulnerable Web Application
+    - [ ] Task 19  [Section 6 - Samba]: Intro
+    - [ ] Task 20  [Section 6 - Samba]: smbmap
+    - [ ] Task 21  [Section 6 - Samba]: smbclient
+    - [ ] Task 22  [Section 6 - Samba]: A note about impacket
+    - [ ] Task 23  [Miscellaneous]: A note on privilege escalation
+    - [ ] Task 24  [Section 7 - Final Exam]: Good Luck :D
 
 ---
 
-- [ ] https://tryhackme.com/room/dvwa  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+
+- [ ] [Toolbox: Vim](https://tryhackme.com/room/toolboxvim)
+  > Learn vim, a universal text editor that can be incredibly powerful when used properly. From basic text editing to editing of binary files, Vim can be an important arsenal in a security toolkit.
+    - [ ] Task 1  Task 1
+    - [ ] Task 2  Task 2
+    - [ ] Task 3  Task 3
+    - [ ] Task 4  Task 4
+    - [ ] Task 5  Task 5
 
 ---
 
-- [ ] https://tryhackme.com/room/ccpentesting  
+![image](https://user-images.githubusercontent.com/51442719/172148624-f016ee92-6552-4680-b9d9-77581ab930ac.png)
+
+- [ ] [Solar, exploiting log4j](https://tryhackme.com/room/solar)
+  > Explore CVE-2021-44228, a vulnerability in log4j affecting almost all software under the sun.
+    - [ ] Task 1  CVE-2021-44228 Introduction
+    - [ ] Task 2  Reconnaissance
+    - [ ] Task 3  Discovery
+    - [ ] Task 4  Proof of Concept
+    - [ ] Task 5  Exploitation
+    - [ ] Task 6  Persistence
+    - [ ] Task 7  Detection
+    - [ ] Task 8  Bypasses
+    - [ ] Task 9  Mitigation
+    - [ ] Task 10  Patching
+    - [ ] Task 11  Credits and Author's Notes
 
 ---
 
-- [ ] https://tryhackme.com/room/toolboxvim  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+
+- [ ] [Linux Strength Training](https://tryhackme.com/room/linuxstrengthtraining)
+  > Guided room for beginners to learn/reinforce linux command line skills
+    - [ ] Task 1  Intro
+    - [ ] Task 2  Finding your way around linux - overview
+    - [ ] Task 3  Working with files
+    - [ ] Task 4  Hashing - introduction
+    - [ ] Task 5  Decoding base64
+    - [ ] Task 6  Encryption/Decryption using gpg
+    - [ ] Task 7  Cracking encrypted gpg files
+    - [ ] Task 8  Reading SQL databases
+    - [ ] Task 9  Final Challenge
+
 
 ---
 
-- [ ] https://tryhackme.com/room/solar  
+![image](https://user-images.githubusercontent.com/51442719/172148914-dbb7bea1-d79b-4290-82f8-9adb10930436.png)
 
----
-
-- [ ] https://tryhackme.com/room/linuxstrengthtraining  
-
----
-
-- [ ] https://tryhackme.com/room/ffuf  
+- [ ] [ffuf](https://tryhackme.com/room/ffuf)
+  > Enumeration, fuzzing, and directory brute forcing using ffuf
+    - [ ] Task 1  `Info` Introduction
+    - [ ] Task 2  `Walkthrough` Basics
+    - [ ] Task 3  `Walkthrough` Finding pages and directories
+    - [ ] Task 4  `Walkthrough` Using filters
+    - [ ] Task 5  `Walkthrough` Fuzzing parameters
+    - [ ] Task 6  `Walkthrough` Finding vhosts and subdomains
+    - [ ] Task 7  `Walkthrough` Proxifying ffuf traffic
+    - [ ] Task 8  `Questions` Reviewing the options
+    - [ ] Task 9  `Info` About the author
 
 ---
 
