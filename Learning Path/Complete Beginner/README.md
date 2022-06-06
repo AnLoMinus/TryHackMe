@@ -444,7 +444,8 @@
 ### Once you have initial access on a machine, learn how to escalate your account privileges to root.
 
 - [x] [What the Shell?](https://tryhackme.com/room/introtoshells)
-  - An introduction to sending and receiving (reverse/bind) shells when exploiting target machines.
+![image](https://user-images.githubusercontent.com/51442719/172149895-00cca57d-cbda-470e-93d9-09ff9d6f1f85.png)
+  > An introduction to sending and receiving (reverse/bind) shells when exploiting target machines.
     - [x] Task 1  What is a shell?
     - [x] Task 2  Tools
     - [x] Task 3  Types of Shell
@@ -462,7 +463,8 @@
     - [x] Task 15  Windows Practice Box
   
 - [x] [Common Linux Privesc](https://tryhackme.com/room/commonlinuxprivesc)
-  - A room explaining common Linux privilege escalation
+![image](https://user-images.githubusercontent.com/51442719/172149921-9f98cfe7-71b0-466c-b643-30e2f984efa4.png)
+  > A room explaining common Linux privilege escalation
     - [x] Task 1  Get Connected
     - [x] Task 2  Understanding Privesc
     - [x] Task 3  Direction of Privilege Escalation
@@ -475,7 +477,9 @@
     - [x] Task 10  Expanding Your Knowledge
 
 - [x] [Linux PrivEsc](https://tryhackme.com/room/linuxprivesc)
-  - Practice your Linux Privilege Escalation skills on an intentionally misconfigured Debian VM with multiple ways to get root! SSH is available. Credentials: user:password321
+![image](https://user-images.githubusercontent.com/51442719/172149986-c05058e2-8c66-4f40-8dc4-9d5fcb1f87e9.png)
+  > Practice your Linux Privilege Escalation skills on an intentionally misconfigured Debian VM with multiple ways to get root! 
+  - SSH is available. Credentials: user:password321
     - [x] Task 1  Deploy the Vulnerable Debian VM
     - [x] Task 2  Service Exploits
     - [x] Task 3  Weak File Permissions - Readable /etc/shadow
@@ -507,7 +511,8 @@
 ### Strengthen your skills by exploiting a range of different applications and services, from networking to web to privilege escalation
 
 - [x] [Vulnversity](https://tryhackme.com/room/vulnversity)
-  - Learn about active recon, web app attacks and privilege escalation.
+![image](https://user-images.githubusercontent.com/51442719/172150092-151ffcef-331b-4719-a3a1-1dec0c8e04c8.png)
+  > Learn about active recon, web app attacks and privilege escalation.
     - [x] Task 1  Deploy the machine
     - [x] Task 2  Reconnaissance
     - [x] Task 3  Locating directories using GoBuster
@@ -515,18 +520,22 @@
     - [x] Task 5  Privilege Escalation
   
 - [x] [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)
-  - This is a machine that allows you to practise web app hacking and privilege escalation
+![image](https://user-images.githubusercontent.com/51442719/172150124-40026c9a-3c58-4592-bbe9-8a4a0aa0f969.png)
+  > This is a machine that allows you to practise web app hacking and privilege escalation
     - [x] Task 1  Web App Testing and Privilege Escalation
 
 - [x] [Kenobi](https://tryhackme.com/room/kenobi)
-  - Walkthrough on exploiting a Linux machine. <br> Enumerate Samba for shares, manipulate a vulnerable version of proftpd and escalate your privileges with path variable manipulation.
+![image](https://user-images.githubusercontent.com/51442719/172150170-b0b5a66f-b963-4f9f-a613-8d25d5cc970c.png)
+  > Walkthrough on exploiting a Linux machine. <br> Enumerate Samba for shares, manipulate a vulnerable version of proftpd and escalate your privileges with path variable manipulation.
     - [x] Task 1  Deploy the vulnerable machine
     - [x] Task 2  Enumerating Samba for shares
     - [x] Task 3  Gain initial access with ProFtpd
     - [x] Task 4  Privilege Escalation with Path Variable Manipulation
   
 - [ ] [Steel Mountain](https://tryhackme.com/room/steelmountain)
-  - Hack into a Mr. Robot themed Windows machine. <br> Use metasploit for initial access, utilise powershell for Windows privilege escalation enumeration and learn a new technique to get Administrator access.
+![image](https://user-images.githubusercontent.com/51442719/172150204-719202e2-dcf2-4cd2-869b-3b59252eddfc.png)
+  > Hack into a Mr. Robot themed Windows machine. 
+  - Use metasploit for initial access, utilise powershell for Windows privilege escalation enumeration and learn a new technique to get Administrator access.
     - [ ] Task 1  Introduction
     - [ ] Task 2  Initial Access
     - [ ] Task 3  Privilege Escalation
