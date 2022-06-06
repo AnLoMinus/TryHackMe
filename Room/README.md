@@ -79,19 +79,60 @@
     - [x] Task 3  Reaching RCE using LFI and log poisoning
 ---
 
-- [ ] https://tryhackme.com/room/androidhacking101  
+  ![image](https://user-images.githubusercontent.com/51442719/172144028-54474e3e-fdda-4d72-8613-59044e6a7e03.png)
+
+- [ ] [Android Hacking 101](https://tryhackme.com/room/androidhacking101)
+  > Android Mobile Application Penetration Testing
+    - [ ] Task 1  Introduction
+    - [ ] Task 2  Setup the environment
+    - [ ] Task 3  Methodology
+    - [ ] Task 4  Information Gathering
+    - [ ] Task 5  Reversing
+    - [ ] Task 6  Static analysis
+    - [ ] Task 7  Static analysis – Complications
+    - [ ] Task 8  Dynamic Analysis
+    - [ ] Task 9  Dynamic Analysis – Complications
+    - [ ] Task 10  Bypass - Complications in Dynamic Analysis
+    - [ ] Task 11  Final
 
 ---
 
-- [ ] https://tryhackme.com/room/attackerkb  
+![image](https://user-images.githubusercontent.com/51442719/172144215-a2bbb270-a659-4e79-8825-f662c5a6eb94.png)
+
+- [ ] [AttackerKB](https://tryhackme.com/room/attackerkb)
+  > Learn how to leverage AttackerKB and learn about exploits in your workflow!
+    - [ ] Task 1  I'm attacking what now?
+    - [ ] Task 2  Discovering the Lay of the Land
+    - [ ] Task 3  Learning to Fly
+    - [ ] Task 4  Blasting Away
+    - [ ] Task 5  Going Further
 
 ---
 
-- [ ] https://tryhackme.com/room/injection  
+![image](https://user-images.githubusercontent.com/51442719/172144342-7c6b3e5a-5cb3-4e54-aaf2-873d7d04de88.png)
+
+- [ ] [Injection](https://tryhackme.com/room/injection)
+  > Walkthrough of OS Command Injection. Demonstrate OS Command Injection and explain how to prevent it on your servers
+    - [ ] Task 1  Introduction & Deploy
+    - [ ] Task 2  An Introduction To Command Injection
+    - [ ] Task 3  Blind Command Injection
+    - [ ] Task 4  Active Command Injection
+    - [ ] Task 5  Get The Flag!
 
 ---
 
-- [ ] https://tryhackme.com/room/postexploit  
+![image](https://user-images.githubusercontent.com/51442719/172144549-04853170-5518-45b8-a6c7-69b80f09fb44.png)
+
+- [ ] [Post-Exploitation Basics](https://tryhackme.com/room/postexploit)
+  > Learn the basics of post-exploitation and maintaining access with mimikatz, bloodhound, powerview and msfvenom
+    - [ ] Task 1  Introduction
+    - [ ] Task 2  Enumeration w/ Powerview
+    - [ ] Task 3  Enumeration w/ Bloodhound
+    - [ ] Task 4  Dumping hashes w/ mimikatz
+    - [ ] Task 5  Golden Ticket Attacks w/ mimikatz
+    - [ ] Task 6  Enumeration w/ Server Manager
+    - [ ] Task 7  Maintaining Access
+    - [ ] Task 8  Conclusion
 
 ---
 
