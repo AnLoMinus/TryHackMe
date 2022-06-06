@@ -4,6 +4,10 @@
 
 ---
 
+### [Learning Paths ](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths)
+
+---
+
 - [TryHackMe-Notes](https://github.com/nargaw/TryHackMe-Notes)
 - [PyWhat](https://github.com/bee-san/pyWhat)
 - [TryHackMe CTFs writeups, notes, dratfs, scrabbles, files and solutions.](https://github.com/edoardottt/tryhackme-ctf)
