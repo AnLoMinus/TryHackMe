@@ -35,20 +35,48 @@
     - [ ] Task 4  Unit 4 - Conclusion
 ---
 
-- [ ] https://tryhackme.com/room/malresearching  
+![image](https://user-images.githubusercontent.com/51442719/172143234-f68baf13-c1f9-4219-b12d-8e7584cec65f.png)
+
+- [ ] [MAL: Researching](https://tryhackme.com/room/malresearching)
+  > Understanding checksums, how to generate them and their use throughout malware analysis with online sandboxing & reporting services
+    - [ ] Task 1  Intro
+    - [ ] Task 2  Deploy!
+    - [ ] Task 3  Checksums 101
+    - [ ] Task 4  Online Sandboxing
+    - [ ] Task 5  Practical: Calculating & Reporting Checksums
+    - [ ] Task 6  VirusTotal
+    - [ ] Task 7  Future Reading (References)
+---
+
+![image](https://user-images.githubusercontent.com/51442719/172143380-096e3516-b6b1-47e7-8f15-ef46ddc1250e.png)
+
+- [x] [Intro to IoT Pentesting](https://tryhackme.com/room/iotintro)
+  > A beginner friendly walkthrough for internet of things (IoT) pentesting.
+    - [x] Task 1  Foreword
+    - [x] Task 2  A little theory
+    - [x] Task 3  Connecting to the machine
+    - [x] Task 4  Unpacking the firmware
+    - [x] Task 5  Attacking the application
+    - [x] Task 6  Personal thoughts
 
 ---
 
-- [ ] https://tryhackme.com/room/iotintro  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+
+- [ ] [Bolt](https://tryhackme.com/room/bolt)
+  > A hero is unleashed
+    - [ ] Task 1  Deploy the machine
+    - [ ] Task 2  Hack your way into the machine!
 
 ---
 
-- [ ] https://tryhackme.com/room/bolt  
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
 
----
-
-- [ ] https://tryhackme.com/room/lfibasics  
-
+- [x] [LFI Basics](https://tryhackme.com/room/lfibasics)
+  > Learn the basics of local file inclusion
+    - [x] Task 1  Local File Inclusion
+    - [x] Task 2  Local File Inclusion using Directory Traversal
+    - [x] Task 3  Reaching RCE using LFI and log poisoning
 ---
 
 - [ ] https://tryhackme.com/room/androidhacking101  
