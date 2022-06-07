@@ -130,11 +130,11 @@
 
 - [ ] [Introduction to OWASP ZAP](https://tryhackme.com/room/learnowaspzap)
   > Learn how to use OWASP ZAP from the ground up. An alternative to BurpSuite.
-    - [ ] Task 1  Intro to ZAP
-    - [ ] Task 2  Disclaimer
-    - [ ] Task 3  Installation
-    - [ ] Task 4  How to perform an automated scan
-    - [ ] Task 5  Manual Scanning
+    - [x] Task 1  Intro to ZAP
+    - [x] Task 2  Disclaimer
+    - [x] Task 3  Installation
+    - [x] Task 4  How to perform an automated scan
+    - [x] Task 5  Manual Scanning
     - [ ] Task 6  Scanning an Authenticated Web Application
     - [ ] Task 7  Brute-force Directories
     - [ ] Task 8  Bruteforce Web Login
