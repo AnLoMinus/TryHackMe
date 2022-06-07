@@ -278,12 +278,12 @@
 - [ ] [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns)
 ![image](https://user-images.githubusercontent.com/51442719/172201224-9a573c4b-f3e9-411b-9bbc-6379918057f0.png)
   - Tutorial room exploring some basic file-upload vulnerabilities in websites
-    - [ ] Task 1  Getting Started
-    - [ ] Task 2  Introduction
-    - [ ] Task 3  General Methodology
-    - [ ] Task 4  Overwriting Existing Files
-    - [ ] Task 5  Remote Code Execution
-    - [ ] Task 6  Filtering
+    - [x] Task 1  Getting Started
+    - [x] Task 2  Introduction
+    - [x] Task 3  General Methodology
+    - [x] Task 4  Overwriting Existing Files
+    - [x] Task 5  Remote Code Execution
+    - [x] Task 6  Filtering
     - [ ] Task 7  Bypassing Client-Side Filtering
     - [ ] Task 8  Bypassing Server-Side Filtering: File Extensions
     - [ ] Task 9  Bypassing Server-Side Filtering: Magic Numbers
