@@ -1,3 +1,5 @@
+# Completed Rooms
+- [x] [Introduction to OWASP ZAP](https://tryhackme.com/room/learnowaspzap)
 
 ---
 
