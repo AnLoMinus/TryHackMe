@@ -37,4 +37,4 @@
 
 ---
 
-- [Anlominus/PenTest/KingMenu/Penetration Testing Stages](https://github.com/Anlominus/PenTest/blob/main/KingMenu.md)
+- [Python tools for penetration testers](https://github.com/Anlominus/PenTest/blob/main/KingMenu.md#python-tools-for-penetration-testers)
