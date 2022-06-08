@@ -8,6 +8,10 @@
 
 ---
 
+### 🔰 [King of the Hill](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill)
+
+---
+
 ### [Learning Paths ](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths)
 
 - ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security) `Easy`
