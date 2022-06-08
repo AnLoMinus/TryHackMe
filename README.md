@@ -18,10 +18,10 @@
   - [x] Path Progress (100%)
 - [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) `Easy`
   - [ ] Path Progress (93%)
-- [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B.md) `Easy`
-  - [ ] Path Progress (92%)
 - [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals.md) `Easy`
   - [ ] Path Progress (99%)
+- [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B.md) `Easy`
+  - [ ] Path Progress (92%)
 - [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting.md) `Intermediate`
   - [ ] Path Progress (38%)
 - [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense.md) `Intermediate`
