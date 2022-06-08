@@ -212,12 +212,22 @@
       - [x] Task 30  [Severity 10] Insufficient Logging and Monitoring
       - [x] Task 31  What Next?
 
-- [x] [OWASP Juice Shop]()
+![image](https://user-images.githubusercontent.com/51442719/172683987-ab31ba4f-3a27-4076-a55a-df3f60c1a92a.png)
+- [x] [OWASP Juice Shop](https://tryhackme.com/room/owaspjuiceshop)
   - This room uses the Juice Shop vulnerable web application to learn how to identify and exploit common web application vulnerabilities.
+      - [x] Task 1  Open for business!
+      - [x] Task 2  Let's go on an adventure!
+      - [x] Task 3  Inject the juice
+      - [x] Task 4  Who broke my lock?!
+      - [x] Task 5  AH! Don't look!
+      - [x] Task 6  Who's flying this thing?
+      - [x] Task 7  Where did that come from?
+      - [x] Task 8  Exploration!
 
 - [ ] [Upload Vulnerabilities]()
   - Tutorial room exploring some basic file-upload vulnerabilities in websites
 
-- [x] [Pickle Rick]()
+![image](https://user-images.githubusercontent.com/51442719/172684156-362eba73-1a44-415d-9bb2-5b5f28efa3ac.png)
+- [x] [Pickle Rick](https://tryhackme.com/room/picklerick)
   - A Rick and Morty CTF. Help turn Rick back into a human!
-
+    - [x] Task 1  Pickle Rick
