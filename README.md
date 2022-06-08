@@ -31,13 +31,6 @@
 - [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense) `Intermediate`
   - [ ] Path Progress (41%)
 
-
----
-
-- [koth-protect-king](https://github.com/MatheuZSecurity/koth-protect-king)
-- [Koth-TryHackMe-Tricks](https://github.com/MatheuZSecurity/Koth-TryHackMe-Tricks)
-- [thm-vm](https://github.com/f11snipe/thm-vm): TryHackMe - Simple helper script for VPN, VM's, etc
-
 ---
 
 - [TryHackMe-Notes](https://github.com/nargaw/TryHackMe-Notes)
