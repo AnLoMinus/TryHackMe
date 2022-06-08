@@ -372,6 +372,7 @@
       - [ ] Task 12  Conclusion
 
 ![image](https://user-images.githubusercontent.com/51442719/172684156-362eba73-1a44-415d-9bb2-5b5f28efa3ac.png)
+![image](https://user-images.githubusercontent.com/51442719/172691157-e04844d9-8a99-4ddd-8c79-c1a5e0a502c6.png)
 - [x] [Pickle Rick](https://tryhackme.com/room/picklerick)
   - A Rick and Morty CTF. Help turn Rick back into a human!
     - [x] Task 1  Pickle Rick
