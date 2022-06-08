@@ -48,7 +48,7 @@
 
 ---
 
-# [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals.md) `Easy`
+# [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Web%20Fundamentals) `Easy`
 > A pathway to web application security.
 - Understand web fundamentals
 - Major vulnerabilities explained
