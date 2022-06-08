@@ -35,9 +35,11 @@
 ---
 
 ## ALL Tools
-- [Pentesting Cheatsheet](PenTest.md): 
 - [koth-protect-king](https://github.com/MatheuZSecurity/koth-protect-king)
+- [Koth-TryHackMe-Tricks](https://github.com/MatheuZSecurity/Koth-TryHackMe-Tricks)
+- [thm-vm](https://github.com/f11snipe/thm-vm): TryHackMe - Simple helper script for VPN, VM's, etc
 - [Python tools for penetration testers](https://github.com/Anlominus/PenTest/blob/main/KingMenu.md#python-tools-for-penetration-testers)
+- [Pentesting Cheatsheet](PenTest.md): 
 
 ---
 
