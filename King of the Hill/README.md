@@ -30,4 +30,9 @@
 
 - [Pentesting Cheatsheet](PenTest.md): 
 - [koth-protect-king](https://github.com/MatheuZSecurity/koth-protect-king)
+- [Koth-TryHackMe-Tricks](https://github.com/MatheuZSecurity/Koth-TryHackMe-Tricks)
+
+## Tools
+* [RustScan](https://github.com/rustscan/rustscan) - Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.
+
 ---
