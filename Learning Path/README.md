@@ -5,6 +5,28 @@
 
 ---
 
+### [Learning Paths ](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths)
+
+- ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security) `Easy`
+  - [x] Path Progress (100%)
+- ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester) `Intermediate`
+  - [x] Path Progress (100%)
+- ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security) `Easy`
+  - [x] Path Progress (100%)
+- [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) `Easy`
+  - [ ] Path Progress (93%)
+- [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) `Easy`
+  - [ ] Path Progress (99%)
+- [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B) `Easy`
+  - [ ] Path Progress (92%)
+- [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) `Intermediate`
+  - [ ] Path Progress (38%)
+- [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense) `Intermediate`
+  - [ ] Path Progress (41%)
+
+
+---
+
 # ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Introduction%20to%20Cyber%20Security) `Easy`
 > Learn the core skills required to start a career in cyber security
 - Learn about different careers in cyber
@@ -41,13 +63,6 @@
 
 ---
 
-# [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) `Easy`
-> Complete this pathway and receive 10% off the Pentest+ exam!
-- Hands-on exercises aligning to PenTest+ exam objectives
-- Practical exam preparation to help you with the Performance Based Questions
-
----
-
 # [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Web%20Fundamentals) `Easy`
 > A pathway to web application security.
 - Understand web fundamentals
@@ -57,6 +72,12 @@
 
 ---
 
+# [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) `Easy`
+> Complete this pathway and receive 10% off the Pentest+ exam!
+- Hands-on exercises aligning to PenTest+ exam objectives
+- Practical exam preparation to help you with the Performance Based Questions
+
+---
 
 # [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) `Intermediate`
 > Prepare yourself for real world penetration testing:
