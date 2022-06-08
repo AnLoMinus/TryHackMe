@@ -5,7 +5,7 @@
 
 ---
 
-# ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security.md) `Easy`
+# ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Introduction%20to%20Cyber%20Security) `Easy`
 > Learn the core skills required to start a career in cyber security
 - Learn about different careers in cyber
 - Hack your first application
@@ -14,7 +14,7 @@
 
 ---
 
-# ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester.md) `Intermediate`
+# ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Jr%20Penetration%20Tester) `Intermediate`
 > Learn the necessary skills to start a career as a penetration tester
 - Pentesting methodologies and tactics
 - Enumeration, exploitation and reporting
@@ -23,7 +23,7 @@
 
 ---
 
-# ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security.md) `Easy`
+# ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Pre%20Security) `Easy`
 > Before hacking something, you first need to understand the basics.
 - Cyber security basics
 - Networking basics and weaknesses
@@ -41,7 +41,7 @@
 
 ---
 
-# [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B.md) `Easy`
+# [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) `Easy`
 > Complete this pathway and receive 10% off the Pentest+ exam!
 - Hands-on exercises aligning to PenTest+ exam objectives
 - Practical exam preparation to help you with the Performance Based Questions
@@ -58,7 +58,7 @@
 ---
 
 
-# [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting.md) `Intermediate`
+# [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) `Intermediate`
 > Prepare yourself for real world penetration testing:
 - Utilise industry standard tools
 - Learn realistic attack scenarios
@@ -67,7 +67,7 @@
 
 ---
 
-# [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense.md) `Intermediate`
+# [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense) `Intermediate`
 > Learn how to analyse and defend against real-world cyber threats/attacks
 - Detect threats
 - Gather threat actor intelligence
