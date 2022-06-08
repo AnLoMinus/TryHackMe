@@ -69,17 +69,93 @@
 ---
     
 ## Introduction to Web Hacking
+
+![image](https://user-images.githubusercontent.com/51442719/172674865-3c734a9d-20a8-4c41-8b0a-923f9030481e.png)
+
 ### Get hands-on, learn about and exploit some of the most popular web application vulnerabilities seen in the industry today.
 
-- []()
+![image](https://user-images.githubusercontent.com/51442719/172674912-dedcdfb8-41ba-4e51-9a34-74d7cc9b4d09.png)
+- [x] [Walking An Application]()
+  - Manually review a web application for security issues using only your browsers developer tools. Hacking with just your browser, no tools or scripts.
+    - [x] Task 1  Walking An Application
+    - [x] Task 2  Exploring The Website
+    - [x] Task 3  Viewing The Page Source
+    - [x] Task 4  Developer Tools - Inspector
+    - [x] Task 5  Developer Tools - Debugger
+    - [x] Task 6  Developer Tools - Network
+  
+- [x] [Content Discovery]()
+  - Learn the various ways of discovering hidden or private content on a webserver that could lead to new vulnerabilities.
+
+- [x] [Subdomain Enumeration]()
+  - Learn the various ways of discovering subdomains to expand your attack surface of a target.
+
+- [x] [Authentication Bypass]()
+  - Learn how to defeat logins and other authentication mechanisms to allow you access to unpermitted areas.
+
+- [x] [IDOR]()
+  - Learn how to find and exploit IDOR vulnerabilities in a web application giving you access to data that you shouldn't have.
+
+- [x] [File Inclusion]()
+  - This room introduces file inclusion vulnerabilities, including Local File Inclusion (LFI), Remote File Inclusion (RFI), and directory traversal.
+
+- [x] [SSRF]()
+  - Learn how to exploit Server-Side Request Forgery (SSRF) vulnerabilities, allowing you to access internal server resources.
+
+- [x] [Cross-site Scripting]()
+  - Learn how to detect and exploit XSS vulnerabilities, giving you control of other visitor's browsers.
+
+- [x] [Command Injection]()
+  - Learn about a vulnerability allowing you to execute commands through a vulnerable app, and its remediations.
+
+- [x] [SQL Injection]()
+  - Learn how to detect and exploit SQL Injection vulnerabilities
+
 
 ## Burp Suite
+![image](https://user-images.githubusercontent.com/51442719/172675426-3fd167f5-cd3e-4359-960f-9747837f05d5.png)
 ### Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
 
-- []()
+- [x] [Burp Suite]()
+  - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
 
+- [x] [Burp Suite: The Basics]()
+  - An introduction to using Burp Suite for Web Application pentesting
+
+- [x] [Burp Suite: Repeater]()
+  - Learn how to use Repeater to duplicate requests in Burp Suite
+
+- [x] [Burp Suite: Intruder]()
+  - Learn how to use Intruder to automate requests in Burp Suite
+
+- [x] [Burp Suite: Other Modules]()
+  - Take a dive into some of Burp Suite's lesser known modules
+
+- [x] [Burp Suite: Extender]()
+  - Learn how to use Extender to broaden the functionality of Burp Suite
+  
 ## Web Hacking Fundamentals
+![image](https://user-images.githubusercontent.com/51442719/172675447-16ccf585-7630-4df4-bd4e-58c3efa78784.png)
 ### Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
 
-- []()
+- [x] [How websites work]()
+  - To exploit a website, you first need to know how they are created.
+
+- [x] [HTTP in detail]()
+  - Learn about how you request content from a web server using the HTTP protocol
+
+- [x] [Burp Suite: The Basics]()
+  - An introduction to using Burp Suite for Web Application pentesting
+
+- [x] [OWASP Top 10]()
+  - Learn about and exploit each of the OWASP Top 10 vulnerabilities; the 10 most critical web security risks.
+
+- [x] [OWASP Juice Shop]()
+  - This room uses the Juice Shop vulnerable web application to learn how to identify and exploit common web application vulnerabilities.
+
+- [ ] [Upload Vulnerabilities]()
+  - Tutorial room exploring some basic file-upload vulnerabilities in websites
+
+- [x] [Pickle Rick]()
+  - A Rick and Morty CTF. Help turn Rick back into a human!
 
