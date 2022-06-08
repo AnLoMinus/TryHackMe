@@ -6,11 +6,11 @@
 
 </div>
 
-# King of the Hill Beta
+# King of the Hill `Beta`
 ## Be the first to hack into a machine, and then retain your presence by patching vulnerabilities to stop your foes from taking your position!
 ### `Attack` then `defend`!
 
-### About
+# About
 #### King of the Hill (KoTH) is a competitive hacking game, where you play against 10 other hackers to compromise a machine and then patch its vulnerabilities to stop other players from also gaining access. 
 #### The longer you maintain your access, the more points you get.
 
