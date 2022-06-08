@@ -31,6 +31,7 @@
 - [Pentesting Cheatsheet](PenTest.md): 
 - [koth-protect-king](https://github.com/MatheuZSecurity/koth-protect-king)
 - [Koth-TryHackMe-Tricks](https://github.com/MatheuZSecurity/Koth-TryHackMe-Tricks)
+- [thm-vm](https://github.com/f11snipe/thm-vm): TryHackMe - Simple helper script for VPN, VM's, etc
 
 ## TOP Tools
 * [RustScan](https://github.com/rustscan/rustscan) - Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.
