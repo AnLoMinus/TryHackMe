@@ -40,7 +40,10 @@
 - [CTF-Writeups](https://github.com/AbdullahRizwan101/CTF-Writeups/tree/master/TryHackMe)
 - Sma-Das/[TryHackMe](https://github.com/Sma-Das/TryHackMe0)
 - thehackingsage/[tryhackme](https://github.com/thehackingsage/tryhackme)
+- [thm-vm](https://github.com/f11snipe/thm-vm): TryHackMe - Simple helper script for VPN, VM's, etc
 
 ---
 
 ![Alt](https://repobeats.axiom.co/api/embed/fa913abe688e84ef0c5d641cb9688c4b9a45953c.svg "Repobeats analytics image")
+
+---
