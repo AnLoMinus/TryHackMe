@@ -32,9 +32,10 @@
 - [koth-protect-king](https://github.com/MatheuZSecurity/koth-protect-king)
 - [Koth-TryHackMe-Tricks](https://github.com/MatheuZSecurity/Koth-TryHackMe-Tricks)
 
-## Tools
+## TOP Tools
 * [RustScan](https://github.com/rustscan/rustscan) - Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.
 
 ---
 
+## ALL Tools
 - [Python tools for penetration testers](https://github.com/Anlominus/PenTest/blob/main/KingMenu.md#python-tools-for-penetration-testers)
