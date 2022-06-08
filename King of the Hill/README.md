@@ -45,4 +45,4 @@
 # Awesome 
 - [Awesome Privilege Escalation](https://github.com/m0nad/awesome-privilege-escalation)
 - [Awesome Incident Response](https://github.com/meirwah/awesome-incident-response)
-- [Certified ethical hacker in bullet points](https://github.com/undergroundwires/CEH-in-bullet-points)
+- [Certified ethical hacker in bullet points](https://github.com/Anlominus/HacKingPro/tree/main/CEH%20-%20Certified%20Ethical%20Hacker#certified-ethical-hacker-in-bullet-points)
