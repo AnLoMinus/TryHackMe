@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/51442719/172730126-bc48a2be-6103-45e5-b51a-492af4579be1.png)
+
 # TryHackMe > WriteUp > [CyberHeroes](https://tryhackme.com/room/cyberheroes)
 
 ## Want to be a part of the elite club of CyberHeroes? Prove your merit by finding a way to log in!
