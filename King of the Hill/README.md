@@ -16,12 +16,6 @@
 
 ---
 
-- [Pentesting Cheatsheet](https://hausec.com/pentesting-cheatsheet/): 
-  - In addition to my own contributions, this compilation is possible by other compiled cheatsheets by g0tmilk, highon.coffee, and pentestmonkey, as well as a few others listed at the bottom. 
-  - It’s easiest to search via ctrl+F, as the Table of Contents isn’t kept up to date fully.
-
----
-
 # How to play
 - Join a lobby with up to 10 players
 - When everyone is ready, you'll get a machines IP address
@@ -32,3 +26,8 @@
 - Hunt for flags around the system for extra points
 - After 60 minutes, the game ends
 
+---
+
+- [Pentesting Cheatsheet](https://hausec.com/pentesting-cheatsheet/): 
+  - In addition to my own contributions, this compilation is possible by other compiled cheatsheets by g0tmilk, highon.coffee, and pentestmonkey, as well as a few others listed at the bottom. 
+  - It’s easiest to search via ctrl+F, as the Table of Contents isn’t kept up to date fully.
