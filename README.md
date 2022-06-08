@@ -1,6 +1,6 @@
 # [TryHackMe](https://tryhackme.com/)
 
-## 🔒 TryHackMe - My Way ! 📝
+## 🔒 TryHackMe - Path Way 📝
 
 <a href="https://tryhackme.com/p/Anlominus">
   <img src="https://tryhackme-badges.s3.amazonaws.com/Anlominus.png" alt="TryHackMe">
