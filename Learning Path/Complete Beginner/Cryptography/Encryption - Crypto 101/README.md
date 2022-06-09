@@ -51,6 +51,41 @@
 - `PGP` - Pretty Good Privacy
 - `GPG` - GNU Privacy Guard
 
+# Private-key cryptosystems
+> Private-key cryptosystems use the same key for encryption and decryption.
+- Caesar cipher
+- Substitution cipher
+- Enigma machine
+- Data Encryption Standard
+- Twofish
+- Serpent
+- Camellia
+- Salsa20
+- ChaCha20
+- Blowfish
+- CAST5
+- Kuznyechik
+- RC4
+- 3DES
+- Skipjack
+- Safer
+- IDEA
+> Advanced Encryption Standard, also known as AES and Rijndael.
+
+# Public-key cryptosystems
+> Public-key cryptosystems use a public key for encryption and a private key for decryption.
+- Diffie–Hellman key exchange
+- RSA encryption
+- Rabin cryptosystem
+- Schnorr signature
+- ElGamal encryption
+- Elliptic-curve cryptography
+- Lattice-based cryptography
+- McEliece cryptosystem
+- Multivariate cryptography
+- Isogeny-based cryptography
+
+
 ---
 
 # Sources
