@@ -6,7 +6,7 @@
 
 </div>
 
-# What is "King of the Hill"?
+# What is "King of the Hill"[?](https://docs.tryhackme.com/docs/koth/king-of-the-hill)
 ## `KoTH` ~ King of the Hill 
 - King of the Hill (KoTH) is a competitive hacking game, where you play against up to 5 other hackers to compromise a machine and then patch its vulnerabilities to stop other players from also gaining access. 
 - The longer you maintain your access, the more points you get.
