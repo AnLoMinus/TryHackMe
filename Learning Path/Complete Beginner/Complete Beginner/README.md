@@ -1,5 +1,3 @@
-# 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
-
 ## Complete Beginner Introduction
 
 ![image](https://user-images.githubusercontent.com/51442719/172025601-131b26f6-7538-4d81-813e-145b2b3b7c02.png)
