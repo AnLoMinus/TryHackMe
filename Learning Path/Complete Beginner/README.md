@@ -1,3 +1,4 @@
+# 🔰 [Complete Beginner](https://tryhackme.com/path-action/beginner/join)
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/completebeginner.jpg)
 
