@@ -49,6 +49,21 @@
 
 ---
 
+# How Points are Scored
+- There are two main methods of obtaining points. 
+- However, it should be noted that any points gained throughout the game are not persistent and will not be reflected on your TryHackMe profile - nor the next lobby you join. 
+- These two methods are the following:
+  - "`Be King`" 
+    - The longer you have your TryHackMe Username in the /root/king.txt file, the more points you get. 
+    - You obtain 10 points every full-minute you are the current "King" I.e. 
+    - to obtain 10 points, you must be the current "King" for 60 seconds (1 full-minute). 
+    - If you are only the king for 50 seconds, you will not be awarded the 10 points, nor will the person who was "King" for the remaining 10 seconds of that minute.
+  - "`Submit Flags`" 
+    - There are multiple entry points to the machine, some will have flags hidden throughout. 
+    - The difficulty of how the value of the flag is obtained will stipulate the points you obtain for it. I.e. 
+    - A harder to reach flag will grant more points then a flag that is easier to obtain.
+
+---
 
 ## TOP Tools
 * [RustScan](https://github.com/rustscan/rustscan) - Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.
