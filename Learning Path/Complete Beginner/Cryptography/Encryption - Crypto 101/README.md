@@ -6,7 +6,7 @@
     - [ ] Task 3  Why is Encryption important?
     - [ ] Task 4  Crucial Crypto Maths
     - [ ] Task 5  Types of Encryption
-    - [ ] Task 6  RSA - Rivest Shamir Adleman
+    - [ ] Task 6  `RSA` - Rivest Shamir Adleman
     - [ ] Task 7  Establishing Keys Using Asymmetric Cryptography
     - [ ] Task 8  Digital signatures and Certificates
     - [ ] Task 9  SSH Authentication
@@ -28,3 +28,4 @@
 - `Symmetric encryption` - Uses the same key to encrypt and decrypt
 - `Brute force` - Attacking cryptography by trying every different password or every different key
 - `Cryptanalysis` - Attacking cryptography by finding a weakness in the underlying maths
+- `RSA` - Rivest Shamir Adleman
