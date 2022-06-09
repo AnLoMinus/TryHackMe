@@ -1,3 +1,4 @@
+# ✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
 
 ![Image not set yet](https://assets.tryhackme.com/img/paths/introduction-to-cyber.jpg)
 
@@ -16,12 +17,8 @@
 
 - Easy
 
-<details>
-    <summary>
         
-✅ [Introduction to Cyber Security](https://tryhackme.com/path-action/introtocyber/join)
-    </summary>
-        
+---        
 
 ## 1️⃣ Introduction to Cyber Security
 ### Understand what is offensive and defensive security, and learn about careers available in cyber.
@@ -64,4 +61,3 @@
 
 #### Completing this learning path will give you the knowledge to kick start your cyber journey.
 
-</details>
