@@ -2,11 +2,27 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/172729066-1293d382-4a31-4f03-8c23-ab0ea5f611a0.png)
 
-# [King of the Hill](https://tryhackme.com/games/koth)
+# [King of the Hill](https://tryhackme.com/games/koth) `Beta`
 
 </div>
 
-# King of the Hill `Beta`
+# What is "King of the Hill"?
+## `KoTH` ~ King of the Hill 
+- King of the Hill (KoTH) is a competitive hacking game, where you play against up to 5 other hackers to compromise a machine and then patch its vulnerabilities to stop other players from also gaining access. 
+- The longer you maintain your access, the more points you get.
+- Traditionally you are taught how to compromise a machine to claim ownership of it. 
+- TryHackMe provides plenty of content on how to do so. 
+- However, an often overlooked aspect of hacking is maintaining access.
+- KoTH not only inspires you to apply the knowledge gained from the content within the platform in a competitive, timed set way, but also encourages the use of blue-team tactics to prevent others from using similar methods, such as those that you employed to compromise the machine.
+
+---
+
+# Becoming King
+- After enumeration and such forth, you will need to add your TryHackMe Username to `/root/king.txt` or king file in ADMINISTRATOR user's directory(Windows machine) on the machine itself to become the latest "King".
+- It is then down to you to prevent your competitors from replacing your TryHackMe Username and becoming the new "King", however, you must follow the rules.
+
+---
+
 ## Be the first to hack into a machine, and then retain your presence by patching vulnerabilities to stop your foes from taking your position!
 ### `Attack` then `defend`!
 
@@ -17,6 +33,11 @@
 ---
 
 # How to play
+- When everyone "readies" within the lobby, you will be provided the IP Address of the machine you all have to compete amongst each other to attack. 
+- From now on, you will compete to become the first King of the Hill.
+- After the lobby has started - the time of which you have specified, the game will last for 60 minutes or 1 Hour. 
+- The member with the most points at the end of the game - regardless of the amount of "King Changes" and the like wins!
+####
 - Join a lobby with up to 10 players
 - When everyone is ready, you'll get a machines IP address
 - Enumerate and hack into the machine
