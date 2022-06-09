@@ -85,8 +85,8 @@
 - Multivariate cryptography
 - Isogeny-based cryptography
 
-
 ---
 
 # Sources
-- 
+
+
