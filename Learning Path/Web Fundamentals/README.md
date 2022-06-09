@@ -29,10 +29,10 @@
 - [x] [Introduction to Web Hacking](introduction-to-web-hacking)
   - Get hands-on, learn about and exploit some of the most popular web application vulnerabilities seen in the industry today.
 
-- [x] [Burp Suite](Web%20Fundamentals/Burp%20Suite)
+- [x] [Burp Suite](Burp%20Suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
 
-- [ ] [Web Hacking Fundamentals](#web-hacking-fundamentals)
+- [ ] [Web Hacking Fundamentals](web%20hacking%20fundamentals)
   - Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
 
     
