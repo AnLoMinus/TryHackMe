@@ -26,13 +26,13 @@
 - [x] [How The Web Works](how%20the%20web%20works)
   - To become a better hacker it's vital to understand the underlying functions of the world wide web and what makes it work.
 
-- [x] [Introduction to Web Hacking](introduction-to-web-hacking)
+- [x] [Introduction to Web Hacking](Introduction%20to%20Web%20Gacking)
   - Get hands-on, learn about and exploit some of the most popular web application vulnerabilities seen in the industry today.
 
 - [x] [Burp Suite](Burp%20Suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
 
-- [ ] [Web Hacking Fundamentals](web%20hacking%20fundamentals)
+- [ ] [Web Hacking Fundamentals](Web%20Hacking%20Fundamentals)
   - Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
 
     
