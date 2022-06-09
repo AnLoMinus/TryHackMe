@@ -33,7 +33,7 @@
 - [ ] [Web Hacking Fundamentals](#web-hacking-fundamentals)
   - Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
 
-- [ ] [Cryptography](#cryptography)
+- [x] [Cryptography](#cryptography)
   - Cryptography is essential in security. Learn how its used to preserve integrity and confidentiality of sensitive information.
 
 - [ ] [Windows Exploitation Basics](#windows-exploitation-basics)
