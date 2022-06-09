@@ -23,13 +23,13 @@
 
 ## The Learning Path
 
-- [x] [How The Web Works](#how-the-web-works)
+- [x] [How The Web Works](how-the-web-works)
   - To become a better hacker it's vital to understand the underlying functions of the world wide web and what makes it work.
 
-- [x] [Introduction to Web Hacking](#introduction-to-web-hacking)
+- [x] [Introduction to Web Hacking](introduction-to-web-hacking)
   - Get hands-on, learn about and exploit some of the most popular web application vulnerabilities seen in the industry today.
 
-- [x] [Burp Suite](#burp-suite)
+- [x] [Burp Suite](burp-suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
 
 - [ ] [Web Hacking Fundamentals](#web-hacking-fundamentals)
