@@ -48,6 +48,8 @@
 - `Brute force` - Attacking cryptography by trying every different password or every different key
 - `Cryptanalysis` - Attacking cryptography by finding a weakness in the underlying maths
 - `RSA` - Rivest Shamir Adleman
+- `PGP` - Pretty Good Privacy
+- `GPG` - GNU Privacy Guard
 
 ---
 
