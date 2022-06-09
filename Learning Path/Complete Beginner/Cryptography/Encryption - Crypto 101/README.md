@@ -50,6 +50,7 @@
 - `RSA` - Rivest Shamir Adleman
 - `PGP` - Pretty Good Privacy
 - `GPG` - GNU Privacy Guard
+- `AES` -  Advanced Encryption Standard
 
 # Private-key cryptosystems
 > Private-key cryptosystems use the same key for encryption and decryption.
