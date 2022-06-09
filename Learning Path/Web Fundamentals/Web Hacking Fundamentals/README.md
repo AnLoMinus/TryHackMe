@@ -6,6 +6,31 @@
 
 </div>
 
+---
+
+- [x] How websites work
+  - To exploit a website, you first need to know how they are created.
+
+- [x] HTTP in detail
+  - Learn about how you request content from a web server using the HTTP protocol
+
+- [x] Burp Suite: The Basics
+  - An introduction to using Burp Suite for Web Application pentesting
+
+- [x] OWASP Top 10
+  - Learn about and exploit each of the OWASP Top 10 vulnerabilities; the 10 most critical web security risks.
+
+- [x] OWASP Juice Shop
+  - This room uses the Juice Shop vulnerable web application to learn how to identify and exploit common web application vulnerabilities.
+
+- [ ] Upload Vulnerabilities
+  - Tutorial room exploring some basic file-upload vulnerabilities in websites
+
+- [x] Pickle Rick
+  - A Rick and Morty CTF. Help turn Rick back into a human!
+
+---
+
 ![image](https://user-images.githubusercontent.com/51442719/172671009-e5b5c093-5414-4966-a836-44d0c5a26266.png)
 - [x] [How websites work](https://tryhackme.com/room/howwebsiteswork)
     - To exploit a website, you first need to know how they are created.
