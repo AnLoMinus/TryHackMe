@@ -8,7 +8,7 @@
 
 ---
 
-### 🔰 👑 [King of the Hill](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill) 🏔 
+- [ ] 👑 [King of the Hill](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill) 🏔 
 
 ---
 
