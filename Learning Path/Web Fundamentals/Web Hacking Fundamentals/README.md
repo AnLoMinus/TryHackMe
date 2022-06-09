@@ -1,6 +1,10 @@
+<div align="center">
+    
 ## Web Hacking Fundamentals
 ![image](https://user-images.githubusercontent.com/51442719/172675447-16ccf585-7630-4df4-bd4e-58c3efa78784.png)
 ### Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
+
+</div>
 
 ![image](https://user-images.githubusercontent.com/51442719/172671009-e5b5c093-5414-4966-a836-44d0c5a26266.png)
 - [x] [How websites work](https://tryhackme.com/room/howwebsiteswork)
