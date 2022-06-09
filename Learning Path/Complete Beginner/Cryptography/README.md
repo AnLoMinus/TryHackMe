@@ -19,5 +19,5 @@
 ---
  
 ![image](https://user-images.githubusercontent.com/51442719/172149395-d4648ee5-4264-4598-9319-b43bda4b5b06.png)
-- [ ] [Encryption - Crypto 101](https://tryhackme.com/room/encryptioncrypto101)
+- [x] [Encryption - Crypto 101](https://tryhackme.com/room/encryptioncrypto101)
 > An introduction to encryption, as part of a series on crypto
