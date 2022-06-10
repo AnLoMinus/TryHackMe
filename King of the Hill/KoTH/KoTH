@@ -38,15 +38,24 @@ vpn_dir="$HOME/.vpn"
 if [ -d /$HOME/.vpn ]; then
   #statements
   echo "\n\t\t $red VPN Location exists ~>: $yellow  $vpn_dir  \n"
-
 else
   echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n"
   mkdir $HOME/.vpn
 fi
 
+# Configuration files
+if [ -d $vpn_dir ]; then
+  if [ -e $vpn_dir/$use ]; then
+    tools_data="$conf_dir/HacKing/data/tools.dat"
+  fi
+  if [ -e $conf_dir/HacKing/data/category.dat ]; then
+    category_data="$conf_dir/HacKing/data/category.dat"
+  fi
+fi
+
 # Define variable for our search string (find this running process)
 vpn_file="$vpn_dir/$username.ovpn"
-if [ -x $vpn_file ]; then
+if [ -e $vpn_file ]; then
   #statements
   echo "\n\t\t $red Found TryHackme VPN File ~>: $yellow  $vpn_file  \n"
 else
@@ -81,7 +90,6 @@ error() {
   echo "${red}${prefix}${1}${nocolor}\n"
   echo "      ${cyan}  |---------------------------------"
   echo "      ${red}  |"
-
   exit ${2:-1}
 }
 
@@ -148,6 +156,7 @@ if [ "$arg1" == "kill" ]; then
 
     if confirmYes "Kill all process(es)?"; then
       sudo pkill -f "$vpn_file"
+      sudo pkill grep
 
       if [ "$?" == "0" ]; then
         log "They're ... all ... dead 🤥"
@@ -162,7 +171,7 @@ if [ "$arg1" == "kill" ]; then
 elif [ "$arg1" == "log" ]; then
   cat $session_log
   log "This sesion log file is located: $session_log"
-elif [ $arg1 =~ $valid_ip ]; then
+elif [ $arg1 -e $valid_ip ]; then
   connectVpn
   if confirmYes "Update profile with VMIP=$arg1  "; then
     res=$(cat $profile_file | sed -e "s/VMIP=\(.*\)\( \#.*\)/VMIP=$arg1/g" | grep VMIP)
