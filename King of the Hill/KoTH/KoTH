@@ -24,6 +24,25 @@ blue='\033[0;34m'
 yellow='\033[0;33m'
 nocolor='\033[0m'
 
+anonSurfing(){
+  #statements
+  echo "\n\t\t $blue Anonimity Status ~>: $yellow \n"
+  anonsurf status
+  sleep 3
+  echo "\n\t\t $blue Anonimity Stoping ~>: $yellow \n"
+  anonsurf stop
+  echo "\n\t\t $blue Anonimity Status ~>: $yellow \n"
+  anonsurf status
+  sleep 3
+  echo "\n\t\t $blue Anonimity Starting ~>: $yellow \n"
+  anonsurf start
+  echo "\n\t\t $blue Anonimity Status ~>: $yellow \n"
+  anonsurf status
+  sleep 3
+
+}
+anonSurfing
+
 # Define variable for THM username
 read_username=$(echo "\n\t\t $yellow Enter Your User Name:$red ")
 read -p "$read_username" Alm
