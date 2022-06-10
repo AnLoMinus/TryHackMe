@@ -8,7 +8,7 @@
 ---
 
 ```shell
-wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH & sudo sh KoTH
+wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH ; sudo sh KoTH
 ```
 
 </div>
