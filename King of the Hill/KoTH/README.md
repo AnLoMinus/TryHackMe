@@ -1,8 +1,9 @@
+>בס״ד
 <div align="center">
 
 ![image](https://user-images.githubusercontent.com/51442719/172729066-1293d382-4a31-4f03-8c23-ab0ea5f611a0.png)
 
-# `Anlominus` [King of the Hill](https://tryhackme.com/games/koth) 
+# `Anlominus` [King of the Hill](https://tryhackme.com/games/koth) `BETA`
 
 </div>
 
