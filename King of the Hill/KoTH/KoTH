@@ -136,16 +136,6 @@ else
   mkdir $HOME/.vpn
 fi
 
-# Configuration files
-if [ -d $vpn_dir ]; then
-  if [ -e $vpn_dir/$use ]; then
-    tools_data="$conf_dir/HacKing/data/tools.dat"
-  fi
-  if [ -e $conf_dir/HacKing/data/category.dat ]; then
-    category_data="$conf_dir/HacKing/data/category.dat"
-  fi
-fi
-
 # Define variable for our search string (find this running process)
 vpn_file="$vpn_dir/$username.ovpn"
 if [ -e $vpn_file ]; then
