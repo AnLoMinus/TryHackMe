@@ -4,7 +4,6 @@
 #!/usr/bin/env bash
 #!/data/data/com.termux/files/usr/bin/bash
 ###############################################
-Alm="Anlominus"
 # Name : Anlominus ~ KoTH
 # Last UPDATE : 2022 Jun 10
 # Create Date : 2022 Jun 10
@@ -13,14 +12,24 @@ Alm="Anlominus"
 # BIG THANX TO ALL COMUNITY THAT SHARE ALL THAT FREE GREAT SCRIPTS
 # CREDIT: To All World Creators free Scripts & Tools
 # Location: Made With LOVE IN ISRAEL !
-# Source: https://github.com/Anlominus/Diablo
+# Source: [ https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH ]
 # Aouther: f11snipe +~> Anlominus ~> RhytMix ~> KoTH
 ###############################################
 clear
+
+# COLORS! :)
+red='\033[0;31m'
+cyan='\033[0;36m'
+blue='\033[0;34m'
+yellow='\033[0;33m'
+nocolor='\033[0m'
+
 # Define variable for THM username
+Alm="Anlominus"
 username="$Alm"
 
 # Define directory were $username.ovpn is located
+echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory" & `mkdir $HOME/.vpn`
 vpn_dir="$HOME/.vpn"
 
 # Define variable for our search string (find this running process)
@@ -41,18 +50,11 @@ arg1=$1
 arg2=$2
 arg3=$3
 
-# COLORS! :)
-red='\033[0;31m'
-cyan='\033[0;36m'
-blue='\033[0;34m'
-yellow='\033[0;33m'
-nocolor='\033[0m'
-
 # Error helper function, prefix with red color and exit 1 (non zero is error)
 # https://emojipedia.org/search/?q=warning
 # 🚫 🚭 🚨
 error() {
-  prefix="[ERROR] "
+  prefix="\n\t\t [ERROR] "
   echo -e "${red}${prefix}${1}${nocolor}"
   echo
 
@@ -61,13 +63,13 @@ error() {
 
 # Warning helper function, show warning prefix with yellow color
 warn() {
-  prefix="[WARN] "
+  prefix="\n\t\t [WARN] "
   echo -e "${yellow}${prefix}${1}${nocolor}"
 }
 
 # log log with cyan color & prefix
 log() {
-  prefix="[INFO] "
+  prefix="\n\t\t [INFO] "
   echo -e "${cyan}${prefix}${1}${nocolor}"
 }
 
