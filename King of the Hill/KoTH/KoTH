@@ -40,13 +40,21 @@ if [ -d /$HOME/.vpn ]; then
   echo "\n\t\t $red VPN Location exists ~>: $yellow  $vpn_dir  \n"
 
 else
-  echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n" & `mkdir $HOME/.vpn`
-
+  echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n"
+  mkdir $HOME/.vpn
 fi
 
 # Define variable for our search string (find this running process)
 vpn_file="$vpn_dir/$username.ovpn"
-
+if [ -x $vpn_file ]; then
+  #statements
+  echo "\n\t\t $red Found TryHackme VPN File ~>: $yellow  $vpn_file  \n"
+else
+  cant_found=$(echo "\n\t\t $red Can't Found TryHackme VPN File !! \n\n\t\t  Enter $username.ovpn Location ~>: ")
+  read -p "$cant_found"  this_location
+  echo "\n\t\t $red Found TryHackme VPN File ~>: $yellow  $this_location\n\t\t $red Moving To $vpn_dir/"
+  mv $this_location $vpn_file
+fi
 # Regex pattern to validate IP format (#.#.#.#)
 valid_ip="([0-9]{1,3}\.){3}"
 valid_thm=".*\.thm$"
@@ -130,7 +138,7 @@ connectVpn() {
 }
 
 # Check if openvpn connection is running
-ps aux | grep "$vpn_file" | grep -v grep > /dev/null
+ps aux | grep "$vpn_file"
 vpn_running=$?
 
 if [ "$arg1" == "kill" ]; then
