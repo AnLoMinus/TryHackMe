@@ -113,7 +113,7 @@ confirmYes() {
 }
 
 connectVpn() {
-  if [[ "$vpn_running" != "0" ]]; then
+  if [ "$vpn_running" != "0" ]; then
     warn "🤨 THM VPN is not running!"
     warn "Searching for process: '$vpn_file' (using ps aux | grep ...)"
 
@@ -132,15 +132,15 @@ connectVpn() {
 ps aux | grep "$vpn_file" | grep -v grep > /dev/null
 vpn_running=$?
 
-if [[ "$arg1" == "kill" ]]; then
-  if [[ "$vpn_running" == "0" ]]; then
+if [ "$arg1" == "kill" ]; then
+  if [ "$vpn_running" == "0" ]; then
     log "Found running openvpn process(es):"
     ps aux | grep "$vpn_file" | grep -v grep
 
     if confirmYes "Kill all process(es)?"; then
       sudo pkill -f "$vpn_file"
 
-      if [[ "$?" == "0" ]]; then
+      if [ "$?" == "0" ]; then
         log "They're ... all ... dead 🤥"
         exit 0
       else
@@ -150,10 +150,10 @@ if [[ "$arg1" == "kill" ]]; then
       warn "Aborting 'kill' command"
     fi
   fi
-elif [[ "$arg1" == "log" ]]; then
+elif [ "$arg1" == "log" ]; then
   cat $session_log
   log "This sesion log file is located: $session_log"
-elif [[ $arg1 =~ $valid_ip ]]; then
+elif [ $arg1 =~ $valid_ip ]; then
   connectVpn
   if confirmYes "Update profile with VMIP=$arg1  "; then
     res=$(cat $profile_file | sed -e "s/VMIP=\(.*\)\( \#.*\)/VMIP=$arg1/g" | grep VMIP)
@@ -164,7 +164,7 @@ elif [[ $arg1 =~ $valid_ip ]]; then
     warn "Aborting new vm session"
   fi
 
-  if [[ $arg2 =~ $valid_thm ]]; then
+  if [ $arg2 =~ $valid_thm ]; then
     warn "ADD AS HOST [/etc/hosts]: $arg1    $arg2"
   fi
 else
