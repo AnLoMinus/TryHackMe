@@ -38,6 +38,7 @@ vpn_dir="$HOME/.vpn"
 if [ -d /$HOME/.vpn ]; then
   #statements
   echo "\n\t\t $red VPN Location exists ~>: $yellow  $vpn_dir  \n"
+  ls -lahs $vpn_dir
 else
   echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n"
   mkdir $HOME/.vpn
