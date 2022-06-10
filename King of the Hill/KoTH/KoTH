@@ -25,12 +25,24 @@ yellow='\033[0;33m'
 nocolor='\033[0m'
 
 # Define variable for THM username
-Alm="Anlominus"
+read_username=$(echo "\n\t\t $yellow Enter Your User Name:$red ")
+read -p "$read_username" Alm
+if [ -z $Alm ]; then
+  #statements
+  Alm="Anlominus"
+fi
 username="$Alm"
 
 # Define directory were $username.ovpn is located
-echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory" & `mkdir $HOME/.vpn`
 vpn_dir="$HOME/.vpn"
+if [ -d /$HOME/.vpn ]; then
+  #statements
+  echo "\n\t\t $red Location exists $yellow >[ $vpn_dir ]< "
+
+else
+  echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n" & `mkdir $HOME/.vpn`
+
+fi
 
 # Define variable for our search string (find this running process)
 vpn_file="$vpn_dir/$username.ovpn"
@@ -54,23 +66,34 @@ arg3=$3
 # https://emojipedia.org/search/?q=warning
 # 🚫 🚭 🚨
 error() {
-  prefix="\n\t\t [ERROR] "
-  echo -e "${red}${prefix}${1}${nocolor}"
-  echo
+  echo "      ${red}  |"
+  echo "      ${cyan}  |---------------------------------"
+  prefix="\n\t\t [ERROR] \n\n\t\t"
+  echo "${red}${prefix}${1}${nocolor}\n"
+  echo "      ${cyan}  |---------------------------------"
+  echo "      ${red}  |"
 
   exit ${2:-1}
 }
 
 # Warning helper function, show warning prefix with yellow color
 warn() {
-  prefix="\n\t\t [WARN] "
-  echo -e "${yellow}${prefix}${1}${nocolor}"
+  echo "      ${red}  |"
+  echo "      ${cyan}  |---------------------------------"
+  prefix="\n\t\t [WARN] \n\n\t\t"
+  echo "${yellow}${prefix}${1}${nocolor}\n"
+  echo "      ${cyan}  |---------------------------------"
+  echo "      ${red}  |"
 }
 
 # log log with cyan color & prefix
 log() {
-  prefix="\n\t\t [INFO] "
-  echo -e "${cyan}${prefix}${1}${nocolor}"
+  echo "      ${red}  |"
+  echo "      ${cyan}  |---------------------------------"
+  prefix="\n\t\t [INFO] \n\n\t\t"
+  echo "${cyan}${prefix}${1}${nocolor}\n"
+  echo "      ${cyan}  |---------------------------------"
+  echo "      ${red}  |"
 }
 
 # Function to read user input, and return boolean whether they confirm "[Y/n]"
