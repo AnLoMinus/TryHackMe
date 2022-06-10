@@ -5,8 +5,19 @@
 
 # `Anlominus` [King of the Hill](https://tryhackme.com/games/koth) `BETA`
 
-</div>
+---
 
+# 📜 Menu ~ To Do
+- 📜 Menu
+  - [ ] [1] ~ Start THM ~> TryHackMe VPN
+  - [ ] [2] ~ Start KoTH ~> King of The Hill 
+
+
+```shell
+wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH & sudo sh KoTH
+```
+
+</div>
 
 ```shell
 #!/bin/sh
