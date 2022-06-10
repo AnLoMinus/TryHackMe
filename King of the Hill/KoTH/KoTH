@@ -143,6 +143,7 @@ connectVpn() {
     fi
   else
     log "THM VPN Connection Confirmed 👍"
+    echo "\n\n\t\t $cyan $(ifconfig tun0) \n"
   fi
 }
 
