@@ -29,7 +29,6 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%
 #!/usr/bin/env bash
 #!/data/data/com.termux/files/usr/bin/bash
 ###############################################
-Alm="Anlominus"
 # Name : Anlominus ~ KoTH
 # Last UPDATE : 2022 Jun 10
 # Create Date : 2022 Jun 10
@@ -38,15 +37,37 @@ Alm="Anlominus"
 # BIG THANX TO ALL COMUNITY THAT SHARE ALL THAT FREE GREAT SCRIPTS
 # CREDIT: To All World Creators free Scripts & Tools
 # Location: Made With LOVE IN ISRAEL !
-# Source: https://github.com/Anlominus/Diablo
+# Source: [ https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH ]
 # Aouther: f11snipe +~> Anlominus ~> RhytMix ~> KoTH
 ###############################################
 clear
+
+# COLORS! :)
+red='\033[0;31m'
+cyan='\033[0;36m'
+blue='\033[0;34m'
+yellow='\033[0;33m'
+nocolor='\033[0m'
+
 # Define variable for THM username
+read_username=$(echo "\n\t\t $yellow Enter Your User Name:$red ")
+read -p "$read_username" Alm
+if [ -z $Alm ]; then
+  #statements
+  Alm="Anlominus"
+fi
 username="$Alm"
 
 # Define directory were $username.ovpn is located
 vpn_dir="$HOME/.vpn"
+if [ -d /$HOME/.vpn ]; then
+  #statements
+  echo "\n\t\t $red Location exists $yellow >[ $vpn_dir ]< "
+
+else
+  echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n" & `mkdir $HOME/.vpn`
+
+fi
 
 # Define variable for our search string (find this running process)
 vpn_file="$vpn_dir/$username.ovpn"
@@ -66,34 +87,38 @@ arg1=$1
 arg2=$2
 arg3=$3
 
-# COLORS! :)
-red='\033[0;31m'
-cyan='\033[0;36m'
-blue='\033[0;34m'
-yellow='\033[0;33m'
-nocolor='\033[0m'
-
 # Error helper function, prefix with red color and exit 1 (non zero is error)
 # https://emojipedia.org/search/?q=warning
 # 🚫 🚭 🚨
 error() {
-  prefix="[ERROR] "
-  echo -e "${red}${prefix}${1}${nocolor}"
-  echo
+  echo "      ${red}  |"
+  echo "      ${cyan}  |---------------------------------"
+  prefix="\n\t\t [ERROR] \n\n\t\t"
+  echo "${red}${prefix}${1}${nocolor}\n"
+  echo "      ${cyan}  |---------------------------------"
+  echo "      ${red}  |"
 
   exit ${2:-1}
 }
 
 # Warning helper function, show warning prefix with yellow color
 warn() {
-  prefix="[WARN] "
-  echo -e "${yellow}${prefix}${1}${nocolor}"
+  echo "      ${red}  |"
+  echo "      ${cyan}  |---------------------------------"
+  prefix="\n\t\t [WARN] \n\n\t\t"
+  echo "${yellow}${prefix}${1}${nocolor}\n"
+  echo "      ${cyan}  |---------------------------------"
+  echo "      ${red}  |"
 }
 
 # log log with cyan color & prefix
 log() {
-  prefix="[INFO] "
-  echo -e "${cyan}${prefix}${1}${nocolor}"
+  echo "      ${red}  |"
+  echo "      ${cyan}  |---------------------------------"
+  prefix="\n\t\t [INFO] \n\n\t\t"
+  echo "${cyan}${prefix}${1}${nocolor}\n"
+  echo "      ${cyan}  |---------------------------------"
+  echo "      ${red}  |"
 }
 
 # Function to read user input, and return boolean whether they confirm "[Y/n]"
