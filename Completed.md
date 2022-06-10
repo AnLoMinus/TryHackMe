@@ -1,3 +1,9 @@
+# [Rooms Complete](https://tryhackme.com/p/Anlominus)
+- 117 Rooms Complete
+- 11 Level
+- 17 Badges
+---
+
 # Passive Reconnaissance
 > Learn about the essential tools for passive reconnaissance, such as whois, nslookup, and dig.
 
