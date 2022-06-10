@@ -73,12 +73,16 @@
 - [CyberChef](https://gchq.github.io/CyberChef)
   > The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis
 - [koth-protect-king](https://github.com/MatheuZSecurity/koth-protect-king)
+  > A script to protect your king in KoTH 
 - [Koth-TryHackMe-Tricks](https://github.com/MatheuZSecurity/Koth-TryHackMe-Tricks)
-- [thm-vm](https://github.com/f11snipe/thm-vm): TryHackMe - Simple helper script for VPN, VM's, etc
+  > Koth TryHackMe - Tricks 
+- [thm-vm](https://github.com/f11snipe/thm-vm): 
+  > TryHackMe - Simple helper script for VPN, VM's, etc
 - [Hide a Process in Koth Tryhackme](https://github.com/MatheuZSecurity/hide-a-process)
 - [Python tools for penetration testers](https://github.com/Anlominus/PenTest/blob/main/KingMenu.md#python-tools-for-penetration-testers)
 - [Pentesting Cheatsheet](PenTest.md): 
-* [RustScan](https://github.com/rustscan/rustscan) - Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.
+- [RustScan](https://github.com/rustscan/rustscan) 
+  > Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.
 
 ---
 
