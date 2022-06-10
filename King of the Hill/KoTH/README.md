@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%
   - [ ] 1️⃣ ~ [`KoTH`](./KoTH) ~> TryHackMe VPN
       > Simple helper script for VPN, VM's, etc
   - [ ] 2️⃣ ~ [`KoTH-Protection`](./KoTH-Protection) ~> Protecting Rank in King of The Hill
-      > Simple helper script for VPN, VM's, etc
+      > A script to protect your king
 
 
 ---
