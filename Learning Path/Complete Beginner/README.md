@@ -36,7 +36,7 @@
 - [x] [Cryptography](#cryptography)
   - Cryptography is essential in security. Learn how its used to preserve integrity and confidentiality of sensitive information.
 
-- [ ] [Windows Exploitation Basics](#windows-exploitation-basics)
+- [x] [Windows Exploitation Basics](#windows-exploitation-basics)
   - Hacking Windows is often daunting. Grasp the fundamentals of core Windows concepts and Active Directory vulnerabilities.
 
 - [x] [Shells and Privilege Escalation](#shells-and-privilege-escalation)
