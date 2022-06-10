@@ -71,6 +71,7 @@
 
 ## ALL Tools
 - [CyberChef](https://gchq.github.io/CyberChef)
+  > The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis
 - [koth-protect-king](https://github.com/MatheuZSecurity/koth-protect-king)
 - [Koth-TryHackMe-Tricks](https://github.com/MatheuZSecurity/Koth-TryHackMe-Tricks)
 - [thm-vm](https://github.com/f11snipe/thm-vm): TryHackMe - Simple helper script for VPN, VM's, etc
