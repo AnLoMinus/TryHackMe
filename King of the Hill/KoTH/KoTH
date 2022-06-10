@@ -37,7 +37,7 @@ username="$Alm"
 vpn_dir="$HOME/.vpn"
 if [ -d /$HOME/.vpn ]; then
   #statements
-  echo "\n\t\t $red Location exists $yellow >[ $vpn_dir ]< "
+  echo "\n\t\t $red VPN Location exists ~>: $yellow  $vpn_dir  \n"
 
 else
   echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n" & `mkdir $HOME/.vpn`
@@ -52,7 +52,8 @@ valid_ip="([0-9]{1,3}\.){3}"
 valid_thm=".*\.thm$"
 
 # Session logfile
-session_log=$vpn_dir/session.log
+session_log=$vpn_dir/KoTH-$(date).log
+echo "\n\t\t $red Session logfile ~>: $yellow $session_log\n"
 
 # Location of profile to update (.zshrc, .bashrc, .bash_profile, etc)
 profile_file=~/.zshrc
