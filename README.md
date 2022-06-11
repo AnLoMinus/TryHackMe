@@ -1,6 +1,14 @@
 
 # [🔒 TryHackMe 📝](https://tryhackme.com/)
 
+<p align="center">
+    <img src="https://img.shields.io/github/license/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/issues/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/stars/oppsec/tomcter?color=yellow&label=STARS&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/forks/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/languages/code-size/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+</p>
+
 ![1](https://user-images.githubusercontent.com/51442719/172742380-5ae5fdd0-f71a-411d-8fbd-8dc6105fa943.jpg)
 
 <a href="https://tryhackme.com/p/Anlominus">
