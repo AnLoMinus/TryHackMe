@@ -83,6 +83,10 @@
 - [Pentesting Cheatsheet](PenTest.md): 
 - [RustScan](https://github.com/rustscan/rustscan) 
   > Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.
+- [King of The Hill ~ cheatsheets](./King%20of%20The%20Hill) [Source](https://github.com/holmes-py/King-of-the-hill)
+  > This is the walkthrough and cheatsheet of Machines on King of the hill on the online hacking platform TryHackme.
+
+
 
 ---
 
