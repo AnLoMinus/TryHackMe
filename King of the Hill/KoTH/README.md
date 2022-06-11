@@ -301,3 +301,39 @@ else
   connectVpn
 fi
 ```
+
+---
+
+# TryHackMe Menu ToDo
+
+---
+
+- [x] Scope
+  - [ ] 1️⃣ Asking For Username:
+  - [ ] 2️⃣ Asking For TryHackMe VPN File Location:
+  - [ ] 3️⃣ Asking Data for Reporting:
+  - [ ] 4️⃣ Asking Location For Reporting:
+  - [ ] 5️⃣ Asking For IP Target: +~> Insert it to ${box_ip}
+  - [ ] 6️⃣ Asking For Name Target: +~> Insert it to ${box_name}
+
+---
+
+- [x] Start
+  - [ ] 1️⃣ Adding ${box_ip} ${box_name} ~>> /etc/hosts
+    - `sudo echo "${box_ip}   ${box_name}" >> /etc/hosts`  
+  - [ ] 2️⃣ Asking For TryHackMe VPN File Location:
+  - [ ] 3️⃣ Asking Data for Reporting:
+
+---
+
+- [x] Stop
+    - [ ] anonsurf status
+    - [ ] anonsurf start
+    - [ ] anonsurf stop
+
+---
+
+- [x] Status
+    - [ ] Asking For Username:
+
+---
