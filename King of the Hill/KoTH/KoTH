@@ -115,7 +115,6 @@ anonSurfing(){
   sleep 3
 
 }
-anonSurfing
 
 # Define variable for THM username
 read_username=$(echo "\n\t\t $yellow Enter Your User Name:$red ")
