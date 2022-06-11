@@ -31,7 +31,7 @@
     - `40 Hours`
 
 - [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) 
-  - [ ] Path Progress (93%)
+  - [ ] Path Progress (98%)
     - `Easy`
     - `64 Hours`
 
