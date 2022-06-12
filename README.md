@@ -77,3 +77,9 @@
 ![Alt](https://repobeats.axiom.co/api/embed/fa913abe688e84ef0c5d641cb9688c4b9a45953c.svg "Repobeats analytics image")
 
 ---
+
+<div align="center">
+
+⫷ [`HacKing`](https://github.com/Anlominus/HacKing) | [`HacKingPro`](https://github.com/Anlominus/HacKingPro) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) | [`ScanPro`](https://github.com/Anlominus/ScanPro) | [`Diablo`](https://github.com/Anlominus/Diablo) ⫸
+
+</div>
