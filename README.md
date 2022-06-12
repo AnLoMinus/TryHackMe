@@ -80,7 +80,7 @@
 
 <div align="center">
 
-⫷ | [`HacKingPro`](https://github.com/Anlominus/HacKingPro) ⫸
+⫷ [`HacKingPro`](https://github.com/Anlominus/HacKingPro) ⫸
 <br>
 ⫷ [`TryHackMe`](https://github.com/Anlominus/TryHackMe) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) ⫸ 
 <br>
