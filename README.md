@@ -80,6 +80,6 @@
 
 <div align="center">
 
-⫷ [`HacKing`](https://github.com/Anlominus/HacKing) | [`HacKingPro`](https://github.com/Anlominus/HacKingPro) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) | [`ScanPro`](https://github.com/Anlominus/ScanPro) | [`Diablo`](https://github.com/Anlominus/Diablo) ⫸
+⫷ [`HacKing`](https://github.com/Anlominus/HacKing) | [`HacKingPro`](https://github.com/Anlominus/HacKingPro) | [`TryHackMe`](https://github.com/Anlominus/TryHackMe) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) | [`ScanPro`](https://github.com/Anlominus/ScanPro) | [`PenTest`](https://github.com/Anlominus/PenTest) | [`Diablo`](https://github.com/Anlominus/Diablo) | [`Diablo`](https://github.com/Anlominus/Diablo) | [`Diablo`](https://github.com/Anlominus/Diablo) ⫸
 
 </div>
