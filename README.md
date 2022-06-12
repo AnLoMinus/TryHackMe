@@ -80,6 +80,8 @@
 
 <div align="center">
 
+<img align="center" width="100" src="https://user-images.githubusercontent.com/51442719/172729066-1293d382-4a31-4f03-8c23-ab0ea5f611a0.png">
+
 ⫷ [`HacKingPro`](https://github.com/Anlominus/HacKingPro) ⫸
 <br>
 ⫷ [`TryHackMe`](https://github.com/Anlominus/TryHackMe) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) ⫸ 
@@ -92,4 +94,5 @@
 <br>
 
 </div>
-https://github.com/Anlominus/Linfo
+
+---
