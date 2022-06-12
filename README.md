@@ -80,8 +80,18 @@
 
 <div align="center">
 
-⫷ [`HacKing`](https://github.com/Anlominus/HacKing) | [`HacKingPro`](https://github.com/Anlominus/HacKingPro) | [`TryHackMe`](https://github.com/Anlominus/TryHackMe) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) | [`ScanPro`](https://github.com/Anlominus/ScanPro) | [`PenTest`](https://github.com/Anlominus/PenTest) | [`Diablo`](https://github.com/Anlominus/Diablo) | [`AnyTeam`](https://github.com/Anlominus/AnyTeam) | [`Studies`](https://github.com/Anlominus/Studies) | [`Offensive-Security`](https://github.com/Anlominus/Offensive-Security) | [`Goals`](https://github.com/Anlominus/Goals) | [`Linfo`](https://github.com/Anlominus/Linfo) ⫸
+⫷ | [`HacKingPro`](https://github.com/Anlominus/HacKingPro) ⫸
+<br>
+⫷ [`TryHackMe`](https://github.com/Anlominus/TryHackMe) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) ⫸ 
+<br>
+⫷  ⫸ 
+<br>
+⫷ [`Offensive-Security`](https://github.com/Anlominus/Offensive-Security) | [`PenTest`](https://github.com/Anlominus/PenTest) ⫸
+<br>
+⫷ [`ScanPro`](https://github.com/Anlominus/ScanPro) | [`Linfo`](https://github.com/Anlominus/Linfo) | [`Diablo`](https://github.com/Anlominus/Diablo) ⫸ 
+<br>
+⫷ [`Goals`](https://github.com/Anlominus/Goals) | [`Studies`](https://github.com/Anlominus/Studies) | [`HacKing`](https://github.com/Anlominus/HacKing) | [`AnyTeam`](https://github.com/Anlominus/AnyTeam) ⫸
+<br>
 
 </div>
-
 https://github.com/Anlominus/Linfo
