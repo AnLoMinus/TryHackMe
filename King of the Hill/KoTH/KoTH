@@ -212,12 +212,13 @@ connectVpn() {
     warn "Searching for process: '$vpn_file' (using ps aux | grep ...)"
     if confirmYes "Connect to VPN now? (requires sudo)"; then
       # sudo echo "init" > $session_log
-      sudo -b openvpn $vpn_file > $session_log 2>&1 &
+      sudo -b openvpn $vpn_file > $session_log
       log "Done! 😁"
     fi
   else
     log "THM VPN Connection Confirmed 👍"
-    echo "\n\n\t\t $cyan $(ifconfig tun0) \n"
+    echo "\n\n\t\t `info` $cyan $(ifconfig tun0) \n"
+    echo "\n\n\t\t `info` $cyan $(ps aux | grep $vpn_dir) \n"
   fi
 }
 
