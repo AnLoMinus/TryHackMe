@@ -3,27 +3,27 @@
 
 ---
 
-- [Burp Suite](https://tryhackme.com/module/learn-burp-suite)
+- ✅ [Burp Suite](https://tryhackme.com/module/learn-burp-suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
 
 ---
 
-- [Metasploit](https://tryhackme.com/module/metasploit)
+- ✅ [Metasploit](https://tryhackme.com/module/metasploit)
   - Metasploit is the most widely used exploitation framework. Learn how to use it and unlock its full potential.
 
 ---
 
-- [Introduction to Web Hacking](https://tryhackme.com/module/intro-to-web-hacking)
+- ✅ [Introduction to Web Hacking](https://tryhackme.com/module/intro-to-web-hacking)
   - Get hands-on, learn about and exploit some of the most popular web application vulnerabilities seen in the industry today.
 
 ---
 
-- [Network Security](https://tryhackme.com/module/network-security)
+- ✅ [Network Security](https://tryhackme.com/module/network-security)
   - Learn the basics of passive and active network reconnaissance. Understand how common protocols work and their attack vectors.
 
 ---
 
-- [Nmap](https://tryhackme.com/module/nmap)
+- ✅ [Nmap](https://tryhackme.com/module/nmap)
   - Learn how to leverage the Nmap network scanner to discover live hosts and open ports using basic and advanced scan options.
 
 ---
@@ -43,7 +43,7 @@
 
 ---
 
-- [Introduction to Offensive Security](https://tryhackme.com/module/introduction-to-offensive-security)
+- ✅ [Introduction to Offensive Security](https://tryhackme.com/module/introduction-to-offensive-security)
   - Understand what Offensive Security entails, and practice breaking into computer systems by exploiting applications and networks.
 
 ---
@@ -53,22 +53,22 @@
 
 ---
 
-- [Introduction to Defensive Security](https://tryhackme.com/module/introduction-to-defensive-security)
+- ✅ [Introduction to Defensive Security](https://tryhackme.com/module/introduction-to-defensive-security)
   - Learn Defensive Security by using digital forensics in an investigation and applying security operations to stop a live cyber attack.
 
 ---
 
-- [Linux Fundamentals](https://tryhackme.com/module/linux-fundamentals)
+- ✅ [Linux Fundamentals](https://tryhackme.com/module/linux-fundamentals)
   - Many servers and security tools use Linux. Learn how to use the Linux operating system, a critical skill in cyber security.
 
 ---
 
-- [How The Web Works](https://tryhackme.com/module/how-the-web-works)
+- ✅ [How The Web Works](https://tryhackme.com/module/how-the-web-works)
   - To become a better hacker it's vital to understand the underlying functions of the world wide web and what makes it work.
 
 ---
 
-- [Introduction to Pentesting](https://tryhackme.com/module/introduction-to-offensive-pentesting)
+- ✅ [Introduction to Pentesting](https://tryhackme.com/module/introduction-to-offensive-pentesting)
   - Understand what a penetration test involves, including testing techniques and methodologies every pentester should know.
 
 ---
