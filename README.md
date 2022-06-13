@@ -14,7 +14,6 @@
 ⫷ [`Goals`](https://github.com/Anlominus/Goals) | [`Studies`](https://github.com/Anlominus/Studies) | [`HacKing`](https://github.com/Anlominus/HacKing) | [`AnyTeam`](https://github.com/Anlominus/AnyTeam) ⫸
 <br>
 
-</div>
 
 ---
 
@@ -27,6 +26,8 @@
 </a>
 
 ---
+
+</div>
 
 - [ ] 👑 [King of the Hill](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill) 🏔 
 
