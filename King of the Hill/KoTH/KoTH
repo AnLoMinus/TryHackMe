@@ -223,7 +223,7 @@ connectVpn() {
 }
 
 # Check if openvpn connection is running
-ps aux | grep "$vpn_file"
+ifconfig tun0
 vpn_running=$?
 
 if [ "$arg1" == "kill" ]; then
