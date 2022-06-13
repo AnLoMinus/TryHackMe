@@ -274,7 +274,6 @@ else
 fi
 
 create_Desktop_App() {
-echo "
   a1=$(wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH.png)
   b2=$(mv KoTH.png /usr/bin/KoTH/)
   c3=$(
@@ -293,5 +292,4 @@ echo "
   a1 
   b2 
   c3
-  "
   }
