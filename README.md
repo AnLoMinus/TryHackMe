@@ -86,27 +86,11 @@
 
 ---
 
+![1](https://user-images.githubusercontent.com/51442719/172742380-5ae5fdd0-f71a-411d-8fbd-8dc6105fa943.jpg)
+
+---
+
 ![Alt](https://repobeats.axiom.co/api/embed/fa913abe688e84ef0c5d641cb9688c4b9a45953c.svg "Repobeats analytics image")
 
 ---
 
-<div align="center">
-
-<img align="center" width="100" src="https://user-images.githubusercontent.com/51442719/172729066-1293d382-4a31-4f03-8c23-ab0ea5f611a0.png">
-
-⫷ [`HacKingPro`](https://github.com/Anlominus/HacKingPro) ⫸
-<br>
-⫷ [`TryHackMe`](https://github.com/Anlominus/TryHackMe) | [`KoTH`](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH) ⫸ 
-<br>
-⫷ [`ScanPro`](https://github.com/Anlominus/ScanPro) | [`Linfo`](https://github.com/Anlominus/Linfo) | [`Diablo`](https://github.com/Anlominus/Diablo) ⫸ 
-<br>
-⫷ [`Offensive-Security`](https://github.com/Anlominus/Offensive-Security) | [`PenTest`](https://github.com/Anlominus/PenTest) ⫸
-<br>
-⫷ [`Goals`](https://github.com/Anlominus/Goals) | [`Studies`](https://github.com/Anlominus/Studies) | [`HacKing`](https://github.com/Anlominus/HacKing) | [`AnyTeam`](https://github.com/Anlominus/AnyTeam) ⫸
-<br>
-
-</div>
-
----
-
-![1](https://user-images.githubusercontent.com/51442719/172742380-5ae5fdd0-f71a-411d-8fbd-8dc6105fa943.jpg)
