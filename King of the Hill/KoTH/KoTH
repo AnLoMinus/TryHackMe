@@ -212,56 +212,57 @@ connectVpn() {
     warn "Searching for process: '$vpn_file' (using ps aux | grep ...)"
     if confirmYes "Connect to VPN now? (requires sudo)"; then
       # sudo echo "init" > $session_log
-      sudo -b openvpn $vpn_file > $session_log
+      sudo openvpn $vpn_file > $session_log
       log "Done! 😁"
     fi
   else
-    log "THM VPN Connection Confirmed 👍"
-    echo "\n\n\t\t  $cyan $(ifconfig tun0) \n"
-    echo "\n\n\t\t  $cyan $(ps aux | grep $vpn_file) \n"
+    log "Found tun0 & Connection Confirmed 👍"
   fi
+  log "THM VPN Connection Confirmed 👍"
+  echo "\n\n\t\t  $cyan $(ifconfig tun0) \n"
+  echo "\n\n\t\t  $cyan $(ps aux | grep $vpn_file) \n"
 }
 
 # Check if openvpn connection is running
 ifconfig tun0
 vpn_running=$?
 
-if [ "$arg1" == "kill" ]; then
-  if [ "$vpn_running" == "0" ]; then
-    log "Found running openvpn process(es):"
-    ps aux | grep "$vpn_file" | grep -v grep
-
-    if confirmYes "Kill all process(es)?"; then
-      sudo pkill -f "$vpn_file"
-      sudo pkill grep
-
-      if [ "$?" == "0" ]; then
-        log "They're ... all ... dead 🤥"
-        exit 0
-      else
-        error "EPIC FAIL"
-      fi
-    else
-      warn "Aborting 'kill' command"
-    fi
-  fi
-elif [ "$arg1" == "log" ]; then
-  cat $session_log
-  log "This sesion log file is located: $session_log"
-elif [ $arg1 -e $valid_ip ]; then
-  connectVpn
-  if confirmYes "Update profile with VMIP=$arg1  "; then
-    res=$(cat $profile_file | sed -e "s/VMIP=\(.*\)\( \#.*\)/VMIP=$arg1/g" | grep VMIP)
-    log "Editing $profile_file: $res"
-    sed -i'.bak' -e "s/VMIP=\(.*\)/VMIP=$arg1/g" $profile_file
-    log "Run: 'source $profile_file' (to reload this session, new terminals will have \$VMIP set automatically)"
-  else
-    warn "Aborting new vm session"
-  fi
-
-  if [ $arg2 =~ $valid_thm ]; then
-    warn "ADD AS HOST [/etc/hosts]: $arg1    $arg2"
-  fi
-else
-  connectVpn
-fi
+# if [ "$arg1" == "kill" ]; then
+#   if [ "$vpn_running" == "0" ]; then
+#     log "Found running openvpn process(es):"
+#     ps aux | grep "$vpn_file" | grep -v grep
+#
+#     if confirmYes "Kill all process(es)?"; then
+#       sudo pkill -f "$vpn_file"
+#       sudo pkill grep
+#
+#       if [ "$?" == "0" ]; then
+#         log "They're ... all ... dead 🤥"
+#         exit 0
+#       else
+#         error "EPIC FAIL"
+#       fi
+#     else
+#       warn "Aborting 'kill' command"
+#     fi
+#   fi
+# elif [ "$arg1" == "log" ]; then
+#   cat $session_log
+#   log "This sesion log file is located: $session_log"
+# elif [ $arg1 -e $valid_ip ]; then
+#   connectVpn
+#   if confirmYes "Update profile with VMIP=$arg1  "; then
+#     res=$(cat $profile_file | sed -e "s/VMIP=\(.*\)\( \#.*\)/VMIP=$arg1/g" | grep VMIP)
+#     log "Editing $profile_file: $res"
+#     sed -i'.bak' -e "s/VMIP=\(.*\)/VMIP=$arg1/g" $profile_file
+#     log "Run: 'source $profile_file' (to reload this session, new terminals will have \$VMIP set automatically)"
+#   else
+#     warn "Aborting new vm session"
+#   fi
+#
+#   if [ $arg2 =~ $valid_thm ]; then
+#     warn "ADD AS HOST [/etc/hosts]: $arg1    $arg2"
+#   fi
+# else
+#   connectVpn
+# fi
