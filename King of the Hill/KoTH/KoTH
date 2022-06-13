@@ -100,7 +100,7 @@ koth_banner
 
 anonSurfing(){
   #statements
-  while [ 1 == 1 ]; do
+  while true; do
     #statements
     echo "\n\t\t Anonimity Surfing Menu"
     echo "\t\t [1] - Anonimity Surfing status"
