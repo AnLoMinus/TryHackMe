@@ -42,6 +42,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%
 # Location: Made With LOVE IN ISRAEL !
 # Source: [ https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill/KoTH ]
 # Aouther: f11snipe +~> Anlominus ~> RhytMix ~> KoTH
+# TryHackMe ~> King of The Hill: https://tryhackme.com/games/koth
 ###############################################
 clear
 
@@ -142,7 +143,6 @@ anonSurfing(){
   sleep 3
 
 }
-anonSurfing
 
 # Define variable for THM username
 read_username=$(echo "\n\t\t $yellow Enter Your User Name:$red ")
@@ -300,6 +300,28 @@ elif [ $arg1 -e $valid_ip ]; then
 else
   connectVpn
 fi
+
+create_Desktop_App() {
+  a1=$(wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH.png)
+  b2=$(cp KoTH /usr/share/KoTH/; mv KoTH.png /usr/bin/KoTH/)
+  c3=$(
+  cat << EOF > KoTH.desktop
+  [Desktop Entry]
+  Name=KoTH
+  Type=Application
+  Path=/usr/bin/KoTH
+  Exec=/usr/bin/KoTH/KoTH start
+  Icon=KoTH.png
+  Terminal=true
+  Categories=Anlominus
+  StartupNotify=false
+  EOF
+  )
+  cp KoTH.desktop ~/Desktop/
+  a1 
+  b2 
+  c3
+  }
 ```
 
 ---
