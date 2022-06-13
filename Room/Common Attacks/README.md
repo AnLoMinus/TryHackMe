@@ -1,5 +1,8 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/172161945-e3ad690a-7fcf-48f4-a626-4501ef93e87e.png)
+- ## Complete the room to earn this badge
+  > ### Security Awareness 
+  > #### Completing the cyber security awareness module <BR> <img width="100" src="https://user-images.githubusercontent.com/51442719/173389898-48e91b1d-714c-48d2-8796-31aeded7d218.png">
 
 - [ ] [Common Attacks](https://tryhackme.com/room/commonattacks)
   > With practical exercises see how common attacks occur, and improve your cyber hygiene to stay safer online.
