@@ -126,14 +126,15 @@ fi
 username="$Alm"
 
 # Define directory were $username.ovpn is located
-vpn_dir="$HOME/.vpn"
-if [ -d /$HOME/.vpn ]; then
+vpn_dir="$HOME/.thm/.vpn"
+if [ -d /$HOME/.thm/.vpn ]; then
   #statements
   echo "\n\t\t $red VPN Location exists ~>: $yellow  $vpn_dir  \n"
   ls -lahs $vpn_dir
 else
-  echo "\n\t\t $yellow Creating .vpn Folder In $HOME/ Directory\n"
-  mkdir $HOME/.vpn
+  echo "\n\t\t $yellow Creating .vpn Folder In $vpn_dir Directory\n"
+  mkdir $HOME/.thm/.vpn
+  ls -lahs $HOME/.thm/.vpn
 fi
 
 # Define variable for our search string (find this running process)
@@ -152,7 +153,7 @@ valid_ip="([0-9]{1,3}\.){3}"
 valid_thm=".*\.thm$"
 
 # Session logfile
-session_log=$vpn_dir/KoTH-$(date).log
+session_log=$vpn_dir/.logs/KoTH-$(date).log
 echo "\n\t\t $red Session logfile ~>: $yellow $session_log\n"
 
 # Location of profile to update (.zshrc, .bashrc, .bash_profile, etc)
@@ -167,33 +168,26 @@ arg3=$3
 # https://emojipedia.org/search/?q=warning
 # 🚫 🚭 🚨
 error() {
-  echo "      ${red}  |"
   echo "      ${cyan}  |---------------------------------"
-  prefix="\n\t\t [ERROR] \n\n\t\t"
+  prefix="\n\t\t [ERROR] \t"
   echo "${red}${prefix}${1}${nocolor}\n"
   echo "      ${cyan}  |---------------------------------"
-  echo "      ${red}  |"
-  exit ${2:-1}
 }
 
 # Warning helper function, show warning prefix with yellow color
 warn() {
-  echo "      ${red}  |"
   echo "      ${cyan}  |---------------------------------"
-  prefix="\n\t\t [WARN] \n\n\t\t"
+  prefix="\n\t\t [WARN] \t"
   echo "${yellow}${prefix}${1}${nocolor}\n"
   echo "      ${cyan}  |---------------------------------"
-  echo "      ${red}  |"
 }
 
 # log log with cyan color & prefix
 log() {
-  echo "      ${red}  |"
   echo "      ${cyan}  |---------------------------------"
-  prefix="\n\t\t [INFO] \n\n\t\t"
+  prefix="\n\t\t [INFO] \t"
   echo "${cyan}${prefix}${1}${nocolor}\n"
   echo "      ${cyan}  |---------------------------------"
-  echo "      ${red}  |"
 }
 
 # Function to read user input, and return boolean whether they confirm "[Y/n]"
@@ -216,11 +210,9 @@ connectVpn() {
   if [ "$vpn_running" != "0" ]; then
     warn "🤨 THM VPN is not running!"
     warn "Searching for process: '$vpn_file' (using ps aux | grep ...)"
-
     if confirmYes "Connect to VPN now? (requires sudo)"; then
-      sudo echo "init" > $session_log
+      # sudo echo "init" > $session_log
       sudo -b openvpn $vpn_file > $session_log 2>&1 &
-
       log "Done! 😁"
     fi
   else
@@ -290,7 +282,7 @@ create_Desktop_App() {
   EOF
   )
   cp KoTH.desktop ~/Desktop/
-  a1 
-  b2 
+  a1
+  b2
   c3
   }
