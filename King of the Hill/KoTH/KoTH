@@ -217,8 +217,8 @@ connectVpn() {
     fi
   else
     log "THM VPN Connection Confirmed 👍"
-    echo "\n\n\t\t `info` $cyan $(ifconfig tun0) \n"
-    echo "\n\n\t\t `info` $cyan $(ps aux | grep $vpn_file) \n"
+    echo "\n\n\t\t  $cyan $(ifconfig tun0) \n"
+    echo "\n\n\t\t  $cyan $(ps aux | grep $vpn_file) \n"
   fi
 }
 
