@@ -100,22 +100,34 @@ koth_banner
 
 anonSurfing(){
   #statements
-  echo "\n\t\t $blue Anonimity Status ~>: $yellow \n"
-  anonsurf status
-  sleep 3
-  echo "\n\t\t $blue Anonimity Stoping ~>: $yellow \n"
-  anonsurf stop
-  echo "\n\t\t $blue Anonimity Status ~>: $yellow \n"
-  anonsurf status
-  sleep 3
-  echo "\n\t\t $blue Anonimity Starting ~>: $yellow \n"
-  anonsurf start
-  echo "\n\t\t $blue Anonimity Status ~>: $yellow \n"
-  anonsurf status
-  sleep 3
-
+  while [ 1 == 1 ]; do
+    #statements
+    echo "\n\t\t Anonimity Surfing Menu"
+    echo "\t\t [1] - Anonimity Surfing status"
+    echo "\t\t [2] - Anonimity Surfing start"
+    echo "\t\t [3] - Anonimity Surfing stop"
+    choosenumber="\t\t [Choose Number]~:"
+    read -p "$choosenumber " choosednumber
+    case $choosednumber in
+      1 )
+      echo "\t\t [1] - Anonimity Surfing status"
+      anonsurf status
+      ;;
+      2 )
+      echo "\t\t [2] - Anonimity Surfing start"
+      anonsurf start
+      ;;
+      3 )
+      echo "\t\t [3] - Anonimity Surfing stop"
+      anonsurf stop
+      ;;
+      * )
+      echo "\t\t [error] - Invalid Choose"
+      ;;
+    esac
+  done
 }
-
+anonSurfing
 # Define variable for THM username
 read_username=$(echo "\n\t\t $yellow Enter Your User Name:$red ")
 read -p "$read_username" Alm
@@ -129,10 +141,10 @@ username="$Alm"
 vpn_dir="$HOME/.thm/.vpn"
 if [ -d /$HOME/.thm/.vpn ]; then
   #statements
-  echo "\n\t\t $red VPN Location exists ~>: $yellow  $vpn_dir  \n"
+  echo "\n\t\t $LGreen VPN Location exists ~>: $yellow  $vpn_dir  \n"
   ls -lahs $vpn_dir
 else
-  echo "\n\t\t $yellow Creating .vpn Folder In $vpn_dir Directory\n"
+  echo "\n\t\t $LGreen Creating .vpn Folder In $vpn_dir Directory\n"
   mkdir $HOME/.thm/.vpn
   ls -lahs $HOME/.thm/.vpn
 fi
@@ -141,11 +153,11 @@ fi
 vpn_file="$vpn_dir/$username.ovpn"
 if [ -e $vpn_file ]; then
   #statements
-  echo "\n\t\t $red Found TryHackme VPN File ~>: $yellow  $vpn_file  \n"
+  echo "\n\t\t $LGreen Found TryHackme VPN File ~>: $yellow  $vpn_file  \n"
 else
   cant_found=$(echo "\n\t\t $red Can't Found TryHackme VPN File !! \n\n\t\t  Enter $username.ovpn Location ~>: ")
   read -p "$cant_found"  this_location
-  echo "\n\t\t $red Found TryHackme VPN File ~>: $yellow  $this_location\n\t\t $red Moving To $vpn_dir/"
+  echo "\n\t\t $LGreen Found TryHackme VPN File ~>: $yellow  $this_location\n\t\t $red Moving To $vpn_dir/"
   mv $this_location $vpn_file
 fi
 # Regex pattern to validate IP format (#.#.#.#)
