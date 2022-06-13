@@ -73,7 +73,7 @@
 
 ---
 
-- [Privilege Escalation](https://tryhackme.com/module/privilege-escalation)
+- ✅ [Privilege Escalation](https://tryhackme.com/module/privilege-escalation)
   - Learn the fundamental techniques that will allow you to elevate account privileges in Linux and windows systems.
 
 ---
@@ -83,12 +83,12 @@
 
 ---
 
-- [Network Exploitation Basics](https://tryhackme.com/module/intro-to-networking)
+- ✅ [Network Exploitation Basics](https://tryhackme.com/module/intro-to-networking)
   - Understand, enumerate and attack various networking services in real-world environments.
 
 ---
 
-- [Vulnerability Research](https://tryhackme.com/module/vulnerability-research)
+- ✅ [Vulnerability Research](https://tryhackme.com/module/vulnerability-research)
   - Familiarise yourself with the skills, research methods, and resources used to exploit vulnerable applications and systems.
 
 ---
@@ -108,17 +108,17 @@
 
 ---
 
-- [Introduction to Cyber Security](https://tryhackme.com/module/introduction-to-cyber-security)
+- ✅ [Introduction to Cyber Security](https://tryhackme.com/module/introduction-to-cyber-security)
   - Understand what is offensive and defensive security, and learn about careers available in cyber.
 
 ---
 
-- [Windows Exploitation Basics](https://tryhackme.com/module/hacking-windows-1)
+- ✅ [Windows Exploitation Basics](https://tryhackme.com/module/hacking-windows-1)
   - Hacking Windows is often daunting. Grasp the fundamentals of core Windows concepts and Active Directory vulnerabilities.
 
 ---
 
-- [Shells and Privilege Escalation](https://tryhackme.com/module/privilege-escalation-and-shells)
+- ✅ [Shells and Privilege Escalation](https://tryhackme.com/module/privilege-escalation-and-shells)
   - Once you have initial access on a machine, learn how to escalate your account privileges to root.
 
 ---
@@ -153,12 +153,12 @@
 
 ---
 
-- [Network Fundamentals](https://tryhackme.com/module/network-fundamentals)
+- ✅ [Network Fundamentals](https://tryhackme.com/module/network-fundamentals)
   - Learn the core concepts of how computers communicate with each other and types of network weaknesses.
 
 ---
 
-- [Windows Fundamentals](https://tryhackme.com/module/windows-fundamentals)
+- ✅ [Windows Fundamentals](https://tryhackme.com/module/windows-fundamentals)
   - Get hands-on access to Windows and it's security controls. These basics will help you in identifying, exploiting and defending Windows.
 
 ---
