@@ -20,7 +20,7 @@
 
 # [🔒 TryHackMe 📝](https://tryhackme.com/)
 
-![1](https://user-images.githubusercontent.com/51442719/172742380-5ae5fdd0-f71a-411d-8fbd-8dc6105fa943.jpg)
+![image](https://user-images.githubusercontent.com/51442719/173326175-c37692c7-0769-4959-b98d-fb218047d53e.png)
 
 <a href="https://tryhackme.com/p/Anlominus">
   <img src="https://tryhackme-badges.s3.amazonaws.com/Anlominus.png" alt="TryHackMe">
@@ -107,3 +107,5 @@
 </div>
 
 ---
+
+![1](https://user-images.githubusercontent.com/51442719/172742380-5ae5fdd0-f71a-411d-8fbd-8dc6105fa943.jpg)
