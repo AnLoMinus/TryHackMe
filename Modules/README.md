@@ -1,4 +1,5 @@
-# 33 Modules
+## 🔶 ~ `33` Modules in Total
+## ✅ ~ `18` Modules is Completed
 ### Modules are made up of bite-sized labs
 
 ---
