@@ -1,4 +1,4 @@
-# Modules
+# 33 Modules
 ### Modules are made up of bite-sized labs
 
 ---
