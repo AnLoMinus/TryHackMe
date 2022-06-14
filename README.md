@@ -39,21 +39,27 @@
   - [x] Path Progress (100%)
     - `Easy`
     - `24 Hours`
-    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173556502-268cd44f-6dd5-4880-9355-6198212d710f.png">
+    > <img width="400" src="https://user-images.githubusercontent.com/51442719/173556502-268cd44f-6dd5-4880-9355-6198212d710f.png"> <br>
+    > Issued on: `1 June 2022` <br>
+    > Cert ID: `THM-KEKXOZE5DA`
 
 
 - ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester) 
   - [x] Path Progress (100%)
     - `Intermediate`
     - `56 Hours`
-    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173556656-bc28a8db-ba13-4276-9422-d6a23cb6c8b9.png">
+    > <img width="400" src="https://user-images.githubusercontent.com/51442719/173556656-bc28a8db-ba13-4276-9422-d6a23cb6c8b9.png"> <br>
+    > Issued on: `29 December2021` <br>
+    > Cert ID: `THM-WWQ2DBBZLG`
 
 
 - ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security) 
   - [x] Path Progress (100%)
     - `Easy`
     - `40 Hours`
-    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173556879-fb290bdc-563a-4a35-875d-6714e4446ed7.png">
+    >  <img width="400" src="https://user-images.githubusercontent.com/51442719/173556879-fb290bdc-563a-4a35-875d-6714e4446ed7.png"> <br>
+    > Issued on: `7 November 2021` <br>
+    > Cert ID: `THM-FDIDRTSJEO`
 
 - [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) 
   - [ ] Path Progress (98%)
@@ -63,8 +69,10 @@
 - ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) 
   - [x] Path Progress (100%)
     - `Easy`
-    - `32 Hours`
-    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png">
+    - `32 Hours` 
+    > <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png"> <br>
+    > Issued on: `14 June 2022` <br>
+    > Cert ID: `THM-KIAXER8B0Z`
 
 
 - [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) 
