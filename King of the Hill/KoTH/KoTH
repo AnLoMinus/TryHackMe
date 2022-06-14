@@ -106,7 +106,7 @@ anonSurfing(){
     echo "${LGreen}\t\t [1] - Anonimity Surfing status"
     echo "${LGreen}\t\t [2] - Anonimity Surfing start"
     echo "${LGreen}\t\t [3] - Anonimity Surfing stop"
-    choosenumber=$(echo "\t\t [Choose Number]~:)"
+    choosenumber=$(echo "\t\t [Choose Number]~:")
     read -p "$choosenumber " choosednumber
     case $choosednumber in
       1 )
@@ -135,6 +135,7 @@ anonSurfing(){
   done
 }
 anonSurfing
+
 # Define variable for THM username
 read_username=$(echo "\n\t\t $yellow Enter Your User Name:$DGrey ")
 read -p "$read_username" Alm
