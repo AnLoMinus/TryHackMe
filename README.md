@@ -33,7 +33,7 @@
 
 ---
 
-### [Learning Paths ](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths)
+### [Learning Paths](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths) & Certificates
 
 - ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security) 
   - [x] Path Progress (100%)
