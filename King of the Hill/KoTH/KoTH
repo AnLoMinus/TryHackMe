@@ -18,7 +18,7 @@
 ###############################################
 clear
 
-DiabloColors(){
+KoTHColors(){
 ##############################################################################
 # COLORS AND BACKGROUNDS
 ##############################################################################
@@ -75,7 +75,7 @@ On_Purple='\033[45m' # Purple
 On_Cyan='\033[46m'   # Cyan
 On_White='\033[47m'  # White
 }
-DiabloColors
+KoTHColors
 
 # COLORS! :)
 red='\033[0;31m'
@@ -98,43 +98,227 @@ $LYellow \t\t░░░░░   ░░░░ ${BYellow} ░░░░░░     �
 }
 koth_banner
 
-anonSurfing(){
-  #statements
+AnonMainMenu(){
   while true; do
-    #statements
-    echo "${LGreen}\n\t\t Anonimity Surfing Menu"
-    echo "${LGreen}\t\t [1] - Anonimity Surfing status"
-    echo "${LGreen}\t\t [2] - Anonimity Surfing start"
-    echo "${LGreen}\t\t [3] - Anonimity Surfing stop"
-    choosenumber=$(echo "\t\t [Choose Number]~:")
-    read -p "$choosenumber " choosednumber
-    case $choosednumber in
+  #statements
+  clear
+  koth_banner
+  KoTHMenuMain=$(echo "${BRed}
+          ${BBlue}[${BRed}#${BBlue}] 📜 ${BYellow} Anonimity Surfing Menu
+
+          ${BBlue}[${BRed}#${BBlue}] 📜 Target IP: ${BRed}${targetIP}
+          ${BBlue}[${BRed}#${BBlue}] 📜 Target Name: ${BRed}${targetNAME}
+
+
+          ${BRed}[${LGrey}1${BRed}]${BBlue} -${DGrey} Anonimity Surfing status
+          ${BRed}[${LGrey}2${BRed}]${BBlue} -${DGrey} Anonimity Surfing start
+          ${BRed}[${LGrey}3${BRed}]${BBlue} -${DGrey} Anonimity Surfing stop
+
+          ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
+
+
+${BCyan}            ┌──${BBlue}[${BBlue} Anlominus 👽${BRed} KoTH ${BCyan}$~${BBlue}]
+${BCyan}            └──╼ ")
+    read -p "$KoTHMenuMain" cmd
+    case $cmd in
       1 )
-      echo "${BGreen}\t\t [1] - Anonimity Surfing status"
+      echo "${BRed}\n\t\t[${LGrey}1${BRed}]${BBlue} -${DGrey} Anonimity Surfing status"
       anonsurf status
+      sleep 1
       ;;
       2 )
-      echo "${BGreen}\t\t [2] - Anonimity Surfing start"
+      echo "${BRed}\n\t\t[${LGrey}2${BRed}]${BBlue} -${DGrey} Anonimity Surfing start"
       anonsurf start
+      sleep 1
       ;;
       3 )
-      echo "${BGreen}\t\t [3] - Anonimity Surfing stop"
+      echo "${BRed}\n\t\t[${LGrey}3${BRed}]${BBlue} -${DGrey} Anonimity Surfing stop"
       anonsurf stop
-      ;;
-      * )
-      echo "${BRed}\t\t [error] - Invalid Choose"
+      sleep 1
       ;;
       x )
-      echo "${LGreen}\t\t [Done] - ${BGreen}Starting KoTH Menu"
-      exit 0
-      ;;
-      clear )
       clear
+      break
       ;;
     esac
   done
 }
-anonSurfing
+
+MainMenu(){
+  while true; do
+  #statements
+  clear
+  koth_banner
+  KoTHMenuMain=$(echo "${BRed}
+          ${BBlue}[${BRed}#${BBlue}] 📜 Menu
+
+          ${BBlue}[${BRed}#${BBlue}] 📜 Target IP: ${BRed}${targetIP}
+          ${BBlue}[${BRed}#${BBlue}] 📜 Target Name: ${BRed}${targetNAME}
+
+          ${BRed}[${LGrey}a${BRed}]${BBlue} -${DGrey} Anonymity Surfing
+          ${BRed}[${LGrey}1${BRed}]${BBlue} -${DGrey} Planning and Scoping
+          ${BRed}[${LGrey}2${BRed}]${BBlue} -${DGrey} Reconnaissance & Vulnerability Assessment
+          ${BRed}[${LGrey}3${BRed}]${BBlue} -${DGrey} Gaining Access & Maintaining Access
+          ${BRed}[${LGrey}4${BRed}]${BBlue} -${DGrey} Covering tracks
+          ${BRed}[${LGrey}5${BRed}]${BBlue} -${DGrey} Analysis & Reporting
+
+          ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
+
+
+${BCyan}            ┌──${BBlue}[${BBlue} Anlominus 👽${BRed} KoTH ${BCyan}$~${BBlue}]
+${BCyan}            └──╼ ")
+    read -p "$KoTHMenuMain" cmd
+    case $cmd in
+      a )
+      AnonMainMenu
+      ;;
+      1 )
+      echo "\n\t\t${BRed}[${BBlue}1${BRed}]${BWhite} - ${BRed}Planning and Scoping"
+      #
+      t1="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
+      read -p "$t1" targetIP
+      if [ -z $targetIP ]; then
+        #statements
+        targetIP="127.0.0.1"
+      fi
+      #
+      t2="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - Name of Target / Client: ${BRed}")"
+      read -p "$t2" targetNAME
+      if [ -z $targetNAME ]; then
+        #statements
+        targetNAME="ChangeMe"
+        echo "\n\t\t${BRed}Target Name: ${BBlue} $targetNAME"
+      fi
+      #
+      file="${targetNAME}-KoTH-Log.md"
+      if [ -e ${file} ]; then
+        t2="$(echo "\n  ${BBlue}[${BRed}!${BBlue}] File Exist! Remove it? [yY/nN]: ")"
+        read -p "$t2 " filexist
+        case $filexist in
+          y|Y)
+          echo "  ${BBlue}[${BRed}!${BBlue}] Removing {${targetNAME}-KoTH-Log.md} file .."
+          rm ${targetNAME}-KoTH-Log.md
+          clear
+          exit
+          ;;
+          n|N)
+          echo "  ${BBlue}[${BRed}!${BBlue}] Leaving {${targetNAME}-KoTH-Log.md} file and Add to it .."
+          ;;
+        esac
+      fi
+      # Page Header
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "---" >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "# Anlominus KoTH Report for $targetNAME " >> ${targetNAME}-KoTH-Log.md
+      echo "#### Date: `date`" >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "---" >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "# 📜 Menu
+
+      [a] - Anonymity Surfing
+      [1] - Planning and Scoping
+      [2] - Reconnaissance & Vulnerability Assessment
+      [3] - Gaining Access & Maintaining Access
+      [4] - Covering tracks
+      [5] - Analysis & Reporting
+
+      ┌──[ Anlominus 👽 KoTH $~]
+      └──╼
+
+      " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "---" >> ${targetNAME}-KoTH-Log.md
+      #  [1] - Planning and Scoping
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "\n\t\t\t# [1] - Planning and Scoping "
+      echo "# [1] - Planning and Scoping " >> ${targetNAME}-KoTH-Log.md
+      echo "### Planning Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "---" >> ${targetNAME}-KoTH-Log.md
+      ;;
+      2 )
+      clear
+      echo "\n\t\t${BRed}[${BBlue}2${BRed}]${BWhite} -${BRed} Reconnaissance & Vulnerability Assessment"
+
+      #  [2] - Reconnaissance & Vulnerability Assessment
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo "# [2] - Reconnaissance & Vulnerability Assessment " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### Arp Scan Log"
+      echo "### Arp Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `arp -an` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### TraceRoute Scan Log"
+      echo "### TraceRoute Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `traceroute $targetIP` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### Ping Scan Log"
+      echo "### Ping Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `ping $targetIP -c4` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### Dig Scan Log"
+      echo "### Dig Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `dig $targetIP all` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### Nslookup Scan Log"
+      echo "### Nslookup Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `nslookup $targetIP` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### WhoIs Scan Log"
+      echo "### WhoIs Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `whois $targetIP` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### Dirb Scan Log "
+      echo "### Dirb Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `dirb http://$targetIP` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "\n\t\t${BGreen}### Nmap Scan Log "
+      echo "### Nmap Scan Log $targetIP: " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " `nmap -sV -sC -O $targetIP ` " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      #
+      echo "---" >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      echo " " >> ${targetNAME}-KoTH-Log.md
+      ;;
+      3 )
+      echo "\n\t\t${BRed}[${BBlue}3${BRed}]${BWhite} -${BRed} Gaining Access & Maintaining Access"
+      ;;
+      4 )
+      echo "\n\t\t${BRed}[${BBlue}4${BRed}]${BWhite} -${BRed} Covering tracks"
+      ;;
+      5 )
+      echo "\n\t\t${BRed}[${BBlue}5${BRed}]${BWhite} -${BRed} Analysis & Reporting"
+      ;;
+      x )
+      clear
+      exit
+      ;;
+    esac
+  done
+}
+# RUN Functions
+MainMenu
+
 
 # Define variable for THM username
 read_username=$(echo "\n\t\t $yellow Enter Your User Name:$DGrey ")
@@ -190,7 +374,7 @@ arg3=$3
 error() {
   echo "      ${cyan}  |---------------------------------"
   prefix="\n\t\t [ERROR] \t"
-  echo "${red}${prefix}${1}${nocolor}\n"
+  echo "${BRed}${prefix}${1}${nocolor}\n"
   echo "      ${cyan}  |---------------------------------"
 }
 
@@ -198,7 +382,7 @@ error() {
 warn() {
   echo "      ${cyan}  |---------------------------------"
   prefix="\n\t\t [WARN] \t"
-  echo "${yellow}${prefix}${1}${nocolor}\n"
+  echo "${BYellow}${prefix}${1}${nocolor}\n"
   echo "      ${cyan}  |---------------------------------"
 }
 
@@ -206,7 +390,7 @@ warn() {
 log() {
   echo "      ${cyan}  |---------------------------------"
   prefix="\n\t\t [INFO] \t"
-  echo "${cyan}${prefix}${1}${nocolor}\n"
+  echo "${BCyan}${prefix}${1}${nocolor}\n"
   echo "      ${cyan}  |---------------------------------"
 }
 
