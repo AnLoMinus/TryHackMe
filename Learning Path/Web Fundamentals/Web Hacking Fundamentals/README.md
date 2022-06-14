@@ -118,7 +118,7 @@
       - [x] Task 8  Exploration!
 
 ![image](https://user-images.githubusercontent.com/51442719/172671036-28090dd7-b737-427e-a2de-3687d0cbd503.png)
-- [ ] [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns) [✅](Upload%20Vulnerabilities)
+- [x] [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns) [✅](Upload%20Vulnerabilities)
   - Tutorial room exploring some basic file-upload vulnerabilities in websites
       - [x] Task 1  Getting Started
       - [x] Task 2  Introduction
