@@ -177,7 +177,7 @@ ${BCyan}            └──╼ ")
       externalIP= " "
       if [ -z $externalIP ]; then
         #statements
-        # externalIP=$(curl ifconfig.me)
+        externalIP=$(curl ifconfig.me)
       fi
       #
       t1="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
