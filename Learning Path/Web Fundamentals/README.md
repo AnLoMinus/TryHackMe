@@ -32,7 +32,7 @@
 - [x] [Burp Suite](Burp%20Suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
 
-- [ ] [Web Hacking Fundamentals](Web%20Hacking%20Fundamentals)
+- [x] [Web Hacking Fundamentals](Web%20Hacking%20Fundamentals)
   - Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
 
     
