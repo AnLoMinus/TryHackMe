@@ -23,7 +23,7 @@
 - [x] [OWASP Juice Shop]()
   - This room uses the Juice Shop vulnerable web application to learn how to identify and exploit common web application vulnerabilities.
 
-- [ ] [Upload Vulnerabilities]()
+- [x] [Upload Vulnerabilities]()
   - Tutorial room exploring some basic file-upload vulnerabilities in websites
 
 - [x] [Pickle Rick]()
@@ -126,12 +126,12 @@
       - [x] Task 4  Overwriting Existing Files
       - [x] Task 5  Remote Code Execution
       - [x] Task 6  Filtering
-      - [ ] Task 7  Bypassing Client-Side Filtering
-      - [ ] Task 8  Bypassing Server-Side Filtering: File Extensions
-      - [ ] Task 9  Bypassing Server-Side Filtering: Magic Numbers
-      - [ ] Task 10  Example Methodology
-      - [ ] Task 11  Challenge
-      - [ ] Task 12  Conclusion
+      - [x] Task 7  Bypassing Client-Side Filtering
+      - [x] Task 8  Bypassing Server-Side Filtering: File Extensions
+      - [x] Task 9  Bypassing Server-Side Filtering: Magic Numbers
+      - [x] Task 10  Example Methodology
+      - [x] Task 11  Challenge
+      - [x] Task 12  Conclusion
 
 ![image](https://user-images.githubusercontent.com/51442719/172684156-362eba73-1a44-415d-9bb2-5b5f28efa3ac.png)
 ![image](https://user-images.githubusercontent.com/51442719/172691157-e04844d9-8a99-4ddd-8c79-c1a5e0a502c6.png)
