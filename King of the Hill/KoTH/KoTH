@@ -150,7 +150,6 @@ MainMenu(){
 
           ${BBlue}[${BRed}#${BBlue}] 📜 VPN IP: ${BRed}${tryhackmeVpnIP}
           ${BBlue}[${BRed}#${BBlue}] 📜 KoTH IP: ${BRed}${targetIP}
-          ${BBlue}[${BRed}#${BBlue}] 📜 External IP: ${BRed}${externalIP}
           ${BBlue}[${BRed}#${BBlue}] 📜 Target Log Name: ${BRed}${targetLogNAME}
           ${BBlue}[${BRed}#${BBlue}] 📜 TryHackMe UserName: ${BRed}${username}
 
@@ -173,12 +172,6 @@ ${BCyan}            └──╼ ")
       ;;
       1 )
       echo "\n\t\t${BRed}[${BBlue}1${BRed}]${BWhite} - ${BRed}Planning and Scoping"
-      #
-      externalIP= " "
-      if [ -z $externalIP ]; then
-        #statements
-        externalIP=$(curl ifconfig.me)
-      fi
       #
       t1="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
       read -p "$t1" targetIP
