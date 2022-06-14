@@ -55,8 +55,8 @@
     - `Easy`
     - `64 Hours`
 
-- [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) 
-  - [ ] Path Progress (99%)
+- ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) 
+  - [ ] Path Progress (100%)
     - `Easy`
     - `32 Hours`
     - <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png">
