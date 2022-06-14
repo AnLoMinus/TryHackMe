@@ -49,7 +49,7 @@
     - `Intermediate`
     - `56 Hours`
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173556656-bc28a8db-ba13-4276-9422-d6a23cb6c8b9.png"> <br>
-    > Issued on: `29 December2021` <br>
+    > Issued on: `29 December 2021` <br>
     > Cert ID: `THM-WWQ2DBBZLG`
 
 
