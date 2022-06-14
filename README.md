@@ -39,16 +39,21 @@
   - [x] Path Progress (100%)
     - `Easy`
     - `24 Hours`
+    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173556502-268cd44f-6dd5-4880-9355-6198212d710f.png">
+
 
 - ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester) 
   - [x] Path Progress (100%)
     - `Intermediate`
     - `56 Hours`
+    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173556656-bc28a8db-ba13-4276-9422-d6a23cb6c8b9.png">
+
 
 - ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security) 
   - [x] Path Progress (100%)
     - `Easy`
     - `40 Hours`
+    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173556879-fb290bdc-563a-4a35-875d-6714e4446ed7.png">
 
 - [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) 
   - [ ] Path Progress (98%)
@@ -56,7 +61,7 @@
     - `64 Hours`
 
 - ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) 
-  - [ ] Path Progress (100%)
+  - [x] Path Progress (100%)
     - `Easy`
     - `32 Hours`
     - <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png">
