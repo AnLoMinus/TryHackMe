@@ -59,6 +59,8 @@
   - [ ] Path Progress (99%)
     - `Easy`
     - `32 Hours`
+    - <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png">
+
 
 - [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) 
   - [ ] Path Progress (92%)
