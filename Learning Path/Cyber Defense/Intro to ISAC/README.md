@@ -7,8 +7,8 @@
 
 ---
 
-- [ ] Task 1  Introduction
-- [ ] Task 2  Basic Terminology
+- [x] Task 1  Introduction
+- [x] Task 2  Basic Terminology
   > - `TTP` ~ Tactics, Techniques, and Procedures <br>
     > The `Tactic` is the adversary's goal or objective. <br>
     > The `Technique` is how the adversary achieves the goal or objective. <br>
@@ -17,6 +17,10 @@
   > - `TI` ~ Threat Intelligence
   > - `CTI` ~ Cyber Threat Intelligence
   > - `IOC` ~ Indicators of Compromise
+  > ### Threat Intelligence is also broken up into three different types. <br>
+  > - `Strategic` <br> Assist senior management make informed decisions specifically about the security budget and strategies. <br>
+  > - `Tactical` <br> Interacts with the TTPs and attack models to identify adversary attack patterns. <br>
+  > - `Operational` <br> Interact with IOCs and how the adversaries operationalize. <br>
 - [ ] Task 3  What is Threat Intelligence
 - [ ] Task 4  What are ISACs
 - [ ] Task 5  Using Threat Connect to create a Threat Intel dashboard
