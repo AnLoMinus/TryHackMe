@@ -51,7 +51,7 @@
 	    - This can be useful to stay away from indicator owners who generate a lot of false positives and their intel may not be as high quality. <br>
 	> ![image](https://user-images.githubusercontent.com/51442719/173931866-8252c41f-6377-4d26-b57a-cb5055067ee3.png) 
 	> - 
-- [ ] Task 6  Introduction to [AlienVault OTX](https://otx.alienvault.com/)
+- [X] Task 6  Introduction to [AlienVault OTX](https://otx.alienvault.com/)
   > AlienVault OTX from AT&T Cybersecurity is one of the main ISACs that is used as an exchange for community maintained threat intelligence. <br>
   > You will need to create an AlienVault account before you can fully use the application. <br>
   > Go to https://otx.alienvault.com/ and create an account before continuing. <br>
@@ -71,14 +71,6 @@
   >   - `Create Pulse` - This will allow you to create your own pulses and contribute to the threat exchange. <br>
   >   - `Submit Sample` - This allows you to submit a malware sample or URL sample which OTX will analyze and generate a report based on the provided sample. <br>
   > 	- API Integration - Allows synchronization of the threat exchange with other tools for monitoring your environment. <br>
-
-
-
-
-
-
-
-
 - [ ] Task 7  Using OTX to gather Threat Intelligence
 - [ ] Task 8  Creating IOCs
 - [ ] Task 9  Investigation Scenarios
