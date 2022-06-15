@@ -22,15 +22,41 @@
 
 ---
 
-
 ## ✅ `Free` [Red Team Engagements](https://tryhackme.com/jr/redteamengagements)
 > Learn the steps and procedures of a red team engagement, including planning, frameworks, and documentation.
+> - [x] Task 1  Introduction
+> - [x] Task 2  Defining Scope and Objectives
+> - [x] Task 3  Rules of Engagement
+> - [x] Task 4  Campaign Planning
+> - [x] Task 5  Engagement Documentation
+> - [x] Task 6  Concept of Operations
+> - [x] Task 7  Resource Plan
+> - [x] Task 8  Operations Plan
+> - [x] Task 9  Mission Plan
+> - [x] Task 10  Conclusion
 
 ---
 
 
 ## 🔶 `VIP` [Red Team Threat Intel](https://tryhackme.com/jr/redteamthreatintel)
 > Apply threat intelligence to red team engagements and adversary emulation.
+> - [x] Task 1  Introduction
+  > - ### `TP` Tactics, Techniques, and Procedures
+  > - ### `TI` Threat Intelligence 
+  > - ### `CTI` Cyber Threat Intelligence 
+  > - ### `ISAC` Information and Sharing Analysis Centers 
+  - [Intro to ISAC](https://tryhackme.com/room/introtoisac)
+  > - ### Learning Objectives
+  >   - #### Understand the basics of threat intelligence and how it can be applied to red team engagements. <br>
+  >   - #### Learn how to create a threat-intel-driven campaign. <br>
+  >   - #### Use frameworks to understand concepts and leverage threat intelligence.
+> - [ ] Task 2  What is Threat Intelligence
+> - [ ] Task 3  Applying Threat Intel to the Red Team
+> - [ ] Task 4  The TIBER-EU Framework
+> - [ ] Task 5  TTP Mapping
+> - [ ] Task 6  Other Red Team Applications of CTI
+> - [ ] Task 7  Creating a Threat Intel Driven Campaign
+> - [ ] Task 8  Conclusion
 
 ---
 
