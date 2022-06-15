@@ -72,6 +72,12 @@
   >   - `Submit Sample` - This allows you to submit a malware sample or URL sample which OTX will analyze and generate a report based on the provided sample. <br>
   > 	- API Integration - Allows synchronization of the threat exchange with other tools for monitoring your environment. <br>
 - [ ] Task 7  Using OTX to gather Threat Intelligence
+  - Pulse Overview
+  	- Pulses can consist of a description, tags, indicator types (file hash, Yara, IP, domain, etc.), and threat infrastructure (country of origin).<br>
+  	- OTX uses pulses as their indicators.  <br>
+  	- A majority of pulses are community-created and maintained.  <br>
+  	- You need to keep this in mind when using pulses for threat intelligence as not all pulses are legit or may contain inaccurate information.  <br>
+  	- Always verify and analyze the indicators used before using them for CTI. <br>
 - [ ] Task 8  Creating IOCs
 - [ ] Task 9  Investigation Scenarios
 
