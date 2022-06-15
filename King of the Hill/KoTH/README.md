@@ -10,6 +10,9 @@
 ```shell
 wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH ; sh KoTH
 ```
+```shell
+wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoTH/KoTH-Protection ; sh KoTH-Protection
+```
 
 </div>
 
