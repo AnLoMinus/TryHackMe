@@ -9,8 +9,14 @@
 
 - [ ] Task 1  Introduction
 - [ ] Task 2  Basic Terminology
-  > - `TTP` ~ Tactics, Techniques, and Procedures
+  > - `TTP` ~ Tactics, Techniques, and Procedures <br>
+    > The `Tactic` is the adversary's goal or objective. <br>
+    > The `Technique` is how the adversary achieves the goal or objective. <br>
+    > The `Procedure` is how the technique is executed. <br>
   > - `APT` ~ Advanced Persistent Threat
+  > - `TI` ~ Threat Intelligence
+  > - `CTI` ~ Cyber Threat Intelligence
+  > - `IOC` ~ Indicators of Compromise
 - [ ] Task 3  What is Threat Intelligence
 - [ ] Task 4  What are ISACs
 - [ ] Task 5  Using Threat Connect to create a Threat Intel dashboard
