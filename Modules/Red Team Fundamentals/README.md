@@ -8,7 +8,7 @@
 ---
 ![image](https://user-images.githubusercontent.com/51442719/173906740-e8f54748-2809-4dda-a2e6-ec5c66a4a10f.png)
 
-## `Free` [Red Team Fundamentals](https://tryhackme.com/jr/redteamfundamentals)
+## ✅ `Free` [Red Team Fundamentals](https://tryhackme.com/jr/redteamfundamentals)
 
 
 > Learn about the basics of a red engagement, the main components and stakeholders involved, and how red teaming differs from other cyber security engagements.
@@ -23,23 +23,23 @@
 ---
 
 
-## `Free` [Red Team Engagements](https://tryhackme.com/jr/redteamengagements)
+## ✅ `Free` [Red Team Engagements](https://tryhackme.com/jr/redteamengagements)
 > Learn the steps and procedures of a red team engagement, including planning, frameworks, and documentation.
 
 ---
 
 
-## `VIP` [Red Team Threat Intel](https://tryhackme.com/jr/redteamthreatintel)
+## 🔶 `VIP` [Red Team Threat Intel](https://tryhackme.com/jr/redteamthreatintel)
 > Apply threat intelligence to red team engagements and adversary emulation.
 
 ---
 
-## `VIP` [Red Team OPSEC](https://tryhackme.com/jr/opsec)
+## 🔶 `VIP` [Red Team OPSEC](https://tryhackme.com/jr/opsec)
 > Learn how to apply Operations Security (OPSEC) process for Red Teams.
 
 ---
 
-## `VIP` [Intro to C2](https://tryhackme.com/jr/introtoc2)
+## 🔶 `VIP` [Intro to C2](https://tryhackme.com/jr/introtoc2)
 > Learn the essentials of Command and Control to help you become a better Red Teamer and simplify your next Red Team assessment!
 
 ---
