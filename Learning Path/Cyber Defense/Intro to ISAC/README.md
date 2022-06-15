@@ -51,8 +51,34 @@
 	    - This can be useful to stay away from indicator owners who generate a lot of false positives and their intel may not be as high quality. <br>
 	> ![image](https://user-images.githubusercontent.com/51442719/173931866-8252c41f-6377-4d26-b57a-cb5055067ee3.png) 
 	> - 
+- [ ] Task 6  Introduction to [AlienVault OTX](https://otx.alienvault.com/)
+  > AlienVault OTX from AT&T Cybersecurity is one of the main ISACs that is used as an exchange for community maintained threat intelligence. <br>
+  > You will need to create an AlienVault account before you can fully use the application. <br>
+  > Go to https://otx.alienvault.com/ and create an account before continuing. <br>
+  > ![image](https://user-images.githubusercontent.com/51442719/173933091-327254af-0624-4d94-a5df-75e54332b674.png) <br>
+  > Alienvault uses 'Pulses' to create trackers for various categories. <br>
+  > Pulses can be categorized by Malware type, APT or group, and targeted industry. <br>
+  > All pulses are community-created excluding official pulses from AlienVault. <br>
+  > Pulses can include a wide variety of IOCs such as File Hashes (MD5, SHA1), IPv4, IPv6, Domain, URL, YARA, CVE, and more. <br>
+  > ![image](https://user-images.githubusercontent.com/51442719/173933587-2cdd8240-0426-400e-9127-d1dca813fb13.png)
+  > The main page of OTX you will use is the Dashboard. <br>
+  > The default dashboard includes a visualization of the most common active malware broken down by category as well as a list of Subscribed Pulses. <br>
+  > By default, only AlienVault's Subscribed Pulses will be listed. This can be expanded upon later. <br><br>
+  > - There are also six different tabs that you can navigate to on the navigation bar, they are outlined below. <br>
+  >   - `Dashboard` - This is shown above in the screenshot above. It's the main page of OTX and will provide a brief overview of important intel. <br>
+  >   - `Browse` - This will allow you to see all new pulses and sort by various categories to find the newest intel. <br>
+  >   - `Scan Endpoints` - This is an automated service called OTX Endpoint Security that will scan endpoints for indicators. <br>
+  >   - `Create Pulse` - This will allow you to create your own pulses and contribute to the threat exchange. <br>
+  >   - `Submit Sample` - This allows you to submit a malware sample or URL sample which OTX will analyze and generate a report based on the provided sample. <br>
+  > 	- API Integration - Allows synchronization of the threat exchange with other tools for monitoring your environment. <br>
 
-- [ ] Task 6  Introduction to AlienVault OTX
+
+
+
+
+
+
+
 - [ ] Task 7  Using OTX to gather Threat Intelligence
 - [ ] Task 8  Creating IOCs
 - [ ] Task 9  Investigation Scenarios
