@@ -21,15 +21,15 @@
   > - `Strategic` <br> Assist senior management make informed decisions specifically about the security budget and strategies. <br>
   > - `Tactical` <br> Interacts with the TTPs and attack models to identify adversary attack patterns. <br>
   > - `Operational` <br> Interact with IOCs and how the adversaries operationalize. <br>
-- [ ] Task 3  What is Threat Intelligence
+- [x] Task 3  What is Threat Intelligence
   > - `ISAC` ~ Information Sharing and Analysis Centers 
-- [ ] Task 4  What are ISACs
+- [x] Task 4  What are ISACs
   > Below is a list of ISACs that can help a blue team we will only be showcasing a few in this room.
   * [US-CERT](https://us-cert.cisa.gov/)
   * [AlienVault OTX](https://otx.alienvault.com/)
   * [ThreatConnect](https://threatconnect.com/)
   * [MISP](https://www.misp-project.org/)
-- [ ] Task 5  Using Threat Connect to create a Threat Intel dashboard
+- [x] Task 5  Using Threat Connect to create a Threat Intel dashboard
   > [Threat Connect](https://threatconnect.com/) focuses more on the information and new developments within cybersecurity and the threat landscape and connecting the landscape with indicators. <br>
   > This intelligence can help your team make better-informed decisions on what to prioritize. <br>
   > Threat Connect would fall under the tactical type of threat intelligence. <br>
