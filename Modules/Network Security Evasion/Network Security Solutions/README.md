@@ -24,6 +24,21 @@
 > Understanding the difference between detection and prevention is essential.  <br>
 > Snort is a network intrusion detection and intrusion detection system. Consequently, Snort can be set up as an IDS or an IPS.  <br>
 > For Snort to function as an IPS, it needs some mechanism to block (drop) offending connections. This capability requires Snort to be set up as inline and to bridge two or more network cards. <br> <br>
+> ### As a signature-based network IDS, Snort is shown in the figure below.
+> ![image](https://user-images.githubusercontent.com/51442719/174126479-acab6bbe-b0f3-42f8-8fdf-18286c993acf.png)
+> ### The following figure shows how Snort can be configured as an IPS if set up inline.
+> ![image](https://user-images.githubusercontent.com/51442719/174126535-5d07926a-42ac-43e3-9018-fb203067cbc9.png)
+> ## IDS setups can be divided based on their location in the network into:
+> - Host-based IDS (HIDS)
+> - Network-based IDS (NIDS)
+
+
+
+
+
+
+
+
 
 
 
