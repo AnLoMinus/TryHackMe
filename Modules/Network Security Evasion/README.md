@@ -16,7 +16,7 @@
   > - [x] Task 1  Introduction <br>
   > - [x] Task 2  IDS Engine Types <br>
   > - [x] Task 3  IDS/IPS Rule Triggering <br>
-  > - [ ] Task 4  Evasion via Protocol Manipulation <br>
+  > - [x] Task 4  Evasion via Protocol Manipulation <br>
   > - [ ] Task 5  Evasion via Payload Manipulation <br>
   > - [ ] Task 6  Evasion via Route Manipulation <br>
   > - [ ] Task 7  Evasion via Tactical DoS <br>
