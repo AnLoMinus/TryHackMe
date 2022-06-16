@@ -30,14 +30,14 @@
 > ![image](https://user-images.githubusercontent.com/51442719/174126535-5d07926a-42ac-43e3-9018-fb203067cbc9.png)
 > ## IDS setups can be divided based on their location in the network into:
 > - Host-based IDS (HIDS)
-> - Network-based IDS (NIDS)
-
-
-
-
-
-
-
+> - Network-based IDS (NIDS) <br> <br>
+> The host-based IDS (HIDS) is installed on an OS along with the other running applications. <br>
+> This setup will give the HIDS the ability to monitor the traffic going in and out of the host; moreover, it can monitor the processes running on the host. <br> <br>
+> The network-based IDS (NIDS) is a dedicated appliance or server to monitor the network traffic.  <br>
+> The NIDS should be connected so that it can monitor all the network traffic of the network or VLANs we want to protect.  <br>
+> This can be achieved by connecting the NIDS to a monitor port on the switch. The NIDS will process the network traffic to detect malicious traffic. <br>
+> ### In the figure below, we use two red circles to show the difference in the coverage of a HIDS versus a NIDS.
+> ![image](https://user-images.githubusercontent.com/51442719/174126895-4ed2dd02-5b78-4da9-aae0-031238d48123.png)
 
 
 
