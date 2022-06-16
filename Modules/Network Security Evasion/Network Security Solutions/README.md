@@ -3,8 +3,8 @@
 ## <img width="100" src="https://user-images.githubusercontent.com/51442719/174120784-1d7207fa-3465-44be-b816-efbe6db45e12.png"> `VIP` [Network Security Solutions](https://tryhackme.com/jr/redteamnetsec)
 > ## Learn about and experiment with various IDS/IPS evasion techniques, such as protocol and payload manipulation.
   > - [x] Task 1  [Introduction](#task-1--introduction-) <br>
-  > - [ ] Task 2  [IDS Engine Types](#task-2--ids-engine-types-) <br>
-  > - [ ] Task 3  IDS/IPS Rule Triggering <br>
+  > - [x] Task 2  [IDS Engine Types](#task-2--ids-engine-types-) <br>
+  > - [ ] Task 3  [IDS/IPS Rule Triggering](#task-3--idsips-rule-triggering-) <br>
   > - [ ] Task 4  Evasion via Protocol Manipulation <br>
   > - [ ] Task 5  Evasion via Payload Manipulation <br>
   > - [ ] Task 6  Evasion via Route Manipulation <br>
@@ -68,15 +68,6 @@
   > - If suddenly you notice that your web browser is too sluggish or unresponsive, you will know that something is wrong. <br>
   > - In other words, you knew it when your browser’s performance deviated from normal. <br>
 
+---
 
-
-
-
- 
-
-
-
-
-
-
-
+> ## Task 3  IDS/IPS Rule Triggering <br>
