@@ -79,7 +79,7 @@
 
 ---
 
-- [Network Security Evasion](https://tryhackme.com/module/network-security-evasion)
+- [`🔶`](https://github.com/Anlominus/TryHackMe/tree/main/Modules/Network%20Security%20Evasion) [Network Security Evasion](https://tryhackme.com/module/network-security-evasion) 
   - Learn how to bypass and evade different security solutions used in the industry such as firewalls, IDS/IPS, and antivirus.
 
 ---
