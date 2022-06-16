@@ -71,3 +71,16 @@
 ---
 
 > ## Task 3  IDS/IPS Rule Triggering <br>
+> Each IDS/IPS has a certain syntax to write its rules. For example, Snort uses the following format for its rules: <br> `Rule Header (Rule Options)`, where Rule Header constitutes: <br>
+> - Action: Examples of action include `alert`, `log`, `pass`, `drop`, and `reject`. <br>
+> - Protocol: `TCP`, `UDP`, `ICMP`, or `IP`. <br>
+> - Source IP/Source Port: `!10.10.0.0/16` any refers to everything not in the class B subnet `10.10.0.0/16`. <br>
+> - Direction of Flow: `->` indicates left (source) to right (destination), while `<>` indicates bi-directional traffic. <br>
+> - Destination IP/Destination Port: `10.10.0.0/16` any to refer to class B subnet `10.10.0.0/16`. <br>
+
+
+
+
+
+
+
