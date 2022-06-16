@@ -1,5 +1,6 @@
-## 🔶 ~ `33` Modules in Total
+## 🔹 ~ `33` Modules in Total
 ## ✅ ~ `18` Modules is Completed
+## 🔶 ~ `1` Modules in Progress 
 ### Modules are made up of bite-sized labs
 
 ---
