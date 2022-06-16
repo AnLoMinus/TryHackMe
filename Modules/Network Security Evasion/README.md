@@ -1,8 +1,7 @@
 ![image](https://user-images.githubusercontent.com/51442719/174120043-525bf1b8-989a-4784-8da7-7bdb4acb846e.png)
 # [Network Security Evasion](https://tryhackme.com/module/network-security-evasion)
 > ### Learn how to bypass and evade different security solutions used in the industry such as firewalls, IDS/IPS, and antivirus. <br>
-> #### Learn how different security solutions work and get hands-on experience bypassing intrusion detection systems (IDS), intrusion prevention systems (IPS), firewalls and antivirus software. <br>
-> #### By the end of the module, you will acquire the skills to use different techniques to evade IDS, IPS, firewalls, sandboxes, antivirus, in addition to logging and monitoring systems.
+> #### Learn how different security solutions work and get hands-on experience bypassing intrusion detection systems (IDS), intrusion prevention systems (IPS), firewalls and antivirus software. <br> By the end of the module, you will acquire the skills to use different techniques to evade IDS, IPS, firewalls, sandboxes, antivirus, in addition to logging and monitoring systems.
 
 ---
 
