@@ -2,16 +2,16 @@
 
 ## <img width="100" src="https://user-images.githubusercontent.com/51442719/174120784-1d7207fa-3465-44be-b816-efbe6db45e12.png"> `VIP` [Network Security Solutions](https://tryhackme.com/jr/redteamnetsec)
 > ## Learn about and experiment with various IDS/IPS evasion techniques, such as protocol and payload manipulation.
-  > - [x] Task 1  [Introduction](#task-1--introduction-) <br>
-  > - [x] Task 2  [IDS Engine Types](#task-2--ids-engine-types-) <br>
-  > - [ ] Task 3  [IDS/IPS Rule Triggering](#task-3--idsips-rule-triggering-) <br>
-  > - [ ] Task 4  Evasion via Protocol Manipulation <br>
-  > - [ ] Task 5  Evasion via Payload Manipulation <br>
-  > - [ ] Task 6  Evasion via Route Manipulation <br>
-  > - [ ] Task 7  Evasion via Tactical DoS <br>
-  > - [ ] Task 8  C2 and IDS/IPS Evasion <br>
-  > - [ ] Task 9  Next-Gen Security <br>
-  > - [ ] Task 10  Summary <br>
+> - [x] [Task 1  Introduction](#task-1--introduction-) <br>
+> - [x] [Task 2  IDS Engine Types](#task-2--ids-engine-types-) <br>
+> - [x] [Task 3  IDS/IPS Rule Triggering](#task-3--idsips-rule-triggering-) <br>
+> - [ ] [Task 4  Evasion via Protocol Manipulation](#task-4--evasion-via-protocol-manipulation-) <br>
+> - [ ] Task 5  Evasion via Payload Manipulation <br>
+> - [ ] Task 6  Evasion via Route Manipulation <br>
+> - [ ] Task 7  Evasion via Tactical DoS <br>
+> - [ ] Task 8  C2 and IDS/IPS Evasion <br>
+> - [ ] Task 9  Next-Gen Security <br>
+> - [ ] Task 10  Summary <br>
 
 ---
 
@@ -108,31 +108,7 @@ TCP Options (3) => NOP NOP TS: 2244530364 287085341
 > - As we can conclude, a signature-based IDS or IPS is limited to how well-written and updated its signatures (rules) are. <br>
 > - We discuss some evasion techniques in the next task. <br>
 
+---
 
-
-
-
-
+> ## Task 4  Evasion via Protocol Manipulation <br>
 > 
-
- 
-
-
-
-
-
-
-> 
-
-
-
-
-
-
-
-
-
-
-
-
-
