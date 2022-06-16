@@ -71,12 +71,64 @@
 ---
 
 > ## Task 3  IDS/IPS Rule Triggering <br>
-> Each IDS/IPS has a certain syntax to write its rules. For example, Snort uses the following format for its rules: <br> `Rule Header (Rule Options)`, where Rule Header constitutes: <br>
+> #### Each IDS/IPS has a certain syntax to write its rules. For example, Snort uses the following format for its rules: <br> `Rule Header (Rule Options)`, where Rule Header constitutes: <br>
 > - Action: Examples of action include `alert`, `log`, `pass`, `drop`, and `reject`. <br>
 > - Protocol: `TCP`, `UDP`, `ICMP`, or `IP`. <br>
 > - Source IP/Source Port: `!10.10.0.0/16` any refers to everything not in the class B subnet `10.10.0.0/16`. <br>
 > - Direction of Flow: `->` indicates left (source) to right (destination), while `<>` indicates bi-directional traffic. <br>
-> - Destination IP/Destination Port: `10.10.0.0/16` any to refer to class B subnet `10.10.0.0/16`. <br>
+> - Destination IP/Destination Port: `10.10.0.0/16` any to refer to class B subnet `10.10.0.0/16`. <br> <br>
+> #### Below is an example rule to `drop` all ICMP traffic passing through Snort IPS: <br>
+> `drop icmp any any -> any any (msg: "ICMP Ping Scan"; dsize:0; sid:1000020; rev: 1;)` <br>
+> #### The rule above instructs the Snort IPS to drop any packet of type ICMP from any source IP address (on any port) to any destination IP address (on any port). The message to be added to the logs is “ICMP Ping Scan.” <br>
+> <img src="https://user-images.githubusercontent.com/51442719/174132737-bba95405-498d-4bc1-b687-cb52e5258230.png" width="100"> <br> 
+> #### Let’s consider a hypothetical case where a vulnerability is discovered in our web server. This vulnerability lies in how our web server handles HTTP POST method requests, allowing the attacker to run system commands. <br <br>
+> #### Let’s consider the following “naive” approach. We want to create a Snort rule that detects the term `ncat` in the payload of the traffic exchanged with our webserver to learn how people exploit this vulnerability. <br> 
+> `alert tcp any any <> any 80 (msg: "Netcat Exploitation"; content:"ncat"; sid: 1000030; rev:1;)` <br> <br>
+> #### The rule above inspects the content of the packets exchanged with port 80 for the string `ncat`. Alternatively, you can choose to write the content that Snort will scan for in hexadecimal format. `ncat` in ASCII is written as `6e 63 61 74` in hexadecimal and it is encapsulated as a string by 2 pipe characters `|`. <br> 
+> `alert tcp any any <> any 80 (msg: "Netcat Exploitation"; content:"|6e 63 61 74|"; sid: 1000031; rev:1;)`  <br> <br>
+> We can further refine it if we expect to see it in HTTP POST requests. Note that `flow:established` tells the Snort engine to look at streams started by a TCP 3-way handshake (established connections).  <br>
+> `alert tcp any any <> any 80 (msg: "Netcat Exploitation"; flow:established,to_server; content:"POST"; nocase; http_method; content:"ncat"; nocase; sid:1000032; rev:1;)` <br> <br>
+> #### If ASCII logging is chosen, the logs would be similar to the two alerts shown next.
+```bash
+[**] [1:1000031:1] Netcat Exploitation [**]
+[Priority: 0] 
+01/14-12:51:26.717401 10.14.17.226:45480 -> 10.10.112.168:80
+TCP TTL:63 TOS:0x0 ID:34278 IpLen:20 DgmLen:541 DF
+***AP*** Seq: 0x26B5C2F  Ack: 0x0  Win: 0x0  TcpLen: 32
+
+[**] [1:1000031:1] Netcat Exploitation [**]
+[Priority: 0] 
+01/14-12:51:26.717401 10.14.17.226:45480 -> 10.10.112.168:80
+TCP TTL:63 TOS:0x0 ID:34278 IpLen:20 DgmLen:541 DF
+***AP*** Seq: 0x26B5C2F  Ack: 0xF1090882  Win: 0x3F  TcpLen: 32
+TCP Options (3) => NOP NOP TS: 2244530364 287085341
+```
+> #### There are a few points to make about signature-based IDS and its rules. <br>
+> - If the attacker made even the slightest changes to avoid using ncat verbatim in their payload, the attack would go unnoticed. <br>
+> - As we can conclude, a signature-based IDS or IPS is limited to how well-written and updated its signatures (rules) are. <br>
+> - We discuss some evasion techniques in the next task. <br>
+
+
+
+
+
+
+> 
+
+ 
+
+
+
+
+
+
+> 
+
+
+
+
+
+
 
 
 
