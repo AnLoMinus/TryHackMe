@@ -17,6 +17,9 @@
 
 > ## Task 1  Introduction <br>
 > (`IDS`) ~ Intrusion Detection System  <br> <br>
+> (`HIDS`) ~ Host Intrusion Detection System   <br> <br>
+> (`NIDS`) ~ Network Intrusion Detection System   <br> <br>
+> (`IPS`) ~ Intrusion Prevention System  <br> <br>
 > An Intrusion Detection System (IDS) is a system that detects network or system intrusions.  <br>
 > One analogy that comes to mind is a guard watching live feeds from different security cameras.  <br>
 > He can spot a theft, but he cannot stop it by himself. However, if this guard can contact another guard and ask them to stop the robber, detection turns into prevention.  <br>
