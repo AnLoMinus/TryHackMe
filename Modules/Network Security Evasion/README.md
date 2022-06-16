@@ -1,3 +1,7 @@
+- [< Back to all modules](https://github.com/Anlominus/TryHackMe/tree/main/Modules) <br>
+
+---
+
 ![image](https://user-images.githubusercontent.com/51442719/174120043-525bf1b8-989a-4784-8da7-7bdb4acb846e.png)
 # [Network Security Evasion](https://tryhackme.com/module/network-security-evasion)
 > ### Learn how to bypass and evade different security solutions used in the industry such as firewalls, IDS/IPS, and antivirus. <br>
@@ -41,3 +45,7 @@
   > - [ ] Task 4  Implementing Various Evasion Techniques <br>
   > - [ ] Task 5  DIY Sandbox Evasion Challenge <br>
   > - [ ] Task 6  Wrapping Up <br>
+
+---
+
+- [< Back to all modules](https://github.com/Anlominus/TryHackMe/tree/main/Modules) <br>
