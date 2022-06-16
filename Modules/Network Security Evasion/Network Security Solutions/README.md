@@ -111,4 +111,41 @@ TCP Options (3) => NOP NOP TS: 2244530364 287085341
 ---
 
 > ## Task 4  Evasion via Protocol Manipulation <br>
+> ![image](https://user-images.githubusercontent.com/51442719/174134653-ef6923cf-8bf5-49ec-91d5-e11dc3da2639.png) <br>
+> Evading a signature-based IDS/IPS requires that you manipulate your traffic so that it does not match any IDS/IPS signatures. <br>
+> Here are four general approaches you might consider to evade IDS/IPS systems. <br>
+> - Evasion via Protocol Manipulation
+> - Evasion via Payload Manipulation
+> - Evasion via Route Manipulation
+> - Evasion via Tactical Denial of Service (DoS) <br>
+> ![image](https://user-images.githubusercontent.com/51442719/174134838-292b173f-129e-4267-845d-b0c4876e5572.png) <br>
+> This room focuses on evasion using `nmap` and `ncat`/`socat`. <br>
+> The evasion techniques related to Nmap are discussed in great detail in the Firewalls room. <br>
+> This room will emphasize `ncat` and `socat` where appropriate. <br> <br>
+> #### We will expand on each of these approaches in its own task. Let’s start with the first one. Evasion via protocol manipulation includes: <br>
+> - Relying on a different protocol <br>
+> - Manipulating (Source) TCP/UDP port <br>
+> - Using session splicing (IP packet fragmentation) <br>
+> - Sending invalid packets <br>
+> ![image](https://user-images.githubusercontent.com/51442719/174135275-0f7292a8-61be-42e0-9451-a6d82f92fd59.png) <br>
+> ## Rely on a Different Protocol
+> - The IDS/IPS system might be configured to block certain protocols and allow others. <br>
+> - For instance, you might consider using UDP instead of TCP or rely on HTTP instead of DNS to deliver an attack or exfiltrate data. <br> 
+> - You can use the knowledge you have gathered about the target and the applications necessary for the target organization to design your attack. <br>
+> - For instance, if web browsing is allowed, it usually means that protected hosts can connect to ports 80 and 443 unless a local proxy is used. <br>
+> - In one case, the client relied on Google services for their business, so the attacker used Google web hosting to conceal his malicious site. <br>
+> - Unfortunately, it is not a one-size-fits-all; moreover, some trial and error might be necessary as long as you don’t create too much noise. <br> <br>
+> #### We have an IPS set to block DNS queries and HTTP requests in the figure below. <br>
+> In particular, it enforces the policy where local machines cannot query external DNS servers but should instead query the local DNS server; <br>
+> moreover, it enforces secure HTTP communications. <br>
+> It is relatively permissive when it comes to HTTPS. In this case, using HTTPS to tunnel traffic looks like a promising approach to evade the IPS. <br>
+> ![image](https://user-images.githubusercontent.com/51442719/174135857-198208c5-aa0d-4ff5-b7f4-8a3917d080f6.png) <br>
+> ### Consider the case where you are using Ncat. Ncat, by default, uses a TCP connection; however, you can get it to use UDP using the option `-u`. <br>
+> - To listen using TCP, just issue `ncat -lvnp PORT_NUM` where port number is the port you want to listen to. <br>
+> - to connect to an Ncat instance listening on a TCP port, you can issue `ncat TARGET_IP PORT_NUM` <br>
+
+
+
 > 
+
+
