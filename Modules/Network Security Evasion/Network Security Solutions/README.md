@@ -157,15 +157,16 @@ TCP Options (3) => NOP NOP TS: 2244530364 287085341
 > ### Manipulate (Source) TCP/UDP Port
 > - Generally speaking, the TCP and UDP source and destination ports are inspected even by the most basic security solutions. 
 > - Without deep packet inspection, the port numbers are the primary indicator of the service used. 
-> - In other words, network traffic involving TCP port 22 would be interpreted as SSH traffic unless the security solution can analyze the data carried by the TCP segments.<br> 
+> - In other words, network traffic involving TCP port 22 would be interpreted as SSH traffic unless the security solution can analyze the data carried by the TCP segments.<br> <br>
+> - Depending on the target security solution, you can make your port scanning traffic resemble web browsing or DNS queries. 
+> If you are using Nmap, you can add the option `-g PORT_NUMBER` (or `--source-port PORT_NUMBER`) to make Nmap send all its traffic from a specific source port number.
+> - While scanning a target, use `nmap -sS -Pn -g 80 -F MACHINE_IP` to make the port scanning traffic appear to be exchanged with an HTTP server at first glance.
+> - If you are interested in scanning UDP ports, you can use `nmap -sU -Pn -g 53 -F MACHINE_IP` to make the traffic appear to be exchanged with a DNS server.
+> ![image](https://user-images.githubusercontent.com/51442719/174190521-a0db1d84-5ae1-4217-9e71-4b43e2bc6ba6.png)
 
 
 
 
 
 
-
-
-
-
-
+ 
