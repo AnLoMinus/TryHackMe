@@ -2,7 +2,7 @@
 
 ## <img width="100" src="https://user-images.githubusercontent.com/51442719/174120784-1d7207fa-3465-44be-b816-efbe6db45e12.png"> `VIP` [Network Security Solutions](https://tryhackme.com/jr/redteamnetsec)
 > ## Learn about and experiment with various IDS/IPS evasion techniques, such as protocol and payload manipulation.
-  > - [ ] Task 1  Introduction <br>
+  > - [x] Task 1  Introduction <br>
   > - [ ] Task 2  IDS Engine Types <br>
   > - [ ] Task 3  IDS/IPS Rule Triggering <br>
   > - [ ] Task 4  Evasion via Protocol Manipulation <br>
@@ -41,6 +41,40 @@
 > This can be achieved by connecting the NIDS to a monitor port on the switch. The NIDS will process the network traffic to detect malicious traffic. <br>
 > ### In the figure below, we use two red circles to show the difference in the coverage of a HIDS versus a NIDS.
 > ![image](https://user-images.githubusercontent.com/51442719/174126895-4ed2dd02-5b78-4da9-aae0-031238d48123.png)
+
+---
+
+  > ## Task 2  IDS Engine Types <br>
+  > ### We can classify network traffic into:
+  > - `Benign traffic`: This is the usual traffic that we expect to have and don’t want the IDS to alert us about. <br>
+  > - `Malicious traffic`: This is abnormal traffic that we don’t expect to see under normal conditions and consequently want the IDS to detect it. <br>
+  > ![image](https://user-images.githubusercontent.com/51442719/174128295-30185943-af92-442a-a8e5-ebbacf00c6ea.png) <br>
+  > In the same way that we can classify network traffic, we can also classify host activity. <br>
+  > The IDS detection engine is either built around detecting malicious traffic and activity or around recognizing normal traffic and activity. <br>
+  > Recognizing “normal” makes it easy to detect any deviation from normal. <br> <br>
+  > ### Consequently, the detection engine of an IDS can be:
+  > #### `Signature-based`: A signature-based IDS requires full knowledge of malicious (or unwanted) traffic. <br>
+  > - In other words, we need to explicitly feed the signature-based detection engine the characteristics of malicious traffic. <br>
+  > - Teaching the IDS about malicious traffic can be achieved using explicit rules to match against. <br>
+  > #### `Anomaly-based`: This requires the IDS to have knowledge of what regular traffic looks like.  <br>
+  > - In other words, we need to “teach” the IDS what normal is so that it can recognize what is not normal.  <br>
+  > - Teaching the IDS about normal traffic, i.e., baseline traffic can be achieved using machine learning or manual rules. <br> <br>
+  > #### Put in another way, signature-based IDS recognizes malicious traffic, so everything that is not malicious is considered benign (normal). <br>
+  > - This approach is commonly found in anti-virus software, which has a database of known virus signatures. <br>
+  > - Anything that matches a signature is detected as a virus. <br>
+  > #### An anomaly-based IDS recognizes normal traffic, so anything that deviates from normal is considered malicious. <br>
+  > - This approach is more similar to how human beings perceive things; you have certain expectations for speed, performance, and responsiveness when you start your web browser. <br>
+  > - In other words, you know what “normal” is for your browser. <br>
+  > - If suddenly you notice that your web browser is too sluggish or unresponsive, you will know that something is wrong. <br>
+  > - In other words, you knew it when your browser’s performance deviated from normal. <br>
+
+
+
+
+
+ 
+
+
 
 
 
