@@ -143,9 +143,29 @@ TCP Options (3) => NOP NOP TS: 2244530364 287085341
 > ### Consider the case where you are using Ncat. Ncat, by default, uses a TCP connection; however, you can get it to use UDP using the option `-u`. <br>
 > - To listen using TCP, just issue `ncat -lvnp PORT_NUM` where port number is the port you want to listen to. <br>
 > - to connect to an Ncat instance listening on a TCP port, you can issue `ncat TARGET_IP PORT_NUM` <br>
+> ### Note that:
+> - `-l` tells `ncat` to listen for incoming connections
+> - `-v` gets more verbose output as `ncat` binds to a source port and receives a connection 
+> - `-n` avoids resolving hostnames 
+> - `-p` specifies the port number that `ncat` will listen on
+> ### As already mentioned, using `-u` will move all communications over UDP.
+> - To listen using UDP, just issue `ncat -ulvnp PORT_NUM` where port number is the port you want to listen to. Note that unless you add `-u`, `ncat` will use TCP by default. 
+> - To connect to an Ncat instance listening on a UDP port, you can issue `nc -u TARGET_IP PORT_NUM`
+> ### Consider the following two examples:
+> - Running `ncat -lvnp 25` on the attacker system and connecting to it will give the impression that it is a usual TCP connection with an SMTP server, unless the IDS/IPS provides deep packet inspection (DPI).
+> - Executing `ncat -ulvnp 162` on the attacker machine and connecting to it will give the illusion that it is a regular UDP communication with an SNMP server unless the IDS/IPS supports DPI.
+> ### Manipulate (Source) TCP/UDP Port
+> - Generally speaking, the TCP and UDP source and destination ports are inspected even by the most basic security solutions. 
+> - Without deep packet inspection, the port numbers are the primary indicator of the service used. 
+> - In other words, network traffic involving TCP port 22 would be interpreted as SSH traffic unless the security solution can analyze the data carried by the TCP segments.<br> 
 
 
 
-> 
+
+
+
+
+
+
 
 
