@@ -44,7 +44,7 @@
 > - ISO/OSI layers and TCP/IP layers. We suggest going through the [Network Fundamentals](https://tryhackme.com/module/network-fundamentals) module if you want to refresh your knowledge.
 > - Network and port scanning. We suggest you complete the [Nmap](https://tryhackme.com/module/nmap) module to learn more about this topic.
 > - Reverse and bind shells. We recommend the [What the Shell?](https://tryhackme.com/room/introtoshells) room to learn more about shells.
-
+> - [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 
 
 
