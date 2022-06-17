@@ -1,8 +1,8 @@
 
 ## <img width="100" src="https://user-images.githubusercontent.com/51442719/174120395-589e8b4d-ea38-4110-a59e-86465ff50dd0.png"> `VIP` [Firewalls](https://tryhackme.com/jr/redteamfirewalls)
 > ## Learn about and experiment with various firewall evasion techniques, such as port hopping and port tunneling.
-  > - [x] Task 1  Introduction <br>
-  > - [ ] Task 2  Types of Firewalls <br>
+  > - [x] [Task 1  Introduction](#task-1--introduction-) <br>
+  > - [ ] [Task 2  Types of Firewalls](#task-2--types-of-firewalls-) <br>
   > - [ ] Task 3  Evasion via Controlling the Source MAC/IP/Port <br>
   > - [ ] Task 4  Evasion via Forcing Fragmentation, MTU, and Data Length <br>
   > - [ ] Task 5  Evasion via Modifying Header Fields <br>
@@ -46,15 +46,17 @@
 > - Reverse and bind shells. We recommend the [What the Shell?](https://tryhackme.com/room/introtoshells) room to learn more about shells.
 > - [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 
+---
 
-
-
-
-
-
-
-
-
+> ## Task 2  Types of Firewalls <br>
+> #### There are multiple ways to classify firewalls. One way to classify firewalls would be whether they are independent appliances.
+> - Hardware Firewall (appliance firewall): As the name implies, an appliance firewall is a separate piece of hardware that the network traffic has to go through. Examples include Cisco ASA (Adaptive Security Appliance), WatchGuard Firebox, and Netgate pfSense Plus appliance.
+> - Software firewall: This is a piece of software that comes bundled with the OS, or you can install it as an additional service. MS Windows has a built-in firewall, Windows Defender Firewall, that runs along with the other OS services and user applications. Another example is Linux iptables and firewalld.
+> ![image](https://user-images.githubusercontent.com/51442719/174251338-fa8915e0-d62b-4469-9d5d-362da0ee55a1.png)
+> #### We can also classify firewalls into:
+> - Personal firewall: A personal firewall is designed to protect a single system or a small network, for example, a small number of devices and systems at a home network. Most likely, you are using a personal firewall at home without paying much attention to it. For instance, many wireless access points designed for homes have a built-in firewall. One example is Bitdefender BOX. Another example is the firewall that comes as part of many wireless access points and home routers from Linksys and Dlink.
+> - Commercial firewall: A commercial firewall protects medium-to-large networks. Consequently, you would expect higher reliability and processing power, in addition to supporting a higher network bandwidth. Most likely, you are going through such a firewall when accessing the Internet from within your university or company.
+> 
 
 
 
