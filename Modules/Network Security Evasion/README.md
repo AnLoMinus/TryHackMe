@@ -24,7 +24,7 @@
   > - [ ] Task 9  Next-Gen Security <br>
   > - [ ] Task 10  Summary <br>
 
-## <a href="/Firewalls#-vip-firewalls"> <img width="100" src="https://user-images.githubusercontent.com/51442719/174120395-589e8b4d-ea38-4110-a59e-86465ff50dd0.png"> </a> `VIP` [Firewalls](https://tryhackme.com/jr/redteamfirewalls)
+## <a href="./Firewalls#-vip-firewalls"> <img width="100" src="https://user-images.githubusercontent.com/51442719/174120395-589e8b4d-ea38-4110-a59e-86465ff50dd0.png"> </a> `VIP` [Firewalls](https://tryhackme.com/jr/redteamfirewalls)
 > ## Learn about and experiment with various firewall evasion techniques, such as port hopping and port tunneling.
   > - [ ] Task 1  Introduction <br>
   > - [ ] Task 2  Types of Firewalls <br>
