@@ -91,7 +91,7 @@
     - `48 Hours`
 
 ---
-
+- [CTF writeups](https://github.com/ChrisPritchard/ctf-writeups) ~ Write-ups of the vulnhub VMs, TryHackMe rooms and other CTFs I have done or am doing, plus helpful resources.
 - [TryHackMe-Notes](https://github.com/nargaw/TryHackMe-Notes)
 - [PyWhat](https://github.com/bee-san/pyWhat)
 - [TryHackMe CTFs writeups, notes, dratfs, scrabbles, files and solutions.](https://github.com/edoardottt/tryhackme-ctf)
