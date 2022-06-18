@@ -140,6 +140,41 @@ ${BCyan}            └──╼ ")
   done
 }
 
+Privilege-Escalation(){
+  while true; do
+  #statements
+  clear
+  koth_banner
+  KoTHMenuMain=$(echo "${BRed}
+          ${BBlue}[${BRed}#${BBlue}] 📜 ${BYellow} Privilege-Escalation
+
+          ${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} Linux-PrivEsc
+          ${BRed}[${LGrey}WPE${BRed}]${BBlue} -${DGrey} Windows-PrivEsc
+
+          ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
+
+
+${BCyan}            ┌──${BBlue}[${BBlue} Anlominus 👽${BRed} KoTH ${BCyan}$~${BBlue}]
+${BCyan}            └──╼ ")
+    read -p "$KoTHMenuMain" cmd
+    case $cmd in
+      lpe|LPE )
+      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} Linux-PrivEsc"
+      anonsurf status
+      sleep 1
+      ;;
+      wpe|WPE )
+      echo "${BRed}[${LGrey}WPE${BRed}]${BBlue} -${DGrey} Windows-PrivEsc"
+      anonsurf start
+      sleep 1
+      ;;
+      x )
+      clear
+      break
+      ;;
+    esac
+  done
+}
 MainMenu(){
   while true; do
   #statements
@@ -414,6 +449,7 @@ ${BCyan}            └──╼ ")
       ;;
       3 )
       echo "\n\t\t${BRed}[${BBlue}3${BRed}]${BWhite} -${BRed} Gaining Access & Maintaining Access"
+      Privilege-Escalation
       ;;
       4 )
       echo "\n\t\t${BRed}[${BBlue}4${BRed}]${BWhite} -${BRed} Covering tracks"
