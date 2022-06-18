@@ -208,19 +208,19 @@ ${BCyan}            └──╼ ")
       1 )
       echo "\n\t\t${BRed}[${BBlue}1${BRed}]${BWhite} - ${BRed}Planning and Scoping"
       #
-      t1="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
+      t1="$(echo "\n\t\t${BBlue}[${BYellow}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
       read -p "$t1" targetIP
       if [ -z $targetIP ]; then
         #statements
         targetIP="127.0.0.1"
       fi
       #
-      t2="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - Name of Target / Client: ${BRed}")"
+      t2="$(echo "\n\t\t${BBlue}[${BYellow}?${BBlue}]${BGreen} - Name of Target / Client: ${BRed}")"
       read -p "$t2" targetLogNAME
       if [ -z $targetLogNAME ]; then
         #statements
-        targetLogNAME="ChangeMe"
-        echo "\n\t\t${BRed}Target Name: ${BBlue} $targetLogNAME"
+        targetLogNAME="ChangeMe_SetTarget"
+        echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BGreen} - Name of Target / Client: ${BRed} $targetLogNAME"
       fi
       #
       file="${targetLogNAME}-KoTH-Log.md"
@@ -265,7 +265,7 @@ ${BCyan}            └──╼ ")
       #  [1] - Planning and Scoping
       echo "#### Date: `date`" >> ${targetLogNAME}-KoTH-Log.md
       echo " " >> ${targetLogNAME}-KoTH-Log.md
-      echo "\n\t\t\t# [1] - Planning and Scoping "
+      echo "\n\t\t\t# [1] Creating - Planning and Scoping Report "
       echo "# [1] - Planning and Scoping " >> ${targetLogNAME}-KoTH-Log.md
       echo "### Planning Log $targetIP: " >> ${targetLogNAME}-KoTH-Log.md
       echo " " >> ${targetLogNAME}-KoTH-Log.md
