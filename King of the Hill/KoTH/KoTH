@@ -140,7 +140,7 @@ ${BCyan}            └──╼ ")
   done
 }
 
-Privilege-Escalation(){
+privilegeEscalation(){
   while true; do
   #statements
   clear
@@ -449,7 +449,7 @@ ${BCyan}            └──╼ ")
       ;;
       3 )
       echo "\n\t\t${BRed}[${BBlue}3${BRed}]${BWhite} -${BRed} Gaining Access & Maintaining Access"
-      Privilege-Escalation
+      privilegeEscalation
       ;;
       4 )
       echo "\n\t\t${BRed}[${BBlue}4${BRed}]${BWhite} -${BRed} Covering tracks"
