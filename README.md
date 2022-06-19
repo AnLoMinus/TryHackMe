@@ -22,7 +22,7 @@
   
 ---
 
-# [🔒 @TryHackMe 📝](https://tryhackme.com/)
+# [🔒 TryHackMe 📝](https://tryhackme.com/)
 
 ![image](https://user-images.githubusercontent.com/51442719/173326175-c37692c7-0769-4959-b98d-fb218047d53e.png)
 
@@ -34,7 +34,7 @@
 
 </div>
 
-- [ ] 👑 [King of the Hill](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill) 🏔 
+## 👑 [King of the Hill](https://github.com/Anlominus/TryHackMe/tree/main/King%20of%20the%20Hill) 🏔 
 
 ---
 
