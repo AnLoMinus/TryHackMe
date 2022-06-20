@@ -25,8 +25,8 @@
 
 ## Task 2  [What is Yara?]()
 - 2.1. [All about Yara](#21-all-about-yara)
-- 2.2. [Why does Malware use Strings?]()
-- 2.3. [Caveat: Malware Analysis]()
+- 2.2. [Why does Malware use Strings?](#22-why-does-malware-use-strings)
+- 2.3. [Caveat: Malware Analysis](#23-caveat-malware-analysis)
   > ## 2.1. All about Yara 
   > ### "The pattern matching swiss knife for malware researchers (and everyone else)" ([Virustotal., 2020](https://virustotal.github.io/yara/))
   > ### With such a fitting quote, Yara can identify information based on both binary and textual patterns, such as hexadecimal and strings contained within a file.
