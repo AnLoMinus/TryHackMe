@@ -95,12 +95,12 @@
   > #### Visit the [`Yara Github repo`](https://github.com/virustotal/yara/releases) to obtain the latest version for your OS. At the time of writing, it is v4.0.2.
   >   - 3.2.3.1. ` wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
   >   ![image](https://user-images.githubusercontent.com/51442719/174511744-b981fe07-fe0e-4b5d-8fc7-d1472860e2b8.png)
-  > ## 3.2.5. Installing Yara: Windows
-  >   - 3.2.5.1. Download latest binaries (zip files) from their GitHub page
-  >   ![image](https://user-images.githubusercontent.com/51442719/174512210-7c96f083-a70e-4bb9-b279-332424188c2d.png)
   > ```bash
   > wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/Room/YARA/install; chmod +x install; ./install
   > ```
+  > ## 3.2.5. Installing Yara: Windows
+  >   - 3.2.5.1. Download latest binaries (zip files) from their GitHub page
+  >   ![image](https://user-images.githubusercontent.com/51442719/174512210-7c96f083-a70e-4bb9-b279-332424188c2d.png)
 
 
 
