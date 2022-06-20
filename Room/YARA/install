@@ -4,14 +4,14 @@
 #!/usr/bin/env bash
 #!/data/data/com.termux/files/usr/bin/bash
 ###############################################
-# Name : Anlominus ~> TryHackMe ~> Room ~> YARA ~> install
 # Last UPDATE : 2022 Jun 20
 # Create Date : 2022 Jun 20
 # Location: Made With LOVE IN ISRAEL !
 # Skils: Best Copywriter IN the COSMOS!
 # Description: Yara Istaller by @Anlominus
-# Aouther: f11snipe +~> Anlominus ~> RhytMix ~> KoTH
 # CREDIT: To All World Creators free Scripts & Tools
+# Aouther: Anlominus ~> TryHackMe ~> YARA ~> install
+# Name : Anlominus ~> TryHackMe ~> Room ~> YARA ~> install
 # BIG THANX TO ALL COMUNITY THAT SHARE ALL THAT FREE GREAT SCRIPTS
 # Source: https://github.com/Anlominus/TryHackMe/tree/main/Room/YARA
 ###############################################
