@@ -87,7 +87,7 @@
   > #### To install Yara on Linux you have two options:
   > ## 3.2.1. `Option #1`: Installing Through Package Manager (Recommended):
   >   - 3.2.1.1. Updating package manager `sudo apt update -y && sudo apt upgrade -y`
-  >   - 3.2.1.1.2. Installing Yara sudo apt install yara
+  >   - 3.2.1.1.2. Installing Yara `sudo apt install yara`
   > ## 3.2.2. `Option #2`: Installing From Source (If you are unable to try Option #1):
   >   - 3.2.2.1. `sudo apt update -y && sudo apt upgrade -y`
   >   - 3.2.2.2. Install dependencies:`sudo apt install automake libtool make gcc flex bison libssl-dev libjansson-dev libmagic-dev pkg-config`
@@ -95,6 +95,10 @@
   > #### Visit the [`Yara Github repo`](https://github.com/virustotal/yara/releases) to obtain the latest version for your OS. At the time of writing, it is v4.0.2.
   >   - 3.2.3.1. ` wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
   >   ![image](https://user-images.githubusercontent.com/51442719/174511744-b981fe07-fe0e-4b5d-8fc7-d1472860e2b8.png)
+  > ## 3.2.5. Installing Yara: Windows
+  >   - 3.2.5.1. Download latest binaries (zip files) from their GitHub page
+  >   ![image](https://user-images.githubusercontent.com/51442719/174512210-7c96f083-a70e-4bb9-b279-332424188c2d.png)
+
 
 
 
