@@ -76,7 +76,9 @@ On_White='\033[47m'  # White
 }
 YaraColors
 
+echo "\n\t\t 🔶 Downloading YARA v4.2.1.tar.gz"
 wget https://github.com/VirusTotal/yara/archive/v4.2.1.tar.gz
+echo "\n\t\t 🔶 Extracting YARA v4.2.1.tar.gz"
 tar -zxvf v4.2.1.tar.gz
 rm v4.2.1.tar.gz
 echo "\n\t\t 🔶 Compile & Install"
@@ -94,3 +96,4 @@ chmod +x bootstrap.sh
 ./bootstrap.sh
 make
 sudo make install
+echo "\n\t\t ✅ YARA v4.2.1 Installed"
