@@ -4,7 +4,7 @@
   > - [x] Task 1  [Introduction](#task-1--introduction)
   > - [x] Task 2  [What is Yara?](#task-2--what-is-yara)
   > - [x] Task 3  [Installing Yara (Ubuntu/Debian & Windows)](#task-3--installing-yara-ubuntudebian--windows)
-  > - [ ] Task 4  [Deploy]()
+  > - [x] Task 4  [Deploy]()
   > - [ ] Task 5  [Introduction to Yara Rules]()
   > - [ ] Task 6  [Expanding on Yara Rules]()
   > - [ ] Task 7  [Yara Modules]()
@@ -15,6 +15,7 @@
   > - [ ] Task 12  [Conclusion]()
 
 ---
+
 - 1.1. [Introduction]()
 - 2.1. [All about Yara](#21-all-about-yara)
 - 2.2. [Why does Malware use Strings?](#22-why-does-malware-use-strings)
@@ -105,8 +106,8 @@
 ---
 
 ## Task 4  Deploy
-> ## 4.1. In-Browser (No  VPN required)
-> ## 4.2. Using SSH (TryHackMe VPN required).
+- 4.1. In-Browser (No  VPN required)
+- 4.2. Using SSH (TryHackMe VPN required).
 > - IP Address: `MACHINE_IP`
 > - Username: `cmnatic`
 > - Password: `yararules!`
