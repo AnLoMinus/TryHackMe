@@ -113,4 +113,34 @@
 > - Password: `yararules!`
 > - SSH Port: `22`
 
+---
+
+## Task 5  Introduction to Yara Rules
+> - #### 5.1. Your First Yara Rule
+> The proprietary language that Yara uses for rules is fairly trivial to pick up, hard to master. <br>
+> This is because your rule is only as effective as your understanding of the patterns you want to search for. <br>
+> - Using a Yara rule is simple. Every yara command requires two arguments to be valid, these are:
+>   - 1) The rule file we create
+>   - 2) Name of file, directory, or process ID to use the rule for.
+> #### Every rule must have a name and condition.
+> #### For example, if we wanted to use "myrule.yar" on directory "some directory" we would use the following command:
+> - `yara myrule.yar somedirectory`
+> #### Note that .yar is the standard file extension for all Yara rules.
+> - #### We'll make one of the most basic rules you can make below.
+>   - 1. Make a file named "somefile" via touch somefile
+>   - 2. Open a new file and name it "myfirstrule.yar" like below:
+>   - ![image](https://user-images.githubusercontent.com/51442719/174675814-4afef00b-a48d-418f-9795-110ebc665ba5.png)
+>   - 3. With this open, input the snippet below and save the file:
+```bash
+rule examplerule {
+        condition: true
+}
+```
+>   - ![image](https://user-images.githubusercontent.com/51442719/174675903-edaf2a99-9d47-41f8-bee9-680ea11ae3d5.png)
+> - #### The name of the rule in this snippet is `examplerule`, where we have one condition - in this case, the `condition` is condition. As previously discussed, every rule requires both a name and a condition to be valid. This rule has satisfied those two requirements. <br>
+> - #### Simply, the rule we have made checks to see if the file/directory/PID that we specify exists via `condition: true`. If the file does exist, we are given the output of `examplerule`
+
+
+
+
 
