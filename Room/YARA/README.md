@@ -59,7 +59,7 @@
 - 3.2. [Installing Yara: Kali Linux](#32-installing-yara-kali-linux)
   - 3.2.1. [`Option #1`: Installing Through Package Manager (Recommended):](#321-option-1-installing-through-package-manager-recommended)
   - 3.2.1.1. [Updating package manager `sudo apt update -y && sudo apt upgrade -y`]()
-  - 3.2.1.1.2. [Installing Yara sudo apt install yara]()
+  - 3.2.1.1.2. [Installing Yara `sudo apt install yara`]()
   - 3.2.2. [`Option #2`: Installing From Source (If you are unable to try Option #1):](#322-option-2-installing-from-source-if-you-are-unable-to-try-option-1)
 - 3.2.3. [Downloading the latest release](#323-downloading-the-latest-release)
   - 3.2.3.1. `wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
