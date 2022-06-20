@@ -4,8 +4,8 @@
   > - [x] Task 1  [Introduction](#task-1--introduction)
   > - [x] Task 2  [What is Yara?](#task-2--what-is-yara)
   > - [x] Task 3  [Installing Yara (Ubuntu/Debian & Windows)](#task-3--installing-yara-ubuntudebian--windows)
-  > - [x] Task 4  [Deploy]()
-  > - [ ] Task 5  [Introduction to Yara Rules]()
+  > - [x] Task 4  [Deploy](#task-4--deploy)
+  > - [x] Task 5  [Introduction to Yara Rules](#task-5--introduction-to-yara-rules)
   > - [ ] Task 6  [Expanding on Yara Rules]()
   > - [ ] Task 7  [Yara Modules]()
   > - [ ] Task 8  [Other tools and Yara]()
@@ -127,8 +127,8 @@
 > - `yara myrule.yar somedirectory`
 > #### Note that .yar is the standard file extension for all Yara rules.
 > - #### We'll make one of the most basic rules you can make below.
->   - 1. Make a file named "somefile" via touch somefile
->   - 2. Open a new file and name it "myfirstrule.yar" like below:
+>   - ##### 1. Make a file named "somefile" via `touch somefile`
+>   - ##### 2. Open a new file and name it "myfirstrule.yar" like below: `nano myfirstrule.yar`
 >   - ![image](https://user-images.githubusercontent.com/51442719/174675814-4afef00b-a48d-418f-9795-110ebc665ba5.png)
 >   - 3. With this open, input the snippet below and save the file:
 ```bash
@@ -139,8 +139,12 @@ rule examplerule {
 >   - ![image](https://user-images.githubusercontent.com/51442719/174675903-edaf2a99-9d47-41f8-bee9-680ea11ae3d5.png)
 > - #### The name of the rule in this snippet is `examplerule`, where we have one condition - in this case, the `condition` is condition. As previously discussed, every rule requires both a name and a condition to be valid. This rule has satisfied those two requirements. <br>
 > - #### Simply, the rule we have made checks to see if the file/directory/PID that we specify exists via `condition: true`. If the file does exist, we are given the output of `examplerule`
+> - #### Let's give this a try on the file "some file" that we made in step one: `yara myfirstrule.yar somefile`
+> - #### If "some file" exists, Yara will say `examplerule` because the pattern has been met - as we can see below: <br>
+> - ![image](https://user-images.githubusercontent.com/51442719/174679484-daa55adf-b687-4710-968f-81fa00a7f5bf.png)
+> - #### If the file does not exist, Yara will output an error such as that below:
+> - #### ![image](https://user-images.githubusercontent.com/51442719/174679595-eb7fb082-b793-4688-8023-34c66039aaf3.png)
+> - ### Congrats! You've made your first rule.
 
-
-
-
+---
 
