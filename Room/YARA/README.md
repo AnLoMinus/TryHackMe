@@ -52,6 +52,37 @@
   > Explaining the functionality of malware is vastly out of scope for this room due to the sheer size of the topic. I have covered strings in much more detail in "Task 12 - Strings" of my [MAL: Introductory room](https://tryhackme.com/room/malmalintroductory). In fact, I am creating a whole Learning Path for it. If you'd like to get a taster whilst learning the fundamentals, I'd recommend my room.
   > 
 
+---
+
+## Task 3  [Installing Yara (Ubuntu/Debian & Windows)]()
+- 3.1. [Note:](#31-note) 
+- 3.2. [Installing Yara: Kali Linux](#32-installing-yara-kali-linux)
+  - 3.2.1. [`Option #1`: Installing Through Package Manager (Recommended):](#321-option-1-installing-through-package-manager-recommended)
+    - 3.2.1.1. [Updating package manager sudo apt update -y && sudo apt upgrade -y]()
+    - 3.2.1.1.2. [Installing Yara sudo apt install yara]()
+  - 3.2.2. [`Option #2`: Installing From Source (If you are unable to try Option #1):](#322-option-2-installing-from-source-if-you-are-unable-to-try-option-1)
+  - 3.2.3. [Downloading the latest release](#323-downloading-the-latest-release)
+    - 3.2.3.1. wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
+    - 
+  > ## 3.1. Note: 
+  > #### Again, I have attached a Linux VM to Task4 - Deploy with Yara & miscellaneous tools that you will use throughout this room. <br> You may follow along using that, or alternatively, install Yara on your own operating system if you'd like.
+  > ## 3.2. Installing Yara: Kali Linux 
+  > #### To install Yara on Linux you have two options:
+  > ## 3.2.1. `Option #1`: Installing Through Package Manager (Recommended):
+  >   - 3.2.1.1. Updating package manager `sudo apt update -y && sudo apt upgrade -y`
+  >   - 3.2.1.1.2. Installing Yara sudo apt install yara
+  > ## 3.2.2. `Option #2`: Installing From Source (If you are unable to try Option #1):
+  >   - 3.2.2.1. `sudo apt update -y && sudo apt upgrade -y`
+  >   - 3.2.2.2. Install dependencies:`sudo apt install automake libtool make gcc flex bison libssl-dev libjansson-dev libmagic-dev pkg-config`
+  > ## 3.2.3. Downloading the latest release
+  > #### Visit the [`Yara Github repo`](https://github.com/virustotal/yara/releases) to obtain the latest version for your OS. At the time of writing, it is v4.0.2.
+  >   - 3.2.3.1. ` wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
+
+
+
+
+
+
 
 
 
