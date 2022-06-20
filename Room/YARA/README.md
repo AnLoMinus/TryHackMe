@@ -58,13 +58,30 @@
 - 3.1. [Note:](#31-note) 
 - 3.2. [Installing Yara: Kali Linux](#32-installing-yara-kali-linux)
   - 3.2.1. [`Option #1`: Installing Through Package Manager (Recommended):](#321-option-1-installing-through-package-manager-recommended)
-    - 3.2.1.1. [Updating package manager sudo apt update -y && sudo apt upgrade -y]()
-    - 3.2.1.1.2. [Installing Yara sudo apt install yara]()
+  - 3.2.1.1. [Updating package manager sudo apt update -y && sudo apt upgrade -y]()
+  - 3.2.1.1.2. [Installing Yara sudo apt install yara]()
   - 3.2.2. [`Option #2`: Installing From Source (If you are unable to try Option #1):](#322-option-2-installing-from-source-if-you-are-unable-to-try-option-1)
-  - 3.2.3. [Downloading the latest release](#323-downloading-the-latest-release)
-    - 3.2.3.1. wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
-    - 
-  > ## 3.1. Note: 
+- 3.2.3. [Downloading the latest release](#323-downloading-the-latest-release)
+  - 3.2.3.1. wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
+- 3.2.4. Extract v4.0.2.tar.gz
+  - 3.2.4.1. tar -zxvf v4.0.2.tar.gz
+- 3.2.5. Compile & Install
+  - 3.2.5.1. cd yara-4.0.2
+  - 3.2.5.2. chmod +x configure
+  - 3.2.5.3. ./configure
+  - 3.2.5.4 chmod +x bootstrap.sh
+  - 3.2.5.5. ./bootstrap.sh
+  - 3.2.5.6. make
+  - 3.2.5.7. sudo make install
+  - 3.2.5.8. cd yara-4.0.2
+  - 3.2.5.9. chmod +x configure
+  - 3.2.5.10. ./configure
+  - 3.2.5.11. chmod +x bootstrap.sh
+  - 3.2.5.12. ./bootstrap.sh
+  - 3.2.5.13. make
+  - 3.2.5.14. sudo make install
+
+> ## 3.1. Note: 
   > #### Again, I have attached a Linux VM to Task4 - Deploy with Yara & miscellaneous tools that you will use throughout this room. <br> You may follow along using that, or alternatively, install Yara on your own operating system if you'd like.
   > ## 3.2. Installing Yara: Kali Linux 
   > #### To install Yara on Linux you have two options:
@@ -77,6 +94,8 @@
   > ## 3.2.3. Downloading the latest release
   > #### Visit the [`Yara Github repo`](https://github.com/virustotal/yara/releases) to obtain the latest version for your OS. At the time of writing, it is v4.0.2.
   >   - 3.2.3.1. ` wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz`
+  >   ![image](https://user-images.githubusercontent.com/51442719/174511744-b981fe07-fe0e-4b5d-8fc7-d1472860e2b8.png)
+
 
 
 
