@@ -15,8 +15,15 @@
   > - [ ] Task 12  [Conclusion]()
 
 ---
+- 1.1. [Introduction]()
+- 2.1. [All about Yara](#21-all-about-yara)
+- 2.2. [Why does Malware use Strings?](#22-why-does-malware-use-strings)
+- 2.3. [Caveat: Malware Analysis](#23-caveat-malware-analysis)
+
+---
 
 ## Task 1  [Introduction]()
+- 1.1. [Introduction]()
   > ### This room will expect you to understand basic Linux familiarity, such as installing software and commands for general navigation of the system. Moreso, this room isn't designed to test your knowledge or for point-scoring. It is here to encourage you to follow along and to experiment with what you have learned here. <br>
   > ### Feel free to use the VM attached to this room in Task 4: Deploy, or alternatively, install Yara on your system using the steps provided in this room. <br>
   > ### As always, I hope you take a few things away from this room, namely, the wonder that Yara (Yet Another Ridiculous Acronym) is and it's importance in infosec today. Yara was developed by Victor M. Alvarez (@plusvic) and @VirusTotal. Check the GitHub repo [here](https://github.com/virustotal/yara).
