@@ -1,8 +1,8 @@
 # <img src="https://user-images.githubusercontent.com/51442719/174496736-c14a8624-fedd-4e8d-887f-4dad42bb6a40.png" width="100"> [YARA](https://tryhackme.com/room/yara)
   > ![image](https://user-images.githubusercontent.com/51442719/174496659-3b7fe02a-6ed9-430e-b601-7f46edeaf1f2.png)
   > ####  Learn the applications and language that is Yara for everything threat intelligence, forensics, and threat hunting!
-  > - [x] Task 1  [Introduction]()
-  > - [x] Task 2  [What is Yara?]()
+  > - [x] Task 1  [Introduction](#task-1--introduction)
+  > - [x] Task 2  [What is Yara?](#task-2--what-is-yara)
   > - [ ] Task 3  [Installing Yara (Ubuntu/Debian & Windows)]()
   > - [ ] Task 4  [Deploy]()
   > - [ ] Task 5  [Introduction to Yara Rules]()
