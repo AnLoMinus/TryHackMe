@@ -5,6 +5,20 @@ Sorry I am lazy AF, will update more machines soon!
 #### I am not posting the methods that are 'technically' better, I am posting methods that will be easiest to do and will get you win. Target is to win while being inside the rules. This is not an exam, there are no wrong answers. As the saying goes, If it works, don't touch it.
 This a github cheatsheet of owning the machines in King of the Hill game of TryHackMe.
 
+## Machine Pool
+Name | OS
+:---:|:---:
+[H1: Hard]()	| Linux
+[H1: Medium]()	| Windows
+[H1: Easy]()	| Linux
+[Hogwarts]()	| Linux
+[Carnage]()	| Linux
+[Lion]()	| Linux
+[Hackers]()	| Linux
+[Fortune]()	| Linux
+[Offline]()	| Windows
+[Panda]()	| Linux
+
 ## Index of Machine Covered:
 1. [Food](#machine-name-food)
 2. [Shrek](#machine-name-shrek)
