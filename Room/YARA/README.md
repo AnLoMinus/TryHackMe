@@ -102,17 +102,14 @@
   >   - 3.2.5.1. Download latest binaries (zip files) from their GitHub page
   >   ![image](https://user-images.githubusercontent.com/51442719/174512210-7c96f083-a70e-4bb9-b279-332424188c2d.png)
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
+## Task 4  Deploy
+> ## 4.1. In-Browser (No  VPN required)
+> ## 4.2. Using SSH (TryHackMe VPN required).
+> - IP Address: `MACHINE_IP`
+> - Username: `cmnatic`
+> - Password: `yararules!`
+> - SSH Port: `22`
 
 
