@@ -3,7 +3,7 @@
   > ####  Learn the applications and language that is Yara for everything threat intelligence, forensics, and threat hunting!
   > - [x] Task 1  [Introduction](#task-1--introduction)
   > - [x] Task 2  [What is Yara?](#task-2--what-is-yara)
-  > - [ ] Task 3  [Installing Yara (Ubuntu/Debian & Windows)]()
+  > - [ ] Task 3  [Installing Yara (Ubuntu/Debian & Windows)](#task-3--installing-yara-ubuntudebian--windows)
   > - [ ] Task 4  [Deploy]()
   > - [ ] Task 5  [Introduction to Yara Rules]()
   > - [ ] Task 6  [Expanding on Yara Rules]()
