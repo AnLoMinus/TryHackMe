@@ -16,7 +16,7 @@
 - [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) `Easy`
   - [ ] Path Progress (93%)
 - [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) `Easy`
-  - [ ] Path Progress (99%)
+  - [x] Path Progress (100%)
 - [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B) `Easy`
   - [ ] Path Progress (92%)
 - [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) `Intermediate`
@@ -63,7 +63,7 @@
 
 ---
 
-# [99%] [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Web%20Fundamentals) `Easy`
+# ✅ [100%] [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Web%20Fundamentals) `Easy`
 > A pathway to web application security.
 - Understand web fundamentals
 - Major vulnerabilities explained
