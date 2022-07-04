@@ -33,15 +33,15 @@
 ### [Learning Paths ](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths)
 
 - ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security) `Easy` 
-  - [x] Path Progress (100%)
+  - [x] Path Progress (100%) [`Certificate`](https://user-images.githubusercontent.com/51442719/173556502-268cd44f-6dd5-4880-9355-6198212d710f.png)
 - ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester) `Intermediate`
-  - [x] Path Progress (100%)
+  - [x] Path Progress (100%) [`Certificate`]()
 - ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security) `Easy`
-  - [x] Path Progress (100%)
+  - [x] Path Progress (100%) [`Certificate`]()
 - [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) `Easy`
   - [ ] Path Progress (93%)
 - ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) `Easy`
-  - [x] Path Progress (100%)
+  - [x] Path Progress (100%) [`Certificate`]()
 - [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B) `Easy`
   - [ ] Path Progress (92%)
 - [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) `Intermediate`
