@@ -23,6 +23,17 @@
   
 ---
 
+- [X] ✅ [INTRODUCTION TO CYBER SECURITY](#-introduction-to-cyber-security) 
+- [X] ✅ [JR PENETRATION TESTER](#-jr-penetration-tester) 
+- [X] ✅ [PRE SECURITY](#-pre-security) 
+- [X] ✅ [COMPLETE BEGINNER](#-complete-beginner) 
+- [X] ✅ [WEB FUNDAMENTALS](#-web-fundamentals) 
+- [ ] [COMPTIA PENTEST+](#comptia-pentest) 
+- [ ] [OFFENSIVE PENTESTING](#offensive-pentesting) 
+- [ ] [CYBER DEFENSE](#cyber-defense) 
+
+--
+
 # [🔒 TryHackMe 📝](https://tryhackme.com/)
 
 <img align="center"  src="https://user-images.githubusercontent.com/51442719/175040415-d4e67728-19e9-498d-918b-48fd3beac49d.png">
@@ -43,7 +54,7 @@
 
 ### [Learning Paths](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths) & Certificates
 
-- ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security) 
+- # ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security) 
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173556502-268cd44f-6dd5-4880-9355-6198212d710f.png"> <br>
     > Issued on: `1 June 2022` <br>
     > Cert ID: `THM-KEKXOZE5DA`
@@ -63,7 +74,7 @@
 ---
 
 
-- ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester) 
+- # ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester) 
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173556656-bc28a8db-ba13-4276-9422-d6a23cb6c8b9.png"> <br>
     > Issued on: `29 December 2021` <br>
     > Cert ID: `THM-WWQ2DBBZLG`
@@ -74,7 +85,7 @@
 ---
 
 
-- ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security) 
+- # ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security) 
     >  <img width="400" src="https://user-images.githubusercontent.com/51442719/173556879-fb290bdc-563a-4a35-875d-6714e4446ed7.png"> <br>
     > Issued on: `7 November 2021` <br>
     > Cert ID: `THM-FDIDRTSJEO`
@@ -85,15 +96,18 @@
 ---
 
 
-- [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) 
-  - [ ] Path Progress (98%)
+- # ✅ [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner) 
+    > <img width="400" src="https://user-images.githubusercontent.com/51442719/177428601-4c2192fb-e553-4b3b-ab5c-a14a858ca9d2.png"> <br>
+    > Issued on: `14 June 2022` <br>
+    > Cert ID: `THM-CUBKJK2GY6`
+    - [X] Path Progress (100%)
     - `Easy`
     - `64 Hours`
 
 ---
 
 
-- ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) 
+- # ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) 
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png"> <br>
     > Issued on: `14 June 2022` <br>
     > Cert ID: `THM-KIAXER8B0Z`
@@ -103,7 +117,7 @@
 
 ---
 
-- [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) 
+- # [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) 
   - [ ] Path Progress (92%)
     - `Easy`
     - `51 Hours` 
@@ -111,7 +125,7 @@
 ---
 
 
-- [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) 
+- # [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) 
   - [ ] Path Progress (38%)
     - `Intermediate`
     - `47 Hours`
@@ -119,7 +133,7 @@
 ---
 
 
-- [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense) 
+- # [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense) 
   - [ ] Path Progress (41%)
     - `Intermediate`
     - `48 Hours`
