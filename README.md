@@ -38,11 +38,11 @@
 
 <img align="center"  src="https://user-images.githubusercontent.com/51442719/175040415-d4e67728-19e9-498d-918b-48fd3beac49d.png">
 
+![image](https://user-images.githubusercontent.com/51442719/173326175-c37692c7-0769-4959-b98d-fb218047d53e.png)
+
 ```bash
 wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod +x TryHackMe; ./TryHackMe
 ```
-
-![image](https://user-images.githubusercontent.com/51442719/173326175-c37692c7-0769-4959-b98d-fb218047d53e.png)
 
 <a href="https://tryhackme.com/p/Anlominus">
   <img src="https://tryhackme-badges.s3.amazonaws.com/Anlominus.png" alt="TryHackMe">
