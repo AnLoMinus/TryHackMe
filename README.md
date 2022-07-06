@@ -85,7 +85,7 @@
 ---
 
 
-- # ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Pre%20Security) 
+- # ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Pre%20Security) 
     >  <img width="400" src="https://user-images.githubusercontent.com/51442719/173556879-fb290bdc-563a-4a35-875d-6714e4446ed7.png"> <br>
     > Issued on: `7 November 2021` <br>
     > Cert ID: `THM-FDIDRTSJEO`
@@ -107,7 +107,7 @@
 ---
 
 
-- # ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) 
+- # ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Web%20Fundamentals) 
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png"> <br>
     > Issued on: `14 June 2022` <br>
     > Cert ID: `THM-KIAXER8B0Z`
@@ -125,7 +125,7 @@
 ---
 
 
-- # [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) 
+- # [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Offensive%20Pentesting) 
   - [ ] Path Progress (38%)
     - `Intermediate`
     - `47 Hours`
@@ -133,7 +133,7 @@
 ---
 
 
-- # [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense) 
+- # [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Cyber%20Defense) 
   - [ ] Path Progress (41%)
     - `Intermediate`
     - `48 Hours`
