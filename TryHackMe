@@ -282,7 +282,6 @@ CheckingifCaseFolderExist(){
     echo "  ${BBlue}|────${BRed}[ ✅ ${BRed}]${BBlue}──╼ ${BYellow}Creating ${BGreen}Case Planning ${BYellow}and Continue to it\n"
     mkdir Planning
     cd Planning
-    read -p "$Press_ENTER"
   fi
 
   # This Variable for Naming File Report
