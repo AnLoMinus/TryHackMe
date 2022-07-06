@@ -19,10 +19,6 @@
 ###############################################
 clear
 chmod +x $0
-ToolName="TryHackMe"
-ToolAouther="AnLoMinus"
-ToolVersion="v0.0.0.2"
-LastUPDATE= "2022 July 6"
 ###############################################
 
 # Define Colors Variables
@@ -349,7 +345,7 @@ TryHackMePlanning(){
   echo "> - ### Target IP: ${targetIP}" >> ${targetNAME}-HacKingPro-Planning-Log.md
 
   #
-  t3="$(echo "\n\t  ${BBlue}[${BRed}?${BBlue}]${BGreen} - Email of Target: ${BRed}")"
+  t3="$(echo "\n\t  ${BBlue}|──[ 🎯 ]──[${BRed} Email of Target: ${BRed}")"
   read -p "$t3" targetEmail
   if [ -z $targetEmail ]; then
     #statements
@@ -359,7 +355,7 @@ TryHackMePlanning(){
   echo "> - ### Target Email: ${targetEmail}" >> ${targetNAME}-HacKingPro-Planning-Log.md
 
   #
-  t4="$(echo "\n\t  ${BBlue}[${BRed}?${BBlue}]${BGreen} - Phone of Target (With Country Code): ${BRed}")"
+  t4="$(echo "\n\t  ${BBlue}|──[ 🎯 ]──[${BRed} Phone of Target (With Country Code): ${BRed}")"
   read -p "$t4" targetPhone
   if [ -z $targetPhone ]; then
     #statements
@@ -434,6 +430,10 @@ FunTargetPhone(){
 # TryHackMe Main Menu
 TryHackMe_Menu(){
   # Parsing Date and Time
+  ToolName="TryHackMe"
+  ToolAouther="AnLoMinus"
+  ToolVersion="v0.0.0.3"
+  LastUPDATE= "2022 July 6"
   year=$(date +%Y)
   month=$(date +%m)
   day=$(date +%d)
@@ -445,7 +445,7 @@ TryHackMe_Menu(){
   FullTime=$(echo "Full Time${BBlue}:${DGrey} ")
 
   # HacKingPro
-  HacKingPro=$(echo "${BRed}Hac${BYellow}King${BBlue}Pro")
+  HacKingPro=$(echo "${BRed}Try${BYellow}Hack${BBlue}Me")
   HacKingProDavid=$(echo "\n\t  ${BRed}[${BCyan}✡${BRed}] ${HacKingPro} ${BRed}[${BCyan}✡${BRed}]\n\t\t ${BGreen}")
   HacKingProExit=$(echo "\n ${BRed}[${BCyan}✡${BRed}] ${BCyan}Exit ${HacKingPro} ${BRed}[${BCyan}✡${BRed}]\n\t\t ${BGreen}")
   XHacKingProCaseTargetName="$XHacKingPro/Case/$targetNAME"
@@ -486,7 +486,7 @@ TryHackMe_Menu(){
     ${BBlue}|
     ${DGrey}|──[ ~$(pwd) ]
     ${DGrey}|
-    ${BYellow}└──[ $Anlominus 👽 ${HacKingPro} ${BYellow}]──╼${BGreen}  ")
+    ${BYellow}└──[ $ToolAouther 👽 ${HacKingPro} ${BYellow}]──╼${BGreen}  ")
           read -p "$HacKingProMenuMain" cmd
           case $cmd in
             arsenal|Arsenal|cs|CS|cheats|Cheatsheets|CheatSheets|Commands|commands|zz )
