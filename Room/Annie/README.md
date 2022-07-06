@@ -10,9 +10,12 @@
 - ## Task 1  Recon - Research - Exploit
   - Do your usual recon, go for some vulnerability research, and exploit this box already.
   - Also, don't forget the PrivEsc of course :)
-  - Good luck & have fun!
-- Answer the questions below
-  - What is user.txt?
-  - Answer format: [`***{*****************}`]()
-  - What is root.txt?
-  - Answer format: [`***{***********.*.******}`]()
+  - Good luck & have fun! <br>
+
+> ###  Answer the questions below
+
+> - What is user.txt?
+>   - Answer format: [`***{*****************}`]()
+
+> - What is root.txt?
+>   - Answer format: [`***{***********.*.******}`]()
