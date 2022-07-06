@@ -30,7 +30,7 @@
 - [x] [Network Exploitation Basics](./Network%20Exploitation%20Basics)
   - Understand, enumerate and attack various networking services in real-world environments.
 
-- [ ] [Web Hacking Fundamentals](./wWeb%20Hacking%20Fundamentals)
+- [x] [Web Hacking Fundamentals](./wWeb%20Hacking%20Fundamentals)
   - Understand the core security issues with web applications, and learn how to exploit them using industry tools and techniques.
 
 - [x] [Cryptography](./Cryptography)
@@ -42,7 +42,7 @@
 - [x] [Shells and Privilege Escalation](./Shells%20and%20Privilege%20Escalation)
   - Once you have initial access on a machine, learn how to escalate your account privileges to root.
 
-- [ ] [Basic Computer Exploitation](./Basic%20Computer%20Exploitation)
+- [x] [Basic Computer Exploitation](./Basic%20Computer%20Exploitation)
   - Strengthen your skills by exploiting a range of different applications and services, from networking to web to privilege escalation
 
 ---
