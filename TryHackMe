@@ -17,9 +17,11 @@
 # Location: Made With LOVE IN ISRAEL !
 # Source: https://github.com/Anlominus/TryHackMe/TryHackMe
 ###############################################
+clear
+chmod +x $0
 ToolName="TryHackMe"
 ToolAouther="AnLoMinus"
-ToolVersion="v0.0.0.1"
+ToolVersion="v0.0.0.2"
 LastUPDATE= "2022 July 6"
 ###############################################
 
@@ -74,5 +76,440 @@ UWhite='\033[4;37m'  # White
 }
 AnLoMinusColors
 
-clear
-chmod +x $0
+###############################################
+
+# Arsenal Cheatsheets
+Arsenal(){
+  clear
+  # Getting Arsenal Cheatsheets
+  if [ -d == ./Arsenal ]; then
+    #statements
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}Arsenal Installed  \n"
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}cd Into Arsenal\n"
+    cd Arsenal
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}List Arsenal Directories \n"
+    ls -lahs
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}Arsenal Runnin  \n"
+    ./run
+  fi
+  if [[ -d $HOME/opt/anaconda3/bin/arsenal ]]; then
+    #statements
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}Arsenal Installed  \n"
+    break
+  else
+    #statements
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}Creating Folder Arsenal \n"
+    mkdir Arsenal
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${LYellow}Cloning Into [./Arsenal] \n"
+    git clone https://github.com/Orange-Cyberdefense/Arsenal ./Arsenal
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}cd Into Arsenal\n"
+    cd Arsenal
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}List Arsenal Directories \n"
+    ls -lahs
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}Installing Arsenal Requirements \n"
+    python3 -m pip install -r requirements.txt
+    echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}Arsenal Run Installation  \n"
+    ./run
+    if [[ $? == 1 ]]; then
+      #statements
+      echo "\n\t\t ${BRed}[${LGrey}CS${BRed}]${BBlue} - ${BYellow}Arsenal Installation ${BRed} ERROR  \n"
+    fi
+    echo "\n\n"
+    echo "\n\t\t ${BRed}[${BCyan}Readed Command${BRed}]${BBlue} - ${BYellow} $ReaDone  \n"
+    read -p "$Press_ENTER" ArsenalCommand
+
+  fi
+  cd ..
+
+}
+
+###############################################
+
+# Checking If User is Root
+CheckingIfRoot(){
+  ROOT_UID=0
+  if [ "$UID" -eq "$ROOT_UID" ]; then
+    echo "Yes, you are root."
+  else
+    echo "No, you are not root"
+  fi
+}
+
+###############################################
+
+# Checking For System Package Manager
+Check_System() {
+  # checking for system package manager
+  if [ -e /data/data/com.termux/files/usr/bin/pkg ]; then
+  pac="pkg"
+  system="termux"
+  elif [ `command -v brew` ]; then
+    pac="brew"
+    system="mac"
+    sudo=""
+  elif [ `command -v apt` ]; then
+    pac="apt"
+    system="linux"
+  elif [ `command -v apt-get` ]; then
+    pac="apt-get"
+    system="linux"
+  elif [ `command -v apk` ]; then
+    pac="apk"
+    system="linux"
+  elif [ `command -v yum` ]; then
+    pac="yum"
+    system="fedora"
+  fi
+
+  # checking for system root access
+  if [ `command -v sudo` ]; then
+    sudo="sudo"
+  else
+    sudo=""
+  fi
+
+  # checking for system home dir
+  if [ -d $HOME ]; then
+    home=$HOME
+  else
+    home="~/"
+  fi
+
+  # checking for system bin dir
+  if [ -d /data/data/com.termux/files/usr/bin ]; then
+    bin="/data/data/com.termux/files/usr/bin"
+  elif [ -d /usr/local/bin ]; then
+    bin="/usr/local/bin"
+  elif [ -d /bin ]; then
+    bin="/bin"
+  elif [ -d /sbin ]; then
+    bin="/sbin"
+  fi
+
+}
+Check_System
+
+###############################################
+
+# Checking If we set Target
+Checking_IP_Target(){
+  if [ -z $targetIP ]; then
+    #statements
+    clear
+    HacKingProLogo1
+    echo "
+      ${BBlue}[${BRed}ERROR${BBlue}] ${BYellow} ❌ ${BRed}Error; ${LRed}You need Enter IP Before Scanning;
+
+      ${BRed}[${DGrey}P${BRed}]${BBlue} -${DGrey} ⚡️ Planning and Scoping 🎯
+      ${BRed}=======================================================================================
+      ${BBlue}[🗓 ]  ${FullTime} $(date)
+      ${BBlue}[🗓 ]  ${CurrentDate}
+      ${BBlue}[🗓 ]  ${StartingTime}
+      ${DGrey}=======================================================================================
+      ${BBlue}┌──[ 🎯 ]──[${BRed}$(FunTargetIP)${BBlue}]──╼  ${LRed}IP${BBlue}: ${BGreen}${targetIP}
+      ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetDns)${BBlue}]──╼  ${LRed}Dns${BBlue}: ${BGreen}${targetDns}
+      ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetName)${BBlue}]──╼  ${LRed}Name${BBlue}: ${BGreen}${targetNAME}
+      ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetEmail)${BBlue}]──╼  ${LRed}Email${BBlue}: ${BGreen}${targetEmail}
+      ${BBlue}└──[ 🎯 ]──[${BRed}$(FunTargetPhone)${BBlue}]──╼  ${LRed}Phone${BBlue}: ${BGreen}${targetPhone}
+      ${BRed}=======================================================================================
+      ${BRed}[${DGrey}I${BRed}]${BBlue} - ${DGrey}Install HacKingPro On the System"
+
+      echo "\n          ${BRed}[${DGrey}P${BRed}]${BBlue} - ${BGreen} [p|P] ${DGrey} On Keyboard and Come Back!!! `date`"
+      sleep 1
+      echo "\n          ${BRed}[${DGrey}P${BRed}]${BBlue} - ${BGreen} [p|P] ${DGrey} On Keyboard and Come Back!!! `date`"
+      sleep 1
+      echo "\n          ${BRed}[${DGrey}P${BRed}]${BBlue} - ${BGreen} [p|P] ${DGrey} On Keyboard and Come Back!!! `date`"
+      sleep 1
+      echo "\n          ${BRed}[${DGrey}P${BRed}]${BBlue} - ${BGreen} [p|P] ${DGrey} On Keyboard and Come Back!!! `date`"
+      sleep 1
+      echo "\n          ${BRed}[${DGrey}P${BRed}]${BBlue} - ${BGreen} [p|P] ${DGrey} On Keyboard and Come Back!!! `date`"
+      sleep 1
+      read -p "$Press_ENTER" readthat
+      cd "$XHacKingPro"
+  fi
+
+}
+
+# Planning and Scoping
+TryHackMePlanning(){
+  clear
+  # HacKingProLogo1
+  cd $XHacKingPro
+  echo "\n\t  ${BRed}[${LGrey}P${BRed}]${BBlue} - ${LGrey}Planning and Scoping\n"
+  HacKingProTargetStatus=$(echo "\n
+  ${BRed}[${DGrey}P${BRed}]${BBlue} -${DGrey} ⚡️ Planning and Scoping 🎯
+  ${BRed}=======================================================================================
+  ${BBlue}[🗓 ]  ${FullTime} $(date)
+  ${BBlue}[🗓 ]  ${CurrentDate}
+  ${BBlue}[🗓 ]  ${StartingTime}
+  ${DGrey}=======================================================================================
+  ${BBlue}┌──[ 🎯 ]──[${BRed}$(FunTargetIP)${BBlue}]──╼  ${LRed}IP${BBlue}: ${BGreen}${targetIP}
+  ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetDns)${BBlue}]──╼  ${LRed}Dns${BBlue}: ${BGreen}${targetDns}
+  ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetName)${BBlue}]──╼  ${LRed}Name${BBlue}: ${BGreen}${targetNAME}
+  ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetEmail)${BBlue}]──╼  ${LRed}Email${BBlue}: ${BGreen}${targetEmail}
+  ${BBlue}└──[ 🎯 ]──[${BRed}$(FunTargetPhone)${BBlue}]──╼  ${LRed}Phone${BBlue}: ${BGreen}${targetPhone}
+  ${BRed}=======================================================================================
+  ${BRed}[${DGrey}P${BRed}]${BBlue} -${DGrey} ⚡️ Planning and Scoping 🎯
+  ")
+
+
+  echo "$HacKingProTargetStatus"
+
+  #
+  t2="$(echo "\n  ${BBlue}┌──[ 🎯 ]──[${BRed} Name of Target / Client ${BBlue}]──╼  ")"
+  read -p "$t2" targetNAME
+  if [ -z $targetNAME ]; then
+    #statements
+    targetNAME="AnLoMinus"
+    echo "\n\t  ${BRed}[${LGrey}TN${BRed}]${BBlue} - ${LGrey}Target Name ${BBlue} $targetNAME\n"
+  fi
+  #
+  if [ -d Case ]; then
+    #statements
+    echo "\n\t\t  ${BRed}[${BYellow}✅${BRed}]${BBlue} - ${BGreen}Case ${BYellow}Folder Exists, Continue to it\n"
+    read -p "$Press_ENTER"
+    cd Case
+    if [ -d $targetNAME ]; then
+      #statements
+      echo "\n\t\t  ${BRed}[${BYellow}✅${BRed}]${BBlue} - ${BGreen}$targetNAME ${BYellow}Folder Exists, Continue to it\n"
+      read -p "$Press_ENTER"
+      cd $targetNAME
+    else
+      mkdir $targetNAME
+      cd $targetNAME
+    fi
+    if [ -d Planning ]; then
+      #statements
+      echo "\n\t\t  ${BRed}[${BYellow}✅${BRed}]${BBlue} - ${BGreen}$targetNAME/Planning ${BYellow}Folder Exists, Continue to it\n"
+      cd Planning
+    else
+      mkdir Planning
+      cd Planning
+    fi
+  else
+    echo "\n\t\t  ${BRed}[${BYellow}❌${BRed}]${BBlue} - ${BGreen}Case ${BYellow}Folder Not Exists, Create it\n"
+    echo "\n\t\t  ${BRed}[${BYellow}✅${BRed}]${BBlue} - ${BYellow}Creating ${BGreen}Case ${BYellow}Folder and Continue to it\n"
+    mkdir Case
+    cd Case
+    read -p "$Press_ENTER"
+
+    echo "\n\t\t  ${BRed}[${BYellow}✅${BRed}]${BBlue} - ${BYellow}Creating ${BGreen}$targetNAME ${BYellow}and Continue to it\n"
+    mkdir $targetNAME
+    cd $targetNAME
+    read -p "$Press_ENTER"
+
+    echo "\n\t\t  ${BRed}[${BYellow}✅${BRed}]${BBlue} - ${BYellow}Creating ${BGreen}Case Planning ${BYellow}and Continue to it\n"
+    read -p "$Press_ENTER"
+    mkdir Planning
+    cd Planning
+  fi
+
+  #
+  Planning_File="${targetNAME}-HacKingPro-Planning-Log.md"
+  if [ -e ${Planning_File} ]; then
+    t5="$(echo "\n\t\t${BRed}[${BYellow}❌${BRed}]${BBlue} - ${BGreen} $Planning_File ${BGreen} ${BYellow}Exist! ${LRed}Remove it? ${BCyan}[yY/nN]: ")"
+    read -p "$t5 " filexist
+    case $filexist in
+      y|Y)
+      cd "$XHacKingProCaseTargetName/Planning"
+      echo "\n\t\t  ${BBlue}[${BGreen}🧹${BBlue}] ${BGreen}🔶 Removing {${Planning_File}} file .."
+      read -p "$Press_ENTER"
+      rm ${Planning_File}
+      echo "\n\t\t  ${BBlue}[${BGreen}🧹${BBlue}] ${BGreen}✅ Removed {${Planning_File}} file .."
+      cd "$XHacKingProCaseTargetName"
+      ;;
+      n|N)
+      echo "\n\t\t  ${BBlue}[${BGreen}🔶${BBlue}] ${BGreen}Leaving {${Planning_File}} file .."
+      ;;
+    esac
+  fi
+  # Recommended Open With `Atom` Editor For Normal View.
+  echo "# Recommended Open With [Atom]() or [Obsidian]() Editor For Normal View." >> ${targetNAME}-HacKingPro-Planning-Log.md
+  echo "### $targetNAME Case Date: `date`" >> ${targetNAME}-HacKingPro-Planning-Log.md
+  echo "> - ### Target Name: ${targetNAME}" >> ${targetNAME}-HacKingPro-Planning-Log.md
+
+
+  #
+  t0="$(echo "\n  ${BBlue}|──[ 🎯 ]──[${BRed} URL / Domain / Dns / Server ${BBlue}]──╼  ")"
+  read -p "$t0" targetDns
+  if [ -z $targetDns ]; then
+    #statements
+    targetDns="xXx.AnLoMinus.xXx"
+  fi
+  echo "> - ### Target Dns: ${targetDns}" >> ${targetNAME}-HacKingPro-Planning-Log.md
+
+  #
+  t1="$(echo "\n  ${BBlue}|──[ 🎯 ]──[${BRed}  IP / Host of Target / Client: ${BRed}")"
+  read -p "$t1" targetIP
+  if [ -z $targetIP ]; then
+    #statements
+    targetIP="127.0.0.1"
+    # targetIP=" "
+  fi
+  echo "> - ### Target IP: ${targetIP}" >> ${targetNAME}-HacKingPro-Planning-Log.md
+
+  #
+  t3="$(echo "\n\t  ${BBlue}[${BRed}?${BBlue}]${BGreen} - Email of Target: ${BRed}")"
+  read -p "$t3" targetEmail
+  if [ -z $targetEmail ]; then
+    #statements
+    targetEmail="Change.Me@Do.Now"
+    echo "\n${BRed}[${LGrey}TE${BRed}]${BBlue} - ${LGrey}Target Email ${BBlue} $targetEmail\n"
+  fi
+  echo "> - ### Target Email: ${targetEmail}" >> ${targetNAME}-HacKingPro-Planning-Log.md
+
+  #
+  t4="$(echo "\n\t  ${BBlue}[${BRed}?${BBlue}]${BGreen} - Phone of Target (With Country Code): ${BRed}")"
+  read -p "$t4" targetPhone
+  if [ -z $targetPhone ]; then
+    #statements
+    targetPhone="9720506933037"
+    echo "\n${BRed}[${LGrey}TP${BRed}]${BBlue} - ${LGrey}Target Phone ${BBlue} $targetPhone\n"
+  fi
+  echo "> - ### Target Phone: ${targetPhone}" >> ${targetNAME}-HacKingPro-Planning-Log.md
+
+  #
+  echo "\n${BRed}[${BYellow}🔸${BRed}]${BBlue} - ${BYellow}Listing Case \n"
+  echo "${BYellow} Log Directory ${BRed}[${BGreen} $(pwd) ${BRed}]\n${BGreen}"
+  echo "${BYellow} Log File ${BRed}[${BGreen} $(ls) ${BRed}]\n${BGreen}"
+  read -p "$Press_ENTER" readthat
+  cd $XHacKingPro
+}
+
+# Planning Status
+PlanningStatus=" "
+FunTargetDns(){
+  #statements
+  if [ -z ${targetDns} ]; then
+    TargetDnsStatusOFF=" ❌ "
+    echo "${TargetDnsStatusOFF}"
+  else
+    targetDnsStatusON=" ✅ "
+    echo "${targetDnsStatusON}"
+  fi
+}
+FunTargetIP(){
+  #statements
+  if [ -z ${targetIP} ]; then
+    TargetIpStatusOFF=" ❌ "
+    echo "${TargetIpStatusOFF}"
+  else
+    TargetIpStatusON=" ✅ "
+    echo "${TargetIpStatusON}"
+  fi
+}
+FunTargetName(){
+  #statements
+  if [ -z ${targetNAME} ]; then
+    TargetNameStatusOFF=" ❌ "
+    echo "${TargetNameStatusOFF}"
+  else
+    TargetNameStatusON=" ✅ "
+    echo "${TargetNameStatusON}"
+  fi
+}
+FunTargetEmail(){
+  #statements
+  if [ -z ${targetEmail} ]; then
+    TargetEmailStatusOFF=" ❌ "
+    echo "${TargetEmailStatusOFF}"
+  else
+    TargetEmailStatusON=" ✅ "
+    echo "${TargetEmailStatusON}"
+  fi
+}
+FunTargetPhone(){
+      #statements
+      if [ -z ${targetPhone} ]; then
+        TargetPhoneStatusOFF=" ❌ "
+        echo "${TargetPhoneStatusOFF}"
+      else
+        TargetPhoneStatusON=" ✅ "
+        echo "${TargetPhoneStatusON}"
+      fi
+    }
+
+###############################################
+
+# TryHackMe Main Menu
+TryHackMe_Menu(){
+  # Parsing Date and Time
+  year=$(date +%Y)
+  month=$(date +%m)
+  day=$(date +%d)
+  hour=$(date +%H)
+  minute=$(date +%M)
+  second=$(date +%S)
+  CurrentDate=$(echo "Current Date${BBlue}: ${DGrey}$day-$month-$year")
+  StartingTime=$(echo "Starting Time${BBlue}: ${DGrey}$hour:$minute:$second")
+  FullTime=$(echo "Full Time${BBlue}:${DGrey} ")
+
+  # HacKingPro
+  HacKingPro=$(echo "${BRed}Hac${BYellow}King${BBlue}Pro")
+  HacKingProDavid=$(echo "\n\t  ${BRed}[${BCyan}✡${BRed}] ${HacKingPro} ${BRed}[${BCyan}✡${BRed}]\n\t\t ${BGreen}")
+  HacKingProExit=$(echo "\n ${BRed}[${BCyan}✡${BRed}] ${BCyan}Exit ${HacKingPro} ${BRed}[${BCyan}✡${BRed}]\n\t\t ${BGreen}")
+  XHacKingProCaseTargetName="$XHacKingPro/Case/$targetNAME"
+  Press_ENTER=$(echo "\n\n${BYellow}                🔶    Press ENTER    🔶     ${BGreen}\n\n")
+  Press_Enter_To_START=$(echo "\n\n${BYellow}                🔶    Press Enter To START    🔶     ${BGreen}\n\n")
+
+  while true; do
+    #statements
+    clear
+    # HacKingProLogo1
+    HacKingProTargetStatus=$(echo "\n
+    ${BRed}[${DGrey}P${BRed}]${BBlue} -${DGrey} ⚡️ Planning and Scoping 🎯
+    ${BRed}=======================================================================================
+    ${BBlue}[🗓 ]  ${FullTime} $(date)
+    ${BBlue}[🗓 ]  ${CurrentDate}
+    ${BBlue}[🗓 ]  ${StartingTime}
+    ${DGrey}=======================================================================================
+    ${BBlue}┌──[ 🎯 ]──[${BRed}$(FunTargetIP)${BBlue}]──╼  ${LRed}IP${BBlue}: ${BGreen}${targetIP}
+    ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetDns)${BBlue}]──╼  ${LRed}Dns${BBlue}: ${BGreen}${targetDns}
+    ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetName)${BBlue}]──╼  ${LRed}Name${BBlue}: ${BGreen}${targetNAME}
+    ${BBlue}|──[ 🎯 ]──[${BRed}$(FunTargetEmail)${BBlue}]──╼  ${LRed}Email${BBlue}: ${BGreen}${targetEmail}
+    ${BBlue}└──[ 🎯 ]──[${BRed}$(FunTargetPhone)${BBlue}]──╼  ${LRed}Phone${BBlue}: ${BGreen}${targetPhone}
+    ${BRed}=======================================================================================
+    ${BRed}[${DGrey}P${BRed}]${BBlue} -${DGrey} ⚡️ Planning and Scoping 🎯
+
+
+    ${BRed}[${BYellow}KoTH${BRed}]${BBlue} - ${BYellow}🤴🏼 King of The Hill ⛰
+
+    ")
+
+    HacKingProMenuMain=$(echo "${BRed}
+    ${BBlue}[${BYellow}#${BBlue}] ${BYellow} 📜 TryHackMe Menu ⌖"
+
+          echo "$HacKingProTargetStatus""
+    ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
+
+    ${BBlue}┌──${BBlue}[${BRed} Arsenal ${BBlue}]${BBlue} - ${DGrey}[${BBlue} Cheat Sheets ${DGrey}] ${BRed}~ ${DGrey}[${BRed} Command ${DGrey}]${BCyan}: $BGreen $ArsenalCommand
+    ${BBlue}|
+    ${DGrey}|──[ ~$(pwd) ]
+    ${DGrey}|
+    ${BYellow}└──[ $Anlominus 👽 ${HacKingPro} ${BYellow}]──╼${BGreen}  ")
+          read -p "$HacKingProMenuMain" cmd
+          case $cmd in
+            arsenal|Arsenal|cs|CS|cheats|Cheatsheets|CheatSheets|Commands|commands|zz )
+            Arsenal
+            ;;
+            ls )
+            ls_lahs="$(echo "\n\t ${BRed}[🙏🏼${BRed}] ${BWhite}List Files ~ Executing: ls -lahs ${HacKingPro} ${BRed}[🙏🏼${BRed}]\n\t\t ${HacKingPro}")"
+            echo "$ls_lahs"
+            sleep 2
+            ls -lahs
+            sleep 2
+            read -p "$ls_lahs" cmd
+            ;;
+            x|X|exit|quit|Exit )
+            clear
+            echo "$HacKingProExit"
+            break
+            ;;
+            p|P|planning|Planning )
+            TryHackMePlanning
+            ;;
+
+          esac
+done
+}
+TryHackMe_Menu
