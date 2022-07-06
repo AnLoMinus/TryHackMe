@@ -117,7 +117,7 @@
 
 ---
 
-- # [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) 
+- # [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/CompTIA%20Pentest%2B) 
   - [ ] Path Progress (92%)
     - `Easy`
     - `51 Hours` 
