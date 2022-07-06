@@ -23,11 +23,11 @@
 
 ---
 
-- [X] ✅ [INTRODUCTION TO CYBER SECURITY](#-introduction-to-cyber-security)
-- [X] ✅ [JR PENETRATION TESTER](#-jr-penetration-tester)
-- [X] ✅ [PRE SECURITY](#-pre-security)
-- [X] ✅ [COMPLETE BEGINNER](#-complete-beginner)
-- [X] ✅ [WEB FUNDAMENTALS](#-web-fundamentals)
+- [X] ✅ [INTRODUCTION TO CYBER SECURITY](#-introduction-to-cyber-security) `24 Hours`
+- [X] ✅ [JR PENETRATION TESTER](#-jr-penetration-tester) `56 Hours`
+- [X] ✅ [PRE SECURITY](#-pre-security) `40 Hours`
+- [X] ✅ [COMPLETE BEGINNER](#-complete-beginner) `64 Hours`
+- [X] ✅ [WEB FUNDAMENTALS](#-web-fundamentals) `32 Hours`
 - [ ] [COMPTIA PENTEST+](#comptia-pentest)
 - [ ] [OFFENSIVE PENTESTING](#offensive-pentesting)
 - [ ] [CYBER DEFENSE](#cyber-defense)
