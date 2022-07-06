@@ -230,7 +230,6 @@ Checking_IP_Target(){
 TryHackMePlanning(){
   clear
   # HacKingProLogo1
-  cd $XHacKingPro
   echo "\n\t  ${BRed}[${LGrey}P${BRed}]${BBlue} - ${LGrey}Planning and Scoping\n"
   HacKingProTargetStatus=$(echo "\n
   ${BRed}[${DGrey}P${BRed}]${BBlue} -${DGrey} ⚡️ Planning and Scoping 🎯
@@ -251,7 +250,8 @@ TryHackMePlanning(){
 
   echo "$HacKingProTargetStatus"
 
-  #
+  # Read Target Name From the User
+  # This Variable is for Case Name.
   t2="$(echo "\n  ${BBlue}┌──[ 🎯 ]──[${BRed} Name of Target / Client ${BBlue}]──╼  ")"
   read -p "$t2" targetNAME
   if [ -z $targetNAME ]; then
@@ -259,7 +259,8 @@ TryHackMePlanning(){
     targetNAME="AnLoMinus"
     echo "\n\t  ${BRed}[${LGrey}TN${BRed}]${BBlue} - ${LGrey}Target Name ${BBlue} $targetNAME\n"
   fi
-  #
+
+  # Checking if Case Folder Exist
   if [ -d Case ]; then
     #statements
     echo "\n\t\t  ${BRed}[${BYellow}✅${BRed}]${BBlue} - ${BGreen}Case ${BYellow}Folder Exists, Continue to it\n"
@@ -300,7 +301,7 @@ TryHackMePlanning(){
     cd Planning
   fi
 
-  #
+  # This Variable for Naming File Report
   Planning_File="${targetNAME}-HacKingPro-Planning-Log.md"
   if [ -e ${Planning_File} ]; then
     t5="$(echo "\n\t\t${BRed}[${BYellow}❌${BRed}]${BBlue} - ${BGreen} $Planning_File ${BGreen} ${BYellow}Exist! ${LRed}Remove it? ${BCyan}[yY/nN]: ")"
@@ -319,6 +320,7 @@ TryHackMePlanning(){
       ;;
     esac
   fi
+
   # Recommended Open With `Atom` Editor For Normal View.
   echo "# Recommended Open With [Atom]() or [Obsidian]() Editor For Normal View." >> ${targetNAME}-HacKingPro-Planning-Log.md
   echo "### $targetNAME Case Date: `date`" >> ${targetNAME}-HacKingPro-Planning-Log.md
@@ -326,6 +328,8 @@ TryHackMePlanning(){
 
 
   #
+  # Read Target URL / Domain / Dns / Server From the User
+  # This Variable is for AttacKing ~> URL / Domain / Dns / Server/ Websites .
   t0="$(echo "\n  ${BBlue}|──[ 🎯 ]──[${BRed} URL / Domain / Dns / Server ${BBlue}]──╼  ")"
   read -p "$t0" targetDns
   if [ -z $targetDns ]; then
@@ -368,12 +372,12 @@ TryHackMePlanning(){
   echo "\n${BRed}[${BYellow}🔸${BRed}]${BBlue} - ${BYellow}Listing Case \n"
   echo "${BYellow} Log Directory ${BRed}[${BGreen} $(pwd) ${BRed}]\n${BGreen}"
   echo "${BYellow} Log File ${BRed}[${BGreen} $(ls) ${BRed}]\n${BGreen}"
-  read -p "$Press_ENTER" readthat
+  read -p "$Press_ENTER"
   cd $XHacKingPro
 }
 
 # Planning Status
-PlanningStatus=" "
+# PlanningStatus=" "
 FunTargetDns(){
   #statements
   if [ -z ${targetDns} ]; then
