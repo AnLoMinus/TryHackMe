@@ -2,10 +2,10 @@
 
 - [ ] [Introduction to Antivirus](https://tryhackme.com/room/introtoav)
   > Understand how antivirus software works and what detection techniques are used to bypass malicious files checks.
-    - [ ] [Task 1  Introduction](#task-1--introduction)
-    - [ ] [Task 2  Antivirus Software](#task-2--antivirus-software)
-    - [ ] [Task 3  Antivirus Features](#task-3--antivirus-features)
-    - [ ] [Task 4  Deploy the VM](#task-4--deploy-the-vm)
+    - [x] [Task 1  Introduction](#task-1--introduction)
+    - [x] [Task 2  Antivirus Software](#task-2--antivirus-software)
+    - [x] [Task 3  Antivirus Features](#task-3--antivirus-features)
+    - [x] [Task 4  Deploy the VM](#task-4--deploy-the-vm)
     - [ ] [Task 5  AV Static Detection](#task-5--av-static-detection)
     - [ ] [Task 6  Other Detection Techniques](#task-6--other-detection-techniques)
     - [ ] [Task 7  AV Testing and Fingerprinting](#task-7--av-testing-and-fingerprinting)
@@ -179,6 +179,113 @@ For more information about Host-based security solutions, we suggest visiting th
 ---
 
 ## Task 5  AV Static Detection
+- Generally speaking, AV detection can be classified into three main approaches:
+  - `Static` Detection
+  - `Dynamic` Detection
+  - `Heuristic` and `Behavioral` Detection 
+
+### Static Detection
+- A static detection technique is the simplest type of Antivirus detection, which is based on predefined signatures of malicious files. 
+- Simply, it uses pattern-matching techniques in the detection, such as finding a unique string, CRC (Checksums), sequence of bytecode/Hex values, and Cryptographic hashes (MD5, SHA1, etc.).
+- It then performs a set of comparisons between existing files within the operating system and a database of signatures. 
+- If the signature exists in the database, then it is considered malicious. 
+- This method is effective against static malware.
+
+![image](https://user-images.githubusercontent.com/51442719/180184875-6f35a756-2ee5-4ffa-ab88-49743ecfc85d.png)
+
+- In this task, we will be using a signature-based detection method to see how antivirus products detect malicious files. 
+- It is important to note that this technique works against known malicious files only with pre-generated signatures in a database. 
+- Thus, the database needs to be updated from time to time.
+
+- We will use the `ClamAV` antivirus software to demonstrate how signature-based detection identifies malicious files. 
+- The `ClamAV` software is pre-installed in the provided VM, and we can access it in the following path: `c:\Program Files\ClamAV\clamscan.exe`. 
+- We will also scan a couple of malware samples, which can be found on the desktop. 
+- The Malware samples folder contains the following files:
+  - `EICAR` is a test file containing ASCII strings used to test AV software's effectiveness instead of real malware that could damage your machine. 
+    > For more information, you may visit the official EICAR website, [`Here`](https://www.eicar.org/?page_id=3950).
+  - `Backdoor 1` is a C# program that uses a well-known technique to establish a reverse connection, including creating a process and executing a Metasploit Framework shellcode.
+  - `Backdoor 2` is a C# program that uses process injection and encryption to establish a reverse connection, including injecting a Metasploit shellcode into an existing and running process.
+  - `AV-Check` is a C# program that enumerates AV software in a target machine. 
+    > Note that this file is not malicious. We will discuss this tool in more detail in task 6. 
+  - `notes.txt` is a text file that contains a command line. 
+    > Note that this file is not malicious.
+- ClamAV comes with its database, and during the installation, we need to download the recently updated version. 
+- Let's try to scan the Malware sample folder using the clamscan.exe binary and check how ClamAV performs against these samples.
+```cmd
+c:\>"c:\Program Files\ClamAV\clamscan.exe" c:\Users\thm\Desktop\Samples
+Loading:    22s, ETA:   0s [========================>]    8.61M/8.61M sigs
+Compiling:   4s, ETA:   0s [========================>]       41/41 tasks
+
+C:\Users\thm\Desktop\Samples\AV-Check.exe: OK
+C:\Users\thm\Desktop\Samples\backdoor1.exe: Win.Malware.Swrort-9872015-0 FOUND
+C:\Users\thm\Desktop\Samples\backdoor2.exe: OK
+C:\Users\thm\Desktop\Samples\eicar.com: Win.Test.EICAR_HDB-1 FOUND
+C:\Users\thm\Desktop\Samples\notes.txt: OK
+```
+- The above output shows that ClamAV software correctly analyzed and flagged two of our tested files (EICAR, backdoor1, AV-Check, and notes.txt) as malicious. 
+- However, it incorrectly identified the backdoor2 as non-malicious while it does.
+- You can run `clamscan.exe --debug <file_to_scan>`, and you will see all modules loaded and used during the scanning. 
+- For example, it uses the unpacking method to split the files and look for a predefined malicious sequence of bytecode values, and that is how it was able to detect the C# backdoor 1. 
+- The bytecode value of the Metasploit shellcode used in backdoor 1 was previously identified and added to ClamAV's database. 
+- However, backdoor 2 uses an encryption technique (XOR) for the Metasploit shellcode, resulting in different sequences of bytecode values that it doesn't find in the ClamAV database. 
+- While the ClamAV was able to detect the EICAR.COM test file as malicious using the md5 signature-based technique. 
+- To confirm this, we can re-scan the EICAR.COM test file again in debug mode (--debug). At some point in the output, you will see the following message:
+```cmd
+LibClamAV debug: FP SIGNATURE: 44d88612fea8a8f36de82e1278abb02f:68:Win.Test.EICAR_HDB-1  # Name: eicar.com, Type: CL_TYPE_TEXT_ASCII
+```
+- Now let's generate the md5 value of the EICAR.COM if it matches what we see in the previous message from the output. 
+- We will be using the `sigtool` for that: 
+```cmd
+c:\>"c:\Program Files\ClamAV\sigtool.exe" --md5 c:\Users\thm\Desktop\Samples\eicar.com
+44d88612fea8a8f36de82e1278abb02f:68:eicar.com
+```
+- If you closely check the generated MD5 value, `44d88612fea8a8f36de82e1278abb02f`, it matches.
+
+### Create Your Own Signature Database 
+- One of ClamAV's features is creating your own database, allowing you to include items not found in the official ClamAV database. 
+- Let's try to create a signature for Backdoor 2, which ClamAV already missed, and add it to a database. 
+- The following are the required steps:
+  - Generate an MD5 signature for the file.
+  - Add the generated signature into a database with the extension "`.hdb`".
+  - Re-scan the ClamAV against the file using our new database.
+- First, we will be using the `sigtool` tool, which is included in the ClamAV suite, to generate an MD5 hash of `backdoor2.exe`  using the `--md5` argument.
+```cmd
+C:\Users\thm\Desktop\Samples>"c:\Program Files\ClamAV\sigtool.exe" --md5 backdoor2.exe
+75047189991b1d119fdb477fef333ceb:6144:backdoor2.exe 
+```
+- As shown in the output, the generated hash string contains the following structure: `Hash:Size-in-byte:FileName`. 
+- Note that ClamAV uses the generated value in the comparison during the scan.
+- Now that we have the MD5 hash, now let's create our own database. 
+- We will use the `sigtool` tool and save the output into a file using the > `thm.hdb` as follows,
+```cmd
+C:\Users\thm\Desktop\Samples>"c:\Program Files\ClamAV\sigtool.exe" --md5 backdoor2.exe > thm.hdb
+```
+- As a result, a `thm.hdb` file will be created in the current directory that executes the command. 
+- We already know that ClamAV did not detect the backdoor2.exe using the official database! 
+- Now, let's re-scan it using the database we created, `thm.hdb`, and see the result!
+```cmd
+C:\Users\thm\Desktop\Samples>"c:\Program Files\ClamAV\clamscan.exe" -d thm.hdb backdoor2.exe
+Loading:     0s, ETA:   0s [========================>]        1/1 sigs
+Compiling:   0s, ETA:   0s [========================>]       10/10 tasks
+
+C:\Users\thm\Desktop\Samples\backdoor2.exe: backdoor2.exe.UNOFFICIAL FOUND
+```
+- As we expected, the ClamAV tool flagged the backdoor2.exe binary as malicious based on the database we provided. 
+- As a practice, add the `AV-Check.exe`'s MD5 signature into the same database we already created, then check whether ClamAV can flag `AV-Check.exe` as malicious.
+
+### Yara Rules for Static Detection
+- One of the tools that help in static detection is [`Yara`](http://virustotal.github.io/yara/). 
+- Yara is a tool that allows malware engineers to classify and detect malware. 
+- Yara uses rule-based detection, so in order to detect new malware, we need to create a new rule. 
+- ClamAV can also deal with Yara rules to detect malicious files. 
+- The rule will be the same as in our database in the previous section. 
+- To create a rule, we need to examine and analyze the malware; based on the findings, we write a rule. 
+- Let's take `AV-Check.exe` as an example and write a rule for it. 
+- First, let's analyze the file and list all human-readable strings in the binary using the strings tool. 
+- As a result, we will see all functions, variables, and nonsense strings. 
+- But, if you look closely, we can use some of the unique strings in our rules to detect this file in the future. 
+- The AV-Check uses a program database (`.pdb`), which contains a type and symbolic debugging information of the program during the compiling.
+
 
 ---
 
