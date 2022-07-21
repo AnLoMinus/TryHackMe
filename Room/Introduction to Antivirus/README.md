@@ -89,11 +89,11 @@ For more information about Host-based security solutions, we suggest visiting th
 ### Answer the questions below
 
 - What was the virus name that infected John McAfee's PC?
-  > Answer format: [`*****`]()
+  > Answer format: [`*****`](#Brain)
 - Which PC Antivirus product was the first AV software on the market?
-  > Answer format: [`******`]()
+  > Answer format: [`******`](#McAfee)
 - Antivirus software is a _____-based security solution.
-  > Answer format: [`****`]()
+  > Answer format: [`****`](#Host)
 
 
 
