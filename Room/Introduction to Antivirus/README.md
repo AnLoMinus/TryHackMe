@@ -59,7 +59,10 @@
   - Inject other malicious software or unwanted advertisements.
   - Used the compromised machine to perform further attacks such as botnet attacks.
 
-### AV vs other security products
+### AV vs other security products 
+
+<img width="100" src="https://user-images.githubusercontent.com/51442719/180164398-5973d7da-e912-4599-9687-b12846990720.png">
+
 - In addition to AV software, other host-based security solutions provide real-time protection to endpoint devices. 
 - `Endpoint Detection and Response` (`EDR`) is a security solution that provides real-time protection based on behavioral analytics. 
 - An antivirus application performs scanning, detecting, and removing malicious files. 
@@ -67,7 +70,33 @@
 
 Modern Antivirus products are implemented to integrate the traditional Antivirus features and other advanced functionalities (similar to EDR functionalities) into one product to provide comprehensive protection against digital threats.
 
-For more information about Host-based security solutions, we suggest visiting the THM room: The Lay of the Land.
+For more information about Host-based security solutions, we suggest visiting the THM room: [`The Lay of the Land`](https://tryhackme.com/room/thelayoftheland).
+
+### AV software in the past and present
+- McAfee Associates, Inc. 
+  - started the first AV software implementation in 1987. 
+  - It was called "VirusScan," and its main goal at that time was to remove a virus named "Brain" that infected John McAfee's computer. 
+  - Later, other companies joined in the battle against viruses. 
+  - AV software was called scanners, and they were command-line software that searched for malicious patterns in files. 
+- Since then, things have changed. 
+  - AV software nowadays uses a Graphical User Interface (GUI) to perform scans for malicious files and other tasks. 
+  - Malware programs have also expanded in scope and now target victims on Windows and other operating systems. 
+  - Modern AV software supports most devices and platforms, including Windows, Linux, macOS, Android, and iOS. 
+  - Modern AV software has improved and become more intelligent and sophisticated, as they pack a bundle of versatile features, including Antivirus, Anti-Exploit, Firewall, Encryption tool, etc.
+
+- We will be discussing some AV features in the next task.
+
+### Answer the questions below
+
+- What was the virus name that infected John McAfee's PC?
+  > Answer format: [`*****`]()
+- Which PC Antivirus product was the first AV software on the market?
+  > Answer format: [`******`]()
+- Antivirus software is a _____-based security solution.
+  > Answer format: [`****`]()
+
+
+
 
 
 ---
