@@ -229,7 +229,8 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 - The bytecode value of the Metasploit shellcode used in backdoor 1 was previously identified and added to ClamAV's database. 
 - However, backdoor 2 uses an encryption technique (XOR) for the Metasploit shellcode, resulting in different sequences of bytecode values that it doesn't find in the ClamAV database. 
 - While the ClamAV was able to detect the EICAR.COM test file as malicious using the md5 signature-based technique. 
-- To confirm this, we can re-scan the EICAR.COM test file again in debug mode (--debug). At some point in the output, you will see the following message:
+- To confirm this, we can re-scan the EICAR.COM test file again in debug mode (--debug). 
+- At some point in the output, you will see the following message:
 ```cmd
 LibClamAV debug: FP SIGNATURE: 44d88612fea8a8f36de82e1278abb02f:68:Win.Test.EICAR_HDB-1  # Name: eicar.com, Type: CL_TYPE_TEXT_ASCII
 ```
