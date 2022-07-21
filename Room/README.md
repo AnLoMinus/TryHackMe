@@ -5,7 +5,7 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/180161008-64a5b047-53f6-4d3c-8e37-621768a43b52.png)
 
-- [ ] [Introduction to Antivirus](https://tryhackme.com/room/introtoav)
+- [ ] [🔮](./Introduction%20to%20Antivirus/README.md) | [Introduction to Antivirus](https://tryhackme.com/room/introtoav)
   > Understand how antivirus software works and what detection techniques are used to bypass malicious files checks.
     - [ ] Task 1  Introduction
     - [ ] Task 2  Antivirus Software
