@@ -2,9 +2,9 @@
 
 - [ ] [Introduction to Antivirus](https://tryhackme.com/room/introtoav)
   > Understand how antivirus software works and what detection techniques are used to bypass malicious files checks.
-    - [ ] [Task 1  Introduction]()
-    - [ ] [Task 2  Antivirus Software]()
-    - [ ] [Task 3  Antivirus Features]()
+    - [ ] [Task 1  Introduction](#task-1--introduction)
+    - [ ] [Task 2  Antivirus Software](#task-2--antivirus-software)
+    - [ ] [Task 3  Antivirus Features](#task-3--antivirus-features)
     - [ ] [Task 4  Deploy the VM]()
     - [ ] [Task 5  AV Static Detection]()
     - [ ] [Task 6  Other Detection Techniques]()
