@@ -6,7 +6,7 @@
 - [x] [Task 4  Vulnerability Analysis](#task-4--vulnerability-analysis)
 - [x] [Task 5  Risk Assessment](#task-5--risk-assessment)
 - [x] [Task 6  Countermeasures](#task-6--countermeasures)
-- [ ] [Task 7  More Practical Examples](#task-7--more-practical-examples)
+- [x] [Task 7  More Practical Examples](#task-7--more-practical-examples)
 - [x] [Task 8  Summary](#task-8--summary)
 
 ---
