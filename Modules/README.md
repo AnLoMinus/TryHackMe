@@ -83,6 +83,16 @@
 - [`🔶`](https://github.com/Anlominus/TryHackMe/tree/main/Modules/Network%20Security%20Evasion) [Network Security Evasion](https://tryhackme.com/module/network-security-evasion) 
   - Learn how to bypass and evade different security solutions used in the industry such as firewalls, IDS/IPS, and antivirus.
 
+    - `VIP` - [Network Security Solutions](https://tryhackme.com/jr/redteamnetsec)
+      > Learn about and experiment with various IDS/IPS evasion techniques, such as protocol and payload manipulation.
+
+    - `VIP` - [Firewalls](https://tryhackme.com/jr/redteamfirewalls)
+      > Learn about and experiment with various firewall evasion techniques, such as port hopping and port tunneling.
+
+    - `VIP` - [Sandbox Evasion](https://tryhackme.com/jr/sandboxevasion)
+      > Learn about active defense mechanisms Blue Teamers can deploy to identify adversaries in their environment.  
+  
+
 ---
 
 - ✅ [Network Exploitation Basics](https://tryhackme.com/module/intro-to-networking)
