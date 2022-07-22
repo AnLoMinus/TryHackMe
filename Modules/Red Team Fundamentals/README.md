@@ -12,60 +12,72 @@
 
 
 > Learn about the basics of a red engagement, the main components and stakeholders involved, and how red teaming differs from other cyber security engagements.
-> - [x] Task 1  Introduction
-> - [x] Task 2  Vulnerability Assessment and Penetration Tests Limitations
-> - [x] Task 3  Red Team Engagements
-> - [x] Task 4  Teams and Functions of an Engagement
-> - [x] Task 5  Engagement Structure
-> - [x] Task 6  Overview of a Red Team Engagement
-> - [x] Task 7  Conclusion
+- [x] Task 1  Introduction
+- [x] Task 2  Vulnerability Assessment and Penetration Tests Limitations
+- [x] Task 3  Red Team Engagements
+- [x] Task 4  Teams and Functions of an Engagement
+- [x] Task 5  Engagement Structure
+- [x] Task 6  Overview of a Red Team Engagement
+- [x] Task 7  Conclusion
 
 ---
 
 ## ✅ `Free` [Red Team Engagements](https://tryhackme.com/jr/redteamengagements)
 > Learn the steps and procedures of a red team engagement, including planning, frameworks, and documentation.
-> - [x] Task 1  Introduction
-> - [x] Task 2  Defining Scope and Objectives
-> - [x] Task 3  Rules of Engagement
-> - [x] Task 4  Campaign Planning
-> - [x] Task 5  Engagement Documentation
-> - [x] Task 6  Concept of Operations
-> - [x] Task 7  Resource Plan
-> - [x] Task 8  Operations Plan
-> - [x] Task 9  Mission Plan
-> - [x] Task 10  Conclusion
+- [x] Task 1  Introduction
+- [x] Task 2  Defining Scope and Objectives
+- [x] Task 3  Rules of Engagement
+- [x] Task 4  Campaign Planning
+- [x] Task 5  Engagement Documentation
+- [x] Task 6  Concept of Operations
+- [x] Task 7  Resource Plan
+- [x] Task 8  Operations Plan
+- [x] Task 9  Mission Plan
+- [x] Task 10  Conclusion
 
 ---
 
 
-## 🔶 `VIP` [Red Team Threat Intel](https://tryhackme.com/jr/redteamthreatintel)
+## ✅ `VIP` [Red Team Threat Intel](https://tryhackme.com/jr/redteamthreatintel)
 > Apply threat intelligence to red team engagements and adversary emulation.
-> - [x] Task 1  Introduction
-  > - ### `TP` Tactics, Techniques, and Procedures
-  > - ### `TI` Threat Intelligence 
-  > - ### `CTI` Cyber Threat Intelligence 
-  > - ### `ISAC` Information and Sharing Analysis Centers 
-  - [Intro to ISAC](https://tryhackme.com/room/introtoisac)
-  > - ### Learning Objectives
-  >   - #### Understand the basics of threat intelligence and how it can be applied to red team engagements. <br>
-  >   - #### Learn how to create a threat-intel-driven campaign. <br>
-  >   - #### Use frameworks to understand concepts and leverage threat intelligence.
-> - [ ] Task 2  What is Threat Intelligence
-> - [ ] Task 3  Applying Threat Intel to the Red Team
-> - [ ] Task 4  The TIBER-EU Framework
-> - [ ] Task 5  TTP Mapping
-> - [ ] Task 6  Other Red Team Applications of CTI
-> - [ ] Task 7  Creating a Threat Intel Driven Campaign
-> - [ ] Task 8  Conclusion
+- `TI` - Threat Intelligence 
+- `TTP` - Tactics, Techniques, and Procedures
+- `CTI` - Cyber Threat Intelligence 
+- `ISAC` - Information and Sharing Analysis Centers 
+- [x] Task 1  Introduction
+- [x] Task 2  What is Threat Intelligence
+- [x] Task 3  Applying Threat Intel to the Red Team
+- [x] Task 4  The TIBER-EU Framework
+- [x] Task 5  TTP Mapping
+- [x] Task 6  Other Red Team Applications of CTI
+- [x] Task 7  Creating a Threat Intel Driven Campaign
+- [x] Task 8  Conclusion
 
 ---
 
 ## 🔶 `VIP` [Red Team OPSEC](https://tryhackme.com/jr/opsec)
 > Learn how to apply Operations Security (OPSEC) process for Red Teams.
+ - [ ] [Task 1  Introduction]()
+- [ ] [Task 2  Critical Information Identification]()
+- [ ] [Task 3  Threat Analysis]()
+- [ ] [Task 4  Vulnerability Analysis]()
+- [ ] [Task 5  Risk Assessment]()
+- [ ] [Task 6  Countermeasures]()
+- [ ] [Task 7  More Practical Examples]()
+- [ ] [Task 8  Summary]()
+
 
 ---
 
 ## 🔶 `VIP` [Intro to C2](https://tryhackme.com/jr/introtoc2)
 > Learn the essentials of Command and Control to help you become a better Red Teamer and simplify your next Red Team assessment!
+- [ ] [Task 1  Introduction]()
+- [ ] [Task 2  Command and Control Framework Structure]()
+- [ ] [Task 3  Common C2 Frameworks]()
+- [ ] [Task 4  Setting Up a C2 Framework]()
+- [ ] [Task 5  C2 Operation Basics]()
+- [ ] [Task 6  Command, Control, and Conquer]()
+- [ ] [Task 7  Advanced C2 Setups]()
+- [ ] [Task 8  Wrapping Up]()
 
 ---
