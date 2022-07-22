@@ -131,6 +131,36 @@
 - After identifying critical information and analysing threats, we can start with the third step: analysing vulnerabilities. 
 - This is not to be confused with vulnerabilities related to cybersecurity. 
 > An OPSEC vulnerability exists when an adversary can obtain critical information, analyse the findings, and act in a way that would affect your plans.
+- To better understand an OPSEC vulnerability as related to red teaming, we'll consider the following scenario. 
+  - You use Nmap to discover live hosts on a target subnet and find open ports on live hosts. 
+  - Moreover, you send various phishing emails leading the victim to a phishing webpage you're hosting. 
+  - Furthermore, you're using the Metasploit framework to attempt to exploit certain software vulnerabilities. 
+  - These are three separate activities; however, if you use the same IP address(es) to carry out these different activities, this would lead to an OPSEC vulnerability. 
+  - Once any hostile/malicious activity is detected, the blue team is expected to take action, such as blocking the source IP address(es) temporarily or permanently. 
+  - Consequently, it would take one source IP address to be blocked for all the other activities use this IP address to fail. 
+  - In other words, this would block access to the destination IP address used for the phising server, and the source IP address using by Nmap and Metasploit Framework.
+- Another example of an OPSEC vulnerability would be an unsecured database that's used to store data received from phishing victims. 
+- If the database is not properly secured, it may lead to a malicious third party compromising the operation and could result in data being exfiltrated and used in an attack against your client's network. 
+- As a result, instead of helping your client secure their network, you would end up helping expose login names and passwords.
+- Lax OPSEC could also result in less sophisticated vulnerabilities. 
+  - For instance, consider a case where one of your red team members posts on social media revealing your client's name. 
+  - If the blue team monitors such information, it will trigger them to learn more about your team and your approaches to better prepare against expected penetration attempts.
+
+### Answer the questions below
+- Your red team uses THC-Hydra to find the password for a specific login page. Moreover, they are using the Metasploit framework on the same system as THC-Hydra. Would you consider this an OPSEC vulnerability? (Y/N)
+  > [`x`](#Y)
+
+- One of the red team members posts a photo of his cat every day. Would this be considered an OPSEC vulnerability? (Y/N)
+  > [`x`](#N)
+
+- Your red team went for dinner, took a photo, and tagged every team member on a popular social media platform. Would you consider this an OPSEC vulnerability? (Y/N)
+  > [`x`](#Y)
+
+- Your red team posts on its website a list of clients you regularly conduct red team exercises with. Would you consider this an OPSEC vulnerability? (Y/N)
+  > [`x`](#Y)
+
+- One of your red team members posted a photo of her morning coffee. Would you consider this an OPSEC vulnerability? (Y/N)
+  > [`x`](#N)
 
 
 
