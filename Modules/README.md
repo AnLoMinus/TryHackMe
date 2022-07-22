@@ -7,6 +7,21 @@
 
 - ✅ [Burp Suite](https://tryhackme.com/module/learn-burp-suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
+    - `Free` - [Burp Suite: The Basics]()
+      - An introduction to using Burp Suite for Web Application pentesting
+
+    - `Free` - [Burp Suite: Repeater]()
+      - Learn how to use Repeater to duplicate requests in Burp Suite
+
+    - `VIP` - [Burp Suite: Intruder]()
+      - Learn how to use Intruder to automate requests in Burp Suite
+
+    - `VIP` - [Burp Suite: Other Modules]()
+      - Take a dive into some of Burp Suite's lesser known modules
+
+    - `VIP` - [Burp Suite: Extender]()
+      - Learn how to use Extender to broaden the functionality of Burp Suite
+
 
 ---
 
