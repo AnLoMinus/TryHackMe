@@ -5,6 +5,11 @@
 
 ---
 
+- `FREE` - Need Just Register, Login and Start.
+- `VIP` - Need Just Register, Login, Subscription and Start.
+
+---
+
 - ✅ [Burp Suite](https://tryhackme.com/module/learn-burp-suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
     - `Free` - [Burp Suite: The Basics]()
