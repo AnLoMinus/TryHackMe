@@ -1,7 +1,7 @@
 ## 🔶 `VIP` [Red Team OPSEC](https://tryhackme.com/jr/opsec)
 > Learn how to apply Operations Security (OPSEC) process for Red Teams.
 - [x] [Task 1  Introduction](#task-1--introduction)
-- [ ] [Task 2  Critical Information Identification](task-2--critical-information-identification)
+- [x] [Task 2  Critical Information Identification](#task-2--critical-information-identification)
 - [ ] [Task 3  Threat Analysis](#task-3--threat-analysis)
 - [ ] [Task 4  Vulnerability Analysis](#task-4--vulnerability-analysis)
 - [ ] [Task 5  Risk Assessment](#task-5--risk-assessment)
