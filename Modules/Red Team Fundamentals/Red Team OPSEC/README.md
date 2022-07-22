@@ -5,14 +5,15 @@
 - [x] [Task 3  Threat Analysis](#task-3--threat-analysis)
 - [x] [Task 4  Vulnerability Analysis](#task-4--vulnerability-analysis)
 - [x] [Task 5  Risk Assessment](#task-5--risk-assessment)
-- [ ] [Task 6  Countermeasures](#task-6--countermeasures)
+- [x] [Task 6  Countermeasures](#task-6--countermeasures)
 - [ ] [Task 7  More Practical Examples](#task-7--more-practical-examples)
-- [ ] [Task 8  Summary](#task-8--summary)
+- [x] [Task 8  Summary](#task-8--summary)
 
 ---
 - (`OPSEC`) - Operational Security 
 - (`SIEM`) - Security Information and Event Management 
 - (`IDS`) - Intrusion Detection System 
+- (`DoD`) - Department of Defense 
 ---
 
 ## [Task 1  Introduction]()
@@ -203,6 +204,23 @@
 ---
 
 ## [Task 6  Countermeasures]()
+
+- The final step is applying countermeasures. 
+- The US `Department of Defense (DoD)` `Operations Security (OPSEC)` Program Manual states, 
+  - “*Countermeasures are designed to prevent an adversary from detecting critical information, provide an alternative interpretation of critical information or indicators (deception), or deny the adversary’s collection system.*”
+  - ![image](https://user-images.githubusercontent.com/51442719/180491597-0843e65a-9465-4be3-a5e7-8dcb350f2c64.png)
+- Let’s revisit the two examples we presented in the Vulnerability Analysis task. 
+- In the first example, we considered the vulnerability of running Nmap, using the Metasploit framework, and hosting the phishing pages using the same public IP address. 
+- The countermeasure for this one seems obvious; use a different IP address for each activity. 
+  - This way, you can ensure that if one activity was detected the public IP address is blocked, the other activities can continue unaffected.
+- In the second example, we considered the vulnerability of an unsecured database used to store data received from a phishing page. 
+  - From a risk assessment perspective, we considered it as high risk due to malicious third parties potentially looking for random easy targets. 
+  - The countermeasure, in this case, would be to ensure that the database is adequately secured so that the data cannot be accessed except by authorized personnel.
+
+### Answer the questions below
+- This concludes the fifth element in the OPSEC process. 
+- Let’s get ready before we apply all five elements to other instances of critical information.
+  > `No answer needed`
 
 ---
 
