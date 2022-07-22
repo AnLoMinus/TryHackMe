@@ -13,19 +13,19 @@
 - ✅ [Burp Suite](https://tryhackme.com/module/learn-burp-suite)
   - Burp Suite is the industry standard tool for web application hacking, and is essential in any web penetration test
     - `Free` - [Burp Suite: The Basics]()
-      - An introduction to using Burp Suite for Web Application pentesting
+      > An introduction to using Burp Suite for Web Application pentesting
 
     - `Free` - [Burp Suite: Repeater]()
-      - Learn how to use Repeater to duplicate requests in Burp Suite
+      > Learn how to use Repeater to duplicate requests in Burp Suite
 
     - `VIP` - [Burp Suite: Intruder]()
-      - Learn how to use Intruder to automate requests in Burp Suite
+      > Learn how to use Intruder to automate requests in Burp Suite
 
     - `VIP` - [Burp Suite: Other Modules]()
-      - Take a dive into some of Burp Suite's lesser known modules
+      > Take a dive into some of Burp Suite's lesser known modules
 
     - `VIP` - [Burp Suite: Extender]()
-      - Learn how to use Extender to broaden the functionality of Burp Suite
+      > Learn how to use Extender to broaden the functionality of Burp Suite
 
 
 ---
@@ -197,4 +197,14 @@
 
 - [Scripting for Pentesters](https://tryhackme.com/module/scripting-for-pentesters)
   - Learn to use PowerShell and Python in different stages of a penetration test and take your pentesting craft to the next level.
+    - `Free` - [Python Basics]()
+      > Using a web-based code editor, learn the basics of Python and put your knowledge into practice by eventually coding a short Bitcoin investment project.
 
+    - `VIP` - [Python for Pentesters]()
+      > Python is probably the most widely used and most convenient scripting language in cybersecurity. This room covers real examples of Python scripts including hash cracking, key logging, enumeration and scanning.
+
+    - `VIP` - [Hacking with PowerShell]()
+      > Learn the basics of PowerShell and PowerShell Scripting
+
+    - `VIP` - [PowerShell for Pentesters]()
+      > This room covers the principle uses of PowerShell in Penetration Tests. Interacting with files, scanning the network and system enumeration are covered.
