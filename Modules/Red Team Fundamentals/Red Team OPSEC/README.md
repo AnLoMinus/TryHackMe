@@ -61,6 +61,43 @@
 
 ## [Task 2  Critical Information Identification]()
 
+- What a red teamer considers critical information worth protecting depends on the operation and the assets or tooling used. 
+- In this setting, critical information includes, but is not limited to, the red team’s intentions, capabilities, activities, and limitations. 
+- Critical information includes any information that, once obtained by the blue team, would hinder or degrade the red team’s mission.
+
+![image](https://user-images.githubusercontent.com/51442719/180427966-8f38a378-4d4f-4358-9352-41e3dce6a0b7.png)
+
+- To identify critical information, the red team needs to use an adversarial approach and ask themselves what information an adversary, the blue team, in this case, would want to know about the mission. 
+- If obtained, the adversary will be in a solid position to thwart the red team’s attacks. 
+- Therefore, critical information is not necessarily sensitive information; however, it is any information that might jeopardise your plans if leaked to an adversary. 
+- The following are some examples:
+  - Client information that your team has learned. 
+    - It's unacceptable to share client specific information such as employee names, roles, and infrastructure that your team has discovered. 
+    - Sharing this type of information should kept on need-to-know basis as it could compromise the integrity of the operation. 
+    - The Principle of Least Privilege (PoLP) dictates that any entity (user or process) must be able to access only the information necessary to carry out its task. 
+    - PoLP should be applied in every step taken by the Red Team.
+  - Red team information, such as identities, activities, plans, capabilities and limitations. 
+    - The adversary can use such information to be better prepared to face your attacks.
+  - Tactics, Techniques, and Procedures (TTP) that your team uses in order to emulate an attack.
+  - OS, cloud hosting provider, or C2 framework utilised by your team. 
+    - Let’s say that your team uses [`Pentoo`](https://pentoo.github.io/) for penetration testing, and the defender knows this. 
+    - Consequently, they can keep an eye for logs exposing the OS as Pentoo. 
+    - Depending on the target, there is a possibility that other attackers are also using Pentoo to launch their attacks; however, there is no reason to expose your OS if you don’t have to.
+  - Public IP addresses that your red team will use. 
+    - If the blue team gains access to this kind of information, they could quickly mitigate the attack by blocking all inbound and outbound traffic to your IP addresses, leaving you to figure out what has happened.
+  - Domain names that your team has registered. 
+    - Domain names play a significant role in attacks such as phishing. Likewise, if the blue team figures out the domain names you will be using to launch your attacks, they could simply block or sinkhole your malicious domains to neutralize your attack.
+  - Hosted websites, such as phishing websites, for adversary emulation.
+
+### Answer the questions below
+- Click on View Site and follow through till you get the flag.
+> (Please note that some browser extensions, such as NoScript, might prevent the site from loading correctly.)
+  > Answer format: [`***{*******************}`](#THM{OPSEC_CRITICAL_INFO})
+
+
+
+
+
 ---
 
 ## [Task 3  Threat Analysis]()
