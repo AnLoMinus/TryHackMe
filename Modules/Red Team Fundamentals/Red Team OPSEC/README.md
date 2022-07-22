@@ -128,6 +128,12 @@
 
 ## [Task 4  Vulnerability Analysis]()
 
+- After identifying critical information and analysing threats, we can start with the third step: analysing vulnerabilities. 
+- This is not to be confused with vulnerabilities related to cybersecurity. 
+> An OPSEC vulnerability exists when an adversary can obtain critical information, analyse the findings, and act in a way that would affect your plans.
+
+
+
 ---
 
 ## [Task 5  Risk Assessment]()
