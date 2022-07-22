@@ -167,6 +167,32 @@
 
 - [Security Operations & Monitoring](https://tryhackme.com/module/security-operations-and-monitoring)
   - Learn how to configure and utilise tooling to ensure that suspicious activity is quickly identified and dealt with in your environment.
+    - `VIP` - [Core Windows Processes]()
+      > Explore the core processes within a Windows operating system and understand what is normal behavior. This foundational knowledge will help you identify malicious processes running on an endpoint!
+
+    - `VIP` - [Sysinternals]()
+      > Learn to use the Sysinternals tools to analyze Window systems or applications.
+
+    - `VIP` - [Windows Event Logs]()
+      > Introduction to Windows Event Logs and the tools to query them.
+
+    - `VIP` - [Sysmon]()
+      > Learn how to utilize Sysmon to monitor and log your endpoints and environments
+
+    - `Free` - [Suricata]()
+      > Learn how to install and configure Suricata to detect real-time threats.
+
+    - `VIP` - [Osquery]()
+      > Learn how to use this operating system instrumentation framework to explore operating system data by using SQL queries.
+
+    - `VIP` - [Splunk 101]()
+      > This room will cover the basics of Splunk.
+
+    - `VIP` - [Splunk 2]()
+      > Part of the Blue Primer series. This room is based on version 2 of the Boss of the SOC (BOTS) competition by Splunk.
+
+    - `Free` - [OpenEDR]()
+      > Learn what is Endpoint Detection and Response (EDR) with Comodo's OpenEDR.
 
 ---
 
