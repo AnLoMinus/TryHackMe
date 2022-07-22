@@ -2,7 +2,7 @@
 > Learn how to apply Operations Security (OPSEC) process for Red Teams.
 - [x] [Task 1  Introduction](#task-1--introduction)
 - [x] [Task 2  Critical Information Identification](#task-2--critical-information-identification)
-- [ ] [Task 3  Threat Analysis](#task-3--threat-analysis)
+- [x] [Task 3  Threat Analysis](#task-3--threat-analysis)
 - [ ] [Task 4  Vulnerability Analysis](#task-4--vulnerability-analysis)
 - [ ] [Task 5  Risk Assessment](#task-5--risk-assessment)
 - [ ] [Task 6  Countermeasures](#task-6--countermeasures)
@@ -95,12 +95,34 @@
   > Answer format: [`***{*******************}`](#THM{OPSEC_CRITICAL_INFO})
 
 
-
-
-
 ---
 
 ## [Task 3  Threat Analysis]()
+- After we identify critical information, we need to analyse threats. 
+- Threat analysis refers to identifying potential adversaries and their intentions and capabilities. 
+- Adapted from the US Department of Defense [`(DoD) Operations Security (OPSEC) Program Manual`](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520502m.pdf), threat analysis aims to answer the following questions:
+  - Who is the adversary is?
+  - What are the adversary’s goals?
+  - What tactics, techniques, and procedures does the adversary use?
+  - What critical information has the adversary obtained, if any?
+  > ![image](https://user-images.githubusercontent.com/51442719/180429730-fb208a7d-20d6-4a79-a123-de7531c8478b.png)
+
+- The task of the red team is to emulate an actual attack so that the blue team discovers its shortcomings, if any, and becomes better prepared to face incoming threats. 
+- The blue team’s main objective is to ensure the security of the organization’s network and systems. 
+- The intentions of the blue team are clear; they want to keep the red team out of their network. 
+- Consequently, considering the task of the red team, the blue team is considered our adversary as each team has conflicting objectives. 
+- We should note that the blue team’s capabilities might not always be known at the beginning.
+
+- Malicious third-party players might have different intentions and capabilities and might pause a threat as a result. 
+- This party can be someone with humble capabilities scanning the systems randomly looking for low-hanging fruit, such as an unpatched exploitable server, or it can be a capable adversary targeting your company or your client systems. 
+- Consequently, the intentions and the capabilities of this third party can make them an adversary as well.
+- We consider any adversary with the intent and capability to take actions that would prevent us from completing our operation as a threat:
+> `Adversary` + `Intent` + `Capability` = `Threat` 
+- In other words, an adversary without the intent or capability does not pose a threat for our purposes.
+
+### Answer the questions below
+- Try to think of at least one adversary who is not a threat and one who is a threat.
+  > `No answer needed`
 
 ---
 
