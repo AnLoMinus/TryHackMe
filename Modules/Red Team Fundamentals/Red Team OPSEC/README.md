@@ -91,7 +91,7 @@
 
 ### Answer the questions below
 - Click on View Site and follow through till you get the flag.
-> (Please note that some browser extensions, such as NoScript, might prevent the site from loading correctly.)
+- (Please note that some browser extensions, such as NoScript, might prevent the site from loading correctly.)
   > Answer format: [`***{*******************}`](#THM{OPSEC_CRITICAL_INFO})
 
 
