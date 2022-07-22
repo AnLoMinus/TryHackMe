@@ -55,16 +55,16 @@
 
 ---
 
-## 🔶 `VIP` [Red Team OPSEC](https://tryhackme.com/jr/opsec)
+## ✅ `VIP` [Red Team OPSEC](https://tryhackme.com/jr/opsec)
 > Learn how to apply Operations Security (OPSEC) process for Red Teams.
- - [ ] [Task 1  Introduction]()
-- [ ] [Task 2  Critical Information Identification]()
-- [ ] [Task 3  Threat Analysis]()
-- [ ] [Task 4  Vulnerability Analysis]()
-- [ ] [Task 5  Risk Assessment]()
-- [ ] [Task 6  Countermeasures]()
-- [ ] [Task 7  More Practical Examples]()
-- [ ] [Task 8  Summary]()
+- [x] [Task 1  Introduction]()
+- [x] [Task 2  Critical Information Identification]()
+- [x] [Task 3  Threat Analysis]()
+- [x] [Task 4  Vulnerability Analysis]()
+- [x] [Task 5  Risk Assessment]()
+- [x] [Task 6  Countermeasures]()
+- [x] [Task 7  More Practical Examples]()
+- [x] [Task 8  Summary]()
 
 
 ---
