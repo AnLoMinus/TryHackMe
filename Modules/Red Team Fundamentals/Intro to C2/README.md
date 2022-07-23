@@ -277,15 +277,12 @@ msf6 >
   > - *A Screenshot of the Covenant UI*
 
 ### Sliver
-- Sliver by Bishop Fox is an advanced, highly customizable multi-user, CLI-based C2 framework. Sliver is written in Go, which makes reverse engineering the C2 "implants" incredibly difficult. It supports various protocols for C2 communications like WireGuard, mTLS, HTTP(S), DNS, and much more. Additionally, it supports BOF files for additional functionality, DNS Canary Domains for masking C2 communications, automatic Let's Encrypt certificate generation for HTTPS beacons, and much more.  
-
-
-
-
-
-
-
-
+- [`Sliver`](https://github.com/BishopFox/sliver) by [`Bishop Fox`](https://bishopfox.com/) is an advanced, highly customizable multi-user, CLI-based C2 framework. 
+- Sliver is written in Go, which makes reverse engineering the C2 "implants" incredibly difficult. 
+- It supports various protocols for C2 communications like WireGuard, mTLS, HTTP(S), DNS, and much more. 
+- Additionally, it supports BOF files for additional functionality, DNS Canary Domains for masking C2 communications, automatic Let's Encrypt certificate generation for HTTPS beacons, and much more.  
+  > ![image](https://user-images.githubusercontent.com/51442719/180626477-a67d0391-4f4b-4e2e-910a-ad5250716ec5.png)
+  > - *A Screenshot of the Sliver UI*
 
 ---
 
