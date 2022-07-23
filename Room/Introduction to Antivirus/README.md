@@ -394,9 +394,48 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
   > ![image](https://user-images.githubusercontent.com/51442719/180620607-a0c547d8-0ca8-4d69-aec7-9ebcab2574e5.png)
 - The first method is by monitoring Windows APIs. 
 - The detection engine inspects Windows application calls and monitors Windows API calls using Windows [`Hooks`](https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks).
+- Another method for dynamic detection is Sandboxing. 
+- A sandbox is a virtualized environment used to run malicious files separated from the host computer. 
+- This is usually done in an isolated environment, and the primary goal is to analyze how the malicious software acts in the system. 
+- Once the malicious software is confirmed, a unique signature and rule will be created based on the characteristic of the binary. 
+- Finally, a new update will be pushed into the cloud database for future use.
+- This type of detection also has drawbacks because it requires executing and running the malicious software for a limited time in the virtual environment to protect the system resources. 
+- As with other detection techniques, dynamic detection can be bypassed. 
+- Malware developers implement their software to not work within the virtual or simulated environment to avoid dynamic analysis. 
+- For example, they check if the system spawns a real process of executing the software before running malicious activities or let the software wait sometime before execution.
+- For more information about sandbox evasion, we suggest checking the THM room: [`Sandbox Evasion`](https://tryhackme.com/room/sandboxevasion)!
 
+### Heuristic and Behavioral Detection
+- Heuristic and behavioral detection have become essential in today's modern AV products. Modern AV software relies on this type of detection to detect malicious software. 
+- The heuristic analysis uses various techniques, including `Static` and `Dynamic` heuristic methods:
+  - `Static Heuristic` Analysis is a process of decompiling (if possible) and extracting the source code of the malicious software. 
+    - Then, the extracted source code is compared to other well-known virus source codes. 
+    - These source codes are previously known and predefined in a heuristic database. 
+    - If a match meets or exceeds a threshold percentage, the code is flagged as malicious.
+  - `Dynamic Heuristic` Analysis is based on predefined behavioral rules. 
+    - Security researchers analyzed suspicious software in isolated and secured environments. 
+    - Based on their findings, they flagged the software as malicious. 
+    - Then, behavioral rules are created to match the software's malicious activities within a target machine.
+- The following are examples of behavioral rules: 
+  - If a process tries to interact with the LSASS.exe process that contains users' NTLM hashes, Kerberos tickets, and more
+  - If a process opens a listening port and waits to receive commands from a Command and Control (C2) server
+- The following diagram shows the Heuristic and behavioral detection scanning flow:
+  > ![image](https://user-images.githubusercontent.com/51442719/180622196-afdb6556-1d89-4dd1-ad47-a2312222b576.png)
 
+### Summing up detection methods
+- Let's summarize how modern AV software works as one unit, including all components, and combines various features and detection techniques to implement its AV engine. 
+- The following is an example of the components of an antivirus engine:
+  > ![image](https://user-images.githubusercontent.com/51442719/180622206-adf46d8e-6b13-41d8-9019-7834b27b0272.png)
+- In the diagram, you can see a suspicious `Foobar.zip` file is passed to AV software to scan. 
+- AV software recognizes that it is a compressed file (.zip). 
+- Since the software supports .zip files, it applies an un-archiver feature to extract the files (`Foobar.exe`). 
+- Next, it identifies the file type to know which module to work with and then performs a PE parsing operation to pull the binary's information and other characteristic features. 
+- Next, it checks whether the file is packed; if it is, it unpacks the code. 
+- Finally, it passes the collected information and the binary to the AV engine, where it tries to detect if it is malicious and gives us the result.
 
+### Answer the questions below
+- Which detection method is used to analyze malicious software inside virtual environments?
+  > Answer format: [`******* *********`](#)
 
 
 
