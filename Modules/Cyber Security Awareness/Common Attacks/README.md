@@ -25,10 +25,18 @@
 - Let's get started!
   > `No answer needed`
 
-
 ---
 
 ## [Task 2  `Common Attacks` Social Engineering]()
+
+### What is Social Engineering?
+- Social Engineering is the term used to describe any cyberattack where a human (rather than a computer) is the target; 
+  - for this reason, it is sometimes referred to as "`People Hacking`". 
+- For example, if an attacker wishes to obtain a victim's password, they could attempt to guess or brute-force the password — or they could [`simply ask you`](https://youtu.be/opRMrEfAIiI?t=42).
+- Whilst the example linked above is relatively straightforward, social engineering attacks can become very complex and often result in an attacker gaining significant control over a target's life — both online and offline. 
+- Social engineering attacks are often multi-layered and escalate due to the snowball effect. 
+- For example, an attacker may start off by obtaining a small amount of publicly available information from a victim's social media presence, which they could then use to get more information from, say, your phone or broadband provider. 
+- The information obtained from the second stage could then be used to gain more useful information, then escalate step-by-step to something like the victim's bank account.
 
 ---
 
