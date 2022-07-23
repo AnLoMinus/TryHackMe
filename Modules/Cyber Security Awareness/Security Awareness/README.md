@@ -5,8 +5,8 @@
 - [x] [Task 2  Why Security Awareness is essential](#task-2--why-security-awareness-is-essential)
 - [x] [Task 3  Data and account security](#task-3--data-and-account-security)
 - [x] [Task 4  Check if you've ever been part of a cyber breach](#task-4--check-if-youve-ever-been-part-of-a-cyber-breach)
-- [ ] [Task 5  Cyber threat actors](#task-5--cyber-threat-actors)
-- [ ] [Task 6  Conclusion](#task-6--conclusion)
+- [x] [Task 5  Cyber threat actors](#task-5--cyber-threat-actors)
+- [x] [Task 6  Conclusion](#task-6--conclusion)
 
 ---
 
@@ -124,6 +124,14 @@
 ---
 
 ## [Task 6  Conclusion]()
+
+- This room introduced you to the basics of security awareness concepts and knowledge that can help you stay safe online. 
+- We discussed the importance of security awareness and why it's essential that you play your part in helping to prevent cyber attacks.
+- In the next room, we will be reviewing some of the common attacks that cyber threat actors can use to gain access to sensitive data, computers, or networks using practical scenarios and exercises.
+
+### Answer the questions below
+- Complete this task and join the [`common attacks`](https://tryhackme.com/room/commonattacks) room.
+  > `No answer needed`
 
 ---
 
