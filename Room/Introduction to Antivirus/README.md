@@ -7,7 +7,7 @@
     - [x] [Task 3  Antivirus Features](#task-3--antivirus-features)
     - [x] [Task 4  Deploy the VM](#task-4--deploy-the-vm)
     - [x] [Task 5  AV Static Detection](#task-5--av-static-detection)
-    - [ ] [Task 6  Other Detection Techniques](#task-6--other-detection-techniques)
+    - [x] [Task 6  Other Detection Techniques](#task-6--other-detection-techniques)
     - [ ] [Task 7  AV Testing and Fingerprinting](#task-7--av-testing-and-fingerprinting)
     - [ ] [Task 8  Conclusion](#task-8--conclusion)
 
@@ -437,11 +437,64 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 - Which detection method is used to analyze malicious software inside virtual environments?
   > Answer format: [`******* *********`](#Dynamic_detection)
 
-
-
 ---
 
 # Task 7  AV Testing and Fingerprinting
+
+### AV Vendors
+- Many AV vendors in the market mainly focus on implementing a security product for home or enterprise users. 
+- Modern AV software has improved and now combines antivirus capabilities with other security features such as Firewall, Encryption, Anti-spam, EDR, vulnerability scanning, VPN, etc. 
+- It is important to note that it is hard to recommend which AV software is the best. 
+- It all comes down to user preferences and experience. 
+- Nowadays, AV vendors focus on business security in addition to end-user security. 
+- We suggest checking the [`AV comparatives website`](https://www.av-comparatives.org/list-of-enterprise-av-vendors-pc/) for more details on enterprise AV vendors.
+
+### AV Testing Environment 
+- AV testing environments are a great place to check suspicious or malicious files. 
+- You can upload files to get them scanned against various AV software vendors. 
+- Moreover, platforms such as VirusTotal use various techniques and provide results within seconds. 
+- As a red teamer or a pentester, we must test a payload against the most well-known AV applications to check the effectiveness of the bypass technique.
+
+### VirusTotal 
+![image](https://user-images.githubusercontent.com/51442719/180623659-447c0982-af7f-44bc-95c2-9e6303d140b6.png)
+- VirusTotal is a well-known web-based scanning platform for checking suspicious files. 
+- It allows users to upload files to be scanned with over 70 antivirus detection engines. 
+- VirusTotal passes the uploaded files to the Antivirus engines to be checked, returns the result, and reports whether it is malicious or not. 
+- Many checkpoints are applied, including checking for blacklisted URLs or services, signatures, binary analysis, behavioral analysis, as well as checking for API calls. 
+- In addition, the binary will be run and checked in a simulated and isolated environment for better results. 
+- For more information and to check other features, you may visit the [`VirusTotal`](https://www.virustotal.com/) website.
+
+### VirusTotal alternatives
+- Important Note: VirusTotal is a handy scanning platform with great features, but it has a sharing policy. 
+- All scanned results will be passed and shared with antivirus vendors to improve their products and update their databases for known malware. 
+- As a red teamer, this will burn a dropper or a payload you use in engagements. 
+- Thus, alternative solutions are available for testing against various security product vendors, and the most important advantage is that they do not have a sharing policy. 
+- However, there are other limitations. You will have a limited number of files to scan per day; otherwise, a subscription is needed for unlimited testing. 
+- For those reasons, we recommend you only test your malware on sites that do not share information, such as:
+	- [`AntiscanMe`](https://antiscan.me/) (6 free scans a day)
+	- [`Virus Scan Jotti's malware scan`](https://virusscan.jotti.org/en-US/filescanjob/r1rkzh92jb)
+
+### Fingerprinting AV software
+- As a red teamer, we do not know what AV software is in place once we gain initial access to a target machine. 
+- Therefore, it is important to find and identify what host-based security products are installed, including AV software. 
+- AV fingerprinting is an essential process to determine which AV vendor is present. 
+- Knowing which AV software is installed is also quite helpful in creating the same environment to test bypass techniques.  
+- This section introduces different ways to look at and identify antivirus software based on static artifacts, including service names, process names, domain names, registry keys, and filesystems.
+- The following table contains well-known and commonly used AV software. 
+
+| **Antivirus Name** |          **Service Name**         |          **Process Name**          |
+|:------------------:|:---------------------------------:|:----------------------------------:|
+| Microsoft Defender |             WinDefend             |             MSMpEng.exe            |
+|     Trend Micro    |              TMBMSRV              |             TMBMSRV.exe            |
+|        Avira       | AntivirService, Avira.ServiceHost | avguard.exe, Avira.ServiceHost.exe |
+|     Bitdefender    |               VSSERV              |       bdagent.exe, vsserv.exe      |
+|      Kaspersky     |           AVP<Version #>          |          avp.exe, ksde.exe         |
+|         AVG        |           AVG Antivirus           |             AVGSvc.exe             |
+|       Norton       |          Norton Security          |         NortonSecurity.exe         |
+|       McAfee       |          McAPExe, Mfemms          |       MCAPExe.exe, mfemms.exe      |
+|        Panda       |              PavPrSvr             |            PavPrSvr.exe            |
+|        Avast       |          Avast Antivirus          |      afwServ.exe, AvastSvc.exe     |
+
 
 ---
 
