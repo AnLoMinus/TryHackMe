@@ -8,8 +8,8 @@
     - [x] [Task 4  Deploy the VM](#task-4--deploy-the-vm)
     - [x] [Task 5  AV Static Detection](#task-5--av-static-detection)
     - [x] [Task 6  Other Detection Techniques](#task-6--other-detection-techniques)
-    - [ ] [Task 7  AV Testing and Fingerprinting](#task-7--av-testing-and-fingerprinting)
-    - [ ] [Task 8  Conclusion](#task-8--conclusion)
+    - [x] [Task 7  AV Testing and Fingerprinting](#task-7--av-testing-and-fingerprinting)
+    - [x] [Task 8  Conclusion](#task-8--conclusion)
 
 ---
 
@@ -494,6 +494,44 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 |       McAfee       |          McAPExe, Mfemms          |       MCAPExe.exe, mfemms.exe      |
 |        Panda       |              PavPrSvr             |            PavPrSvr.exe            |
 |        Avast       |          Avast Antivirus          |      afwServ.exe, AvastSvc.exe     |
+
+
+### SharpEDRChecker
+- One way to fingerprint AV is by using public tools such as [`SharpEDRChecker`](https://github.com/PwnDexter/SharpEDRChecker). 
+- It is written in C# and performs various checks on a target machine, including checks for AV software, like running processes, files' metadata, loaded DLL files, Registry keys, services, directories, and files.
+- We have pre-downloaded the SharpEDRChecker from the [`GitHub repo`](https://github.com/PwnDexter/SharpEDRChecker) so that we can use it in the attached VM. 
+- Now we need to compile the project, and we have already created a shortcut to the project on the desktop (SharpEDRChecker). 
+- To do so, double-click on it to open it in Microsoft Visual Studio 2022. 
+- Now that we have our project ready, we need to compile it, as shown in the following screenshot:
+	> ![image](https://user-images.githubusercontent.com/51442719/180625176-21adb57f-0d58-4e3e-8835-0d01b88be5d7.png)
+- Once it is compiled, we can find the path of the compiled version in the output section, as highlighted in step 3. 
+- We also added a copy of the compiled version in the `C:\Users\thm\Desktop\Files directory`. 
+- Now let's try to run it and see the result as follows:
+```powershell
+C:\> SharpEDRChecker.exe
+
+[!] Directory Summary:
+   [-] C:\Program Files\Windows Defender : defender
+   [-] C:\Program Files\Windows Defender Advanced Threat Protection : defender, threat
+   [-] C:\Program Files (x86)\Windows Defender : defender
+
+[!] Service Summary:
+   [-] PsShutdownSvc : sysinternal
+   [-] Sense : defender, threat
+   [-] WdNisSvc : defender, nissrv
+   [-] WinDefend : antimalware, defender, malware, msmpeng
+   [-] wscsvc : antivirus
+```
+- As a result, the Windows Defender is found based on folders and services. 
+- Note that this program may be flagged by AV software as malicious since it does various checks and APIs calls. 
+
+
+
+
+
+
+
+
 
 
 ---
