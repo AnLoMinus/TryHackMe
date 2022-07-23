@@ -219,8 +219,42 @@ sleep = sleep + jitter
 ---
 
 # [Task 3  Common C2 Frameworks]()
+
 ### Common C2 Frameworks
-Throughout your journey, you may encounter many different C2 Frameworks; we will discuss a few popular C2 Frameworks that are widely used by Red Teamers and Adversaries alike. We will be dividing this into two sections:
+- Throughout your journey, you may encounter many different C2 Frameworks; we will discuss a few popular C2 Frameworks that are widely used by Red Teamers and Adversaries alike. 
+- We will be dividing this into two sections:
+  - Free
+  - Premium/Paid
+- You may ask some questions like “Why would I use a premium or paid C2 framework?”, and this is an excellent question. 
+- Premium/Paid C2 frameworks usually are less likely to be detected by Anti-Virus vendors. 
+- This is not to say that it's impossible to be detected, just that open-source C2 projects are generally well understood, and signatures can be easily be developed.
+- Usually, premium C2 frameworks generally have more advanced post-exploitation modules, pivoting features, and even feature requests that open-source software developers may sometimes not fulfill. 
+- For example, one feature Cobalt Strike offers that most other C2 frameworks do not is the ability to open a VPN tunnel from a beacon. 
+- This can be a fantastic feature if a Proxy does not work well in your specific situation. 
+- You must do your research to find out what will work best for your team.
+
+### Free C2 Frameworks
+#### Metasploit
+- The [`Metasploit Framework`](https://www.metasploit.com/), developed and maintained by [`Rapid7`](https://github.com/rapid7), is one of the most popular Exploitation and Post Exploitation frameworks (C2) that is publicly available and is installed on most penetration testing distributions.
+```cmd
+root@kali$ msfconsole
+```                                                  
+```cmd
+       =[ metasploit v6.1.12-dev                          ]
++ -- --=[ 2177 exploits - 1152 auxiliary - 399 post       ]
++ -- --=[ 596 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: View a module's description using 
+info, or the enhanced version in your browser with 
+info -d
+
+msf6 > 
+```
+
+
+
+
 
 ---
 
