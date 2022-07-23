@@ -241,7 +241,9 @@ sleep = sleep + jitter
 ## [Task 8  Wrapping Up]()
 
 ### Recap
-In this room, you hopefully learned a lot about Command and Control frameworks and will be able to take the knowledge you gained within this room and apply it in the real world. At the end of the day, almost everyone in Red Team Ops uses a Command and Control Framework. It's an essential part of every Red Teamer's toolkit, and we encourage you to go out and explore various C2 frameworks that were not covered or mentioned in this room.
+- In this room, you hopefully learned a lot about Command and Control frameworks and will be able to take the knowledge you gained within this room and apply it in the real world. 
+- At the end of the day, almost everyone in Red Team Ops uses a Command and Control Framework. 
+- It's an essential part of every Red Teamer's toolkit, and we encourage you to go out and explore various C2 frameworks that were not covered or mentioned in this room.
 
 ### How to Choose a C2 Framework
 - After finishing this room, you may be left with some questions, and hopefully, one of them is "How do I know what C2 Framework to choose in my Red Team Operations". 
