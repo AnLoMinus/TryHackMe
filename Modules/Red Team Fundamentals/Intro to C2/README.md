@@ -204,6 +204,18 @@ sleep = sleep + jitter
 - For more information on how C2 profiles can be powerful, see this blog post on [`Understanding Malleable C2 Profiles for Cobalt Strike`](https://blog.zsec.uk/cobalt-strike-profiles/).
 - In task 7, we will explain and explore another technique called "Redirectors". 
 - We will gain hands-on experience configuring Metasploit and Apache 2 to demonstrate how a redirector is set up.
+
+### Answer the questions below
+- What is the component's name that lives on the victim machine that calls back to the C2 server?
+  > [`*****`](#Agent)
+- What is the beaconing option that introduces a random delay value to the sleep timer?
+  > [`******`](#Jitter)
+- What is the term for the first portion of a Staged payload?
+  > [`*******`](#Dropper)
+- What is the name of the communication method that can potentially allow access to a restricted network segment that communicates via TCP ports 139 and 445?
+  > [`*** ******`](#SMB-Beacon)
+
+
 ---
 
 ## [Task 3  Common C2 Frameworks]()
