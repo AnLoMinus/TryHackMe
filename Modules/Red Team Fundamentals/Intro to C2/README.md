@@ -7,7 +7,7 @@
 - [ ] [Task 5  C2 Operation Basics](#task-5--c2-operation-basics)
 - [ ] [Task 6  Command, Control, and Conquer](#task-6--command-control-and-conquer)
 - [ ] [Task 7  Advanced C2 Setups](#task-7--advanced-c2-setups)
-- [ ] [Task 8  Wrapping Up](#task-8--wrapping-up)
+- [x] [Task 8  Wrapping Up](#task-8--wrapping-up)
 
 ---
 - (`C2`) - Command and Control 
@@ -239,5 +239,24 @@ sleep = sleep + jitter
 ---
 
 ## [Task 8  Wrapping Up]()
+
+### Recap
+In this room, you hopefully learned a lot about Command and Control frameworks and will be able to take the knowledge you gained within this room and apply it in the real world. At the end of the day, almost everyone in Red Team Ops uses a Command and Control Framework. It's an essential part of every Red Teamer's toolkit, and we encourage you to go out and explore various C2 frameworks that were not covered or mentioned in this room.
+
+### How to Choose a C2 Framework
+- After finishing this room, you may be left with some questions, and hopefully, one of them is "How do I know what C2 Framework to choose in my Red Team Operations". 
+- There is no right or wrong answer for this, just a few general questions that you should answer first:
+  - What are your goals? 
+  - Do you have a budget?
+  - Do you need something highly customizable?
+  - Is off-the-shelf AV Evasion necessary?
+  - Do you need the ability to create your own modules/scripts?
+  - Is built-in reporting necessary for you?
+- You should then take that information to the C2 Matrix spreadsheet and narrow your selection based on the questions above. 
+- If you find a Premium C2 Framework that meets your criteria, it is highly recommended you request an evaluation/trial to find out if that C2 Framework works best for you.
+
+### Answer the questions below
+- Read the closing task.
+  > `No answer needed`
 
 ---
