@@ -6,7 +6,7 @@
     - [x] [Task 2  Antivirus Software](#task-2--antivirus-software)
     - [x] [Task 3  Antivirus Features](#task-3--antivirus-features)
     - [x] [Task 4  Deploy the VM](#task-4--deploy-the-vm)
-    - [ ] [Task 5  AV Static Detection](#task-5--av-static-detection)
+    - [x] [Task 5  AV Static Detection](#task-5--av-static-detection)
     - [ ] [Task 6  Other Detection Techniques](#task-6--other-detection-techniques)
     - [ ] [Task 7  AV Testing and Fingerprinting](#task-7--av-testing-and-fingerprinting)
     - [ ] [Task 8  Conclusion](#task-8--conclusion)
@@ -383,6 +383,22 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 ---
 
 ## Task 6  Other Detection Techniques
+
+- The concept of static detection is relatively simple. 
+- In this section, we will discuss the different types of detection techniques.
+
+### Dynamic Detection
+- The dynamic detection approach is advanced and more complicated than static detection. 
+- Dynamic detection is focused more on checking files at runtime using different methods. 
+- The following diagram shows the dynamic detection scanning flow:
+  > ![image](https://user-images.githubusercontent.com/51442719/180620607-a0c547d8-0ca8-4d69-aec7-9ebcab2574e5.png)
+- The first method is by monitoring Windows APIs. 
+- The detection engine inspects Windows application calls and monitors Windows API calls using Windows [`Hooks`](https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks).
+
+
+
+
+
 
 ---
 
