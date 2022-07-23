@@ -499,3 +499,16 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 ---
 
 # Task 8  Conclusion
+
+### Recap
+- In this room, we covered Antivirus software and its detection approaches. 
+- As a red teamer, it is important to know how AV software works and detects malicious applications to be able to implement bypass techniques.
+- We also discussed the static detection technique in detail and showcased how ClamAV, an open-source Antivirus, detects malicious files using static analysis. 
+- Additionally, we showed how to create your own database and use Yara rules to detect malicious files that are not detected by the official database.
+- Once we obtain access to a target, it is essential to enumerate the target machine before performing further actions, such as privilege escalation or lateral movement. 
+- The reason is to not trigger alerts for suspicious activities, which may cause losing access to the target machine. 
+- Thus, we introduced two methods to practice AV fingerprinting using public and private tools.
+
+### Answer the questions below
+- Congrats on completing the room, and keep learning!
+  > `No answer needed`
