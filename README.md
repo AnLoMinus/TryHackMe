@@ -19,10 +19,12 @@
 ⫷ [**`Goals`**](https://github.com/Anlominus/Goals) | [**`Studies`**](https://github.com/Anlominus/Studies) | [**`HacKing`**](https://github.com/Anlominus/HacKing) | [**`AnyTeam`**](https://github.com/Anlominus/AnyTeam) ⫸
 <br>
 
-</div>
 
 ---
-⫷ [**`Rooms`**](./Rooms) | [**`Modules`**](./Modules) | [**`Paths`**](#Paths) ⫸
+
+⫷ [**`Paths`**](#Paths) | [**`Modules`**](./Modules) | [**`Rooms`**](./Room) ⫸
+
+</div>
 
 ---
 
