@@ -1,7 +1,7 @@
 ## 🔶 `Free` - [Common Attacks](https://tryhackme.com/room/commonattacks)
 ![image](https://user-images.githubusercontent.com/51442719/172191250-ff82edc6-b5bd-4264-aeaf-8ab6118495f3.png)
 > With practical exercises see how common attacks occur, and improve your cyber hygiene to stay safer online.
-- [ ] [Task 1  `Information` Introduction](#task-1--information-introduction)
+- [x] [Task 1  `Information` Introduction](#task-1--information-introduction)
 - [ ] [Task 2  `Common Attacks` Social Engineering](#task-2--common-attacks-social-engineering)
 - [ ] [Task 3  `Common Attacks` Social Engineering: Phishing](#task-3--common-attacks-social-engineering-phishing)
 - [ ] [Task 4  `Common Attacks` Malware and Ransomware](#task-4--common-attacks-malware-and-ransomware)
@@ -15,6 +15,16 @@
 ---
 
 ## [Task 1  `Information` Introduction]()
+
+- Our existence in a digital world makes it imperative that we understand and can protect against common attacks.
+- This room will discuss some of the most common techniques used by attackers to target people online. 
+- It will also teach some of the best ways to prevent the success of each technique.
+- Without further ado, let's begin!
+
+### Answer the questions below
+- Let's get started!
+  > `No answer needed`
+
 
 ---
 
