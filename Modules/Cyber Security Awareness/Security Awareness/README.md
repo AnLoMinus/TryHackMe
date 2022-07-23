@@ -44,7 +44,7 @@
   - Improve IT defenses
   - Improves customer confidence
 - Based on Proofpoint's [`study`](https://www.proofpoint.com/us/threat-reference/security-awareness-training), the following diagrams show the effectiveness of security awareness training:
-  - ![image](https://user-images.githubusercontent.com/51442719/180602949-0162fe60-a308-4de1-906e-90a32a711f42.png)
+  > ![image](https://user-images.githubusercontent.com/51442719/180602949-0162fe60-a308-4de1-906e-90a32a711f42.png)
     - 95% reduction in malware and viruses and a greater awareness of cybersecurity threats in a financial institution.
     - 90% reduction in attempted phishing attacks in an educational institution.
     - 80% reduction in fraud attacks on government employees.
@@ -64,7 +64,7 @@
   - Protecting this data is important not only to the organization but also to its clients and customers.
   - Now that we know why data protection is so important we now need to understand the type of data we have, why it must be protected and the methods we can take to secure it.
 - The following diagram illustrates the top 10 data breaches by some of the large companies in history, the number of people who were affected and the type of data that was leaked.
-  - ![image](https://user-images.githubusercontent.com/51442719/180603031-c44f83fc-46c3-4e38-b699-f33c0bf1545b.png)
+  > ![image](https://user-images.githubusercontent.com/51442719/180603031-c44f83fc-46c3-4e38-b699-f33c0bf1545b.png)
 
 ### Answer the questions below
 - How many people were affected by eBay being hacked?
@@ -87,7 +87,7 @@
 - Criminals can use the information found in data breaches of companies to perform targeted social engineer attacks or phishing campaigns (more on this in future security awareness rooms). 
 - Have I Been Pwned is a service that keeps track of data breaches leaked information, giving you the ability to find out if you've been a victim of a previous data breach. 
 - Search your email or phone number, and it will reveal if your personal information has ever been leaked.
-  - ![image](https://user-images.githubusercontent.com/51442719/180603133-14aff27e-e155-4a5f-a537-8cbca6a761b4.png)
+  > ![image](https://user-images.githubusercontent.com/51442719/180603133-14aff27e-e155-4a5f-a537-8cbca6a761b4.png)
 
 ### Answer the questions below
 - Go to [`haveibeenpwned.com`](https://haveibeenpwned.com/) and see if your information has ever been part of a breach. 
@@ -95,11 +95,31 @@
 - The next room in this module will talk about how you can use a password manager to create unique passwords for all your accounts.
   > `No answer needed`
 
-
-
 ---
 
 ## [Task 5  Cyber threat actors]()
+
+> ![image](https://user-images.githubusercontent.com/51442719/180603245-89491c76-f89c-4a84-988c-9ec060118e35.png)
+- A cyber threat is the possibility of a malicious attempt to damage or disrupt a computer network or system. 
+- Cyber threat actors are individuals or groups of people who maliciously aim to take advantage of system security weaknesses to compromise and gain unauthorized access to victim data, computers, or networks.
+
+### The motivation of threat actors may vary and can be categorized into different groups:
+  - `Nation-state` cyber threat actors are geopolitically motivated.
+  - `Cybercriminals` are financially motivated.
+  - `Hacktivists` are ideologically motivated.
+  - `Terrorist groups` are motivated by ideological violence.
+  - `Thrill-seekers` are motivated by satisfaction.
+  - `Insider threat actors` are motivated by discontent.
+> ![image](https://user-images.githubusercontent.com/51442719/180603299-9146834c-ecde-4051-80aa-a09afff77cd5.png)
+
+### Answer the questions below
+- Who would most likely be interested in exploiting a business? 
+  > [`************`](#Cybercriminals)
+- Who would most likely be interested in exploiting a personal computer for fun? 
+  > [`****** *******`](#Thrill-seekers)
+- Who would most likely be interested in exploiting a website to deliver a message? 
+  > [`***********`](#Hacktivists)
+
 
 ---
 
