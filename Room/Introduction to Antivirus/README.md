@@ -18,7 +18,7 @@
 
 ---
 
-## Task 1  Introduction
+# Task 1  Introduction
 
 ### Welcome to Intro to AV
 - Antivirus (`AV`) software is one of the essential host-based security solutions available to detect and prevent malware attacks within the end-user's machine. 
@@ -41,7 +41,7 @@
 
 ---
 
-## Task 2  Antivirus Software
+# Task 2  Antivirus Software
 
 ### What is AV software?
 - Antivirus (AV) software is an extra layer of security that aims to detect and prevent the execution and spread of malicious files in a target operating system.
@@ -97,7 +97,7 @@ For more information about Host-based security solutions, we suggest visiting th
 
 ---
 
-## Task 3  Antivirus Features
+# Task 3  Antivirus Features
 
 ### Antivirus Engines
 - An AV engine is responsible for finding and removing malicious code and files. 
@@ -174,7 +174,7 @@ For more information about Host-based security solutions, we suggest visiting th
 
 ---
 
-## Task 4  Deploy the VM
+# Task 4  Deploy the VM
 
 ---
 
@@ -382,7 +382,7 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
   
 ---
 
-## Task 6  Other Detection Techniques
+# Task 6  Other Detection Techniques
 
 - The concept of static detection is relatively simple. 
 - In this section, we will discuss the different types of detection techniques.
@@ -441,8 +441,8 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 
 ---
 
-## Task 7  AV Testing and Fingerprinting
+# Task 7  AV Testing and Fingerprinting
 
 ---
 
-## Task 8  Conclusion
+# Task 8  Conclusion
