@@ -13,7 +13,7 @@
 - (`C2`) - Command and Control 
 ---
 
-## [Task 1  Introduction]()
+# [Task 1  Introduction]()
 
 ### Welcome to Intro to C2 
 - Command and Control (C2) Frameworks are an essential part of both Red Teamers and Advanced Adversaries playbooks. 
@@ -37,7 +37,7 @@
 
 ---
 
-## [Task 2  Command and Control Framework Structure]()
+# [Task 2  Command and Control Framework Structure]()
 
 ### What is a Command and Control Framework
 - While trying to digest the various components of a C2 framework, it may be intimidating. However, they don’t have to be. 
@@ -218,27 +218,29 @@ sleep = sleep + jitter
 
 ---
 
-## [Task 3  Common C2 Frameworks]()
+# [Task 3  Common C2 Frameworks]()
+### Common C2 Frameworks
+Throughout your journey, you may encounter many different C2 Frameworks; we will discuss a few popular C2 Frameworks that are widely used by Red Teamers and Adversaries alike. We will be dividing this into two sections:
 
 ---
 
-## [Task 4  Setting Up a C2 Framework]()
+# [Task 4  Setting Up a C2 Framework]()
 
 ---
 
-## [Task 5  C2 Operation Basics]()
+# [Task 5  C2 Operation Basics]()
 
 ---
 
-## [Task 6  Command, Control, and Conquer]()
+# [Task 6  Command, Control, and Conquer]()
 
 ---
 
-## [Task 7  Advanced C2 Setups]()
+# [Task 7  Advanced C2 Setups]()
 
 ---
 
-## [Task 8  Wrapping Up]()
+# [Task 8  Wrapping Up]()
 
 ### Recap
 - In this room, you hopefully learned a lot about Command and Control frameworks and will be able to take the knowledge you gained within this room and apply it in the real world. 
