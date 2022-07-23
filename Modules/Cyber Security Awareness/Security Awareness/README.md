@@ -3,8 +3,8 @@
 > An introduction to security awareness; why its important, the impact of being attacked, different threat actors and basic account security.
 - [x] [Task 1  Introduction to Security Awareness](#task-1--introduction-to-security-awareness)
 - [x] [Task 2  Why Security Awareness is essential](#task-2--why-security-awareness-is-essential)
-- [ ] [Task 3  Data and account security](#task-3--data-and-account-security)
-- [ ] [Task 4  Check if you've ever been part of a cyber breach](#task-4--check-if-youve-ever-been-part-of-a-cyber-breach)
+- [x] [Task 3  Data and account security](#task-3--data-and-account-security)
+- [x] [Task 4  Check if you've ever been part of a cyber breach](#task-4--check-if-youve-ever-been-part-of-a-cyber-breach)
 - [ ] [Task 5  Cyber threat actors](#task-5--cyber-threat-actors)
 - [ ] [Task 6  Conclusion](#task-6--conclusion)
 
@@ -76,6 +76,26 @@
 ---
 
 ## [Task 4  Check if you've ever been part of a cyber breach]()
+
+- The impact of cyber threats increased significantly during the pandemic, primarily due to the increase in home working. 
+- The following points are potential consequences of a successful cyberattack:
+  - Legal penalties (lawsuits and GDPR)
+  - Reputational damage
+  - Disruption to trading
+  - Financial loss
+  - Loss of Sensitive Data
+- Criminals can use the information found in data breaches of companies to perform targeted social engineer attacks or phishing campaigns (more on this in future security awareness rooms). 
+- Have I Been Pwned is a service that keeps track of data breaches leaked information, giving you the ability to find out if you've been a victim of a previous data breach. 
+- Search your email or phone number, and it will reveal if your personal information has ever been leaked.
+  - ![image](https://user-images.githubusercontent.com/51442719/180603133-14aff27e-e155-4a5f-a537-8cbca6a761b4.png)
+
+### Answer the questions below
+- Go to [`haveibeenpwned.com`](https://haveibeenpwned.com/) and see if your information has ever been part of a breach. 
+- If you have, don't panic - ensure you change the breached accounts password. 
+- The next room in this module will talk about how you can use a password manager to create unique passwords for all your accounts.
+  > `No answer needed`
+
+
 
 ---
 
