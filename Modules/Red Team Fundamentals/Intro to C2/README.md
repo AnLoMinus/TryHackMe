@@ -251,6 +251,37 @@ info -d
 
 msf6 > 
 ```
+### Armitage 
+- Armitage is an extension of the Metasploit Framework - it adds a Graphical user interface and is written in Java, and is incredibly similar to Cobalt Strike. 
+- This is because they were both developed by Raphael Mudge. 
+- Armitage offers an easy way to enumerate and visualize all of your targets. 
+- Aside from looking a lot like Cobalt Strike, it even offers some unique features. 
+- One of the most popular can be found in the “Attacks” menu; 
+  - This feature is known as the Hail Mary attack, which attempts to run all exploits for the services running on a specific workstation. 
+- Armitage really is “Fast and Easy Hacking”.
+  > ![image](https://user-images.githubusercontent.com/51442719/180626371-c5f8a8a2-8e38-4118-9808-73dabf71d3f9.png)
+  > - *A Screenshot of the Armitage UI*
+
+### Powershell Empire/Starkiller
+- [`Powershell Empire`](https://bc-security.gitbook.io/empire-wiki/) and [`Starkiller`](https://github.com/BC-SECURITY/Starkiller) is another incredibly popular C2 originally created by Harmjoy, Sixdub, and Enigma0x3 from Veris Group. 
+- Currently, the project has been discontinued and has been picked up by the BC Security team (Cx01N, Hubbl3, and _Vinnybod). 
+- Empire features agents written in various languages compatible with multiple platforms, making it an incredibly versatile C2. 
+- For more information on Empire, we recommend you take a look at the [`Powershell Empire room`](https://tryhackme.com/room/rppsempire).
+  > ![image](https://user-images.githubusercontent.com/51442719/180626403-1ead1c39-2e6a-4d92-aac0-f5377ccc80bc.png)
+  > - *A Screenshot of the Starkiller UI*
+
+### Covenant
+- [`Covenant`](https://github.com/cobbr/Covenant) by Ryan Cobb is the last free C2 Framework we will be covering - By far, it is one of the most unique C2 Frameworks being written in C#. 
+- Unlike Metasploit/Armitage, It’s primarily used for post-exploitation and lateral movement with HTTP, HTTPS, and SMB listeners with highly customizable agents.
+  > ![image](https://user-images.githubusercontent.com/51442719/180626427-1eacd5f7-b962-4a19-995c-211e56ac7788.png)
+  > - *A Screenshot of the Covenant UI*
+
+### Sliver
+- Sliver by Bishop Fox is an advanced, highly customizable multi-user, CLI-based C2 framework. Sliver is written in Go, which makes reverse engineering the C2 "implants" incredibly difficult. It supports various protocols for C2 communications like WireGuard, mTLS, HTTP(S), DNS, and much more. Additionally, it supports BOF files for additional functionality, DNS Canary Domains for masking C2 communications, automatic Let's Encrypt certificate generation for HTTPS beacons, and much more.  
+
+
+
+
 
 
 
