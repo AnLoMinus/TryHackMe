@@ -435,7 +435,7 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 
 ### Answer the questions below
 - Which detection method is used to analyze malicious software inside virtual environments?
-  > Answer format: [`******* *********`](#)
+  > Answer format: [`******* *********`](#Dynamic_detection)
 
 
 
