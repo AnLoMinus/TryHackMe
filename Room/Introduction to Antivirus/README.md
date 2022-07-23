@@ -286,8 +286,100 @@ C:\Users\thm\Desktop\Samples\backdoor2.exe: backdoor2.exe.UNOFFICIAL FOUND
 - As a result, we will see all functions, variables, and nonsense strings. 
 - But, if you look closely, we can use some of the unique strings in our rules to detect this file in the future. 
 - The AV-Check uses a program database (`.pdb`), which contains a type and symbolic debugging information of the program during the compiling.
+```powershell
+C:\Users\thm\Desktop\Samples>strings AV-Check.exe | findstr pdb
+C:\Users\thm\source\repos\AV-Check\AV-Check\obj\Debug\AV-Check.pdb
+```
+- We will use the path in the previous command's output as our unique string example in the Yara rule that we will create. 
+- The signature could be something else in the real world, such as Registry keys, commands, etc. 
+- If you are not familiar with Yara, then we suggest checking the Yara THM room. 
+- The following is Yara's rule that we will use in our detection:
+```yara
+rule thm_demo_rule {
+	meta:
+		author = "THM: Intro-to-AV-Room"
+		description = "Look at how the Yara rule works with ClamAV"
+	strings:
+		$a = "C:\\Users\\thm\\source\\repos\\AV-Check\\AV-Check\\obj\\Debug\\AV-Check.pdb"
+	condition:
+		$a
+}
+```
+- Let's explain this Yara's rule a bit more.
+  - The rule starts with `rule thm_demo_rule`, which is the name of our rule. 
+  - ClamAV uses this name if a rule matches.
+  - The metadata section, which is general information, contains the author and description, which the user can fill.
+  - The strings section contains the strings or bytecode that we are looking for. 
+  - We are using the C# program's database path in this case. 
+  - Notice that we add an extra `\` in that path to escape the special character, so it does not break the rule. 
+  - In the condition section, we specify if the defined string is found in the string section, then flag the file.
+- Note that Yara rules must store in a `.yara` extension file for ClamAV to deal with it. 
+- Let's re-scan the `c:\Users\thm\Desktop\Samples` folder again using the Yara rule we created. 
+- You can find a copy of the Yara rule on the desktop at `c:\Users\thm\Desktop\Files\thm-demo-1.yara`.
+```powershell
+C:\Users\thm>"c:\Program Files\ClamAV\clamscan.exe" -d Desktop\Files\thm-demo-1.yara Desktop\Samples
+Loading:     0s, ETA:   0s [========================>]        1/1 sigs
+Compiling:   0s, ETA:   0s [========================>]       40/40 tasks
 
+C:\Users\thm\Desktop\Samples\AV-Check.exe: YARA.thm_demo_rule.UNOFFICIAL FOUND
+C:\Users\thm\Desktop\Samples\backdoor1.exe: OK
+C:\Users\thm\Desktop\Samples\backdoor2.exe: OK
+C:\Users\thm\Desktop\Samples\eicar.com: OK
+C:\Users\thm\Desktop\Samples\notes.txt: YARA.thm_demo_rule.UNOFFICIAL FOUND
+```
+- As a result, ClamAV can detect the `AV-Check.exe` binary as malicious based on the Yara rule we provide. 
+- However, ClamAV gave a false-positive result where it flagged the `notes.txt` file as malicious. 
+- If we open the `notes.txt` file, we can see that the text contains the same path we specified in the rule.
+- Let's improve our Yara rule to reduce the false-positive result. We will be specifying the file type in our rule. 
+- Often, the types of a file can be identified using magic numbers, which are the first two bytes of the binary. 
+- For example, [`executable`](https://en.wikipedia.org/wiki/DOS_MZ_executable) files (.exe) always start with the ASCII "MZ" value or "4D 5A" in hex.
+- To confirm this, let's use the [`HxD`](https://mh-nexus.de/en/hxd/) application, which is a freeware Hex Editor, to examine the AV-Check.exe binary and see the first two bytes. 
+  > Note that the HxD is already available in the provided VM.
+![image](https://user-images.githubusercontent.com/51442719/180619558-f18da962-f4b6-4b38-8be5-223f1b263650.png)
+- Knowing this will help improve the detection, let's include this in our Yara rule to flag only the .exe files that contain our signature string as malicious. 
+- The following is the improved Yara rule:
+```yara
+rule thm_demo_rule {
+	meta:
+		author = "THM: Intro-to-AV-Room"
+		description = "Look at how the Yara rule works with ClamAV"
+	strings:
+		$a = "C:\\Users\\thm\\source\\repos\\AV-Check\\AV-Check\\obj\\Debug\\AV-Check.pdb"
+		$b = "MZ"
+	condition:
+		$b at 0 and $a
+}
+```
+- In the new Yara rule, we defined a unique string ($b) equal to the MZ as an identifier for the .exe file type. 
+- We also updated the condition section, which now includes the following conditions:
+  - If the string "MZ" is found at the 0 location, the file's beginning.
+  - If the unique string (the path) occurs within the binary.
+  - In the condition section, we used the `AND` operator for both definitions in 1 and 2 are found, then we have a match. 
+- You can find the updated rule in `Desktop\Files\thm-demo-2.yara`. 
+- Now that we have our updated Yara rule, now let's try it again.
+```powershell
+C:\Users\thm>"c:\Program Files\ClamAV\clamscan.exe" -d Desktop\Files\thm-demo-2.yara Desktop\Samples
+Loading:     0s, ETA:   0s [========================>]        1/1 sigs
+Compiling:   0s, ETA:   0s [========================>]       40/40 tasks
 
+C:\Users\thm\Desktop\Samples\AV-Check.exe: YARA.thm_demo_rule.UNOFFICIAL FOUND
+C:\Users\thm\Desktop\Samples\backdoor1.exe: OK
+C:\Users\thm\Desktop\Samples\backdoor2.exe: OK
+C:\Users\thm\Desktop\Samples\eicar.com: OK
+C:\Users\thm\Desktop\Samples\notes.txt: OK
+```
+- The output shows we improved our Yara rule to reduce the false-positive results. 
+- That was a simple example of how AV software works. 
+- Thus, AV software vendors work hard to fight against malware and improve their products and database to enhance the performance and accuracy of results.
+- The drawback of the signature-based detection is that files will have a different hash value if the binary is modified. 
+- Therefore, it is easy for someone to bypass signature-based detection techniques if they know what AV software looks for and how to analyze binaries, as shown in later rooms.
+
+### Answer the questions below
+- What is the sigtool tool output to generate an MD5 of the AV-Check.exe binary?
+  > Answer format: [`********************************:****:********.***`](#)
+- Use the strings tool to list all human-readable strings of the AV-Check binary. What is the flag?
+  > Answer format: [`***{**************}`](#)
+  
 ---
 
 ## Task 6  Other Detection Techniques
