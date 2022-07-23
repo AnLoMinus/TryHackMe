@@ -53,11 +53,25 @@
 - Read the above.
   > `No answer needed`
 
-
-
 ---
 
 ## [Task 3  Data and account security]()
+
+![image](https://user-images.githubusercontent.com/51442719/180602989-59483e27-65c8-4be1-8dbf-eaf0d039dd59.png)
+- Everyone holds sensitive data, whether it be personal information, customer data, financial reports, or company details, obtaining data (or holding it to ransom) is a cybercriminal's main objective.
+- Sensitive data can be in many different forms. 
+  - For example, the HR department has all details and information of employees while the finance department will have the credit card and bank account details of customers. 
+  - Protecting this data is important not only to the organization but also to its clients and customers.
+  - Now that we know why data protection is so important we now need to understand the type of data we have, why it must be protected and the methods we can take to secure it.
+- The following diagram illustrates the top 10 data breaches by some of the large companies in history, the number of people who were affected and the type of data that was leaked.
+  - ![image](https://user-images.githubusercontent.com/51442719/180603031-c44f83fc-46c3-4e38-b699-f33c0bf1545b.png)
+
+### Answer the questions below
+- How many people were affected by eBay being hacked?
+  > Answer format: [`*** *******`](#145-Million)
+- What data was leaked from Playstation being hacked?
+  > Answer format: [`*****, *********, ******, ***** *****`](#NAMES,-ADDRESSES,-E-MAIL,-BIRTH-DATES)
+
 
 ---
 
