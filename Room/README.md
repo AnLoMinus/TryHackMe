@@ -5,6 +5,21 @@
 
 ![image](https://user-images.githubusercontent.com/51442719/180161008-64a5b047-53f6-4d3c-8e37-621768a43b52.png)
 
+# ✅ [Introduction to Antivirus](https://tryhackme.com/room/introtoav)
+  > Understand how antivirus software works and what detection techniques are used to bypass malicious files checks.
+  - [x] [Task 1  Introduction](#task-1--introduction)
+  - [x] [Task 2  Antivirus Software](#task-2--antivirus-software)
+  - [x] [Task 3  Antivirus Features](#task-3--antivirus-features)
+  - [x] [Task 4  Deploy the VM](#task-4--deploy-the-vm)
+  - [x] [Task 5  AV Static Detection](#task-5--av-static-detection)
+  - [x] [Task 6  Other Detection Techniques](#task-6--other-detection-techniques)
+  - [x] [Task 7  AV Testing and Fingerprinting](#task-7--av-testing-and-fingerprinting)
+  - [x] [Task 8  Conclusion](#task-8--conclusion)
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/180161008-64a5b047-53f6-4d3c-8e37-621768a43b52.png)
+
 - [ ] [🔮](./Introduction%20to%20Antivirus/README.md) | [Introduction to Antivirus](https://tryhackme.com/room/introtoav)
   > Understand how antivirus software works and what detection techniques are used to bypass malicious files checks.
     - [ ] Task 1  Introduction
