@@ -376,9 +376,9 @@ C:\Users\thm\Desktop\Samples\notes.txt: OK
 
 ### Answer the questions below
 - What is the sigtool tool output to generate an MD5 of the AV-Check.exe binary?
-  > Answer format: [`********************************:****:********.***`](#)
+  > Answer format: [`********************************:****:********.***`](#f4a974b0cf25dca7fbce8701b7ab3a88:6144:AV-Check,exe)
 - Use the strings tool to list all human-readable strings of the AV-Check binary. What is the flag?
-  > Answer format: [`***{**************}`](#)
+  > Answer format: [`***{**************}`](#THM{Y0uC4nC-5tr16s})
   
 ---
 
