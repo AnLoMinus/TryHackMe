@@ -22,7 +22,11 @@
 </div>
 
 ---
+⫷ [**`Rooms`**](./Rooms) | [**`Modules`**](./Modules) | [**`Paths`**](#Paths) ⫸
 
+---
+
+# Paths
 - [X] ✅ [INTRODUCTION TO CYBER SECURITY](#-introduction-to-cyber-security) `24 Hours`
 - [X] ✅ [JR PENETRATION TESTER](#-jr-penetration-tester) `56 Hours`
 - [X] ✅ [PRE SECURITY](#-pre-security) `40 Hours`
