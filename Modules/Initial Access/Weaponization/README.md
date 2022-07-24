@@ -18,36 +18,36 @@
 
 ---
 
-- [ ] [Task 1  Introduction]()
+# [Task 1  Introduction]()
 
 ---
 
-- [ ] [Task 2  Deploy the Windows Machine]()
+# [Task 2  Deploy the Windows Machine]()
 
 ---
 
-- [ ] [Task 3  Windows Scripting Host - WSH]()
+# [Task 3  Windows Scripting Host - WSH]()
 
 ---
 
-- [ ] [Task 4  An HTML Application - HTA]()
+# [Task 4  An HTML Application - HTA]()
 
 ---
 
-- [ ] [Task 5  Visual Basic for Application - VBA]()
+# [Task 5  Visual Basic for Application - VBA]()
 
 ---
 
-- [ ] [Task 6  PowerShell - PSH]()
+# [Task 6  PowerShell - PSH]()
 
 ---
 
-- [ ] [Task 7  Command And Control - (C2 Or C&C)]()
+# [Task 7  Command And Control - (C2 Or C&C)]()
 
 ---
 
-- [ ] [Task 8  Delivery Techniques]()
+# [Task 8  Delivery Techniques]()
 
 ---
 
-- [ ] [Task 9  Practice Arena]()
+# [Task 9  Practice Arena]()
