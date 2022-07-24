@@ -3,7 +3,7 @@
 - [x] [Task 1  Introduction](#task-1--introduction)
 - [x] [Task 2  Command and Control Framework Structure](#task-2--command-and-control-framework-structure)
 - [x] [Task 3  Common C2 Frameworks](#task-3--common-c2-frameworks) [`C2Matrix`](https://docs.google.com/spreadsheets/d/19IjBcl_zuRm-N5D2b9f3Gtk7eh3yCdYC_yGnIHkec7k/edit?usp=sharing)
-- [ ] [Task 4  Setting Up a C2 Framework](#task-4--setting-up-a-c2-framework)
+- [x] [Task 4  Setting Up a C2 Framework](#task-4--setting-up-a-c2-framework)
 - [ ] [Task 5  C2 Operation Basics](#task-5--c2-operation-basics)
 - [ ] [Task 6  Command, Control, and Conquer](#task-6--command-control-and-conquer)
 - [ ] [Task 7  Advanced C2 Setups](#task-7--advanced-c2-setups)
@@ -303,6 +303,19 @@ git clone https://gitlab.com/kalilinux/packages/armitage.git && cd armitage && b
 ---
 
 # [Task 5  C2 Operation Basics]()
+
+### Accessing and Managing your C2 Infrastructure
+- Now that we have a general idea of how to set up a C2 Server, we will go over some basic operational details that you should know when accessing your C2 Server. 
+- It's important to note that you are not required to perform any actions in this task - This is meant to gain general experience and familiarity with Command and Control Frameworks.
+
+#### Basic Operational Security
+- We briefly touched on this in the last section; You should never have your C2 management interface directly accessible. 
+- This is primarily for you to improve operational security. 
+- It can be incredibly easy to fingerprint C2 servers. 
+- For example, in versions prior to 3.13, Cobalt Strike C2 servers were able to be identified by an extra space (\x20) at the end of the HTTP Response.
+- Using this tactic, many Blue Teamers could fingerprint all of the Cobalt Strike C2 servers publicly accessible. 
+- For more information on fingerprinting and identifying Cobalt Strike C2 Servers, check out this posted on the [`Recorded Future blog`](https://www.recordedfuture.com/cobalt-strike-servers/).
+
 
 ---
 
