@@ -333,8 +333,18 @@ ssh -L 55553:127.0.0.1:55553 root@192.168.0.44
 ```
 - Now that we have an SSH remote port forward set up, you can now connect to your C2 server running on TCP/55553. 
 - As a reminder, Armitage does not support listening on a loopback interface (127.0.0.1-127.255.255.255), so this is general C2 server admin advice. 
-- You will find this advice more centric to C2 servers like Covenant, Empire, and many others.
+- You will find this advice more centric to C2 servers like `Covenant`, `Empire`, and many others.
+- We highly recommend putting firewall rules in place for C2 servers that must listen on a public interface so only the intended users can access your C2 server. 
+- There are various ways to do this. 
+- If you are hosting Cloud infrastructure, you can set up a Security Group or use a host-based firewall solution like `UFW` or `IPTables`.
 
+#### Creating a Listener in Armitage
+- Next, we're going to move onto a topic that all C2 servers have - this being listener creation. 
+- To stay on topic, we will demonstrate how to set up a basic listener with Armitage then explore some of the other theoretical listeners you may encounter in various other C2 Frameworks. 
+- Let's create a basic Meterpreter Listener running on TCP/31337. To start, click on the Armitage dropdown and go over to the "Listeners" section; you should see three options, Bind, Reverse, and set LHOST. 
+- Bind refers to Bind Shells; you must connect to these hosts. Reverse refers to standard Reverse Shells; this is the option we will be using.
+  > ![image](https://user-images.githubusercontent.com/51442719/180646140-40ae4b3d-20ce-4ad1-baf8-843c5524fa9f.png) 
+  > - *Creating a Listener in Armitage*
 
 ---
 
