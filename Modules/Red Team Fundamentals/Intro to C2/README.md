@@ -316,6 +316,25 @@ git clone https://gitlab.com/kalilinux/packages/armitage.git && cd armitage && b
 - Using this tactic, many Blue Teamers could fingerprint all of the Cobalt Strike C2 servers publicly accessible. 
 - For more information on fingerprinting and identifying Cobalt Strike C2 Servers, check out this posted on the [`Recorded Future blog`](https://www.recordedfuture.com/cobalt-strike-servers/).
 
+#### Accessing your Remote C2 Server that's Listening Locally
+- This section will be focusing on how to securely access your C2 server by SSH port-forwarding; if you have port-forwarded with SSH before, feel free to skip over this section, you may not learn anything new. 
+- For those unfamiliar, SSH port-forwarding allows us to either host resources on a remote machine by forwarding a local port to the remote server, or allows us to access local resources on the remote machine we are connecting to.  
+- In some circumstances, this may be for circumventing Firewalls.
+  > ![image](https://user-images.githubusercontent.com/51442719/180645878-0139fd08-0fc1-40b3-8d44-a62f8923f462.png)
+  - Or, in our instance, this could be done for operational security reasons.
+  > ![image](https://user-images.githubusercontent.com/51442719/180645900-94a608d8-c090-4768-9c71-0558a7f58f96.png)
+  > - *Firewall Allows TCP/22, allowing us to access TCP/8080 over TCP/22*
+- Now that we have a better understanding of why we want to SSH port forward, let's go over the how.
+- In our C2 set up from Task 4, our Teamserver is listening on localhost on TCP/55553. 
+- In order to access Remote port 55553, we must set up a Local port-forward to forward our local port to the remote Teamserver server. 
+- We can do this with the -L flag on our SSH client:
+```cmd
+ssh -L 55553:127.0.0.1:55553 root@192.168.0.44
+```
+- Now that we have an SSH remote port forward set up, you can now connect to your C2 server running on TCP/55553. 
+- As a reminder, Armitage does not support listening on a loopback interface (127.0.0.1-127.255.255.255), so this is general C2 server admin advice. 
+- You will find this advice more centric to C2 servers like Covenant, Empire, and many others.
+
 
 ---
 
