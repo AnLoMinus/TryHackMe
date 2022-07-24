@@ -34,9 +34,9 @@
 - [X] ✅ [PRE SECURITY](#-pre-security) `40 Hours`
 - [X] ✅ [COMPLETE BEGINNER](#-complete-beginner) `64 Hours`
 - [X] ✅ [WEB FUNDAMENTALS](#-web-fundamentals) `32 Hours`
-- [ ] [COMPTIA PENTEST+](#comptia-pentest)
-- [ ] [OFFENSIVE PENTESTING](#offensive-pentesting)
-- [ ] [CYBER DEFENSE](#cyber-defense)
+- [ ] [COMPTIA PENTEST+](#comptia-pentest) `51 Hours`
+- [ ] [OFFENSIVE PENTESTING](#offensive-pentesting) `47 Hours`
+- [ ] [CYBER DEFENSE](#cyber-defense) `48 Hours`
 
 --
 
