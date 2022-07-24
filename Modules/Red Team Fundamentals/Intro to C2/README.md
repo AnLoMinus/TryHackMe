@@ -2,7 +2,7 @@
 > Learn the essentials of Command and Control to help you become a better Red Teamer and simplify your next Red Team assessment!
 - [x] [Task 1  Introduction](#task-1--introduction)
 - [x] [Task 2  Command and Control Framework Structure](#task-2--command-and-control-framework-structure)
-- [ ] [Task 3  Common C2 Frameworks](#task-3--common-c2-frameworks) [`C2Matrix`](https://docs.google.com/spreadsheets/d/19IjBcl_zuRm-N5D2b9f3Gtk7eh3yCdYC_yGnIHkec7k/edit?usp=sharing)
+- [x] [Task 3  Common C2 Frameworks](#task-3--common-c2-frameworks) [`C2Matrix`](https://docs.google.com/spreadsheets/d/19IjBcl_zuRm-N5D2b9f3Gtk7eh3yCdYC_yGnIHkec7k/edit?usp=sharing)
 - [ ] [Task 4  Setting Up a C2 Framework](#task-4--setting-up-a-c2-framework)
 - [ ] [Task 5  C2 Operation Basics](#task-5--c2-operation-basics)
 - [ ] [Task 6  Command, Control, and Conquer](#task-6--command-control-and-conquer)
@@ -287,6 +287,18 @@ msf6 >
 ---
 
 # [Task 4  Setting Up a C2 Framework]()
+
+# Let's Setup a C2 Server
+- In order to gain a better understanding of what is required to set up and administer a C2 server, we will be using Armitage. 
+- As a reminder, Armitage is a GUI for the Metasploit Framework, and because of this, it has almost all aspects of a standard C2 framework.
+> 💡 Note: In case you're using the AttackBox, you may skip to the Preparing our Environment section.
+- Setting Up Armitage
+- Downloading, Building, and Installing Armitage
+- First, we must clone the repository from Gitlab:
+```
+git clone https://gitlab.com/kalilinux/packages/armitage.git && cd armitage && bash package.sh
+```
+
 
 ---
 
