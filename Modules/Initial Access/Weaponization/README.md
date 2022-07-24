@@ -14,7 +14,7 @@
 - [ ] [Task 6  PowerShell - PSH]()
 - [ ] [Task 7  Command And Control - (C2 Or C&C)]()
 - [ ] [Task 8  Delivery Techniques]()
-- [ ] [Task 9  Practice Arena]()
+- [ ] [Task 9  Practice Arena](#task-9--practice-arena)
 
 ---
 
