@@ -1,8 +1,8 @@
 ![image](https://user-images.githubusercontent.com/51442719/180655800-ab7238f2-e777-4ea2-8203-8c2a0ca86566.png)
 
 # [Weaponization](https://tryhackme.com/room/weaponization)
-- Understand and explore common red teaming weaponization techniques. 
-- You will learn to build custom payloads using common methods seen in the industry to get initial access.
+> #### Understand and explore common red teaming weaponization techniques. 
+> #### You will learn to build custom payloads using common methods seen in the industry to get initial access.
 
 ---
 
