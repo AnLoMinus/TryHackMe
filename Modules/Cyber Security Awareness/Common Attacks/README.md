@@ -3,7 +3,7 @@
 > With practical exercises see how common attacks occur, and improve your cyber hygiene to stay safer online.
 - [x] [Task 1  `Information` Introduction](#task-1--information-introduction)
 - [x] [Task 2  `Common Attacks` Social Engineering](#task-2--common-attacks-social-engineering)
-- [ ] [Task 3  `Common Attacks` Social Engineering: Phishing](#task-3--common-attacks-social-engineering-phishing)
+- [x] [Task 3  `Common Attacks` Social Engineering: Phishing](#task-3--common-attacks-social-engineering-phishing)
 - [ ] [Task 4  `Common Attacks` Malware and Ransomware](#task-4--common-attacks-malware-and-ransomware)
 - [ ] [Task 5  `Common Attacks` Passwords and Authentication](#task-5--common-attacks-passwords-and-authentication)
 - [ ] [Task 6  `Staying Safe` Multi-Factor Authentication and Password Managers](#task-6--staying-safe-multi-factor-authentication-and-password-managers)
@@ -168,7 +168,7 @@ Stuxnet was the name given to a particularly nasty computer virus (allegedly dev
 - Once you have successfully identified all of the messages you will be presented with a flag to enter, here.
 > Good luck!
 - What is the flag?
-  > Answer format: [`***{**********************}`]()
+  > Answer format: [`***{**********************}`](#THM{I_CAUGHT_ALL_THE_PHISH})
 
 
 
