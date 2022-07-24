@@ -60,8 +60,8 @@
 
 ---
 
-# [Red Team Fundamentals](https://tryhackme.com/module/red-team-fundamentals)
-  - Learn the core components of a red team engagement, from threat intelligence to OPSEC and C2s
+# ✅ [Red Team Fundamentals](https://tryhackme.com/module/red-team-fundamentals)
+- Learn the core components of a red team engagement, from threat intelligence to OPSEC and C2s
 
 ---
 
