@@ -128,7 +128,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 ---
 
 - # [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/CompTIA%20Pentest%2B)
-  - [ ] Path Progress (92%)
+  - [ ] Path Progress (94%)
     - `Easy`
     - `51 Hours`
 
@@ -136,7 +136,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 
 - # [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Offensive%20Pentesting)
-  - [ ] Path Progress (38%)
+  - [ ] Path Progress (50%)
     - `Intermediate`
     - `47 Hours`
 
@@ -144,7 +144,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 
 - # [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Cyber%20Defense)
-  - [ ] Path Progress (41%)
+  - [ ] Path Progress (44%)
     - `Intermediate`
     - `48 Hours`
 
