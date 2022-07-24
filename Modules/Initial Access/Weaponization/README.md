@@ -6,14 +6,14 @@
 
 ---
 
-- [x] [Task 1  Introduction]()
-- [x] [Task 2  Deploy the Windows Machine]()
-- [x] [Task 3  Windows Scripting Host - WSH]()
-- [x] [Task 4  An HTML Application - HTA]()
-- [x] [Task 5  Visual Basic for Application - VBA]()
-- [x] [Task 6  PowerShell - PSH]()
-- [x] [Task 7  Command And Control - (C2 Or C&C)]()
-- [x] [Task 8  Delivery Techniques]()
+- [x] [Task 1  Introduction](#task-1--introduction)
+- [x] [Task 2  Deploy the Windows Machine](#task-2--deploy-the-windows-machine)
+- [x] [Task 3  Windows Scripting Host - WSH](#task-3--windows-scripting-host---wsh)
+- [x] [Task 4  An HTML Application - HTA](#task-4--an-html-application---hta)
+- [x] [Task 5  Visual Basic for Application - VBA](#task-5--visual-basic-for-application---vba)
+- [x] [Task 6  PowerShell - PSH](#task-6--powershell---psh)
+- [x] [Task 7  Command And Control - (C2 Or C&C)](#task-7--command-and-control---c2-or-cc)
+- [x] [Task 8  Delivery Techniques](#task-8--delivery-techniques)
 - [ ] [Task 9  Practice Arena](#task-9--practice-arena)
 
 ---
