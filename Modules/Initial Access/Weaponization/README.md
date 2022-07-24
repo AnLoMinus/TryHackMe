@@ -53,7 +53,8 @@
 # [Task 9  Practice Arena]()
 
 - We have prepared a Windows 10 machine that runs a user simulation web app to execute your payloads or visit the malicious HTA links automatically. 
-Deploy the attached machine and wait a couple of minutes until it's up and running. Then, visit the user simulator web application at `http://10.10.132.115:8080/`.
+- Deploy the attached machine and wait a couple of minutes until it's up and running. 
+- Then, visit the user simulator web application at `http://10.10.132.115:8080/`.
 - Make sure to visit the user simulator web application from the AttackBox, or you can access it by connecting to the VPN.
   > ![image](https://user-images.githubusercontent.com/51442719/180656171-3cd54534-77fc-458a-9d7b-f431ca69280d.png)
 - The web application allows uploading payloads as VBS, DOC, PS1 files. In addition, if you provide a malicious HTA link, the web application will visit your link.
