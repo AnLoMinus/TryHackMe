@@ -642,9 +642,9 @@ run
 
 ### Answer the questions below
 - What setting name that allows you to modify the User Agent field in a Meterpreter payload?
-  > Answer format: [`*************`](#)
+  > Answer format: [`*************`](#HTTPUserAgent)
 - What setting name that allows you to modify the Host header in a Meterpreter payload?
-  > Answer format: [`**************`](#)
+  > Answer format: [`**************`](#HttpHostHeader)
 
 
 ---
