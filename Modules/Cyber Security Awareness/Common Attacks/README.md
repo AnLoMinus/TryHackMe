@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/51442719/172191250-ff82edc6-b5bd-4264-aeaf-8ab6118495f3.png)
 > With practical exercises see how common attacks occur, and improve your cyber hygiene to stay safer online.
 - [x] [Task 1  `Information` Introduction](#task-1--information-introduction)
-- [ ] [Task 2  `Common Attacks` Social Engineering](#task-2--common-attacks-social-engineering)
+- [x] [Task 2  `Common Attacks` Social Engineering](#task-2--common-attacks-social-engineering)
 - [ ] [Task 3  `Common Attacks` Social Engineering: Phishing](#task-3--common-attacks-social-engineering-phishing)
 - [ ] [Task 4  `Common Attacks` Malware and Ransomware](#task-4--common-attacks-malware-and-ransomware)
 - [ ] [Task 5  `Common Attacks` Passwords and Authentication](#task-5--common-attacks-passwords-and-authentication)
@@ -12,6 +12,8 @@
 - [ ] [Task 9  `Staying Safe` Updates and Patches](#task-9--staying-safe-updates-and-patches)
 - [ ] [Task 10  `Information` Conclusion](#task-10--information-conclusion)
 
+---
+- (`Phishing`) -  When emails are sent to a target(s) purporting to be from a trusted entity to lure individuals into providing sensitive information.
 ---
 
 # [Task 1  `Information` Introduction]()
@@ -81,6 +83,44 @@ Stuxnet was the name given to a particularly nasty computer virus (allegedly dev
 ---
 
 # [Task 3  `Common Attacks` Social Engineering: Phishing]()
+
+### Overview
+- Phishing is one of the most common cyber attack types employed by scammers and bad actors, targeting individuals and businesses indiscriminately. 
+- In many cases, phishing is the initial attack vector used to gain access to a company's infrastructure before performing further attacks against the corporate network. 
+- Whilst there are many automated tools now available to help combat phishing threats, phishing is still one of the most prolific attack vectors around.
+
+### What is Phishing?
+- Phishing is a sub-section of social engineering. 
+- Whereas social engineering is a very general term used to describe any attack that takes advantage of a human rather than a computer system, phishing specifically describes attacks whereby a scammer or other attacker tricks a victim into opening a malicious webpage by sending them a text message, email, or another form of online correspondence. 
+- Traditionally, "phishing" simply referred to emails; however, in the days of instant messaging, text messages, and voice/video calling, the term has evolved to blanket these other categories. 
+- These other forms are sometimes referred to individually as "smishing" — phishing over SMS — and "vishing" — phishing over voice chat — respectively.
+- These attacks are very widespread (indeed, the chances of you not having been on the receiving end of such an attack are slim!) and are frequently deployed on massive scales using lists of leaked or stolen phone numbers and email addresses.
+- Phishing messages usually deploy psychological trickery (for example, inducing a false sense of urgency to make victims act rashly) and nearly always involve getting a victim to click on a link to a web application owned by the attacker. 
+- The victim is then often asked to enter sensitive information — for example, login details or credit card information — at which point the malicious site stores the information and the attack is complete. 
+- Alternatively, the victim may inadvertently install malware from the malicious page, thus giving an attacker an entry point into their device and network.
+
+#### There are three primary types of phishing attacks:
+
+|    **Attack Type**   |                                                                                                                                                                                        **Definition**                                                                                                                                                                                       |
+|:---------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| **General Phishing** | A simple, mass phishing attack which doesn't target anyone in particular, although they may aim for large groups (e.g. PayPal users, or Amazon customers). <br> These large-scale campaigns are usually simple and are generally (but not always) fairly easy to spot as the messages and malicious sites are often not very well crafted and frequently contain many immediately visible errors. |
+|   **Spearphishing**  |         More targeted than general phishing, spearphishing aims for an individual or small group (e.g. employees of a specific company). <br> Spearphishing campaigns are generally better crafted than the correspondence and malicious sites used in general phishing as they are designed to target a particular group, often as part of a more extensive campaign against the target.         |
+|      **Whaling**     |                                                                                       Even more specific than spearphishing, whaling targets high-value individuals (e.g. a C-Suite executive in a target company). <br> The messages are generally extremely well crafted and tend to be very hard to spot.                                                                                      |
+
+- Be aware that you are much more likely to encounter a general phishing attack than a spearphishing or whaling attack in your day-to-day life. 
+- This may not be the case in your work life, however — especially if you are a high-ranking member of a company.
+- An example of a popular general phishing scenario (or "pretext") would be receiving an email purportedly from "Amazon", informing you that your account has been used to buy a very costly item (e.g. the latest iPad). 
+- You are then provided with a link to view your purchase history. 
+- The link looks like it goes to https://amazon.co.uk but will actually take you to an attacker-controlled web application (that looks identical to the Amazon login page), asking you to enter your Amazon credentials. 
+- When you enter your credentials, you get redirected to the real Amazon orders page, where you find that there are no unauthorised purchases... yet. 
+- The attacker will then use your duly provided credentials to actually order expensive items with your account.
+
+#### This process is shown in the following diagram:
+
+
+
+
+
 
 ---
 
