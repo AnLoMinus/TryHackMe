@@ -116,6 +116,60 @@ Stuxnet was the name given to a particularly nasty computer virus (allegedly dev
 - The attacker will then use your duly provided credentials to actually order expensive items with your account.
 
 #### This process is shown in the following diagram:
+- The attacker sends out a malicious phishing email campaign
+- Prospective victims receive the emails — some of them open the email and click the link
+- The victims enter their credentials into the attacker's fake web page
+- The web page stores the credentials or sends them directly to the attacker
+- The attacker uses the credentials to access the site, thus taking over the victims' accounts
+> ![image](https://user-images.githubusercontent.com/51442719/180638533-8bd311d6-f864-4d67-9bc0-6e19a94a5fbb.png)
+- Phishing attacks work best when the malicious web page mimics an existing (usually well-known) web page. 
+- For this reason, attackers/scammers will usually use one of many freely available tools to simply clone an existing page, which can then be edited at their leisure.
+- The end goal of a phishing attack can vary significantly depending on who is performing the attack. 
+- For example, a low-level scammer may simply be after sensitive information (e.g., bank details), whereas a high-powered group of malicious hackers may be targeting a specific organisation with the intention of causing further damage.
+
+### Identifying Phishing Attacks
+- Many generic phishing attacks are relatively easy to spot; they frequently have poor grammar and often do not address their victims by name (instead leaving the greetings generic — e.g., "Dear customer"). 
+- That said, other instances can be extremely difficult to spot, with some attacks being thorough enough to fool cybersecurity professionals.
+- Regardless of the attack type, in many cases, the pretext will be plausible — for example: 
+  - the Amazon scam listed above, or a (fake) message from your "bank" telling you that there has been unusual activity with your account and to please log in to review it. 
+  - This is especially true for spearphishing or whaling attacks where the pretext will be very carefully tailored to the target.
+- Equally, the domain name for the malicious site will usually be similar (but never identical) to the domain name used by the legitimate website. 
+- As a real-world example from 2021, a group of scammers sent out a mass phishing campaign over SMS, mimicking the British Royal Mail service and using the domain name https://royalmai1.co.uk (as opposed to https://royalmail.co.uk). 
+- By exchanging the final "L" for the number one, the scammers were able to successfully register a domain name that looked almost identical to the domain name of their cloned website; this is a very common tactic.
+- Also, bear in mind that HTML emails (effectively any email that looks fancy and contains formatting/graphics) can also be used to mask the real domain name in use. 
+  - For example, the text in the email may be "https://amazon.co.uk"; however, the link actually goes to "https://am4zon.co.uk". 
+  - You can see this by hovering your mouse over the link in a desktop application — the real link should appear at the bottom of the screen as in this graphic:
+  > ![image](https://user-images.githubusercontent.com/51442719/180638700-5348506f-4781-4884-9435-e846e87c5f89.png)
+- In a similar vein, the "From" email address in an email-based phishing campaign will often be suspicious. 
+- Many generic mass phishing campaigns will simply use Gmail addresses — not bothering to use a domain name associated with the company they are spoofing.
+- This is a dead giveaway that the email is suspicious.
+- The best way to identify a phishing email is simply to keep your eyes open and look for anything suspicious — all but the best will have a mistake somewhere.
+ 
+### Staying Safe from Phishing Attacks
+#### There are a variety of things that you can (and should!) do to keep yourself safe from phishing attacks:
+- Delete unknown or untrusted emails without opening them. 
+- If you can see anything suspicious in the email, also report it as spam to your email provider, or forward it to your IT Security department if you received the email at work.
+- Never open attachments from untrusted emails — this includes any attachments from a legitimate contact that you were not expecting.
+- Do not click on embedded links in emails or messages. 
+- Where possible, navigate to the real website in your web browser and access the content that way. 
+- If you absolutely must click on the link, ensure that the domain name is correct and that the link points to where you think it does.
+- Always make sure that your device and antivirus software are up-to-date.
+- Avoid making your personal information (e.g. email address and phone number) public if possible. 
+- If you must publish personal details publicly, create a "burner" email address (a temporary address made for one purpose, then destroyed soon afterwards) for the occasion, then destroy it as soon as it is no longer required.
+- It's worth noting at this point that anyone can fall for a phishing attack — especially a complex one that has been made to look very realistic. 
+- If you accidentally fall for one, don't panic! Make sure that you change any affected passwords immediately, and contact IT Services if the attack happens at work.
+
+### Answer the questions below
+
+- Click the green "View Site" button at the top of this task if you haven't already done so.
+  > `No answer needed`
+- The static site will display a series of emails and text messages. 
+- You will be asked to identify which of these messages are genuine and which are phishing attempts. 
+- Once you have successfully identified all of the messages you will be presented with a flag to enter, here.
+> Good luck!
+- What is the flag?
+  > Answer format: [`***{**********************}`]()
+
 
 
 
