@@ -36,6 +36,27 @@
 
 # [Task 3  Installation]()
 
+- The installation for Empire and Starkiller very easy and can all be done from the command line. The choice is up to you on whether or not you want to use the GUI for Empire, the room itself will showcase Starkiller but all functionalities are the same. 
+- For further instructions on installing Empire refer to the [`BC-Security Github`](https://github.com/BC-SECURITY/Empire).
+> 💡 `Note`: Starkiller is the GUI for Empire is not required however it will be used within this room.
+- For more information about Empire check out the BC-Security blog.
+
+### Installing Empire
+#### We can begin by installing Empire on our device. Follow the instructions below to install Empire.
+
+```cmd
+cd /opt
+```
+```cmd
+git clone https://github.com/BC-SECURITY/Empire/
+```
+```cmd
+cd /opt/Empire
+```
+```cmd
+./setup/install.sh
+```
+
 ---
 
 # [Task 4  Menu Overview]()
