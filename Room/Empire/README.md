@@ -3,8 +3,8 @@
 # [Empire](https://tryhackme.com/room/rppsempire)
 > #### Learn how to use Empire and it's GUI Starkiller, a powerful post-exploitation C2 framework.
   - [x] [Task 1  Introduction](#task-1--introduction)
-  - [ ] [Task 2  Deploy!](#task-2--deploy)
-  - [ ] [Task 3  Installation](#task-3--installation)
+  - [x] [Task 2  Deploy!](#task-2--deploy)
+  - [x] [Task 3  Installation](#task-3--installation)
   - [ ] [Task 4  Menu Overview](#task-4--menu-overview)
   - [ ] [Task 5  Listeners](#task-5--listeners)
   - [ ] [Task 6  Stagers](#task-6--stagers)
@@ -56,6 +56,44 @@ cd /opt/Empire
 ```cmd
 ./setup/install.sh
 ```
+
+### Installing Starkiller
+#### Once Empire is installed we can install the GUI for Empire known as Starkiller.
+```cmd
+cd /opt
+```
+- Download an up to date version of Starkiller from the BC-Security Github repo 
+  - https://github.com/BC-SECURITY/Starkiller/releases 
+```cmd
+chmod +x starkiller-0.0.0.AppImage
+```
+
+### Starting Empire
+#### Once both Empire and Starkiller are installed we can start both servers. 
+- Being by starting Empire with the instructions below.
+```cmd
+cd /opt/Empire
+```
+```cmd
+./empire --rest
+```
+
+### Starting Starkiller
+#### Once Empire is started follow the instructions below to start Starkiller.
+```cmd
+cd /opt
+```
+```cmd
+./starkiller-0.0.0.AppImage
+```
+- Login to Starkiller
+  - Default Credentials
+    - Uri: `127.0.0.1:1337`
+    - User: `empireadmin`
+    - Pass: `password123`
+- Once you have logged into Starkiller you should be greeted with the Listeners menu, once you have Starkiller or Empire ready move on to Task 3 to get familiar with the menu.
+
+
 
 ---
 
