@@ -23,6 +23,11 @@
 
 ---
 
+- (`NSM`) - Network Security Monitoring 
+- (`SOC`) – Security Operating Center
+
+---
+
 ## [Task 1  Introduction]()
 
 - The room aims to provide a general network monitoring overview and work with Zeek to investigate captured traffic. 
