@@ -89,6 +89,29 @@
 | Pros | It provides in-depth traffic visibility. Useful for threat hunting. Ability to detect complex threats. It has a scripting language and supports event correlation.  Easy to read logs. | Easy to write rules. Cisco supported rules. Community support. |
 | Common Use Case | Network monitoring. In-depth traffic investigation. Intrusion detecting in chained events.  | Intrusion detection and prevention. Stop known attacks/threats. |
 
+### Zeek Architecture
+- Zeek has two primary layers; "Event Engine" and "Policy Script Interpreter". 
+- The Event Engine layer is where the packets are processed; it is called the event core and is responsible for describing the event without focusing on event details. 
+- It is where the packages are divided into parts such as source and destination addresses, protocol identification, session analysis and file extraction.
+- The Policy Script Interpreter layer is where the semantic analysis is conducted. 
+- It is responsible for describing the event correlations by using Zeek scripts.
+
+> ![image](https://user-images.githubusercontent.com/51442719/181111656-64f74fbc-2683-4d55-8855-57515223a328.png)
+
+### Zeek Frameworks
+- Zeek has several frameworks to provide extended functionality in the scripting layer. 
+- These frameworks enhance Zeek's flexibility and compatibility with other network components. 
+- Each framework focuses on the specific use case and easily runs with Zeek installation. 
+- For instance, we will be using the "Logging Framework" for all cases. 
+- Having ide on each framework's functionality can help users quickly identify an event of interest. 
+
+#### Available Frameworks
+
+| Logging | Notice | Input | Configuration | Intelligence |
+|:---:|:---:|:---:|:---:|:---:|
+| Cluster | Broker Communication | Supervisor | GeoLocation | File Analysis |
+| Signature | Summary | NetControl | Packet Analysis | TLS Decryption |
+
 - You can read more on frameworks [`here`](https://docs.zeek.org/en/master/frameworks/index.html). 
 
 ### Zeek Outputs
@@ -155,30 +178,8 @@ root@ubuntu$ ls -l
 | -v |  Version information. |
 | zeekctl | ZeekControl module. |
 
-### Zeek Architecture
-- Zeek has two primary layers; "Event Engine" and "Policy Script Interpreter". 
-- The Event Engine layer is where the packets are processed; it is called the event core and is responsible for describing the event without focusing on event details. 
-- It is where the packages are divided into parts such as source and destination addresses, protocol identification, session analysis and file extraction.
-- The Policy Script Interpreter layer is where the semantic analysis is conducted. 
-- It is responsible for describing the event correlations by using Zeek scripts.
-
-> ![image](https://user-images.githubusercontent.com/51442719/181111656-64f74fbc-2683-4d55-8855-57515223a328.png)
-
-### Zeek Frameworks
-- Zeek has several frameworks to provide extended functionality in the scripting layer. 
-- These frameworks enhance Zeek's flexibility and compatibility with other network components. 
-- Each framework focuses on the specific use case and easily runs with Zeek installation. 
-- For instance, we will be using the "Logging Framework" for all cases. 
-- Having ide on each framework's functionality can help users quickly identify an event of interest. 
-
-#### Available Frameworks
-
-| Logging | Notice | Input | Configuration | Intelligence |
-|:---:|:---:|:---:|:---:|:---:|
-| Cluster | Broker Communication | Supervisor | GeoLocation | File Analysis |
-| Signature | Summary | NetControl | Packet Analysis | TLS Decryption |
-
-
+- Investigating the generated logs will require command-line tools (cat, cut, grep sort, and uniq) and additional tools (zeek-cut). 
+- We will cover them in the following tasks.
 ---
 
 ## [Task 3  Zeek Logs]()
