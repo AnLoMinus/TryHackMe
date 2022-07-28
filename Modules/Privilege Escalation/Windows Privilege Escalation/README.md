@@ -4,7 +4,7 @@
 
 - [x] [Task 1  Introduction](#task-1--introduction)
 - [x] [Task 2  Windows Privilege Escalation](#task-2--windows-privilege-escalation)
-- [ ] [Task 3  Harvesting Passwords from Usual Spots](#task-3--harvesting-passwords-from-usual-spots)
+- [x] [Task 3  Harvesting Passwords from Usual Spots](#task-3--harvesting-passwords-from-usual-spots)
 - [ ] [Task 4  Other Quick Wins](#task-4--other-quick-wins)
 - [ ] [Task 5  Abusing Service Misconfigurations](#task-5--abusing-service-misconfigurations)
 - [ ] [Task 6  Abusing dangerous privileges](#task-6--abusing-dangerous-privileges)
@@ -137,7 +137,7 @@ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr
 
 ### Retrieve Credentials from Software: PuTTY
 - PuTTY is an SSH client commonly found on Windows systems. 
-Instead of having to specify a connection's parameters every single time, users can store sessions where the IP, user and other configurations can be stored for later use. 
+- Instead of having to specify a connection's parameters every single time, users can store sessions where the IP, user and other configurations can be stored for later use. 
 - While PuTTY won't allow users to store their SSH password, it will store proxy configurations that include cleartext authentication credentials.
 
 #### To retrieve the stored proxy credentials, you can search under the following registry key for ProxyPassword with the following command:
