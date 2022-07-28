@@ -7,11 +7,12 @@
 
 ---
 
-### `VIP` What the Shell?
-- An introduction to sending and receiving (reverse/bind) shells when exploiting target machines.
+## `VIP` - [What the Shell?](https://tryhackme.com/jr/introtoshells)
+#### An introduction to sending and receiving (reverse/bind) shells when exploiting target machines.
 
-#### `Free` Linux PrivEsc
-- Learn the fundamentals of Linux privilege escalation. From enumeration to exploitation, get hands-on with over 8 different privilege escalation techniques.
+## `Free` - [Linux PrivEsc](https://tryhackme.com/jr/linprivesc)
+#### Learn the fundamentals of Linux privilege escalation. 
+- From enumeration to exploitation, get hands-on with over 8 different privilege escalation techniques.
 
-#### `VIP` Windows Privilege Escalation
-- Learn the fundamentals of Windows privilege escalation techniques.
+## `VIP` - [Windows Privilege Escalation](https://tryhackme.com/jr/windowsprivesc20)
+#### Learn the fundamentals of Windows privilege escalation techniques.
