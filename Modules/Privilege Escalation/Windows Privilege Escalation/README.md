@@ -2,8 +2,8 @@
 ## `VIP` - [Windows Privilege Escalation](https://tryhackme.com/jr/windowsprivesc20)
 #### Learn the fundamentals of Windows privilege escalation techniques.
 
-- [ ] [Task 1  Introduction]()
-- [ ] [Task 2  Windows Privilege Escalation]()
+- [x] [Task 1  Introduction]()
+- [x] [Task 2  Windows Privilege Escalation]()
 - [ ] [Task 3  Harvesting Passwords from Usual Spots]()
 - [ ] [Task 4  Other Quick Wins]()
 - [ ] [Task 5  Abusing Service Misconfigurations]()
@@ -46,16 +46,16 @@
 
 | Administrators | These users have the most privileges. They can change any system configuration parameter and access any file in the system. |
 |:---:|:---:|
-| Standard Users | These users can access the computer but only perform limited tasks. Typically these users can not make permanent or essential changes to the system and are limited to their files. |
+| **Standard Users** | These users can access the computer but only perform limited tasks. Typically these users can not make permanent or essential changes to the system and are limited to their files. |
 
 - Any user with administrative privileges will be part of the Administrators group. On the other hand, standard users are part of the Users group.
 
 - In addition to that, you will usually hear about some special built-in accounts used by the operating system in the context of privilege escalation:
 
-| **SYSTEM / LocalSystem ** | An account used by the operating system to perform internal tasks. It has full access to all files and resources available on the host with even higher privileges than administrators. |
+| **SYSTEM / LocalSystem** | An account used by the operating system to perform internal tasks. It has full access to all files and resources available on the host with even higher privileges than administrators. |
 |:---:|:---:|
-| **Local Service ** | Default account used to run Windows services with "minimum" privileges. It will use anonymous connections over the network. |
-| **Network Service ** | Default account used to run Windows services with "minimum" privileges. It will use the computer credentials to authenticate through the network. |
+| **Local Service** | Default account used to run Windows services with "minimum" privileges. It will use anonymous connections over the network. |
+| **Network Service** | Default account used to run Windows services with "minimum" privileges. It will use the computer credentials to authenticate through the network. |
 
 - These accounts are created and managed by Windows, and you won't be able to use them as other regular accounts. 
 - Still, in some situations, you may gain their privileges due to exploiting specific services.
