@@ -2,15 +2,15 @@
 ## `VIP` - [Windows Privilege Escalation](https://tryhackme.com/jr/windowsprivesc20)
 #### Learn the fundamentals of Windows privilege escalation techniques.
 
-- [x] [Task 1  Introduction]()
-- [x] [Task 2  Windows Privilege Escalation]()
-- [ ] [Task 3  Harvesting Passwords from Usual Spots]()
-- [ ] [Task 4  Other Quick Wins]()
-- [ ] [Task 5  Abusing Service Misconfigurations]()
-- [ ] [Task 6  Abusing dangerous privileges]()
-- [ ] [Task 7  Abusing vulnerable software]()
-- [ ] [Task 8  Tools of the Trade]()
-- [ ] [Task 9  Conclusion]()
+- [x] [Task 1  Introduction](#task-1--introduction)
+- [x] [Task 2  Windows Privilege Escalation](#task-2--windows-privilege-escalation)
+- [ ] [Task 3  Harvesting Passwords from Usual Spots](#task-3--harvesting-passwords-from-usual-spots)
+- [ ] [Task 4  Other Quick Wins](#task-4--other-quick-wins)
+- [ ] [Task 5  Abusing Service Misconfigurations](#task-5--abusing-service-misconfigurations)
+- [ ] [Task 6  Abusing dangerous privileges](#task-6--abusing-dangerous-privileges)
+- [ ] [Task 7  Abusing vulnerable software](#task-7--abusing-vulnerable-software)
+- [ ] [Task 8  Tools of the Trade](#task-8--tools-of-the-trade)
+- [ ] [Task 9  Conclusion](#task-9--conclusion)
 
 
 ---
