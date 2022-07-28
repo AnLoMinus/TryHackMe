@@ -48,7 +48,8 @@
 |:---:|:---:|
 | **Standard Users** | These users can access the computer but only perform limited tasks. Typically these users can not make permanent or essential changes to the system and are limited to their files. |
 
-- Any user with administrative privileges will be part of the Administrators group. On the other hand, standard users are part of the Users group.
+- Any user with administrative privileges will be part of the Administrators group. 
+- On the other hand, standard users are part of the Users group.
 
 - In addition to that, you will usually hear about some special built-in accounts used by the operating system in the context of privilege escalation:
 
