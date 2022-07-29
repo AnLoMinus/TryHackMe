@@ -15,6 +15,8 @@
 
 ---
 
+### (`SCM`) - Service Control Manager 
+### (`DACL`) - Discretionary Access Control List 
 
 ---
 
@@ -189,7 +191,7 @@ sc qc apphostsvc
 #### All of the services configurations are stored on the registry under `HKLM\SYSTEM\CurrentControlSet\Services\`:
 > ![image](https://user-images.githubusercontent.com/51442719/181739977-de6d032e-e13b-416d-b9b5-6ff09c3f650c.png)
 - A subkey exists for every service in the system. 
-- Again, we can see the associated executable on the ImagePath value and the account used to start the service on the ObjectName value. 
+- Again, we can see the associated executable on the `ImagePath` value and the account used to start the service on the ObjectName value. 
 - If a DACL has been configured for the service, it will be stored in a subkey called Security. 
 - As you have guessed by now, only administrators can modify such registry entries by default.
 
