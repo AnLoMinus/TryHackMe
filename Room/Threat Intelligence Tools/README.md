@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/51442719/182532569-9f2dc531-87ef-4a96-b4d0-a4eb05822cf7.png)
-![image](https://user-images.githubusercontent.com/51442719/182532556-26e4506f-7921-4b44-b42b-66d2bf21b8d7.png)
 # [Threat Intelligence Tools](https://tryhackme.com/room/threatinteltools)
-### Explore different OSINT tools used to conduct security threat assessments and investigations.
+![image](https://user-images.githubusercontent.com/51442719/182532556-26e4506f-7921-4b44-b42b-66d2bf21b8d7.png)
+> ### Explore different OSINT tools used to conduct security threat assessments and investigations.
 
 - [ ] [Task 1  Room Outline](#task-1--room-outline)
 - [ ] [Task 2  Threat Intelligence](#task-2--threat-intelligence)
