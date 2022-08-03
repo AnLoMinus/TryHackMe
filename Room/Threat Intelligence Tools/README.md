@@ -63,6 +63,49 @@
 
 ## [Task 3  UrlScan.io]()
 
+#### [Urlscan.io](https://urlscan.io/) is a free service developed to assist in scanning and analysing websites. 
+- It is used to automate the process of browsing and crawling through websites to record activities and interactions.
+
+#### When a URL is submitted, the information recorded includes the domains and IP addresses contacted, resources requested from the domains, a snapshot of the web page, technologies utilised and other metadata about the website.
+- The site provides two views, the first one showing the most recent scans performed and the second one showing current live scans.
+![image](https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/db3fb7276dd4c303a5ef7aa04a2ad8a0.gif)
+
+![image](https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/5ba68bbdd6e7e9ef2bbe2a0dc13106bc.gif)
+
+### Scan Results
+#### URL scan results provide ample information, with the following key areas being essential to look at:
+- **Summary**: 
+  - Provides general information about the URL, ranging from the identified IP address, domain registration details, page history and a screenshot of the site.
+- **HTTP**: 
+  - Provides information on the HTTP connections made by the scanner to the site, with details about the data fetched and the file types received.
+- **Redirects**: 
+  - Shows information on any identified HTTP and client-side redirects on the site.
+- **Links**: 
+  - Shows all the identified links outgoing from the site's homepage.
+- **Behaviour**: 
+  - Provides details of the variables and cookies found on the site. 
+  - These may be useful in identifying the frameworks used in developing the site.
+- **Indicators**: Lists all IPs, domains and hashes associated with the site. These indicators do not imply malicious activity related to the site.
+
+### Scenario
+- You have been tasked to perform a scan on TryHackMe's domain. 
+- The results obtained are displayed in the image below. 
+
+#### Use the details on the image to answer the questions:
+![image](https://user-images.githubusercontent.com/51442719/182537390-49586d26-7421-43d0-a764-c2ef0832a581.png)
+
+### Answer the questions below
+
+- What is TryHackMe's Cisco Umbrella Rank?
+  > Answer format: ******
+- How many domains did UrlScan.io identify?
+  > Answer format: **
+- What is the main domain registrar listed?
+  > Answer format: ********* ***
+- What is the main IP address identified?
+  > Answer format: ****:****:**::****:****
+
+
 ---
 
 ## [Task 4  Abuse.ch]()
