@@ -3,9 +3,24 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/180161008-64a5b047-53f6-4d3c-8e37-621768a43b52.png)
+# [Threat Intelligence Tools](https://tryhackme.com/room/threatinteltools)
+![image](https://user-images.githubusercontent.com/51442719/182532556-26e4506f-7921-4b44-b42b-66d2bf21b8d7.png)
+> ### Explore different OSINT tools used to conduct security threat assessments and investigations.
+
+- [ ] [Task 1  Room Outline](#task-1--room-outline)
+- [ ] [Task 2  Threat Intelligence](#task-2--threat-intelligence)
+- [ ] [Task 3  UrlScan.io](#task-3--urlscanio)
+- [ ] [Task 4  Abuse.ch](#task-4--abusech)
+- [ ] [Task 5  PhishTool](#task-5--phishtool)
+- [ ] [Task 6  Cisco Talos Intelligence](#task-6--cisco-talos-intelligence)
+- [ ] [Task 7  Scenario 1](#task-7--scenario-1)
+- [ ] [Task 8  Scenario 2](#task-8--scenario-2)
+- [ ] [Task 9  Conclusion](#task-9--conclusion)
+
+---
 
 # ✅ [Introduction to Antivirus](https://tryhackme.com/room/introtoav)
+![image](https://user-images.githubusercontent.com/51442719/180161008-64a5b047-53f6-4d3c-8e37-621768a43b52.png)
   > Understand how antivirus software works and what detection techniques are used to bypass malicious files checks.
   - [x] [Task 1  Introduction](./Introduction%20to%20Antivirus/README.m#task-1--introduction)
   - [x] [Task 2  Antivirus Software](./Introduction%20to%20Antivirus/README.m#task-2--antivirus-software)
@@ -18,9 +33,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
-
 - [ ] [Physical Security Intro](https://tryhackme.com/room/physicalsecurityintro)
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
   > This room is an introduction to physical security methods to bypass locks, doors and other physical barriers.
     - [ ] Task 1  Introduction
     - [ ] Task 2  Overt, Covert, and Surreptitious Entry
@@ -32,9 +46,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172142890-ce739a5b-1039-41fa-9a27-2fe45c91cda6.png)
-
 - [ ] [Printer Hacking 101](https://tryhackme.com/room/printerhacking101)
+![image](https://user-images.githubusercontent.com/51442719/172142890-ce739a5b-1039-41fa-9a27-2fe45c91cda6.png)
   > Learn about (and get hands on with) printer hacking and understand the basics of IPP.
     - [ ] Task 1  Unit 1 - Introduction
     - [ ] Task 2  Unit 2: IPP Port
@@ -42,9 +55,8 @@
     - [ ] Task 4  Unit 4 - Conclusion
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172143234-f68baf13-c1f9-4219-b12d-8e7584cec65f.png)
-
 - [ ] [MAL: Researching](https://tryhackme.com/room/malresearching)
+![image](https://user-images.githubusercontent.com/51442719/172143234-f68baf13-c1f9-4219-b12d-8e7584cec65f.png)
   > Understanding checksums, how to generate them and their use throughout malware analysis with online sandboxing & reporting services
     - [ ] Task 1  Intro
     - [ ] Task 2  Deploy!
@@ -55,9 +67,8 @@
     - [ ] Task 7  Future Reading (References)
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172143380-096e3516-b6b1-47e7-8f15-ef46ddc1250e.png)
-
 - [x] [Intro to IoT Pentesting](https://tryhackme.com/room/iotintro)
+![image](https://user-images.githubusercontent.com/51442719/172143380-096e3516-b6b1-47e7-8f15-ef46ddc1250e.png)
   > A beginner friendly walkthrough for internet of things (IoT) pentesting.
     - [x] Task 1  Foreword
     - [x] Task 2  A little theory
@@ -68,27 +79,25 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
-
 - [ ] [Bolt](https://tryhackme.com/room/bolt)
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
   > A hero is unleashed
     - [ ] Task 1  Deploy the machine
     - [ ] Task 2  Hack your way into the machine!
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
-
 - [x] [LFI Basics](https://tryhackme.com/room/lfibasics)
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
   > Learn the basics of local file inclusion
     - [x] Task 1  Local File Inclusion
     - [x] Task 2  Local File Inclusion using Directory Traversal
     - [x] Task 3  Reaching RCE using LFI and log poisoning
+    
 ---
 
-  ![image](https://user-images.githubusercontent.com/51442719/172144028-54474e3e-fdda-4d72-8613-59044e6a7e03.png)
-
 - [ ] [Android Hacking 101](https://tryhackme.com/room/androidhacking101)
+![image](https://user-images.githubusercontent.com/51442719/172144028-54474e3e-fdda-4d72-8613-59044e6a7e03.png)
   > Android Mobile Application Penetration Testing
     - [ ] Task 1  Introduction
     - [ ] Task 2  Setup the environment
@@ -104,9 +113,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172144215-a2bbb270-a659-4e79-8825-f662c5a6eb94.png)
-
 - [ ] [AttackerKB](https://tryhackme.com/room/attackerkb)
+![image](https://user-images.githubusercontent.com/51442719/172144215-a2bbb270-a659-4e79-8825-f662c5a6eb94.png)
   > Learn how to leverage AttackerKB and learn about exploits in your workflow!
     - [ ] Task 1  I'm attacking what now?
     - [ ] Task 2  Discovering the Lay of the Land
@@ -116,9 +124,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172144342-7c6b3e5a-5cb3-4e54-aaf2-873d7d04de88.png)
-
 - [ ] [Injection](https://tryhackme.com/room/injection)
+![image](https://user-images.githubusercontent.com/51442719/172144342-7c6b3e5a-5cb3-4e54-aaf2-873d7d04de88.png)
   > Walkthrough of OS Command Injection. Demonstrate OS Command Injection and explain how to prevent it on your servers
     - [ ] Task 1  Introduction & Deploy
     - [ ] Task 2  An Introduction To Command Injection
@@ -128,9 +135,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172144549-04853170-5518-45b8-a6c7-69b80f09fb44.png)
-
 - [ ] [Post-Exploitation Basics](https://tryhackme.com/room/postexploit)
+![image](https://user-images.githubusercontent.com/51442719/172144549-04853170-5518-45b8-a6c7-69b80f09fb44.png)
   > Learn the basics of post-exploitation and maintaining access with mimikatz, bloodhound, powerview and msfvenom
     - [ ] Task 1  Introduction
     - [ ] Task 2  Enumeration w/ Powerview
@@ -143,9 +149,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172146036-5177246d-0cef-4760-8a65-71190766bffc.png)
-
 - [ ] [Introduction to OWASP ZAP](https://tryhackme.com/room/learnowaspzap)
+![image](https://user-images.githubusercontent.com/51442719/172146036-5177246d-0cef-4760-8a65-71190766bffc.png)
   > Learn how to use OWASP ZAP from the ground up. An alternative to BurpSuite.
     - [x] Task 1  Intro to ZAP
     - [x] Task 2  Disclaimer
@@ -160,18 +165,17 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
-
 - [ ] [Dumping Router Firmware](https://tryhackme.com/room/rfirmware)
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
   > Have you ever been curious about how your router works? What OS it runs? What makes it tick?
     - [ ] Task 1  Preparation
     - [ ] Task 2  Investigating Firmware
     - [ ] Task 3  Mounting and Analysis of the Router's Filesystem
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172146399-8b88d65f-eb1a-4fcc-9b45-279a90dce159.png)
 
 - [ ] [MAL: Malware Introductory](https://tryhackme.com/room/malmalintroductory)
+![image](https://user-images.githubusercontent.com/51442719/172146399-8b88d65f-eb1a-4fcc-9b45-279a90dce159.png)
   > The start of a series of rooms covering Malware Analysis...
     - [ ] Task 1  What is the Purpose of Malware Analysis?
     - [ ] Task 2  Understanding Malware Campaigns
@@ -190,9 +194,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
-
 - [ ] [Volatility](https://tryhackme.com/room/bpvolatility)
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
   > Learn how to perform memory forensics with Volatility!
     - [ ] Task 1  Intro
     - [ ] Task 2  Obtaining Memory Samples
@@ -202,9 +205,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172146883-a392071e-23db-4299-a95c-36d07dfd9ef4.png)
-
 - [ ] [hackerNote](https://tryhackme.com/room/hackernote)
+![image](https://user-images.githubusercontent.com/51442719/172146883-a392071e-23db-4299-a95c-36d07dfd9ef4.png)
   > A custom webapp, introducing username enumeration, custom wordlists and a basic privilege escalation exploit.
     - [ ] Task 1  Reconnaissance
     - [ ] Task 2  Investigate
@@ -215,9 +217,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172147088-8493119a-95a6-43fc-8f8c-ad1755eef21c.png)
-
 - [ ] [Shodan.io](https://tryhackme.com/room/shodan)
+![image](https://user-images.githubusercontent.com/51442719/172147088-8493119a-95a6-43fc-8f8c-ad1755eef21c.png)
   > Learn about Shodan.io and how to use it for devices enumeration - is your coffee machine publicly accessible?
     - [ ] Task 1  Introduction
     - [ ] Task 2  Filters
@@ -229,9 +230,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172147208-299336df-bd16-4a3b-b623-f693fb121c67.png)
-
 - [ ] [Jupyter 101](https://tryhackme.com/room/jupyter101)
+![image](https://user-images.githubusercontent.com/51442719/172147208-299336df-bd16-4a3b-b623-f693fb121c67.png)
   > A friendly introduction into using the Jupyter Notebook environment. Learn to process and visualise data!
     - [ ] Task 1  Preface
     - [ ] Task 2  What is Jupyter?
@@ -244,9 +244,8 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172147333-d5f57d13-9826-4149-b092-c411c15f32cf.png)
-
 - [ ] [Empire](https://tryhackme.com/room/rppsempire)
+![image](https://user-images.githubusercontent.com/51442719/172147333-d5f57d13-9826-4149-b092-c411c15f32cf.png)
   > Learn how to use Empire and it's GUI Starkiller, a powerful post-exploitation C2 framework.
     - [ ] Task 1  Introduction
     - [ ] Task 2  Deploy!
@@ -261,19 +260,20 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
 
 - [ ] [Phishing: HiddenEye](https://tryhackme.com/room/phishinghiddeneye)
-  > A simple guide on how to use a tool known as HiddenEye developed by ANONUD4Y. This tool helps you create a phishing page for different sites such as Gmail, Snapchat, Paypal and more. Including understanding the difference between legit and fake site.
+![image](https://user-images.githubusercontent.com/51442719/172142953-ad6a76a6-fb90-4c58-b63a-288cd917482b.png)
+  > A simple guide on how to use a tool known as HiddenEye developed by ANONUD4Y. 
+  > This tool helps you create a phishing page for different sites such as Gmail, Snapchat, Paypal and more. 
+  > Including understanding the difference between legit and fake site.
     - [ ] Task 1  Installation & Creating your first phishing page !
     - [ ] Task 2  Masking Your Link.
     - [ ] Task 3  Creating Gmail Phishing Page !
 
 ---
 
-![image](https://user-images.githubusercontent.com/51442719/172147645-8a2ca46d-0dc7-4b23-9c24-a6b5abeea460.png)
-
 - [x] [Sublist3r](https://tryhackme.com/room/rpsublist3r)
+![image](https://user-images.githubusercontent.com/51442719/172147645-8a2ca46d-0dc7-4b23-9c24-a6b5abeea460.png)
   > Learn how to find subdomains with Sublist3r!
     - [x] Task 1  Intro
     - [x] Task 2  Installation
