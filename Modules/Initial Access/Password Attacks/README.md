@@ -9,7 +9,7 @@
 - [ ] [Task 7  Deploy the VM](#)
 - [ ] [Task 8  Online password attacks](#)
 - [ ] [Task 9  Password spray attack](#)
-- [ ] [Task 10  Summary](#)
+- [x] [Task 10  Summary](#)
 
 ---
 
@@ -222,3 +222,10 @@ Using `python3 username_generator.py -h` shows the tool's help message and optio
 
 # [Task 10  Summary](#)
 
+This room introduced the basic concepts of different password attacks and how to create custom and targeted password lists.  
+We covered and discussed various topics, including:
+
+- Default, weak, leaked combined wordlists
+- Password profiling
+- Offline password attacks
+- Online password attacks
