@@ -127,8 +127,8 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ---
 
-- # [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/CompTIA%20Pentest%2B)
-  - [ ] Path Progress (94%)
+- # ✅ [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/CompTIA%20Pentest%2B)
+  - [x] Path Progress (100%)
     - `Easy`
     - `51 Hours`
 
