@@ -42,8 +42,8 @@
   - [x] Path Progress (100%)
 - ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Web%20Fundamentals) `Easy`
   - [x] Path Progress (100%) [`Certificate`](https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png)
-- [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B) `Easy`
-  - [ ] Path Progress (92%)
+- ✅ [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest%2B) `Easy`
+  - [x] Path Progress (100%)
 - [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Offensive%20Pentesting) `Intermediate`
   - [ ] Path Progress (38%)
 - [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Cyber%20Defense) `Intermediate`
@@ -97,7 +97,7 @@
 
 ---
 
-# [92%] [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) `Easy`
+# ✅ [100%] [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/CompTIA%20Pentest) `Easy`
 > Complete this pathway and receive 10% off the Pentest+ exam!
 - Hands-on exercises aligning to PenTest+ exam objectives
 - Practical exam preparation to help you with the Performance Based Questions
