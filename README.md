@@ -128,7 +128,10 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 ---
 
 - # ✅ [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/CompTIA%20Pentest%2B)
+  > <img width="400" src="https://user-images.githubusercontent.com/51442719/186541003-9c51d14b-a0e4-4729-8565-4ed759221705.png"> <br>
   - [x] Path Progress (100%)
+    > Issued on: `24 August 2022` <br>
+    > Cert ID: `THM-8MPVWS4EBC`
     - `Easy`
     - `51 Hours`
 
