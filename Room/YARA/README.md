@@ -180,4 +180,8 @@ rule examplerule {
 > - `>=` more than or equal to
 > - `!=` not equal to
 
+# Anatomy of a Yara Rule
+> ![image](https://user-images.githubusercontent.com/51442719/186707072-4302923b-6a5f-4d7f-a18f-fb8dc1551e41.png)
+
+
 
