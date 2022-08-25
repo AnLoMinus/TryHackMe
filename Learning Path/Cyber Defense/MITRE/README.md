@@ -42,10 +42,22 @@
 
 ## Task 6 MITRE D3FEND
 
+What is this MITRE resource? Per the D3FEND website, this resource is 
+
+#### "A knowledge graph of cybersecurity countermeasures."
+
+- [d3fend](https://d3fend.mitre.org/) 
+
+D3FEND is still in beta and is funded by the Cybersecurity Directorate of the NSA. 
+
+D3FEND stands for Detection, Denial, and Disruption Framework Empowering Network Defense. 
+
+At the time of this writing, there are 408 artifacts in the D3FEND matrix. See the below image.
+
 ---
 
 ## Task 7  ATT&CK® Emulation Plans
-
+- [Adversary Emulation Library](https://github.com/center-for-threat-informed-defense/adversary_emulation_library)
 ---
 
 ## Task 8  ATT&CK® and Threat Intelligence
