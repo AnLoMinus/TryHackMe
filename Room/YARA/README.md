@@ -16,6 +16,10 @@
 
 ---
 
+### `IOC` - Indicator of Compromise
+
+---
+
 - 1.1. [Introduction]()
 - 2.1. [All about Yara](#21-all-about-yara)
 - 2.2. [Why does Malware use Strings?](#22-why-does-malware-use-strings)
