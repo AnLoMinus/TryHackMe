@@ -193,6 +193,7 @@ rule examplerule {
 - https://cuckoosandbox.org/  
 - https://pypi.org/project/pefile/  
 - [Awesome YARA](https://github.com/InQuest/awesome-yara)
-- [Fenrir](https://github.com/Neo23x0/Fenrir) Simple Bash IOC Scanner
+- [Fenrir](https://github.com/Neo23x0/Fenrir) - Simple Bash IOC Scanner
+- [Loki](https://github.com/Neo23x0/Loki) - Simple IOC and YARA Scanner
 
 
