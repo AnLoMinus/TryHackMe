@@ -184,4 +184,8 @@ rule examplerule {
 > ![image](https://user-images.githubusercontent.com/51442719/186707072-4302923b-6a5f-4d7f-a18f-fb8dc1551e41.png)
 
 
+##  Task 7 Yara Modules
 
+- https://cuckoosandbox.org/  
+- https://pypi.org/project/pefile/  
+- [Awesome YARA](https://github.com/InQuest/awesome-yara)
