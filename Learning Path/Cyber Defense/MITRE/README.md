@@ -10,6 +10,51 @@
 - [x] Task 3  ATT&CK® Framework
 - [x] Task 4  CAR Knowledge Base
 - [x] Task 5  Shield Active Defense
-- [x] Task 6  ATT&CK® Emulation Plans
-- [x] Task 7  ATT&CK® and Threat Intelligence
-- [x] Task 8  Conclusion
+- [x] Task 6 MITRE D3FEND
+- [x] Task 7  ATT&CK® Emulation Plans
+- [x] Task 8  ATT&CK® and Threat Intelligence
+- [x] Task 9  Conclusion
+
+---
+
+
+---
+
+## Task 1  Introduction to MITRE
+
+---
+
+## Task 2  Basic Terminology
+
+---
+
+## Task 3  ATT&CK® Framework
+
+---
+
+## Task 4  CAR Knowledge Base
+
+---
+
+## Task 5  Shield Active Defense
+
+---
+
+## Task 6 MITRE D3FEND
+
+---
+
+## Task 7  ATT&CK® Emulation Plans
+
+---
+
+## Task 8  ATT&CK® and Threat Intelligence
+
+---
+
+## Task 9  Conclusion
+
+
+---
+
+- [TryHackMe | MITRE Room Walkthrough 2022](https://www.pyaeheinnkyaw.tech/tryhackme-mitre-room-writeup/)
