@@ -195,5 +195,6 @@ rule examplerule {
 - [Awesome YARA](https://github.com/InQuest/awesome-yara)
 - [Fenrir](https://github.com/Neo23x0/Fenrir) - Simple Bash IOC Scanner
 - [Loki](https://github.com/Neo23x0/Loki) - Simple IOC and YARA Scanner
+- [PE-sieve](https://github.com/hasherezade/pe-sieve) - is a tool that helps to detect malware running on the system, as well as to collect the potentially malicious material for further analysis. 
 
 
