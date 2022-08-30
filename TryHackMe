@@ -199,11 +199,13 @@ Check_System() {
 }
 Check_System
 
+
+# Checking Running Direction
 CheckPWD(){
+  # Define Current Direction Variable
   CheckingDirectory="$(pwd)"
-  # echo "$CheckingDirectory"
+  # Assign $CheckingDirectory to $MainDirectoriy
   MainDirectoriy="$CheckingDirectory"
-  # read -p "$Press_ENTER"
 }
 CheckPWD
 
@@ -305,7 +307,6 @@ CheckingifCaseFolderExist(){
   fi
 
 }
-
 
 ###############################################
 
