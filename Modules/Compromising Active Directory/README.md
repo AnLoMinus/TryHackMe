@@ -15,20 +15,20 @@ You will learn to breach AD, enumerate AD, exploit AD, and finally also deploy p
 
 ---
 
-## ✅ | `Free` | Active Directory Basics
+## ✅ | `Free` | [Active Directory Basics](https://tryhackme.com/jr/winadbasics)
 - This room will introduce the basic concepts and functionality provided by Active Directory.
 
-## `Free` | Breaching Active Directory
+## `Free` | [Breaching Active Directory](https://tryhackme.com/jr/breachingad)
 - This network covers techniques and tools that can be used to acquire that first set of AD credentials that can then be used to enumerate AD.
 
-## `Free` | Enumerating Active Directory
+## `Free` | [Enumerating Active Directory](https://tryhackme.com/jr/adenumeration)
 - This room covers various Active Directory enumeration techniques, their use cases as well as drawbacks.
 
-## `VIP` | Lateral Movement and Pivoting
+## `VIP` | [Lateral Movement and Pivoting](https://tryhackme.com/jr/lateralmovementandpivoting)
 - Learn about common techniques used to move laterally across a Windows network.
 
-## `VIP` | Exploiting Active Directory
+## `VIP` | [Exploiting Active Directory](https://tryhackme.com/jr/exploitingad)
 - Learn common AD exploitation techniques that can allow you to reach your goal in an AD environment.
 
-## `VIP` | Persisting Active Directory
+## `VIP` | [Persisting Active Directory](https://tryhackme.com/jr/persistingad)
 - Learn about common Active Directory persistence techniques that can be used post-compromise to ensure the blue team will not be able to kick you out during a red team exercise..
