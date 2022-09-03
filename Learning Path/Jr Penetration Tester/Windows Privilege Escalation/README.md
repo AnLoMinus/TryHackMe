@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/51442719/188273857-0f77a54f-6810-416e-a616-a1411677d5bf.png)
+
 # [Windows Privilege Escalation](https://tryhackme.com/room/windowsprivesc20)
 #### Learn the fundamentals of Windows privilege escalation techniques.
 
