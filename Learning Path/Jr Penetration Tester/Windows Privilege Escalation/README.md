@@ -5,7 +5,7 @@
 
 - [ ] Task 1  [Introduction](#task-1--introduction)
 - [ ] Task 2  [Windows Privilege Escalation](#task-2--windows-privilege-escalation)
-- [ ] Task 3  [Harvesting Passwords from Usual Spots](#)
+- [ ] Task 3  [Harvesting Passwords from Usual Spots](#task-3--harvesting-passwords-from-usual-spots)
 - [ ] Task 4  [Other Quick Wins](#)
 - [ ] Task 5  [Abusing Service Misconfigurations](#)
 - [ ] Task 6  [Abusing dangerous privileges](#)
