@@ -122,6 +122,42 @@ While you can't see the actual passwords, if you notice any credentials worth tr
 runas /savecred /user:admin cmd.exe
 ```
 
+## IIS Configuration
+Internet Information Services (IIS) is the default web server on Windows installations.  
+The configuration of websites on IIS is stored in a file called `web.config` and can store passwords for databases or configured authentication mechanisms.  
+Depending on the installed version of IIS, we can find web.config in one of the following locations:
+
+- C:\inetpub\wwwroot\web.config
+- C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config
+
+Here is a quick way to find database connection strings on the file:
+
+```cmd
+type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr connectionString
+```
+
+## Retrieve Credentials from Software: PuTTY
+PuTTY is an SSH client commonly found on Windows systems.  
+Instead of having to specify a connection's parameters every single time, users can store sessions where the IP, user and other configurations can be stored for later use.  
+While PuTTY won't allow users to store their SSH password, it will store proxy configurations that include cleartext authentication credentials.  
+
+To retrieve the stored proxy credentials, you can search under the following registry key for ProxyPassword with the following command:
+
+```cmd
+reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
+```
+
+`Note`: Simon Tatham is the creator of PuTTY (and his name is part of the path), not the username for which we are retrieving the password. The stored proxy username should also be visible after running the command above.
+
+Just as putty stores credentials, any software that stores passwords, including browsers, email clients, FTP clients, SSH clients, VNC software and others, will have methods to recover any passwords the user has saved.
+
+### Answer the questions below
+- A password for the `julia.jones` user has been left on the Powershell history. What is the password? [🔶](ZuperCkretPa5z)
+- A web server is running on the remote host. Find any interesting password on `web.config` files associated with IIS. What is the password of the db_admin user? [🔶](098n0x35skjD3)
+- There is a saved password on your Windows credentials. Using cmdkey and runas, spawn a shell for mike.katz and retrieve the flag from his desktop. [🔶](THM{WHAT_IS_MY_PASSWORD})
+- Retrieve the saved password stored in the saved PuTTY session under your profile. What is the password for the thom.smith user? [🔶](CoolPass2021)
+
+
 ---
 
 
