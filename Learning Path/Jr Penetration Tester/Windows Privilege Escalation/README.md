@@ -4,7 +4,7 @@
 #### Learn the fundamentals of Windows privilege escalation techniques.
 
 - [ ] Task 1  [Introduction](#task-1--introduction)
-- [ ] Task 2  [Windows Privilege Escalation](#)
+- [ ] Task 2  [Windows Privilege Escalation](#task-2--windows-privilege-escalation)
 - [ ] Task 3  [Harvesting Passwords from Usual Spots](#)
 - [ ] Task 4  [Other Quick Wins](#)
 - [ ] Task 5  [Abusing Service Misconfigurations](#)
