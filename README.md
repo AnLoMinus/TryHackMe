@@ -155,16 +155,15 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 ---
 
 - # [RED TEAMING](https://tryhackme.com/path-action/redteaming/join)
-Learn the skills needed to become a Red Team Operator
+  - [ ] Path Progress (33%)
+    - `Intermediate`
+    - `48 Hours`
 
+#### Learn the skills needed to become a Red Team Operator
 - Use diverse techniques for initial access
 - Enumerate and persist on targets`
 - Evade security solutions
 - Exploit Active Directory
-
-- [ ] Path Progress (33%)
-  - `Intermediate`
-  - `48 Hours`
 
 
 ---
