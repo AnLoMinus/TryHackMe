@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/51442719/188941805-bcbc8785-8b88-45fe-9243-523ebb5a6fbf.png)
 
-# [Learn & win prizes - Fall 2022](https://tryhackme.com/room/tickets3)
+# [Learn & win prizes - Fall 2022](https://tryhackme.com/room/tickets3) | [Extra Tickets !](https://tryhackme.com/signup?referrer=Anlominus)
 
 Upskill with our rooms and earn tickets. You need three of the same ticket type to win a prize - let’s go!
 
