@@ -37,6 +37,7 @@
 - [x] ✅ [COMPTIA PENTEST+](#comptia-pentest) `51 Hours`
 - [ ] [OFFENSIVE PENTESTING](#offensive-pentesting) `47 Hours`
 - [ ] [CYBER DEFENSE](#cyber-defense) `48 Hours`
+- [ ] [RED TEAMING](#red-teaming) `48 Hours`
 
 --
 
@@ -152,6 +153,23 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
     - `48 Hours`
 
 ---
+
+- # [RED TEAMING](https://tryhackme.com/path-action/redteaming/join)
+Learn the skills needed to become a Red Team Operator
+
+- Use diverse techniques for initial access
+- Enumerate and persist on targets`
+- Evade security solutions
+- Exploit Active Directory
+
+- [ ] Path Progress (33%)
+  - `Intermediate`
+  - `48 Hours`
+
+
+---
+
+
 - [CTF writeups](https://github.com/ChrisPritchard/ctf-writeups) ~ Write-ups of the vulnhub VMs, TryHackMe rooms and other CTFs I have done or am doing, plus helpful resources.
 - [TryHackMe-Notes](https://github.com/nargaw/TryHackMe-Notes)
 - [PyWhat](https://github.com/bee-san/pyWhat)
