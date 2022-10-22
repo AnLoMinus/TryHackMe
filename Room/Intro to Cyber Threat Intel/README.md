@@ -139,6 +139,15 @@ Feedback should be regular interaction between teams to keep the lifecycle worki
 
 - ## Task 4  CTI Standards & Frameworks
 
+Standards and frameworks provide structures to rationalise the distribution and use of threat intel across industries.  
+They also allow for common terminology, which helps in collaboration and communication.  
+Here, we briefly look at some essential standards and frameworks commonly used.
+
+### MITRE ATT&CK
+The [ATT&CK framework](https://tryhackme.com/room/mitre) is a knowledge base of adversary behaviour, focusing on the indicators and tactics.  
+Security analysts can use the information to be thorough while investigating and tracking adversarial behaviour.  
+
+
 ---
 
 - ## Task 5  Practical Analysis
