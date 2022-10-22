@@ -147,6 +147,23 @@ Here, we briefly look at some essential standards and frameworks commonly used.
 The [ATT&CK framework](https://tryhackme.com/room/mitre) is a knowledge base of adversary behaviour, focusing on the indicators and tactics.  
 Security analysts can use the information to be thorough while investigating and tracking adversarial behaviour.  
 
+![image](https://user-images.githubusercontent.com/51442719/197352017-797478d9-76cd-40f8-abea-cd7428b90989.png)
+
+### TAXII
+[The Trusted Automated eXchange of Indicator Information (TAXII)](https://oasis-open.github.io/cti-documentation/taxii/intro) defines protocols for securely exchanging threat intel to have near real-time detection, prevention and mitigation of threats.  
+The protocol supports two sharing models:
+
+- **Collection**: Threat intel is collected and hosted by a producer upon request by users using a request-response model.  
+- **Channel**: Threat intel is pushed to users from a central server through a publish-subscribe model.
+
+### STIX
+[Structured Threat Information Expression (STIX)](https://oasis-open.github.io/cti-documentation/stix/intro) is a language developed for the "specification, capture, characterisation and communication of standardised cyber threat information".  
+It provides defined relationships between sets of threat info such as observables, indicators, adversary TTPs, attack campaigns, and more.  
+
+### Cyber Kill Chain
+Developed by Lockheed Martin, the Cyber Kill Chain breaks down adversary actions into steps.  
+This breakdown helps analysts and defenders identify which stage-specific activities occurred when investigating an attack.  
+The phases defined are shown in the image below.  
 
 ---
 
