@@ -4,7 +4,7 @@
 
 
 - [x] [Task 1  Introduction](#task-1--introduction)
-- [ ] [Task 2  Cyber Threat Intelligence](#task-2--cyber-threat-intelligence)
+- [x] [Task 2  Cyber Threat Intelligence](#task-2--cyber-threat-intelligence)
 - [ ] [Task 3  CTI Lifecycle](#task-3--cti-lifecycle)
 - [ ] [Task 4  CTI Standards & Frameworks](#task-4--cti-standards--frameworks)
 - [ ] [Task 5  Practical Analysis](#task-5--practical-analysis)
