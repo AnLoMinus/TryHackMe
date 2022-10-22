@@ -165,6 +165,37 @@ Developed by Lockheed Martin, the Cyber Kill Chain breaks down adversary actions
 This breakdown helps analysts and defenders identify which stage-specific activities occurred when investigating an attack.  
 The phases defined are shown in the image below.  
 
+![image](https://user-images.githubusercontent.com/51442719/197352131-e32a5133-a32a-4df2-935a-2d49ee699ead.png)
+
+| Technique | Purpose | Examples |
+|:---:|:---:|:---:|
+| Reconnaissance | Obtain information about the victim and the tactics used for the attack. | Harvesting emails, OSINT, and social media, network scans |
+| Weaponisation | Malware is engineered based on the needs and intentions of the attack. | Exploit with backdoor, malicious office document |
+| Delivery | Covers how the malware would be delivered to the victim's system. | Email, weblinks, USB |
+| Exploitation | Breach the victim's system vulnerabilities to execute code and create scheduled jobs to establish persistence. | EternalBlue, Zero-Logon, etc. |
+| Installation | Install malware and other tools to gain access to the victim's system. | Password dumping, backdoors, remote access trojans |
+| Command & Control | Remotely control the compromised system, deliver additional malware, move across valuable assets and elevate privileges. | Empire, Cobalt Strike, etc. |
+| Actions on Objectives | Fulfil the intended goals for the attack: financial gain, corporate espionage, and data exfiltration. | Data encryption, ransomware, public defacement |
+
+Over time, the kill chain has been expanded using other frameworks such as ATT&CK and formulated a new Unified Kill Chain.
+
+### The Diamond Model
+The diamond model looks at intrusion analysis and tracking attack groups over time.  
+It focuses on four key areas, each representing a different point on the diamond.  
+These are:Image showing a possible phishing attack through the Diamond Model.
+
+![image](https://user-images.githubusercontent.com/51442719/197352327-fbc459b6-a9b5-4dc8-9654-aaa94554221a.png)
+
+- **Adversary**: The focus here is on the threat actor behind an attack and allows analysts to identify the motive behind the attack.
+- **Victim**: The opposite end of adversary looks at an individual, group or organisation affected by an attack.
+- **Infrastructure**: The adversaries' tools, systems, and software to conduct their attack are the main focus.  
+Additionally, the victim's systems would be crucial to providing information about the compromise.
+- **Capabilities**: The focus here is on the adversary's approach to reaching its goal.  
+This looks at the means of exploitation and the TTPs implemented across the attack timeline.
+
+An example of the diamond model in play would involve an adversary targeting a victim using phishing attacks to obtain sensitive information and compromise their system, as displayed on the diagram.  
+As a threat intelligence analyst, the model allows you to pivot along its properties to produce a complete picture of an attack and correlate indicators.  
+
 ---
 
 - ## Task 5  Practical Analysis
