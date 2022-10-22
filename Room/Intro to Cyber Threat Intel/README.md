@@ -36,15 +36,28 @@ The module will also contain:
 
 - ## Task 2  Cyber Threat Intelligence
 
-Cyber Threat Intelligence (CTI) can be defined as evidence-based knowledge about adversaries, including their indicators, tactics, motivations, and actionable advice against them. These can be utilised to protect critical assets and inform cybersecurity teams and management business decisions.
+Cyber Threat Intelligence (CTI) can be defined as evidence-based knowledge about adversaries, including their indicators, tactics, motivations, and actionable advice against them.  
+These can be utilised to protect critical assets and inform cybersecurity teams and management business decisions.
 
-It would be typical to use the terms “data”, “information”, and “intelligence” interchangeably. However, let us distinguish between them to understand better how CTI comes into play.An image depicting data from the web, servers and firewalls being collected through a funnel and being sorted.
+It would be typical to use the terms “data”, “information”, and “intelligence” interchangeably.  
+However, let us distinguish between them to understand better how CTI comes into play.  
+An image depicting data from the web, servers and firewalls being collected through a funnel and being sorted.
+![image](https://user-images.githubusercontent.com/51442719/197340036-72b1736c-219d-4191-b0a7-aa3a055ff9ab.png)
 
-**Data**: Discrete indicators associated with an adversary such as IP addresses, URLs or hashes.
+- **Data**: Discrete indicators associated with an adversary such as IP addresses, URLs or hashes.
 
-**Information**: A combination of multiple data points that answer questions such as “How many times have employees accessed tryhackme.com within the month?”
+- **Information**: A combination of multiple data points that answer questions such as “How many times have employees accessed tryhackme.com within the month?”
 
-**Intelligence**: The correlation of data and information to extract patterns of actions based on contextual analysis.
+- **Intelligence**: The correlation of data and information to extract patterns of actions based on contextual analysis.
+
+The primary goal of CTI is to understand the relationship between your operational environment and your adversary and how to defend your environment against any attacks.  
+You would seek this goal by developing your cyber threat context by trying to answer the following questions:
+
+- Who’s attacking you?
+- What are their motivations?
+- What are their capabilities?
+- What artefacts and indicators of compromise (IOCs) should you look out for?
+
 
 ---
 
