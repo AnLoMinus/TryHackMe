@@ -14,6 +14,24 @@
 
 - ## Task 1  Introduction
 
+### Introduction
+This room will introduce you to cyber threat intelligence (CTI) and various frameworks used to share intelligence.  
+As security analysts, CTI is vital for investigating and reporting against adversary attacks with organisational stakeholders and external communities.
+
+### Learning Objectives
+The basics of CTI and its various classifications.
+The lifecycle followed to deploy and use intelligence during threat investigations.
+Frameworks and standards used in distributing intelligence.
+
+### Cyber Threat Intelligence Module
+﻿This is the first room in a new Cyber Threat Intelligence module.  
+The module will also contain:
+
+- [Threat Intelligence Tools](https://tryhackme.com/room/threatinteltools)
+- [YARA](https://tryhackme.com/room/yara)
+- [OpenCTI](https://tryhackme.com/room/opencti)
+- [MISP](https://tryhackme.com/room/misp)
+
 ---
 
 - ## Task 2  Cyber Threat Intelligence
