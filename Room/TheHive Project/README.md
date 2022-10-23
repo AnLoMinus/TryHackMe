@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/51442719/197387383-c4ea3ff0-60bc-44e7-886c-ed51684ee82d.png)
 
 # [TheHive Project](https://tryhackme.com/room/thehiveproject)
 #### Learn how to use TheHive, a Security Incident Response Platform, to report investigation findings
@@ -26,6 +27,9 @@ Specifically, we will be looking at:
 
 Before we begin, ensure you download the attached file, as it will be needed for Task 5.
 
+![image](https://user-images.githubusercontent.com/51442719/197387274-20c921d4-080f-4d51-b452-e919cb2d69b4.png)
+
+
 
 ---
 
@@ -36,6 +40,10 @@ TheHive Project is a scalable, open-source and freely available Security Inciden
 Security Analysts can collaborate on investigations simultaneously, ensuring real-time information pertaining to new or existing cases, tasks, observables and IOCs are available to all team members.
 
 More information about the project can be found on https://thehive-project.org/ & their [GitHub Repo](https://github.com/TheHive-Project/TheHive).
+
+![image](https://user-images.githubusercontent.com/51442719/197387319-2c854ada-2382-4ce7-9556-ab4d590124ea.png)
+Image: Cases dashboard on TheHive by order of reported severity
+
 
 TheHive Project operates under the guide of three core functions:
 
