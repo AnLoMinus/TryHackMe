@@ -344,12 +344,130 @@ True
 
 As a result, we can confirm the inbound connection on port 80 is open and allowed in the firewall. Note that we can also test for remote targets in the same network or domain names by specifying in the `-ComputerName` argument for the `Test-NetConnection`. 
 
-
-
-
 ---
 
 # Task 7  Host Security Solution #2
+
+In this task, we will keep discussing host security solutions.
+
+## Security Event Logging and Monitoring 
+
+![image](https://user-images.githubusercontent.com/51442719/197828986-23d7140a-79b1-4b07-9ad0-721ed691d017.png)
+
+By default, Operating systems log various activity events in the system using log files. The event logging feature is available to the IT system and network administrators to monitor and analyze important events, whether on the host or the network side. In cooperating networks, security teams utilize the logging event technique to track and investigate security incidents. 
+
+There are various categories where the Windows operating system logs event information, including the application, system, security, services, etc. In addition, security and network devices store event information into log files to allow the system administrators to get an insight into what is going on.
+
+We can get a list of available event logs on the local machine using the `Get-EventLog` cmdlet.
+
+```cmd 
+PS C:\Users\thm> Get-EventLog -List
+
+  Max(K) Retain OverflowAction        Entries Log
+  ------ ------ --------------        ------- ---
+     512      7 OverwriteOlder             59 Active Directory Web Services
+  20,480      0 OverwriteAsNeeded         512 Application
+     512      0 OverwriteAsNeeded         170 Directory Service
+ 102,400      0 OverwriteAsNeeded          67 DNS Server
+  20,480      0 OverwriteAsNeeded       4,345 System
+  15,360      0 OverwriteAsNeeded       1,692 Windows PowerShell
+```
+
+Sometimes, the list of available event logs gives you an insight into what applications and services are installed on the machine! For example, we can see that the local machine has Active Directory, DNS server, etc. For more information about the `Get-EventLog` cmdlet with examples, visit the [Microsoft documents website](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-eventlog?view=powershell-5.1).
+
+In corporate networks, log agent software is installed on clients to collect and gather logs from different sensors to analyze and monitor activities within the network. We will discuss them more in the Network Security Solution task.
+
+## System Monitor (Sysmon)
+
+![image](https://user-images.githubusercontent.com/51442719/197829295-9be03070-f368-481e-8fc2-2250bb52dd4f.png)
+
+
+Windows System Monitor `sysmon` is a service and device driver. It is one of the Microsoft Sysinternals suites. The `sysmon` tool is not an essential tool (not installed by default), but it starts gathering and logging events once installed. These logs indicators can significantly help system administrators and blue teamers to track and investigate malicious activity and help with general troubleshooting.
+
+One of the great features of the `sysmon`  tool is that it can log many important events, and you can also create your own rule(s) and configuration to monitor:
+
+- Process creation and termination
+- Network connections
+- Modification on file
+- Remote threats
+- Process and memory access
+- and many others
+
+For learning more about `sysmon`, visit the Windows document page [here](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon).
+
+As a red teamer, one of the primary goals is to stay undetectable, so it is essential to be aware of these tools and avoid causing generating and alerting events. The following are some of the tricks that can be used to detect whether the `sysmon` is available in the victim machine or not. 
+
+We can look for a process or service that has been named "Sysmon" within the current process or services as follows,
+
+```cmd
+PS C:\Users\thm> Get-Process | Where-Object { $_.ProcessName -eq "Sysmon" }
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    373      15    20212      31716              3316   0 Sysmon
+```
+
+or look for services as follows,
+
+```cmd
+PS C:\Users\thm> Get-CimInstance win32_service -Filter "Description = 'System Monitor service'"
+# or
+Get-Service | where-object {$_.DisplayName -like "*sysm*"}
+```
+
+It also can be done by checking the Windows registry 
+
+```cmd
+PS C:\Users\thm> reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Sysmon/Operational
+```
+
+All these commands confirm if the `sysmon` tool is installed. Once we detect it, we can try to find the sysmon configuration file if we have readable permission to understand what system administrators are monitoring.
+
+```cmd
+PS C:\Users\thm> findstr /si '<ProcessCreate onmatch="exclude">' C:\tools\*
+C:\tools\Sysmon\sysmonconfig.xml:      
+C:\tools\Sysmon\sysmonconfig.xml:   
+```
+
+For more detail about the Windows `sysmon` tool and how to utilize it within endpoints, we suggest trying the TryHackMe room: [`Sysmon`](https://tryhackme.com/room/sysmon).
+
+## Host-based Intrusion Detection/Prevention System (HIDS/HIPS)
+
+![image](https://user-images.githubusercontent.com/51442719/197830202-d761d135-fff7-4438-ba77-6121fc4bd777.png)
+
+HIDS stands for Host-based Intrusion Detection System. It is software that has the ability to monitor and detect abnormal and malicious activities in a host. The primary purpose of HIDS is to detect suspicious activities and not to prevent them. There are two methods that the host-based or network intrusion detection system works, including:
+
+- Signature-based IDS - it looks at checksums and message authentication.
+- Anomaly-based IDS looks for unexpected activities, including abnormal bandwidth usage, protocols, and ports.
+
+Host-based Intrusion Prevention Systems (HIPS) works by securing the operating system activities which where is installed. It is a detecting and prevention solution against well-known attacks and abnormal behaviors. HIPS is capable of auditing log files of the host, monitoring processes, and protecting system resources. HIPS is a mixture of best product features such as antivirus, behavior analysis, network, application firewall, etc.
+
+There is also a network-based IDS/IPS, which we will be covering in the next task. 
+
+## Endpoint Detection and Response (EDR)
+
+![image](https://user-images.githubusercontent.com/51442719/197830403-102d690c-5b50-4a5c-9a35-27a45352bb9a.png)
+
+
+It is also known as Endpoint Detection and Threat Response (EDTR). The EDR is a cybersecurity solution that defends against malware and other threats. EDRs can look for malicious files, monitor endpoint, system, and network events, and record them in a database for further analysis, detection, and investigation. EDRs are the next generation of antivirus and detect malicious activities on the host in real-time.
+
+EDR analyze system data and behavior for making section threats, including
+
+- Malware, including viruses, trojans, adware, keyloggers
+- Exploit chains
+- Ransomware
+
+Below are some common EDR software for endpoints
+
+- Cylance
+- Crowdstrike
+- Symantec
+- SentinelOne
+- Many others
+
+Even though an attacker successfully delivered their payload and bypassed EDR in receiving reverse shell, EDR is still running and monitors the system. It may block us from doing something else if it flags an alert.
+
+We can use scripts for enumerating security products within the machine, such as [Invoke-EDRChecker](https://github.com/PwnDexter/Invoke-EDRChecker) and [SharpEDRChecker](https://github.com/PwnDexter/SharpEDRChecker). They check for commonly used Antivirus, EDR, logging monitor products by checking file metadata, processes, DLL loaded into current processes, Services, and drivers, directories.
 
 ---
 
