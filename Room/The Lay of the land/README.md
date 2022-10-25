@@ -96,9 +96,119 @@ We will discuss more Windows applications and services in Task 9, including DNS 
 
 # Task 4  Active Directory (AD) environment
 
+What is the Active Directory (AD) environment?
+
+![image](https://user-images.githubusercontent.com/51442719/197809098-d13e4300-454e-49ca-bc1b-52043afe891a.png)
+
+It is a Windows-based directory service that stores and provides data objects to the internal network environment. It allows for centralized management of authentication and authorization. The AD contains essential information about the network and the environment, including users, computers, printers, etc. For example, AD might have users' details such as job title, phone number, address, passwords, groups, permission, etc.
+
+![image](https://user-images.githubusercontent.com/51442719/197809137-cca8d681-eb23-451b-91f8-7f9a6864dae7.png)
+
+The diagram is one possible example of how Active Directory can be designed. The AD controller is placed in a subnet for servers (shown above as server network), and then the AD clients are on a separate network where they can join the domain and use the AD services via the firewall.
+
+The following is a list of Active Directory components that we need to be familiar with:
+
+- Domain Controllers
+- Organizational Units
+- AD objects
+- AD Domains
+- Forest
+- AD Service Accounts: Built-in local users, Domain users, Managed service accounts
+- Domain Administrators
+
+A Domain Controller is a Windows server that provides Active Directory services and controls the entire domain. It is a form of centralized user management that provides encryption of user data as well as controlling access to a network, including users, groups, policies, and computers. It also enables resource access and sharing. These are all reasons why attackers target a domain controller in a domain because it contains a lot of high-value information.
+
+![image](https://user-images.githubusercontent.com/51442719/197809299-e8dfadf5-92cf-4faf-8480-55cb9af97cd4.png)
+
+Organizational Units (OU's) are containers within the AD domain with a hierarchical structure.
+
+Active Directory Objects can be a single user or a group, or a hardware component, such as a computer or printer. Each domain holds a database that contains object identity information that creates an AD environment, including:
+
+- Users - A security principal that is allowed to authenticate to machines in the domain
+- Computers - A special type of user accounts
+- GPOs - Collections of policies that are applied to other AD objects
+
+AD domains are a collection of Microsoft components within an AD network. 
+
+AD Forest is a collection of domains that trust each other. 
+
+![image](https://user-images.githubusercontent.com/51442719/197809456-74f14c3f-41d6-479e-be66-91b8bc715bdb.png)
+
+For more information about the basics of Active Directory, we suggest trying the following TryHackMe room: [Active Directory Basics](https://tryhackme.com/room/activedirectorybasics).
+
+
 ---
 
 # Task 5  Users and Groups Management
+
+In this task, we will learn more about users and groups, especially within the Active Directory. Gathering information about the compromised machine is essential that could be used in the next stage. Account discovery is the first step once we have gained initial access to the compromised machine to understand what we have and what other accounts are in the system. 
+
+![image](https://user-images.githubusercontent.com/51442719/197810064-8286a71e-a548-487c-9390-ab1d9de38d3c.png)
+
+An Active Directory environment contains various accounts with the necessary permissions, access, and roles for different purposes. Common Active Directory service accounts include built-in local user accounts, domain user accounts, managed service accounts, and virtual accounts. 
+
+- The built-in local users' accounts are used to manage the system locally, which is not part of the AD environment.
+- Domain user accounts with access to an active directory environment can use the AD services (managed by AD).
+- AD managed service accounts are limited domain user account with higher privileges to manage AD services.
+- Domain Administrators are user accounts that can manage information in an Active Directory environment, including AD configurations, users, groups, permissions, roles, services, etc. One of the red team goals in engagement is to hunt for information that leads to a domain administrator having complete control over the AD environment.
+
+The following are Active Directory Administrators accounts:
+
+| BUILTIN\Administrator | Local admin access on a domain controller |
+|:---:|:---:|
+| Domain Admins | Administrative access to all resources in the domain |
+| Enterprise Admins | Available only in the forest root |
+| Schema Admins | Capable of modifying domain/forest; useful for red teamers |
+| Server Operators | Can manage domain servers |
+| Account Operators | Can manage users that are not in privileged groups |
+
+Now that we learn about various account types within the AD environment. Let's enumerate the Windows machine that we have access to during the initial access stage. As a current user, we have specific permissions to view or manage things within the machine and the AD environment. 
+
+## Active Directory (AD) Enum
+
+Now, enumerating in the AD environment requires different tools and techniques. Once we confirm that the machine is part of the AD environment, we can start hunting for any variable info that may be used later. In this stage, we are using PowerShell to enumerate for users and groups.
+
+The following PowerShell command is to get all active directory user accounts. Note that we need to use  `-Filter` argument.
+
+```cmd
+PS C:\Users\thm> Get-ADUser  -Filter *
+DistinguishedName : CN=Administrator,CN=Users,DC=thmredteam,DC=com
+Enabled           : True
+GivenName         :
+Name              : Administrator
+ObjectClass       : user
+ObjectGUID        : 4094d220-fb71-4de1-b5b2-ba18f6583c65
+SamAccountName    : Administrator
+SID               : S-1-5-21-1966530601-3185510712-10604624-500
+Surname           :
+UserPrincipalName :
+PS C:\Users\thm>
+```
+
+We can also use the [LDAP hierarchical tree structure](http://www.ietf.org/rfc/rfc2253.txt) to find a user within the AD environment. The Distinguished Name (DN) is a collection of comma-separated key and value pairs used to identify unique records within the directory. The DN consists of Domain Component (DC), OrganizationalUnitName (OU), Common Name (CN), and others. The following `"CN=User1,CN=Users,DC=thmredteam,DC=com"` is an example of DN, which can be visualized as follow:
+
+![image](https://user-images.githubusercontent.com/51442719/197810680-a866152f-0a97-4100-871d-c110e375b7a8.png)
+
+Using the `SearchBase` option, we specify a specific Common-Name `CN` in the active directory. For example, we can specify to list any user(s) that part of `Users`.
+
+```cmd
+PS C:\Users\thm> Get-ADUser -Filter * -SearchBase "CN=Users,DC=THMREDTEAM,DC=COM"
+
+
+DistinguishedName : CN=Administrator,CN=Users,DC=thmredteam,DC=com
+Enabled           : True
+GivenName         :
+Name              : Administrator
+ObjectClass       : user
+ObjectGUID        : 4094d220-fb71-4de1-b5b2-ba18f6583c65
+SamAccountName    : Administrator
+SID               : S-1-5-21-1966530601-3185510712-10604624-500
+Surname           :
+UserPrincipalName :
+```
+
+Note that the result may contain more than one user depending on the configuration of the CN. Try the command to find all users within the THM `OU` and answer question 1 below.
+
 
 ---
 
