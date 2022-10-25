@@ -473,6 +473,14 @@ We can use scripts for enumerating security products within the machine, such as
 
 # Task 8  Network Security Solutions
 
+This task will discuss network security solutions commonly seen and used in enterprises networks.
+
+## Network Security Solutions
+
+![image](https://user-images.githubusercontent.com/51442719/197835129-4b75ffe8-2f44-4698-bec5-d6889fa90221.png)
+
+
+
 ---
 
 # Task 9  Applications and Services
