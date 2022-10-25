@@ -214,6 +214,139 @@ Note that the result may contain more than one user depending on the configurati
 
 # Task 6  Host Security Solution #1
 
+Before performing further actions, we need to obtain general knowledge about the security solutions in place. Remember, it is important to enumerate antivirus and security detection methods on an endpoint in order to stay as undetected as possible and reduce the chance of getting caught.
+
+This task will discuss the common security solution used in corporate networks, divided into `Host` and `Network` security solutions.
+
+## Host Security Solutions
+
+![image](https://user-images.githubusercontent.com/51442719/197826000-ff272a1e-f9df-4969-b9d3-84d6b77217da.png)
+
+It is a set of software applications used to monitor and detect abnormal and malicious activities within the host, including:
+
+- Antivirus software
+- Microsoft Windows Defender
+- Host-based Firewall
+- Security Event Logging and Monitoring 
+- Host-based Intrusion Detection System (HIDS)/ Host-based Intrusion Prevention System (HIPS)
+- Endpoint Detection and Response (EDR)
+
+Let's go more detail through the host-based security solutions that we may encounter during the red team engagement.
+
+## Antivirus Software (AV)
+
+Antivirus software also known as anti-malware, is mainly used to monitor, detect, and prevent malicious software from being executed within the host.  Most antivirus software applications use well-known features, including Background scanning, Full system scans, Virus definitions. In the background scanning, the antivirus software works in real-time and scans all open and used files in the background. The full system scan is essential when you first install the antivirus. The most interesting part is the virus definitions, where antivirus software replies to the pre-defined virus. That's why antivirus software needs to update from time to time.
+
+There are various detection techniques that the antivirus uses, including
+
+- Signature-based detection
+- Heuristic-based detection
+- Behavior-based detection
+
+submit their infected files into an antivirus engine platform for further analysis by AV vendors, and if it confirms as malicious, then the signature gets registered in their database. The antivirus software compares the scanned file with a database of known signatures for possible attacks and malware on the client-side. If we have a match, then it considers a threat.
+
+Heuristic-based detection uses machine learning to decide whether we have the malicious file or not. It scans and statically analyses in real-time in order to find suspicious properties in the application's code or check whether it uses uncommon Windows or system APIs. It does not rely on the signature-based attack in making the decisions, or sometimes it does. This depends on the implementation of the antivirus software.
+
+Finally, Behavior-based detection relies on monitoring and examining the execution of applications to find abnormal behaviors and uncommon activities, such as creating/updating values in registry keys, killing/creating processes, etc.
+
+As a red teamer, it is essential to be aware of whether antivirus exists or not. It prevents us from doing what we are attempting to do. We can enumerate AV software using Windows built-in tools, such as `wmic`.
+
+```cmd
+wmic /namespace:\\root\securitycenter2 path antivirusproduct
+```
+
+This also can be done using PowerShell, which gives the same result.
+
+```cmd
+Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct
+```
+
+As a result, there is a third-party antivirus (Bitdefender Antivirus) and Windows Defender installed on the computer.  
+Note that Windows servers may not have `SecurityCenter2` namespace, which may not work on the attached VM. Instead, it works for Windows workstations!
+
+## Microsoft Windows Defender
+
+Microsoft Windows Defender is a pre-installed antivirus security tool that runs on endpoints. It uses various algorithms in the detection, including machine learning, big-data analysis, in-depth threat resistance research, and Microsoft cloud infrastructure in protection against malware and viruses. MS Defender works in three protection modes: Active, Passive, Disable modes. 
+
+Active mode is used where the MS Defender runs as the primary antivirus software on the machine where provides protection and remediation. Passive mode is run when a 3rd party antivirus software is installed. Therefore, it works as secondary antivirus software where it scans files and detects threats but does not provide remediation. Finally, Disable mode is when the MS Defender is disabled or uninstalled from the system.
+
+ We can use the following PowerShell command to check the service state of Windows Defender:
+ 
+ ```cmd
+ Get-Service WinDefend
+ ```
+ 
+ Next, we can start using the `Get-MpComputerStatus` cmdlet to get the current Windows Defender status. However, it provides the current status of security solution elements, including Anti-Spyware, Antivirus, LoavProtection, Real-time protection, etc. We can use `select` to specify what we need for as follows,
+
+```cmd
+Get-MpComputerStatus | select RealTimeProtectionEnabled
+```
+
+As a result, `MpComputerStatus` highlights whether Windows Defender is enabled or not.
+
+3. Host-based Firewall: It is a security tool installed and run on a host machine that can prevent and block attacker or red teamers' attack attempts. Thus, it is essential to enumerate and gather details about the firewall and its rules within the machine we have initial access to.  
+
+![image](https://user-images.githubusercontent.com/51442719/197826779-5ad11501-8ed0-408d-a8a8-603b8cca1fd2.png)
+
+The main purpose of the host-based firewall is to control the inbound and outbound traffic that goes through the device's interface. It protects the host from untrusted devices that are on the same network. A modern host-based firewall uses multiple levels of analyzing traffic, including packet analysis, while establishing the connection.
+
+A firewall acts as control access at the network layer. It is capable of allowing and denying network packets. For example, a firewall can be configured to block ICMP packets sent through the `ping` command from other machines in the same network. Next-generation firewalls also can inspect other OSI layers, such as application layers. Therefore, it can detect and block SQL injection and other application-layer attacks.
+
+```cmd
+Get-NetFirewallProfile | Format-Table Name, Enabled
+```
+
+If we have admin privileges on the current user we logged in with, then we try to disable one or more than one firewall profile using the `Set-NetFirewallProfile` cmdlet.
+
+```cmd
+PS C:\Windows\system32> Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
+PS C:\Windows\system32> Get-NetFirewallProfile | Format-Table Name, Enabled
+---- -------
+Domain False
+Private False
+Public False
+```
+
+We can also learn and check the current Firewall rules, whether allowing or denying by the firewall.
+
+```cmd
+PS C:\Users\thm> Get-NetFirewallRule | select DisplayName, Enabled, Description
+
+DisplayName                                                                  Enabled
+-----------                                                                  -------
+Virtual Machine Monitoring (DCOM-In)                                           False
+Virtual Machine Monitoring (Echo Request - ICMPv4-In)                          False
+Virtual Machine Monitoring (Echo Request - ICMPv6-In)                          False
+Virtual Machine Monitoring (NB-Session-In)                                     False
+Virtual Machine Monitoring (RPC)                                               False
+SNMP Trap Service (UDP In)                                                     False
+SNMP Trap Service (UDP In)                                                     False
+Connected User Experiences and Telemetry                                        True
+Delivery Optimization (TCP-In)                                                  True
+```
+
+During the red team engagement, we have no clue what the firewall blocks. However, we can take advantage of some PowerShell cmdlets such as `Test-NetConnection` and `TcpClient`. Assume we know that a firewall is in place, and we need to test inbound connection without extra tools, then we can do the following: 
+
+```cmd
+PS C:\Users\thm> Test-NetConnection -ComputerName 127.0.0.1 -Port 80
+
+
+ComputerName     : 127.0.0.1
+RemoteAddress    : 127.0.0.1
+RemotePort       : 80
+InterfaceAlias   : Loopback Pseudo-Interface 1
+SourceAddress    : 127.0.0.1
+TcpTestSucceeded : True
+
+PS C:\Users\thm> (New-Object System.Net.Sockets.TcpClient("127.0.0.1", "80")).Connected
+True
+```
+
+As a result, we can confirm the inbound connection on port 80 is open and allowed in the firewall. Note that we can also test for remote targets in the same network or domain names by specifying in the `-ComputerName` argument for the `Test-NetConnection`. 
+
+
+
+
 ---
 
 # Task 7  Host Security Solution #2
