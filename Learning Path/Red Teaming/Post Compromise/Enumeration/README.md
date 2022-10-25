@@ -608,8 +608,63 @@ Ensure that you are running the MS Windows Server machine from Task 4 and answer
 
 Task 6  More Tools for Windows
 
+
+In this room, our focus has been on command-line built-in tools readily available on any modern MS Windows system. We didn’t cover Graphical User Interface (GUI) tools; moreover, we didn’t cover any programs requiring additional downloading and installation steps.
+
+This task mentions three options that are not built-in command-line tools:
+
+- Sysinternals Suite
+- Process Hacker
+- GhostPack Seatbelt
+
+## Sysinternals Suite
+
+The [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/) is a group of command-line and GUI utilities and tools that provides information about various aspects related to the Windows system. To give you an idea, we listed a few examples in the table below.
+
+| Utility Name | Description |
+|:---:|:---:|
+| Process Explorer | Shows the processes along with the open files and registry keys |
+| Process Monitor | Monitor the file system, processes, and Registry |
+| PsList | Provides information about processes |
+| PsLoggedOn | Shows the logged-in users |
+
+Check [Sysinternals Utilities](https://docs.microsoft.com/en-us/sysinternals/downloads/) Index for a complete list of the utilities. If you want to learn more and experiment with these different utilities, we suggest the [Sysinternals](https://tryhackme.com/room/btsysinternalssg) room.
+
+## Process Hacker
+Another efficient and reliable MS Windows GUI tool that lets you gather information about running processes is [Process Hacker](https://processhacker.sourceforge.io/). Process Hacker gives you detailed information regarding running processes and related active network connections; moreover, it gives you deep insight into system resource utilization from CPU and memory to disk and network.
+
+## GhostPack Seatbelt
+[Seatbelt](https://github.com/GhostPack/Seatbelt), part of the GhostPack collection, is a tool written in C#. It is not officially released in binary form; therefore, you are expected to compile it yourself using MS Visual Studio.
+
 ---
 
 Task 7  Conclusion
+
+The focus of this room was on built-in command-line tools in both Linux and MS Windows systems. Many commands exist in both systems, although the command arguments and resulting output are different. The following tables show the primary Linux and MS Windows commands that we relied on to get more information about the system.
+
+| Linux Command | Description |
+|:---:|:---:|
+| hostname | shows the system’s hostname |
+| who | shows who is logged in |
+| whoami | shows the effective username |
+| w | shows who is logged in and what they are doing |
+| last | shows a listing of the last logged-in users |
+| ip address show | shows the network interfaces and addresses |
+| arp | shows the ARP cache |
+| netstat | prints network connections |
+| ps | shows a snapshot of the current processes |
+
+| Windows Command | Description |
+|:---:|:---:|
+| systeminfo | shows OS configuration information, including service pack levels |
+| whoami | shows the user name and group information along with the respective security identifiers |
+| netstat | shows protocol statistics and current TCP/IP network connections |
+| net user | shows the user accounts on the computer |
+| net localgroup | shows the local groups on the computer |
+| arp | shows the IP-to-Physical address translation tables |
+
+This room focused on post-exploitation enumeration of a Linux or MS Windows machine. For enumeration related to Active Directory, we recommend that you join the [Enumerating AD](https://tryhackme.com/room/adenumeration) room.
+
+
 
 ---
