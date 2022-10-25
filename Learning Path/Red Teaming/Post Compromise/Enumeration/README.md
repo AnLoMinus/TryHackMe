@@ -215,6 +215,123 @@ nameserver 10.20.30.2
 | -x | UNIX |
 | -p | Show the PID and name of the program to which the socket belongs |
 
+You can use any combination that suits your needs. For instance, `netstat -plt` will return Programs Listening on TCP sockets. As we can see in the terminal output below, `sshd` is listening on the SSH port, while `master` is listening on the SMTP port on both IPv4 and IPv6 addresses. Note that to get all PID (process ID) and program names, you need to run `netstat` as root or use `sudo netstat`.
+
+```cmd
+user@TryHackMe$ sudo netstat -plt
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      978/sshd            
+tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN      1141/master         
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      978/sshd            
+tcp6       0      0 localhost:smtp          [::]:*                  LISTEN      1141/master
+```
+
+`netstat -atupn` will show All TCP and UDP listening and established connections and the program names with addresses and ports in numeric format.
+
+```cmd
+user@TryHackMe$ sudo netstat -atupn
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      978/sshd            
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1141/master         
+tcp        0      0 10.20.30.129:22         10.20.30.113:38822        ESTABLISHED 5665/sshd: peter [p 
+tcp        0      0 10.20.30.129:22         10.20.30.105:38826        ESTABLISHED 5723/sshd: jane [pr 
+tcp6       0      0 :::22                   :::*                    LISTEN      978/sshd            
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1141/master         
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           640/chronyd         
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           5638/dhclient       
+udp6       0      0 ::1:323                 :::*                                640/chronyd
+```
+
+One might think that using `nmap` before gaining access to the target machine would have provided a comparable result. However, this is not entirely true. Nmap needs to generate a relatively large number of packets to check for open ports, which can trigger intrusion detection and prevention systems. Furthermore, firewalls across the route can drop certain packets and hinder the scan, resulting in incomplete Nmap results.
+
+`lsof` stands for List Open Files. If we want to display only Internet and network connections, we can use `lsof -i`. The terminal output below shows IPv4 and IPv6 listening services and ongoing connections. The user `peter` is connected to the server `rpm-red-enum`.thm on the `ssh` port. Note that to get the complete list of matching programs, you need to run `lsof` as root or use `sudo lsof`.
+
+```cmd
+user@TryHackMe$ sudo lsof -i
+COMMAND   PID      USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+chronyd   640    chrony    5u  IPv4  16945      0t0  UDP localhost:323 
+chronyd   640    chrony    6u  IPv6  16946      0t0  UDP localhost:323 
+sshd      978      root    3u  IPv4  20035      0t0  TCP *:ssh (LISTEN)
+sshd      978      root    4u  IPv6  20058      0t0  TCP *:ssh (LISTEN)
+master   1141      root   13u  IPv4  20665      0t0  TCP localhost:smtp (LISTEN)
+master   1141      root   14u  IPv6  20666      0t0  TCP localhost:smtp (LISTEN)
+dhclient 5638      root    6u  IPv4  47458      0t0  UDP *:bootpc 
+sshd     5693     peter    3u  IPv4  47594      0t0  TCP rpm-red-enum.thm:ssh->10.20.30.113:38822 (ESTABLISHED)
+[...]
+```
+
+Because the list can get quite lengthy, you can further filter the output by specifying the ports you are interested in, such as SMTP port 25. By running `lsof -i :25`, we limit the output to those related to port 25, as shown in the terminal output below. The server is listening on port 25 on both IPv4 and IPv6 addresses.
+
+```cmd
+user@TryHackMe$ sudo lsof -i :25
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+master  1141 root   13u  IPv4  20665      0t0  TCP localhost:smtp (LISTEN)
+master  1141 root   14u  IPv6  20666      0t0  TCP localhost:smtp (LISTEN)
+```
+
+## Running Services
+Getting a snapshot of the running processes can provide many insights. `ps` lets you discover the running processes and plenty of information about them.
+
+You can list every process on the system using `ps -e`, where `-e` selects all processes. For more information about the process, you can add `-f` for full-format and `-l` for long format. Experiment with `ps -e`, `ps -ef`, and `ps -el`.
+
+You can get comparable output and see all the processes using BSD syntax: `ps ax` or `ps aux`. Note that `a` and `x` are necessary when using BSD syntax as they lift the “only yourself” and “must have a tty” restrictions; in other words, it becomes possible to display all processes. The `u` is for details about the user that has the process.
+
+| Option | Description |
+|:---:|:---:|
+| -e | all processes |
+| -f | full-format listing |
+| -j | jobs format |
+| -l | long format |
+| -u | user-oriented format |
+
+For more “visual” output, you can issue `ps axjf` to print a process tree. The `f` stands for “forest”, and it creates an ASCII art process hierarchy as shown in the terminal output below.
+
+```cmd
+user@TryHackMe$ ps axf
+   PID TTY      STAT   TIME COMMAND
+     2 ?        S      0:00 [kthreadd]
+     4 ?        S<     0:00  \_ [kworker/0:0H]
+     5 ?        S      0:01  \_ [kworker/u256:0]
+[...]
+   978 ?        Ss     0:00 /usr/sbin/sshd -D
+  5665 ?        Ss     0:00  \_ sshd: peter [priv]
+  5693 ?        S      0:00  |   \_ sshd: peter@pts/1
+  5694 pts/1    Ss     0:00  |       \_ -bash
+  5713 pts/1    S+     0:00  |           \_ vi notes.txt
+  5723 ?        Ss     0:00  \_ sshd: jane [priv]
+  5727 ?        S      0:00      \_ sshd: jane@pts/0
+  5728 pts/0    Ss     0:00          \_ -bash
+  7080 pts/0    R+     0:00              \_ ps axf
+   979 ?        Ssl    0:12 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+   981 ?        Ssl    0:07 /usr/sbin/rsyslogd -n
+  1141 ?        Ss     0:00 /usr/libexec/postfix/master -w
+  1147 ?        S      0:00  \_ qmgr -l -t unix -u
+  6991 ?        S      0:00  \_ pickup -l -t unix -u
+  1371 ?        Ss     0:00 login -- root
+  1376 tty1     Ss     0:00  \_ -bash
+  1411 tty1     S+     0:00      \_ man man
+  1420 tty1     S+     0:00          \_ less -s
+[...]
+```
+
+To summarize, remember to use `ps -ef` or `ps aux` to get a list of all the running processes. Consider piping the output via `grep` to display output lines with certain words. The terminal output below shows the lines with `peter` in them.
+
+```cmd
+user@TryHackMe$ ps -ef | grep peter
+root       5665    978  0 07:11 ?        00:00:00 sshd: peter [priv]
+peter      5693   5665  0 07:13 ?        00:00:00 sshd: peter@pts/1
+peter      5694   5693  0 07:13 pts/1    00:00:00 -bash
+peter      5713   5694  0 07:13 pts/1    00:00:00 vi notes.txt
+```
+
+Start the attached Linux machine if you have not done so already, as you need it to answer the questions below. You can log in to it using SSH: `ssh user@10.10.58.253`, where the login credentials are:
+
+Username: `user`
+Password: `THM6877`
+
+
 
 
 ---
