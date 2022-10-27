@@ -194,6 +194,12 @@ Scripting may be a bit difficult, but [here](https://learnxinyminutes.com/docs/p
 
 # Task 6  Intermediate Scripting
 
+Now that you've learnt a little bit about how scripting works - let's try something a bit more interesting. Sometimes we may not have utilities like nmap and python available, and we are forced to write scripts to do very rudimentary tasks. Why don't you try writing a simple port scanner using Powershell. Here's the general approach to use: 
+
+- Determine IP ranges to scan(in this case it will be localhost) and you can provide the input in any way you want
+- Determine the port ranges to scan
+- Determine the type of scan to run(in this case it will be a simple TCP Connect Scan)
+
 
 ---
 
