@@ -133,11 +133,20 @@ Here's an example of sort the list of directories:
 
 Now that you've understood the basics of how Powershell works, let try some commands to apply this knowledge!
 
-
-
 ---
 
 # Task 4  Enumeration
+
+The first step when you have gained initial access to any machine would be to enumerate. We'll be enumerating the following:
+
+- users
+- basic networking information
+- file permissions
+- registry permissions
+- scheduled and running tasks
+- insecure files
+
+Your task will be to answer the following questions to enumerate the machine using Powershell commands! 
 
 ---
 
@@ -148,3 +157,8 @@ Now that you've understood the basics of how Powershell works, let try some comm
 # Task 6  Intermediate Scripting
 
 ---
+
+---
+
+# Writeups
+https://medium.com/@CyberOPS.LittleDog/tryhackme-hacking-with-powershell-834d8b86ec4a
