@@ -152,9 +152,48 @@ Your task will be to answer the following questions to enumerate the machine usi
 
 # Task 5  Basic Scripting Challenge
 
+Now that we have run powershell commands, let's actually try write and run a script to do more complex and powerful actions. 
+
+For this ask, we'll be using PowerShell ISE(which is the Powershell Text Editor). To show an example of this script, let's use a particular scenario. Given a list of port numbers, we want to use this list to see if the local port is listening. Open the listening-ports.ps1 script on the Desktop using Powershell ISE. Powershell scripts usually have the .ps1 file extension. 
+
+```powershell
+$system_ports = Get-NetTCPConnection -State Listen
+
+$text_port = Get-Content -Path C:\Users\Administrator\Desktop\ports.txt
+
+foreach($port in $text_port){
+
+    if($port -in $system_ports.LocalPort){
+        echo $port
+     }
+
+}
+```
+
+On the first line, we want to get a list of all the ports on the system that are listening. We do this using the Get-NetTCPConnection cmdlet. We are then saving the output of this cmdlet into a variable. The convention to create variables is used as:
+
+```powershell
+$variable_name = value
+```
+
+On the next line, we want to read a list of ports from the file. We do this using the Get-Content cmdlet. Again, we store this output in the variables. The simplest next step is iterate through all the ports in the file to see if the ports are listening. To iterate through the ports in the file, we use the following
+
+```powershell
+foreach($new_var in $existing_var){}
+```
+
+This particular code block is used to loop through a set of object. Once we have each individual port, we want to check if this port occurs in the listening local ports. Instead of doing another for loop, we just use an if statement with the `-in` operator to check if the port exists the LocalPort property of any object. A full list of if statement comparison operators can be found [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-6). To run script, just call the script path using Powershell or click the green button on Powershell ISE:
+
+![image](https://user-images.githubusercontent.com/51442719/198343084-6b042560-2f4d-4353-bd2f-0d5b399968a0.png)
+
+Now that we've seen what a basic script looks like - it's time to write one of your own. The emails folder on the Desktop contains copies of the emails John, Martha and Mary have been sending to each other(and themselves). Answer the following questions with regards to these emails(try not to open the files and use a script to answer the questions). 
+
+Scripting may be a bit difficult, but [here](https://learnxinyminutes.com/docs/powershell/) is a good resource to use: 
+
 ---
 
 # Task 6  Intermediate Scripting
+
 
 ---
 
