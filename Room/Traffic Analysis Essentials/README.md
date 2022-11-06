@@ -139,3 +139,12 @@ Now use the static site to simulate a traffic analysis operation and find the fl
 ---
 
 # Task 4  Conclusion
+
+**Congratulations**! You just finished the "Traffic Analysis Essentials" room.
+
+In this room, we covered the foundations of the network security and traffic analysis concepts:
+
+- Network Security Operations
+- Network Traffic Analysis
+
+Now, you are ready to complete the "Network Security and Traffic Analysis" module.
