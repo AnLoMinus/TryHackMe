@@ -3,6 +3,17 @@
 
 ---
 
+# [Traffic Analysis Essentials](https://tryhackme.com/room/trafficanalysisessentials)
+![image](https://user-images.githubusercontent.com/51442719/200156840-7e69feca-a4a5-4fad-8159-cd19a9a80298.png)
+> ### Learn Network Security and Traffic Analysis foundations and take a step into probing network anomalies.
+
+- [ ] [Task 1  Introduction](#)
+- [ ] [Task 2  Network Security and Network Data](#)
+- [ ] [Task 3  Traffic Analysis](#)
+- [ ] [Task 4  Conclusion](#)
+
+---
+
 # [Threat Intelligence Tools](https://tryhackme.com/room/threatinteltools)
 ![image](https://user-images.githubusercontent.com/51442719/182532556-26e4506f-7921-4b44-b42b-66d2bf21b8d7.png)
 > ### Explore different OSINT tools used to conduct security threat assessments and investigations.
