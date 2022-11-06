@@ -76,10 +76,62 @@ There are two main approaches and multiple elements under these control levels. 
 | Device and software installation <br> Initial configuration Automation | Feature configuration Initial network access configuration | Security policy implementation NAT and VPN implementation Threat mitigation | System monitoring User activity monitoring Threat monitoring  Log and traffic sample capturing | Upgrades Security updates Rule adjustments Licence management Configuration updates |
 
 
+## Managed Security Services
+
+Not every organisation has enough resources to create dedicated groups for specific security domains.  
+There are plenty of reasons for this: budget, employee skillset, and organisation size could determine how security operations are handled.  
+At this point, Managed Security Services (MSS) come up to fulfil the required effort to ensure/enhance security needs.  
+MSS are services that have been outsourced to service providers.  
+These service providers are called Managed Security Service Providers (MSSPs).  
+Today, most MSS are time and cost effective, can be conducted in-house or outsourced, are easy to engage, and ease the management process.  
+There are various elements of MSS, and the most common ones are explained below.  
+
+| Network Penetration Testing  | Assessing network security by simulating external/internal attacker techniques to breach the network. |
+|---|---|
+| Vulnerability Assessment | Assessing network security by discovering and analysing vulnerabilities in the environment. |
+| Incident Response | An organised approach to addressing and managing a security breach. It contains a set of actions to identify, contain, and eliminate incidents. |
+| Behavioural Analysis | An organised approach to addressing system and user behaviours, creating baselines and traffic profiles for specific patterns to detect anomalies, threats, vulnerabilities, and attacks. |
 
 ---
 
 # Task 3  Traffic Analysis
+
+![image](https://user-images.githubusercontent.com/51442719/200159458-4ffa5039-91ba-4418-a27c-7d333624f6e3.png)
+
+## Traffic Analysis / Network Traffic Analysis
+
+Traffic Analysis is a method of intercepting, recording/monitoring, and analysing network data and communication patterns to detect and respond to system health issues, network anomalies, and threats.  
+The network is a rich data source, so traffic analysis is useful for security and operational matters.  
+The operational issues cover system availability checks and measuring performance, and the security issues cover anomaly and suspicious activity detection on the network.  
+
+Traffic analysis is one of the essential approaches used in network security, and it is part of multiple disciplines of network security operations listed below:  
+
+- Network Sniffing and Packet Analysis (Covered in [Wireshark room](https://tryhackme.com/room/wiresharkthebasics))
+- Network Monitoring (Covered in [Zeek room](https://tryhackme.com/room/zeekbro))
+- Intrusion Detection and Prevention (Covered in [Snort room](https://tryhackme.com/room/snort))
+- Network Forensics (Covered in [NetworkMiner room](https://tryhackme.com/room/networkminer))
+- Threat Hunting (Covered in [Brim room](https://tryhackme.com/room/brim))
+
+### **There are two main techniques used in Traffic Analysis:**
+
+| Flow Analysis | Packet Analysis |
+|:---:|:---:|
+| Collecting data/evidence from the networking devices. This type of analysis aims to provide statistical results through the data summary without applying in-depth packet-level investigation. Advantage: Easy to collect and analyse. Challenge: Doesn't provide full packet details to get the root cause of a case. | Collecting all available network data. Applying in-depth packet-level investigation (often called Deep Packet Inspection (DPI) ) to detect and block anomalous and malicious packets. Advantage: Provides full packet details to get the root cause of a case. Challenge: Requires time and skillset to analyse. |
+
+### **Benefits of the Traffic Analysis:**
+
+- Provides full network visibility.
+- Helps comprehensive baselining for asset tracking.
+- Helps to detect/respond to anomalies and threats.
+
+
+## Does the Traffic Analysis Still Matter?
+
+The widespread usage of security tools/services and an increasing shift to cloud computing force attackers to modify their tactics and techniques to avoid detection. Network data is a pure and rich data source. Even if it is encoded/encrypted, it still provides a value by pointing to an odd, weird or unexpected pattern/situation. Therefore traffic analysis is still a must-to-have skill for any security analyst who wants to detect and respond to advanced threats.
+
+Now you know what Traffic Analysis is and how it operates. Now use the static site to simulate a traffic analysis operation and find the flags.
+
+
 
 ---
 
