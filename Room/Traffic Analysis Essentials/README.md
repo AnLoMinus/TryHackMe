@@ -127,9 +127,12 @@ Traffic analysis is one of the essential approaches used in network security, an
 
 ## Does the Traffic Analysis Still Matter?
 
-The widespread usage of security tools/services and an increasing shift to cloud computing force attackers to modify their tactics and techniques to avoid detection. Network data is a pure and rich data source. Even if it is encoded/encrypted, it still provides a value by pointing to an odd, weird or unexpected pattern/situation. Therefore traffic analysis is still a must-to-have skill for any security analyst who wants to detect and respond to advanced threats.
+The widespread usage of security tools/services and an increasing shift to cloud computing force attackers to modify their tactics and techniques to avoid detection.   
+Network data is a pure and rich data source. Even if it is encoded/encrypted, it still provides a value by pointing to an odd, weird or unexpected pattern/situation.  
+Therefore traffic analysis is still a must-to-have skill for any security analyst who wants to detect and respond to advanced threats.  
 
-Now you know what Traffic Analysis is and how it operates. Now use the static site to simulate a traffic analysis operation and find the flags.
+Now you know what Traffic Analysis is and how it operates.   
+Now use the static site to simulate a traffic analysis operation and find the flags.  
 
 
 
