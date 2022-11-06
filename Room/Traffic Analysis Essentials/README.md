@@ -31,7 +31,7 @@ The essential concern of Network Security focuses on two core concepts: authenti
 There are a variety of tools, technologies, and approaches to ensure and measure implementations of these two key concepts and go beyond to provide continuity and reliability.  
 Network security operations contain three base control levels to ensure the maximum available security management.
 
-**Base Network Security Control Levels:**
+### **Base Network Security Control Levels:**
 
 | Physical | Physical security controls prevent unauthorised physical access to networking devices, cable boards, locks, and all linked components. |
 |---|---|
@@ -40,14 +40,14 @@ Network security operations contain three base control levels to ensure the maxi
 
 There are two main approaches and multiple elements under these control levels. The most common elements used in network security operations are explained below.
 
-**The main approaches:**
+### **The main approaches:**
 
 | Access Control | Threat Control |
 |:---:|:---:|
 | The starting point of Network Security. It is a set of controls to ensure authentication and authorisation.  | Detecting and preventing anomalous/malicious activities on the network. It contains both internal (trusted) and external traffic data probes. |
 
 
-**The key elements of Access Control:**
+### **The key elements of Access Control:**
 
 | Firewall Protection | Controls incoming and outgoing network traffic with predetermined security rules. Designed to block suspicious/malicious traffic and application-layer threats while allowing legitimate and expected traffic. |
 |---|---|
@@ -58,7 +58,7 @@ There are two main approaches and multiple elements under these control levels. 
 | Virtual Private Networks (VPN) | Creates and controls encrypted communication between devices (typically for secure remote access) over the network (including communications over the internet). |
 | Zero Trust Model | Suggests configuring and implementing the access and permissions at a minimum level (providing access required to fulfil the assigned role). The mindset is focused on: "Never trust, always verify". |
 
-**The key elements of Threat Control:**
+### **The key elements of Threat Control:**
 
 | Intrusion Detection and Prevention (IDS/IPS) | Inspects the traffic and creates alerts (IDS) or resets the connection (IPS) when detecting an anomaly/threat. |
 |---|---|
@@ -69,7 +69,7 @@ There are two main approaches and multiple elements under these control levels. 
 | Security Orchestration Automation and Response (SOAR) | Technology that helps coordinate and automates tasks between various people, tools, and data within a single platform to identify anomalies, threats, and vulnerabilities. It also supports vulnerability management, incident response, and security operations. |
 | Network Traffic Analysis & Network Detection and Response | Inspecting network traffic or traffic capture to identify anomalies and threats. |
 
-**Typical Network Security Management Operation is explained in the given table:**
+### **Typical Network Security Management Operation is explained in the given table:**
 
 | Deployment | Configuration | Management | Monitoring | Maintenance |
 |:---:|:---:|:---:|:---:|:---:|
