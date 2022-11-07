@@ -65,6 +65,8 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ### [Learning Paths](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path#learning-paths) & Certificates
 
+![image](https://user-images.githubusercontent.com/51442719/200425056-52cba291-68dc-44e2-b912-cfefa9b4f096.png)
+
 - # ✅ [INTRODUCTION TO CYBER SECURITY](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Introduction%20to%20Cyber%20Security)
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173556502-268cd44f-6dd5-4880-9355-6198212d710f.png"> <br>
     > Issued on: `1 June 2022` <br>
@@ -84,6 +86,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ---
 
+![image](https://user-images.githubusercontent.com/51442719/200425097-02733f17-e9f8-4959-9731-edf817bc50c2.png)
 
 - # ✅ [JR PENETRATION TESTER](https://github.com/Anlominus/TryHackMe/blob/main/Learning%20Path/Jr%20Penetration%20Tester)
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173556656-bc28a8db-ba13-4276-9422-d6a23cb6c8b9.png"> <br>
@@ -95,6 +98,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ---
 
+![image](https://user-images.githubusercontent.com/51442719/200425120-18d80eee-08e9-4f09-a976-7a408639df22.png)
 
 - # ✅ [PRE SECURITY](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Pre%20Security)
     >  <img width="400" src="https://user-images.githubusercontent.com/51442719/173556879-fb290bdc-563a-4a35-875d-6714e4446ed7.png"> <br>
@@ -106,6 +110,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ---
 
+![image](https://user-images.githubusercontent.com/51442719/200425320-5fea222d-0bb3-4005-bdec-6193ba457a13.png)
 
 - # ✅ [COMPLETE BEGINNER](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Complete%20Beginner)
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/177428601-4c2192fb-e553-4b3b-ab5c-a14a858ca9d2.png"> <br>
@@ -117,6 +122,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ---
 
+![image](https://user-images.githubusercontent.com/51442719/200425321-6d1f8e9c-568d-49a1-99a0-d285fe28b86a.png)
 
 - # ✅ [WEB FUNDAMENTALS](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Web%20Fundamentals)
     > <img width="400" src="https://user-images.githubusercontent.com/51442719/173555903-151151a6-4478-4f5b-a78a-09fa0a917331.png"> <br>
@@ -138,6 +144,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ---
 
+![image](https://user-images.githubusercontent.com/51442719/200425341-f93b8f27-a5d9-46b4-9efd-6ba1679f9a36.png)
 
 - # [OFFENSIVE PENTESTING](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Offensive%20Pentesting)
   - [ ] Path Progress (50%)
@@ -146,6 +153,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ---
 
+![image](https://user-images.githubusercontent.com/51442719/200425165-92a7fadd-f8a5-4b5b-814c-491f32fbbe6d.png)
 
 - # [CYBER DEFENSE](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/Cyber%20Defense)
   - [ ] Path Progress (44%)
@@ -153,6 +161,8 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
     - `48 Hours`
 
 ---
+
+![image](https://user-images.githubusercontent.com/51442719/200424999-5023d80b-33e7-4cbe-8f16-290f914be62b.png)
 
 - # [RED TEAMING](https://tryhackme.com/path-action/redteaming/join)
   - [ ] Path Progress (33%)
