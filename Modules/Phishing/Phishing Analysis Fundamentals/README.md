@@ -45,9 +45,47 @@ In this room, we'll look at all the components involved with sending emails acro
 
 ## Task 2  The Email Address
 
+It's only appropriate to start this room by mentioning the man who invented the concept of emails and made the @ symbol famous. The person responsible for the contribution to the way we communicate was `Ray Tomlinson`. 
+
+The invention of the email dates back to the 1970s for [ARPANET](https://www.britannica.com/topic/ARPANET).  
+Yep, probably before you were born. Definitely, before I was born. :) 
+
+So, what makes up an email address?
+1. User Mailbox (or Username)
+2. @
+3. Domain
+
+Let's look at the following email address, billy@johndoe.com.
+
+1. The user mailbox is billy
+2. @ (thanks Ray)
+3. The domain is johndoe.com
+
+To simplify this even further, think about the street on which you live on.
+
+- You can think of your street as the domain. 
+- The recipient's first/last name, along with the house number in this scenario, represents the user mailbox. 
+
+With this information, the postal worker delivering the mail knows into which mailbox to put the letter(s). 
+
+Next, let's look at the network protocols used to send an email from the sender to the recipient.
+
+
+
 ---
 
 ## Task 3  Email Delivery
+
+A handful of protocols are involved with the "magic" that takes place when you hit SEND in an email client. 
+
+By now, you should already know that certain protocols were created to handle specific network-related tasks, such as email. 
+
+There are 3 specific protocols involved to facilitate the outgoing and incoming email messages, and they are briefly listed below.
+
+- `SMTP` (`Simple Mail Transfer Protocol`) - It is utilized to handle the sending of emails. 
+- `POP3` (`Post Office Protocol`) - Is responsible transferring email between a client and a mail server. 
+- `IMAP` (`Internet Message Access Protocol`) - Is responsible transferring email between a client and a mail server. 
+
 
 ---
 
