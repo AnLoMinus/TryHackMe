@@ -85,6 +85,48 @@ There are 3 specific protocols involved to facilitate the outgoing and incoming 
 - `SMTP` (`Simple Mail Transfer Protocol`) - It is utilized to handle the sending of emails. 
 - `POP3` (`Post Office Protocol`) - Is responsible transferring email between a client and a mail server. 
 - `IMAP` (`Internet Message Access Protocol`) - Is responsible transferring email between a client and a mail server. 
+- `POP3` | Port `995` (`Secure` Transport   — SSL function enabled)
+- `IMAP` | Port `993` (`Secure` Transport   — SSL function enabled)
+- `IMAP` | Port `143` (`Insecure` Transport — No SSL function enabled)
+- `POP3` | Port `110` (`Insecure` Transport — No SSL function enabled)
+
+You should have noticed that both POP3 and IMAP have the same definition. But there are differences between the two.
+
+The difference between the two is listed below: (credit [AOL](https://help.aol.com/articles/what-is-the-difference-between-pop3-and-imap) -- [You got mail!](https://www.youtube.com/watch?v=gFBLiHpkcOk)
+
+### POP3
+- Emails are downloaded and stored on a single device.
+- Sent messages are stored on the single device from which the email was sent.
+- Emails can only be accessed from the single device the emails were downloaded to.
+- If you want to keep messages on the server, make sure the setting "Keep email on server" is enabled, or all messages are deleted from the server once downloaded to the single device's app or software.
+
+### IMAP
+- Emails are stored on the server and can be downloaded to multiple devices.
+- Sent messages are stored on the server.
+- Messages can be synced and accessed across multiple devices.
+
+Now let's talk about how email travels from the sender to the recipient.
+
+To best illustrate this, see the oversimplified image below:
+
+![image](https://user-images.githubusercontent.com/51442719/200478065-b2a70769-d067-4c2b-8901-c739223e1ead.png)
+
+Below is an explanation of each numbered point from the above diagram:
+
+- Alexa composes an email to Billy (`billy@johndoe.com`) in her favorite email client. After she's done, she hits the send button.
+- The SMTP server needs to determine where to send Alexa's email. It queries DNS for information associated with `johndoe.com`. 
+- The DNS server obtains the information `johndoe.com` and sends that information to the SMTP server. 
+- The SMTP server sends Alexa's email across the Internet to Billy's mailbox at `johndoe.com`.
+- In this stage, Alexa's email passes through various SMTP servers and is finally relayed to the destination SMTP server. 
+- Alexa's email finally reached the destination SMTP server.
+- Alexa's email is forwarded and is now sitting in the local POP3/IMAP server waiting for Billy. 
+- Billy logs into his email client, which queries the local POP3/IMAP server for new emails in his mailbox.
+- Alexa's email is copied (IMAP) or downloaded (POP3) to Billy's email client. 
+
+Lastly, each protocol has its associated default ports and recommended ports. For example, SMTP is port 25.
+
+Read the following article to understand the difference between each [here](https://help.dreamhost.com/hc/en-us/articles/215612887-Email-client-protocols-and-port-numbers).
+
 
 
 ---
