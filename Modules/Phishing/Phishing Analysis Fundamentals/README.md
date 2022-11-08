@@ -145,3 +145,8 @@ Read the following article to understand the difference between each [here](http
 
 ## Task 7  Conclusion
 
+
+---
+
+#### WRITEUPS
+- [TryHackMe | Phishing Emails 1 Walkthrough](https://medium.com/@tr1n1ty8/tryhackme-phishing-emails-1-walkthrough-9e2b7a31789d)
