@@ -108,9 +108,52 @@ The capabilities can be malware and phishing email development skills or, at lea
 
 ## Task 5  Infrastructure
 
+`Infrastructure` – is also known as software or hardware. Infrastructure is the physical or logical interconnections that the adversary uses to deliver a capability or maintain control of capabilities.  
+For example, a command and control centre (C2) and the results from the victim (data exfiltration). 
+
+The infrastructure can also be IP addresses, domain names, email addresses, or even a malicious USB device found in the street that is being plugged into a workstation. 
+
+`Type 1 Infrastructure` is the infrastructure controlled or owned by the adversary. 
+
+`Type 2 Infrastructure` is the infrastructure controlled by an intermediary.  
+Sometimes the intermediary might or might not be aware of it.  
+This is the infrastructure that a victim will see as the adversary.  
+Type 2 Infrastructure has the purpose of obfuscating the source and attribution of the activity.  
+Type 2 Infrastructure includes malware staging servers, malicious domain names, compromised email accounts, etc.
+
+`Service Providers` are organizations that provide services considered critical for the adversary availability of Type 1 and Type 2 Infrastructures, for example, Internet Service Providers, domain registrars, and webmail providers.
+
 ---
 
 ## Task 6  Event Meta Features
+
+Six possible meta-features can be added to the Diamond Model.  
+Meta-features are not required, but they can add some valuable information or intelligence to the Diamond Model.
+
+- `Timestamp` - is the date and time of the event. <br> Each event can be recorded with a date and time that it occurred, such as 2021-09-12 02:10:12.136. <br> The timestamp can include when the event started and stopped. <br> Timestamps are essential to help determine the patterns and group the malicious activity. <br> For example, if the intrusion or breach happened at 3 am in the United States, it might be possible that the attack was carried out from a specific country with a different time zone and standard business hours. 
+
+- `Phase` - these are the phases of an intrusion, attack, or breach. <br> According to the Diamond Model creators and the Axiom 4, "Every malicious activity contains two or more phases which must be successfully executed in succession to achieve the desired result." Malicious activities don't occur in two or more events rather than just one. A great example can be the Cyber Kill Chain developed by Lockheed Martin. <br> You can find out more about the Cyber Kill Chain by visiting the Cyber Kill Chain room on TryHackMe 
+
+  The phases can be: 
+  - 1. Reconnaissance
+  - 2. Weaponization
+  - 3. Delivery
+  - 4. Exploitation
+  - 5. Installation
+  - 6. Command & Control
+  - 7. Actions on Objective  
+  
+  For example, an attacker needs to do some research to discover the target or a victim.  
+  Then they would try to exploit the target, establish a command-and-control centre and, lastly, exfiltrate the sensitive information. 
+
+- `Result` - While the results and post-conditions of an adversary’s operations will not always be known or have a high confidence value when they are known, they are helpful to capture. <br> It is crucial to capture the results and post-conditions of an adversary's operations, but sometimes they might not always be known. <br> The event results can be labelled as "success," "failure," or "unknown." The event results can also be related to the CIA (confidentiality, integrity, and availability) triad, such as Confidentiality Compromised, Integrity Compromised, and Availability Compromised. <br> Another approach can also be documenting all of the post-conditions resulting from the event, for example, information gathered in the reconnaissance stage or successful passwords/sensitive data exfiltration.
+
+- `Direction` - This meta-feature helps describe host-based and network-based events and represents the direction of the intrusion attack. <br> The Diamond Model of Intrusion Analysis defines seven potential values for this meta-feature: Victim-to-Infrastructure, Infrastructure-to-Victim, Infrastructure-to-Infrastructure, Adversary-to-Infrastructure, Infrastructure-to-Adversary, Bidirectional or Unknown.
+
+- `Methodology` - This meta-feature will allow an analyst to describe the general classification of intrusion, for example, phishing, DDoS, breach, port scan, etc. 
+
+- `Resources` - According to the Diamond Model, every intrusion event needs one or more external resources to be satisfied to succeed. <br> Examples of the resources can include the following: software (e.g., operating systems, virtualization software, or Metasploit framework), knowledge (e.g., how to use Metasploit to execute the attack and run the exploit), information (e.g., a username/password to masquerade), hardware (e.g., servers, workstations, routers), funds (e.g., money to purchase domains), facilities (e.g., electricity or shelter), access (e.g., a network path from the source host to the victim and vice versa, network access from an Internet Service Provider (ISP)).
+
 
 ---
 
