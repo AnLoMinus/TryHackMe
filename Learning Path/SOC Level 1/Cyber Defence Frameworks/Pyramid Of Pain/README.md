@@ -106,6 +106,7 @@ In the Pyramid of Pain, IP addresses are indicated with the color green. You mig
 From a defense standpoint, knowledge of the IP addresses an adversary uses can be valuable. A common defense tactic is to block, drop, or deny inbound requests from IP addresses on your parameter or external firewall. This tactic is often not bulletproof as it’s trivial for an experienced adversary to recover simply by using a new public IP address.
 
 Malicious IP connections ([app.any.run](https://app.any.run/tasks/a66178de-7596-4a05-945d-704dbf6b3b90)):
+
 ![image](https://user-images.githubusercontent.com/51442719/201247070-24a33d78-77a5-477d-8d44-3f37c7bad524.png)
 
 > `NOTE`! Do not attempt to interact with the IP addresses shown above.
