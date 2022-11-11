@@ -132,7 +132,7 @@ Meta-features are not required, but they can add some valuable information or in
 
 - `Timestamp` - is the date and time of the event. <br> Each event can be recorded with a date and time that it occurred, such as 2021-09-12 02:10:12.136. <br> The timestamp can include when the event started and stopped. <br> Timestamps are essential to help determine the patterns and group the malicious activity. <br> For example, if the intrusion or breach happened at 3 am in the United States, it might be possible that the attack was carried out from a specific country with a different time zone and standard business hours. 
 
-- `Phase` - these are the phases of an intrusion, attack, or breach. <br> According to the Diamond Model creators and the Axiom 4, "Every malicious activity contains two or more phases which must be successfully executed in succession to achieve the desired result." Malicious activities don't occur in two or more events rather than just one. A great example can be the Cyber Kill Chain developed by Lockheed Martin. <br> You can find out more about the Cyber Kill Chain by visiting the Cyber Kill Chain room on TryHackMe 
+- `Phase` - these are the phases of an intrusion, attack, or breach. <br> According to the Diamond Model creators and the Axiom 4, "Every malicious activity contains two or more phases which must be successfully executed in succession to achieve the desired result." Malicious activities don't occur in two or more events rather than just one. A great example can be the Cyber Kill Chain developed by Lockheed Martin. <br> You can find out more about the Cyber Kill Chain by visiting the [Cyber Kill Chain](https://tryhackme.com/room/cyberkillchainzmt) room on TryHackMe 
 
   The phases can be: 
   - 1. Reconnaissance
