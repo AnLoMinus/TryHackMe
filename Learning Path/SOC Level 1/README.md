@@ -12,7 +12,7 @@ The responsibilities of a Junior Security Analyst or Tier 1 SOC Analyst include 
 
 ---
 
-## [Cyber Defence Frameworks](#)
+## ✅ [Cyber Defence Frameworks](#)
 #### Discover frameworks and policies that help establish a good security posture. Learn how organisations use these in defensive strategies.
 
 ---
