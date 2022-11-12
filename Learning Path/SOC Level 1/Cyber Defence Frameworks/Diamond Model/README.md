@@ -154,14 +154,21 @@ Meta-features are not required, but they can add some valuable information or in
 
 - `Resources` - According to the Diamond Model, every intrusion event needs one or more external resources to be satisfied to succeed. <br> Examples of the resources can include the following: software (e.g., operating systems, virtualization software, or Metasploit framework), knowledge (e.g., how to use Metasploit to execute the attack and run the exploit), information (e.g., a username/password to masquerade), hardware (e.g., servers, workstations, routers), funds (e.g., money to purchase domains), facilities (e.g., electricity or shelter), access (e.g., a network path from the source host to the victim and vice versa, network access from an Internet Service Provider (ISP)).
 
-
 ---
 
 ## Task 7  Social-Political Component
 
+The social-political component describes the needs and intent of the adversary, for example, financial gain, gaining acceptance in the hacker community, hacktivism, or espionage. 
+
+The scenario can be that the victim provides a “product”, for example, computing resources & bandwidth as a zombie in a botnet for crypto mining (producing new cryptocurrencies by solving cryptographic equations through the use of computers) purposes, while the adversary consumes their product or gets financial gain. 
+
 ---
 
 ## Task 8  Technology Component
+
+Technology – the technology meta-feature or component highlights the relationship between the core features: capability and infrastructure.  
+The capability and infrastructure describe how the adversary operates and communicates.  
+A scenario can be a watering-hole attack which is a methodology where the adversary compromises legitimate websites that they believe their targeted victims will visit.
 
 ---
 
@@ -170,3 +177,9 @@ Meta-features are not required, but they can add some valuable information or in
 ---
 
 ## Task 10  Conclusion
+
+We hope you enjoyed this room and will apply the Diamond Model concepts in disrupting threat activity using the Diamond Model and bringing valuable information to your team and business executives (C-Suite), an audience, customer, or client that is not technical.
+
+The Diamond Model is a scientific method to improve the efficiency and accuracy of intrusion analysis.  
+With this in your arsenal, you will have opportunities to leverage real-time intelligence for network defence and predict adversary operations.
+
