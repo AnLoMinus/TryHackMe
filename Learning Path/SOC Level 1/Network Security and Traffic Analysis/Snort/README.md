@@ -381,11 +381,33 @@ Note that you can use the parameters both in combined and separated form as foll
 
 Make sure you understand and practice each parameter with different types of traffic and discover your favourite combination.
 
-
-
 ---
 
 ## Task 6  Operation Mode 2: Packet Logger Mode
+
+![image](https://user-images.githubusercontent.com/51442719/201781118-9bc9fbd6-2f19-4e05-8c0a-85ee6ff297a7.png)
+
+### Let's run Snort in Logger Mode
+
+You can use Snort as a sniffer and log the sniffed packets via logger mode. You only need to use the packet logger mode parameters, and Snort does the rest to accomplish this.
+
+Packet logger parameters are explained in the table below;
+
+| Parameter | Description |
+|:---:|:---:|
+| -l | Logger mode, target log and alert output directory. Default output folder is /var/log/snort The default action is to dump as tcpdump format in /var/log/snort |
+| -K ASCII | Log packets in ASCII format. |
+| -r | Reading option, read the dumped logs in Snort. |
+| -n | Specify the number of packets that will process/read. Snort will stop after reading the specified number of packets. |
+
+Let's start using each parameter and see the difference between them. Snort needs active traffic on your interface, so we need to generate traffic to see Snort in action.
+
+
+### Logfile Ownership
+Before generating logs and investigating them, we must remember the Linux file ownership and permissions. No need to deep dive into user types and permissions. The fundamental file ownership rule; whoever creates a file becomes the owner of the corresponding file.
+
+Snort needs superuser (root) rights to sniff the traffic, so once you run the snort with the "sudo" command, the "root" account will own the generated log files. Therefore you will need "root" rights to investigate the log files. There are two different approaches to investigate the generated log files;
+
 
 ---
 
