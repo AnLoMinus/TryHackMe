@@ -258,7 +258,7 @@ Start the Snort instance in dumping packet data mode (-d); sudo snort -d
 Now run the traffic-generator script as sudo and start ICMP/HTTP traffic. Once the traffic is generated, snort will start showing the  packets in verbosity mode as follows;
 
 ```cmd
-sniffing with -d
+# sniffing with -d
 user@ubuntu$ sudo snort -d
                              
 Running in packet dump mode
@@ -327,7 +327,7 @@ Start the Snort instance in full packet dump mode (-X); sudo snort -X
 Now run the traffic-generator script as sudo and start ICMP/HTTP traffic. Once the traffic is generated, snort will start showing the  packets in verbosity mode as follows;
 
 ```cmd
-sniffing with -X
+# sniffing with -X
 user@ubuntu$ sudo snort -X
                              
 Running in packet dump mode
@@ -408,6 +408,202 @@ Before generating logs and investigating them, we must remember the Linux file o
 
 Snort needs superuser (root) rights to sniff the traffic, so once you run the snort with the "sudo" command, the "root" account will own the generated log files. Therefore you will need "root" rights to investigate the log files. There are two different approaches to investigate the generated log files;
 
+- Elevation of privileges - You can elevate your privileges to examine the files. You can use the "sudo" command to execute your command as a superuser with the following command `sudo command`. You can also elevate the session privileges and switch to the superuser account to examine the generated log files with the following command: `sudo su`
+
+- Changing the ownership of files/directories - You can also change the ownership of the file/folder to read it as your user: `sudo chown username file` or `sudo chown username -R directory` The "-R" parameter helps recursively process the files and directories.
+
+### Logging with parameter "-l"
+
+First, start the Snort instance in packet logger mode; `sudo snort -dev -l` .
+
+Now start ICMP/HTTP traffic with the traffic-generator script.
+
+Once the traffic is generated, Snort will start showing the packets and log them in the target directory. You can configure the default output directory in snort.config file. However, you can use the "-l" parameter to set a target directory. Identifying the default log directory is useful for continuous monitoring operations, and the "`-l`" parameter is much more useful for testing purposes.
+
+The `-l` . part of the command creates the logs in the current directory. You will need to use this option to have the logs for each exercise in their folder.
+
+```cmd
+# logging with -l
+user@ubuntu$ sudo snort -dev -l .
+                             
+Running in packet logging mode
+
+        --== Initializing Snort ==--
+Initializing Output Plugins!
+Log directory = /var/log/snort
+pcap DAQ configured to passive.
+Acquiring network traffic from "ens33".
+Decoding Ethernet
+
+        --== Initialization Complete ==--
+...
+Commencing packet processing (pid=2679)
+WARNING: No preprocessors configured for policy 0.
+WARNING: No preprocessors configured for policy 0.
+```
+
+Now, let's check the generated log file. Note that the log file names will be different in your case.
+
+```cmd
+# checking the log file
+user@ubuntu$ ls .
+                             
+snort.log.1638459842
+```
+
+As you can see, it is a single all-in-one log file. It is a binary/tcpdump format log. This is what it looks like in the folder view.
+
+![image](https://user-images.githubusercontent.com/51442719/201788284-240378d5-cf6c-444e-a38e-717d4fa907b2.png)
+
+### Logging with parameter "-K ASCII"
+
+Start the Snort instance in packet logger mode; `sudo snort -dev -K ASCII`
+
+Now run the traffic-generator script as sudo and start ICMP/HTTP traffic. Once the traffic is generated, Snort will start showing the  packets in verbosity mode as follows;
+
+```cmd
+# logging with -K ASCII
+user@ubuntu$ sudo snort -dev -K ASCII -l .
+                             
+Running in packet logging mode
+
+        --== Initializing Snort ==--
+Initializing Output Plugins!
+Log directory = /var/log/snort
+pcap DAQ configured to passive.
+Acquiring network traffic from "ens33".
+Decoding Ethernet
+
+        --== Initialization Complete ==--
+...
+Commencing packet processing (pid=2679)
+WARNING: No preprocessors configured for policy 0.
+WARNING: No preprocessors configured for policy 0.
+```
+
+Now, let's check the generated log file.
+
+```cmd
+# Checking the log file
+user@ubuntu$ ls .
+                             
+142.250.187.110  192.168.175.129  snort.log.1638459842
+```
+
+This is what it looks like in the folder view.
+
+![image](https://user-images.githubusercontent.com/51442719/201788457-cd93036c-9abf-4538-9a21-4b28ca626109.png)
+
+The logs created with "-K ASCII" parameter is entirely different. There are two folders with IP address names. Let's look into them.
+
+```cmd
+# checking the log file
+user@ubuntu$ ls ./192.168.175.129/
+                             
+ICMP_ECHO  UDP:36648-53  UDP:40757-53  UDP:47404-53  UDP:50624-123
+```
+
+Once we look closer at the created folders, we can see that the logs are in ASCII and categorised format, so it is possible to read them without using a Snort instance.
+
+This is what it looks like in the folder view.
+
+![image](https://user-images.githubusercontent.com/51442719/201788510-7987951c-af4c-4d98-b7ec-61f58e1161b5.png)
+
+
+In a nutshell, ASCII mode provides multiple files in human-readable format, so it is possible to read the logs easily by using a text editor. By contrast with ASCII format, binary format is not human-readable and requires analysis using Snort or an application like tcpdump.
+
+Let's compare the ASCII format with the binary format by opening both of them in a text editor. The difference between the binary log file and the ASCII log file is shown below. (Left side: binary format. Right side: ASCII format).
+
+![image](https://user-images.githubusercontent.com/51442719/201788538-be3d54ea-004a-4009-8734-357fe4f10b04.png)
+
+
+### Reading generated logs with parameter "-r"
+
+Start the Snort instance in packet reader mode; `sudo snort -r`
+
+```cmd
+# reading log files with -r
+
+user@ubuntu$ sudo snort -r snort.log.1638459842
+                             
+Running in packet dump mode
+
+        --== Initializing Snort ==--
+Initializing Output Plugins!
+pcap DAQ configured to read-file.
+Acquiring network traffic from "snort.log.1638459842".
+
+        --== Initialization Complete ==--
+...
+Commencing packet processing (pid=3012)
+WARNING: No preprocessors configured for policy 0.
+12/02-07:44:03.123225 192.168.175.129 -> 142.250.187.110
+ICMP TTL:64 TOS:0x0 ID:41900 IpLen:20 DgmLen:84 DF
+Type:8  Code:0  ID:1   Seq:49  ECHO
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+WARNING: No preprocessors configured for policy 0.
+12/02-07:44:26.169620 192.168.175.129 -> 142.250.187.110
+ICMP TTL:64 TOS:0x0 ID:44765 IpLen:20 DgmLen:84 DF
+Type:8  Code:0  ID:1   Seq:72  ECHO
+===============================================================================
+Packet I/O Totals:
+   Received:           51
+   Analyzed:           51 (100.000%)
+    Dropped:            0 (  0.000%)
+   Filtered:            0 (  0.000%)
+Outstanding:            0 (  0.000%)
+   Injected:            0
+===============================================================================
+Breakdown by protocol (includes rebuilt packets):
+...
+      Total:           51
+===============================================================================
+Snort exiting
+```
+
+Note that Snort can read and handle the binary like output (tcpdump and Wireshark also can handle this log format). However, if you create logs with "-K ASCII" parameter, Snort will not read them. As you can see in the above output, Snort read and displayed the log file just like in the sniffer mode.
+
+Opening log file with tcpdump.
+
+```cmd
+# Opening the log file with tcpdump
+user@ubuntu$ sudo tcpdump -r snort.log.1638459842 -ntc 10
+                             
+reading from file snort.log.1638459842, link-type EN10MB (Ethernet)
+IP 192.168.175.129 > 142.250.187.110: ICMP echo request, id 1, seq 49, length 64
+IP 142.250.187.110 > 192.168.175.129: ICMP echo reply, id 1, seq 49, length 64
+IP 192.168.175.129 > 142.250.187.110: ICMP echo request, id 1, seq 50, length 64
+IP 142.250.187.110 > 192.168.175.129: ICMP echo reply, id 1, seq 50, length 64
+IP 192.168.175.129 > 142.250.187.110: ICMP echo request, id 1, seq 51, length 64
+IP 142.250.187.110 > 192.168.175.129: ICMP echo reply, id 1, seq 51, length 64
+IP 192.168.175.129 > 142.250.187.110: ICMP echo request, id 1, seq 52, length 64
+IP 142.250.187.110 > 192.168.175.129: ICMP echo reply, id 1, seq 52, length 64
+IP 192.168.175.1.63096 > 239.255.255.250.1900: UDP, length 173
+IP 192.168.175.129 > 142.250.187.110: ICMP echo request, id 1, seq 53, length 64
+```
+
+Opening log file with Wireshark.
+
+![image](https://user-images.githubusercontent.com/51442719/201788676-43bb1415-6125-425a-8ad3-583c002b6f69.png)
+
+"-r" parameter also allows users to filter the binary log files. You can filter the processed log to see specific packets with the "-r" parameter and Berkeley Packet Filters (BPF). 
+
+- `sudo snort -r logname.log -X`
+- `sudo snort -r logname.log icmp`
+- `sudo snort -r logname.log tcp`
+- `sudo snort -r logname.log 'udp and port 53'`
+
+The output will be the same as the above, but only packets with the chosen protocol will be shown. Additionally, you can specify the number of processes with the parameter "-n". The following command will process only the first 10 packets:
+
+`snort -dvr logname.log -n 10`
+
+Please use the following resources to understand how the BPF works and its use.
+
+- https://en.wikipedia.org/wiki/Berkeley_Packet_Filter
+- https://biot.com/capstats/bpf.html
+- https://www.tcpdump.org/manpages/tcpdump.1.html
+
+Now, use the attached VM and navigate to the Task-Exercises/Exercise-Files/TASK-6 folder to answer the questions!
 
 ---
 
