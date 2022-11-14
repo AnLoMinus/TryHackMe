@@ -251,8 +251,7 @@ Snort exiting
 
 As you can see in the given output, verbosity mode provides tcpdump like output information. Once we interrupt the sniffing with CTRL+C, it stops and summarises the sniffed packets.
 
-### 
-Sniffing with parameter "-d"
+### Sniffing with parameter "-d"
 
 Start the Snort instance in dumping packet data mode (-d); sudo snort -d
 
