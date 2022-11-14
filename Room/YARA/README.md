@@ -250,6 +250,21 @@ Information security researcher "fr0gger_" has recently created a [handy cheatsh
 
 ##  Task 6 Yara Modules
 
+### Integrating With Other Libraries
+Frameworks such as the [Cuckoo Sandbox](https://cuckoosandbox.org/) or [Python's PE Module](https://pypi.org/project/pefile/) allow you to improve the technicality of your Yara rules ten-fold.
+
+### Cuckoo
+Cuckoo Sandbox is an automated malware analysis environment. This module allows you to generate Yara rules based upon the behaviours discovered from Cuckoo Sandbox. As this environment executes malware, you can create rules on specific behaviours such as runtime strings and the like.
+
+### Python PE
+Python's PE module allows you to create Yara rules from the various sections and elements of the Windows Portable Executable (PE) structure.
+
+Explaining this structure is out of scope as it is covered in my [malware introductory room](https://tryhackme.com/room/malmalintroductory). However, this structure is the standard formatting of all executables and DLL files on windows. Including the programming libraries that are used. 
+
+Examining a PE file's contents is an essential technique in malware analysis; this is because behaviours such as cryptography or worming can be largely identified without reverse engineering or execution of the sample.
+
+---
+
 - https://cuckoosandbox.org/  
 - https://pypi.org/project/pefile/  
 - [Awesome YARA](https://github.com/InQuest/awesome-yara)
@@ -257,4 +272,93 @@ Information security researcher "fr0gger_" has recently created a [handy cheatsh
 - [Loki](https://github.com/Neo23x0/Loki) - Simple IOC and YARA Scanner
 - [PE-sieve](https://github.com/hasherezade/pe-sieve) - is a tool that helps to detect malware running on the system, as well as to collect the potentially malicious material for further analysis. 
 
+
+## Task 7  Other tools and Yara
+
+### Yara Tools
+Knowing how to create custom Yara rules is useful, but luckily you don't have to create many rules from scratch to begin using Yara to search for evil. There are plenty of [GitHub Resources](https://github.com/InQuest/awesome-yara) and open-source tools (along with commercial products) that can be utilized to leverage Yara in hunt operations and/or incident response engagements. 
+
+### LOKI (What, not who, is Loki?)
+
+LOKI is a free open-source IOC (Indicator of Compromise) scanner created/written by Florian Roth.
+
+Based on the GitHub page, detection is based on 4 methods:
+
+- File Name IOC Check
+- Yara Rule Check (we are here)
+- Hash Check
+- C2 Back Connect Check
+
+There are additional checks that LOKI can be used for. For a full rundown, please reference the [GitHub readme](https://github.com/Neo23x0/Loki/blob/master/README.md).
+
+LOKI can be used on both Windows and Linux systems and can be downloaded [here](https://github.com/Neo23x0/Loki/releases).
+
+> Please note that you are not expected to use this tool in this room.
+
+```cmd
+# Displaying Loki's help menu
+cmnatic@thm:~/Loki$ python3 loki.py -h
+usage: loki.py [-h] [-p path] [-s kilobyte] [-l log-file] [-r remote-loghost]
+               [-t remote-syslog-port] [-a alert-level] [-w warning-level]
+               [-n notice-level] [--allhds] [--alldrives] [--printall]
+               [--allreasons] [--noprocscan] [--nofilescan] [--vulnchecks]
+               [--nolevcheck] [--scriptanalysis] [--rootkit] [--noindicator]
+               [--dontwait] [--intense] [--csv] [--onlyrelevant] [--nolog]
+               [--update] [--debug] [--maxworkingset MAXWORKINGSET]
+               [--syslogtcp] [--logfolder log-folder] [--nopesieve]
+               [--pesieveshellc] [--python PYTHON] [--nolisten]
+               [--excludeprocess EXCLUDEPROCESS] [--force]
+
+Loki - Simple IOC Scanner
+
+optional arguments:
+  -h, --help            show this help message and exit
+```
+
+### THOR (superhero named programs for a superhero blue teamer)
+
+THOR Lite is Florian's newest multi-platform IOC AND YARA scanner. There are precompiled versions for Windows, Linux, and macOS. A nice feature with THOR Lite is its scan throttling to limit exhausting CPU resources. For more information and/or to download the binary, start [here](https://www.nextron-systems.com/thor-lite/). You need to subscribe to their mailing list to obtain a copy of the binary. Note that THOR is geared towards corporate customers. THOR Lite is the free version.
+
+> Please note that you are not expected to use this tool in this room.
+
+```cmd
+# Displaying Thor Lite's help menu
+cmnatic@thm:~$ ./thor-lite-linux-64 -h
+Thor Lite
+APT Scanner
+Version 10.7.3 (2022-07-27 07:33:47)
+cc) Nextron Systems GmbH
+Lite Version
+
+> Scan Options
+  -t, --template string      Process default scan parameters from this YAML file
+  -p, --path strings         Scan a specific file path. Define multiple paths by specifying this option multiple times. Append ':NOWALK' to the path for non-recursive scanning (default: only the system drive) (default [])
+      --allhds               (Windows Only) Scan all local hard drives (default: only the system drive)
+      --max_file_size uint   Max. file size to check (larger files are ignored). Increasing this limit will also increase memory usage of THOR. (default 30MB)
+
+> Scan Modes
+      --quick     Activate a number of flags to speed up the scan at cost of some detection.
+                  This is equivalent to: --noeventlog --nofirewall --noprofiles --nowebdirscan --nologscan --noevtx --nohotfixes --nomft --lookback 3 --lookback-modules filescan
+```
+
+### FENRIR (naming convention still mythical themed)
+
+This is the 3rd tool created by Neo23x0 (Florian Roth). You guessed it; the previous 2 are named above. The updated version was created to address the issue from its predecessors, where requirements must be met for them to function. Fenrir is a bash script; it will run on any system capable of running bash (nowadays even Windows). 
+
+> Please note that you are not expected to use this tool in this room.
+
+```cmd
+# Running Fenrir
+cmnatic@thm-yara:~/tools$ ./fenrir.sh
+##############################################################
+    ____             _
+   / __/__ ___  ____(_)___
+  / _// -_) _ \/ __/ / __/
+ /_/  \__/_//_/_/ /_/_/
+ v0.9.0-log4shell
+
+ Simple Bash IOC Checker
+ Florian Roth, Dec 2021
+##############################################################
+```
 
