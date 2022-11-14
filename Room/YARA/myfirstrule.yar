@@ -1,3 +1,3 @@
-rule examplerule {
+rule WeFoundThat {
         condition: true
 }
