@@ -166,13 +166,36 @@ rule examplerule {
 > - #### This section of a Yara rule is reserved for descriptive information by the author of the rule. For example, you can use `desc`, short for description, to summarise what your rule checks for. Anything within this section does not influence the rule itself. Similar to commenting code, it is useful to summarise your rule.
 - 6.1.2. Strings
 > - #### Remember our discussion about strings in Task 2? Well, here we go. You can use strings to search for specific text or hexadecimal in files or programs. For example, say we wanted to search a directory for all files containing "Hello World!", we would create a rule such as below:
-> - ![image](https://user-images.githubusercontent.com/51442719/174680206-fd1b001b-abc6-4be0-99c6-732b3641ac50.png)
+```yara
+rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!"
+}
+```
 > - #### We define the keyword `Strings` where the string that we want to search, i.e., "Hello World!" is stored within the variable `$hello_world`
 > - #### Of course, we need a condition here to make the rule valid. In this example, to make this string the condition, we need to use the variable's name. In this case, `$hello_world`:
-> - ![image](https://user-images.githubusercontent.com/51442719/174680284-328255f2-0c2f-40cb-850b-e39f71ea614e.png)
+```yara
+rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!"
+
+	condition:
+		$hello_world
+}
+```
 > - #### Essentially, if any file has the string "Hello World!" then the rule will match. However, this is literally saying that it will only match if "Hello World!" is found and will not match if "hello world" or "HELLO WORLD."
 > - #### To solve this, the condition `any of them` allows multiple strings to be searched for, like below:
-> - ![image](https://user-images.githubusercontent.com/51442719/174680342-91907bea-e5f2-4fb6-aac8-4e8d2c9b2303.png)
+```yara
+rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!"
+		$hello_world_lowercase = "hello world"
+		$hello_world_uppercase = "HELLO WORLD"
+
+	condition:
+		any of them
+}
+```
 > - #### Now, any file with the strings of:
 - Hello World!
 - hello world
