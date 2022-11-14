@@ -80,6 +80,61 @@ Refer to the [connectors](https://github.com/OpenCTI-Platform/connectors) and [d
 
 ## Task 4  OpenCTI Dashboard 1
 
+### OpenCTI Dashboard
+Once connected to the platform, the opening dashboard showcases various visual widgets summarising the threat data ingested into OpenCTI. Widgets on the dashboard showcase the current state of entities ingested on the platform via the total number of entities, relationships, reports and observables ingested, and changes to these properties noted within 24 hours.
+
+![image](https://user-images.githubusercontent.com/51442719/201574511-72ce93ad-cbdd-45d5-bf94-7cf368b875e1.png)
+
+### Activities & Knowledge
+The OpenCTI categorises and presents entities under the Activities and Knowledge groups on the left-side panel. The activities section covers security incidents ingested onto the platform in the form of reports. It makes it easy for analysts to investigate these incidents. In contrast, the Knowledge section provides linked data related to the tools adversaries use, targeted victims and the type of threat actors and campaigns used.
+
+### Analysis
+The Analysis tab contains the input entities in reports analysed and associated external references. Reports are central to OpenCTI as knowledge on threats and events are extracted and processed. They allow for easier identification of the source of information by analysts. Additionally, analysts can add their investigation notes and other external resources for knowledge enrichment. As displayed below, we can look at the Triton Software report published by MITRE ATT&CK and observe or add to the details provided.
+
+![image](https://user-images.githubusercontent.com/51442719/201574556-ac01724a-f830-40c8-8f48-da1be504202a.png)
+
+### Events
+Security analysts investigate and hunt for events involving suspicious and malicious activities across their organisational network. Within the Events tab, analysts can record their findings and enrich their threat intel by creating associations for their incidents.
+
+![image](https://user-images.githubusercontent.com/51442719/201574574-b4fe4cdd-1241-4fe3-96c4-3308b63b64f8.png)
+
+### Observations
+Technical elements, detection rules and artefacts identified during a cyber attack are listed under this tab: one or several identifiable makeup indicators. These elements assist analysts in mapping out threat events during a hunt and perform correlations between what they observe in their environments against the intel feeds. 
+
+![image](https://user-images.githubusercontent.com/51442719/201574591-02261fd3-21da-4b96-bb92-4e211116333b.png)
+
+### Threats
+All information classified as threatening to an organisation or information would be classified under threats. These will include:
+
+- Threat Actors: An individual or group of attackers seeking to propagate malicious actions against a target.
+
+- Intrusion Sets: An array of TTPs, tools, malware and infrastructure used by a threat actor against targets who share some attributes. APTs and threat groups are listed under this category on the platform due to their known pattern of actions.
+
+- Campaigns: Series of attacks taking place within a given period and against specific victims initiated by advanced persistent threat actors who employ various TTPs. Campaigns usually have specified objectives and are orchestrated by threat actors from a nation state, crime syndicate or other disreputable organisation.
+
+![image](https://user-images.githubusercontent.com/51442719/201574636-64e6f5e1-c4a8-4603-b3d9-7c45a9f10709.png)
+
+### Arsenal
+This tab lists all items related to an attack and any legitimate tools identified from the entities.
+
+- Malware: Known and active malware and trojan are listed with details of their identification and mapping based on the knowledge ingested into the platform. In our example, we analyse the 4H RAT malware and we can extract information and associations made about the malware.
+
+- Attack Patterns: Adversaries implement and use different TTPs to target, compromise, and achieve their objectives. Here, we can look at the details of the Command-Line Interface and make decisions based on the relationships established on the platform and navigate through an investigation associated with the technique.
+
+- Courses of Action: MITRE maps out concepts and technologies that can be used to prevent an attack technique from being employed successfully. These are represented as Courses of Action (CoA) against the TTPs.
+
+- Tools: Lists all legitimate tools and services developed for network maintenance, monitoring and management. Adversaries may also use these tools to achieve their objectives. For example, for the Command-Line Interface attack pattern, it is possible to narrow down that CMD would be used as an execution tool. As an analyst, one can investigate reports and instances associated with the use of the tool.
+
+- Vulnerabilities: Known software bugs, system weaknesses and exposures are listed to provide enrichment for what attackers may use to exploit and gain access to systems. The Common Vulnerabilities and Exposures (CVE) list maintained by MITRE is used and imported via a connector.
+
+![image](https://user-images.githubusercontent.com/51442719/201574682-09a4cb4f-7ffe-4b33-ba70-30f76e812ae0.png)
+
+### Entities
+This tab categorises all entities based on operational sectors, countries, organisations and individuals. This information allows for knowledge enrichment on attacks, organisations or intrusion sets.
+
+![image](https://user-images.githubusercontent.com/51442719/201574712-fd5b6be7-fa46-41c8-a1f9-85ceec787bc2.png)
+
+
 ---
 
 ## Task 5  OpenCTI Dashboard 2
