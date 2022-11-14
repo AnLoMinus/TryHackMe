@@ -50,7 +50,7 @@ Developed by the collaboration of the [French National cybersecurity agency (ANS
 ## Task 3  OpenCTI Data Model
 
 ### OpenCTI Data Model
-OpenCTI uses a variety of knowledge schemas in structuring data, the main one being the Structured Threat Information Expression (STIX2) standards. STIX is a serialised and standardised language format used in threat intelligence exchange. It allows for the data to be implemented as entities and relationships, effectively tracing the origin of the provided information.
+OpenCTI uses a variety of knowledge schemas in structuring data, the main one being the Structured Threat Information Expression ([STIX2](https://oasis-open.github.io/cti-documentation/stix/intro)) standards. STIX is a serialised and standardised language format used in threat intelligence exchange. It allows for the data to be implemented as entities and relationships, effectively tracing the origin of the provided information.
 
 This data model is supported by how the platform's architecture has been laid out. The image below gives an architectural structure for your know-how.
 
