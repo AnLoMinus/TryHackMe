@@ -80,6 +80,13 @@ Refer to the [connectors](https://github.com/OpenCTI-Platform/connectors) and [d
 
 ## Task 4  OpenCTI Dashboard 1
 
+Follow along with the task by launching the attached machine and using the credentials provided; log in to the OpenCTI Dashboard via the AttackBox on http://10.10.25.103:8080/. Give the machine 5 minutes to start up and it is advisable to use the AttackBox on fullscreen.
+
+- Username: 
+  - info@tryhack.io
+- Password: 
+  - TryHackMe1234
+
 ### OpenCTI Dashboard
 Once connected to the platform, the opening dashboard showcases various visual widgets summarising the threat data ingested into OpenCTI. Widgets on the dashboard showcase the current state of entities ingested on the platform via the total number of entities, relationships, reports and observables ingested, and changes to these properties noted within 24 hours.
 
