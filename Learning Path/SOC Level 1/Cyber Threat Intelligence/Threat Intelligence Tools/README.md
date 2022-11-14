@@ -253,3 +253,13 @@ At the top, we have several tabs that provide different types of intelligence re
 ---
 
 ## [Task 9  Conclusion]()
+
+### There's More Out There
+You have come to the end of the room. However, this is just the tip of the iceberg for open-source threat intelligence tools that can help you as an analyst triage through incidents. There are plenty of more tools that may have more functionalities than the ones discussed in this room.
+
+Check out these rooms to dive deeper into Threat Intelligence:
+
+- [Introduction to ISAC](https://tryhackme.com/room/introtoisac)
+- [Yara](https://tryhackme.com/room/yara)
+- [MISP](https://tryhackme.com/room/misp)
+- [Red Team Threat Intel](https://tryhackme.com/room/redteamthreatintel)
