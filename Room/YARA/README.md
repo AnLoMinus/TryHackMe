@@ -464,3 +464,32 @@ Further Reading on creating Yara rules and using yarGen:
 - https://www.bsk-consulting.de/2015/02/16/write-simple-sound-yara-rules/
 - https://www.bsk-consulting.de/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/
 - https://www.bsk-consulting.de/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/
+
+
+## Task 10  Valhalla
+
+### Valhalla
+
+Valhalla is an online Yara feed created and hosted by [Nextron-Systems](https://www.nextron-systems.com/valhalla/) (erm, Florian Roth). By now, you should be aware of the ridiculous amount of time and energy Florian has dedicated to creating these tools for the community. Maybe we should have just called this the Florian Roth room. (lol)
+
+> Per the website, "Valhalla boosts your detection capabilities with the power of thousands of hand-crafted high-quality YARA rules."
+
+![image](https://user-images.githubusercontent.com/51442719/201564348-344ac858-56f2-467d-839a-c5f54d0c10c2.png)
+
+From the image above, we should denote that we can conduct searches based on a keyword, tag, ATT&CK technique, sha256, or rule name. 
+
+Note: For more information on ATT&CK, please visit the [MITRE](https://tryhackme.com/room/mitre) room. 
+
+Taking a look at the data provided to us, let's examine the rule in the screenshot below:
+
+![image](https://user-images.githubusercontent.com/51442719/201564385-f90f5353-4518-4ead-852e-b04d7f71da0c.png)
+
+We are provided with the name of the rule, a brief description, a reference link for more information about the rule, along with the rule date. 
+
+Feel free to look at some rules to become familiar with the usefulness of Valhalla. The best way to learn the product is by just jumping right in. 
+
+Picking up from our scenario, at this point, you know that the 2 files are related. Even though Loki classified the files are suspicious, you know in your gut that they are malicious. Hence the reason you created a Yara rule using yarGen to detect it on other web servers. But let's further pretend that you are not code-savvy (FYI - not all security professionals know how to code/script or read it). You need to conduct further research regarding these files to receive approval to eradicate these files from the network. 
+
+Time to use Valhalla for some threat intelligence gathering...
+
+### Valhalla
