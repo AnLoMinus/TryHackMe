@@ -4,15 +4,14 @@
   > - [x] Task 1  [Introduction](#task-1--introduction)
   > - [x] Task 2  [What is Yara?](#task-2--what-is-yara)
   > - [x] Task 3  [Installing Yara (Ubuntu/Debian & Windows)](#task-3--installing-yara-ubuntudebian--windows)
-  > - [x] Task 4  [Deploy](#task-4--deploy)
-  > - [x] Task 5  [Introduction to Yara Rules](#task-5--introduction-to-yara-rules)
-  > - [ ] Task 6  [Expanding on Yara Rules]()
-  > - [ ] Task 7  [Yara Modules]()
-  > - [ ] Task 8  [Other tools and Yara]()
-  > - [ ] Task 9  [Using LOKI and its Yara rule set]()
-  > - [ ] Task 10  [Creating Yara rules with yarGen]()
-  > - [ ] Task 11  [Valhalla]()
-  > - [ ] Task 12  [Conclusion]()
+  > - [x] Task 4  [Introduction to Yara Rules](#task-5--introduction-to-yara-rules)
+  > - [ ] Task 5  [Expanding on Yara Rules]()
+  > - [ ] Task 6  [Yara Modules]()
+  > - [ ] Task 7  [Other tools and Yara]()
+  > - [ ] Task 8  [Using LOKI and its Yara rule set]()
+  > - [ ] Task 9  [Creating Yara rules with yarGen]()
+  > - [ ] Task 10  [Valhalla]()
+  > - [ ] Task 11  [Conclusion]()
 
 ---
 
@@ -109,17 +108,7 @@
 
 ---
 
-## Task 4  Deploy
-- 4.1. In-Browser (No  VPN required)
-- 4.2. Using SSH (TryHackMe VPN required).
-> - IP Address: `MACHINE_IP`
-> - Username: `cmnatic`
-> - Password: `yararules!`
-> - SSH Port: `22`
-
----
-
-## Task 5  Introduction to Yara Rules
+## Task 4  Introduction to Yara Rules
 > - #### 5.1. Your First Yara Rule
 > The proprietary language that Yara uses for rules is fairly trivial to pick up, hard to master. <br>
 > This is because your rule is only as effective as your understanding of the patterns you want to search for. <br>
@@ -200,6 +189,7 @@ rule helloworld_checker{
 - Hello World!
 - hello world
 - HELLO WORLD 
+
 - #### Will now trigger the rule.
 - 6.2. Conditions
 > - #### We have already used the `true` and `any of them` condition. Much like regular programming, you can use operators such as:
@@ -207,11 +197,58 @@ rule helloworld_checker{
 > - `>=` more than or equal to
 > - `!=` not equal to
 
+
+The rule will now:  
+1. Look for the "Hello World!" string  
+2. Only say the rule matches if there are less than or equal to ten occurrences of the "Hello World!" string  
+
+### Combining keywords
+
+Moreover, you can use keywords such as:
+
+- and
+- not
+- or 
+
+To combine multiple conditions. Say if you wanted to check if a file has a string and is of a certain size (in this example, the sample file we are checking is less than <10 kb and has "Hello World!" you can use a rule like below:
+
+```yara
+rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!" 
+        
+        condition:
+	        $hello_world and filesize < 10KB 
+}
+```
+
+The rule will only match if both conditions are true. To illustrate: below, the rule we created, in this case, did not match because although the file has "Hello World!", it has a file size larger than 10KB:
+
+```cmd
+# Yara failing to match the file mytextfile because it is larger than 10kb
+cmnatic@thm:~$ <output intentionally left blank>
+```
+
+However, the rule matched this time because the file has both "Hello World!" and a file size of less than 10KB.
+
+```cmd
+# Yara successfully matching the file mytextfile because it has "Hello World" and a file size of less than 10KB
+cmnatic@thm:~$ yara myfirstrule.yar mytextfile.txt
+helloworld_textfile_checker mytextfile.txt
+```
+
+Remembering that the text within the red box is the name of our rule, and the text within the green is the matched file.
+
+
 # Anatomy of a Yara Rule
 > ![image](https://user-images.githubusercontent.com/51442719/186707072-4302923b-6a5f-4d7f-a18f-fb8dc1551e41.png)
 
+Information security researcher "fr0gger_" has recently created a [handy cheatsheet](https://medium.com/malware-buddy/security-infographics-9c4d3bd891ef#18dd) that breaks down and visualises the elements of a YARA rule (shown above, all image credits go to him). It's a great reference point for getting started!
 
-##  Task 7 Yara Modules
+# Linux Kernel Security Best Practices
+![image](https://user-images.githubusercontent.com/51442719/201556470-bd95668f-6e51-4cfd-a82d-1633fec06b51.png)
+
+##  Task 6 Yara Modules
 
 - https://cuckoosandbox.org/  
 - https://pypi.org/project/pefile/  
