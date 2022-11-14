@@ -493,3 +493,12 @@ Picking up from our scenario, at this point, you know that the 2 files are relat
 Time to use Valhalla for some threat intelligence gathering...
 
 ### Valhalla
+
+## Task 11  Conclusion
+In this room, we explored Yara, how to use Yara, and manually created basic Yara rules. We also explored various open-source tools to hit the ground running that utilizes Yara rules to detect evil on endpoints.
+
+By going through the room scenario, you should understand the need (as a blue teamer) to know how to create Yara rules effectively if we rely on such tools. Commercial products, even though not perfect, will have a much richer Yara ruleset than an open-source product. Both commercial and open-source will allow you to add Yara rules to expand its capabilities further to detect threats. 
+
+If it is not clear, the reason why file 2 was not detected is that the Yara rule was not in the Yara file used by Loki to detect the hack tool (web shell) even though its the hack tool has been around for years and has even been attributed to at least 1 nation-state. The Yara rule is present in the commercial variant of Loki, which is Thor. 
+
+There is more that can be done with Yara and Yara rules. We encourage you to explore this tool further at your own leisure. 
