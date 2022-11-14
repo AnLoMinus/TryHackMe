@@ -623,10 +623,12 @@ NIDS mode parameters are explained in the table below;
 
 | Parameter | Description |
 |:---:|:---:|
-| -l | Logger mode, target log and alert output directory. Default output folder is /var/log/snort The default action is to dump as tcpdump format in /var/log/snort |
-| -K ASCII | Log packets in ASCII format. |
-| -r | Reading option, read the dumped logs in Snort. |
-| -n | Specify the number of packets that will process/read. Snort will stop after reading the specified number of packets. |
+| -c | Defining the configuration file. |
+| -T | Testing the configuration file. |
+| -N | Disable logging. |
+| -D | Background mode. |
+| -A | Alert modes;  full: Full alert mode, providing all possible information about the alert. This one also is the default mode; once you use -A and don't specify any mode, snort uses this mode.  fast:  Fast mode shows the alert message, timestamp, source and destination IP, along with port numbers. console: Provides fast style alerts on the console screen. cmg: CMG style, basic header details with payload in hex and text format. none: Disabling alerting. |
+
 
 Let's start using each parameter and see the difference between them. Snort needs active traffic on your interface, so we need to generate traffic to see Snort in action. To do this, use the traffic-generator script and sniff the traffic. 
 
