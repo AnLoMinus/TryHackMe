@@ -362,3 +362,25 @@ cmnatic@thm-yara:~/tools$ ./fenrir.sh
 ##############################################################
 ```
 
+### YAYA (Yet Another Yara Automaton)
+
+YAYA was created by the EFF (Electronic Frontier Foundation) and released in September 2020. Based on their website, "YAYA is a new open-source tool to help researchers manage multiple YARA rule repositories. YAYA starts by importing a set of high-quality YARA rules and then lets researchers add their own rules, disable specific rulesets, and run scans of files."
+
+> Note: Currently, YAYA will only run on Linux systems. 
+
+```cmd
+# Running YAYA
+cmnatic@thm-yara:~/tools$ yaya
+YAYA - Yet Another Yara Automaton
+Usage:
+yaya [-h]  
+    -h print this help screen
+Commands:
+   update - update rulesets
+   edit - ban or remove rulesets
+   add - add a custom ruleset, located at 
+   scan - perform a yara scan on the directory at 
+```
+
+In the next section, we will examine [LOKI](https://github.com/Neo23x0/Loki) further...
+
