@@ -175,7 +175,7 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
 
 ![image](https://user-images.githubusercontent.com/51442719/201672939-2d729809-f6f3-4129-902d-219b568adc4e.png)
 
-- # [SOC Level 1]() 
+- # [SOC Level 1](https://tryhackme.com/path-action/soclevel1/join) 
   - [ ] Path Progress (33%)
     - `Easy`
     - `56 Hours`
