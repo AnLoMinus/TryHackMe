@@ -54,6 +54,8 @@ OpenCTI uses a variety of knowledge schemas in structuring data, the main one be
 
 This data model is supported by how the platform's architecture has been laid out. The image below gives an architectural structure for your know-how.
 
+![image](https://user-images.githubusercontent.com/51442719/201573959-e48817a1-9a17-4225-afc0-f3f6acabc2bd.png)
+
 > Source: [OpenCTI Public Knowledge Base](https://luatix.notion.site/OpenCTI-Public-Knowledge-Base-d411e5e477734c59887dad3649f20518)
 
 The highlight services include:
