@@ -38,6 +38,8 @@
 - [ ] [OFFENSIVE PENTESTING](#offensive-pentesting) `47 Hours`
 - [ ] [CYBER DEFENSE](#cyber-defense) `48 Hours`
 - [ ] [RED TEAMING](#red-teaming) `48 Hours`
+- [ ] [SOC Level 1](#soc-level-1) `56 Hours`
+
 
 --
 
@@ -168,6 +170,16 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
   - [ ] Path Progress (33%)
     - `Intermediate`
     - `48 Hours`
+
+---
+
+![image](https://user-images.githubusercontent.com/51442719/201672939-2d729809-f6f3-4129-902d-219b568adc4e.png)
+
+- # [SOC Level 1]() 
+  - [ ] Path Progress (33%)
+    - `Easy`
+    - `56 Hours`
+
 
 #### Learn the skills needed to become a Red Team Operator
 - Use diverse techniques for initial access
