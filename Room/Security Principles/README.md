@@ -17,6 +17,8 @@
 
 ---
 
+## Task 1  Introduction
+
 ![image](https://user-images.githubusercontent.com/51442719/202032585-d54f2f0e-3717-4161-a385-5c311e4b2f1d.png)
 
 Security has become a buzzword; every company wants to claim its product or service is secure. But is it?
@@ -36,10 +38,6 @@ The objective of this room is to:
 - Explain security principles such as Defence-in-Depth, Zero Trust, and Trust but Verify.
 - Introduce ISO/IEC 19249.
 - Explain the difference between Vulnerability, Threat, and Risk.
-
----
-
-## Task 1  Introduction
 
 ---
 
