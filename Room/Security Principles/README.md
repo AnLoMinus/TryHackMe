@@ -261,6 +261,28 @@ There is a limit to how much we can apply zero trust without negatively impactin
 
 ## Task 8  Threat versus Risk
 
+![image](https://user-images.githubusercontent.com/51442719/202066814-33f53c40-4772-41ca-9f2e-20c34d1ca095.png)
+
+There are three terms that we need to take note of to avoid any confusion.
+
+- `Vulnerability`: Vulnerable means susceptible to attack or damage. In information security, a vulnerability is a weakness.
+- `Threat`: A threat is a potential danger associated with this weakness or vulnerability.
+- `Risk`: The risk is concerned with the likelihood of a threat actor exploiting a vulnerability and the consequent impact on the business.
+
+Away from information systems, a showroom with doors and windows made of standard glass suffers a weakness, or vulnerability, due to the nature of glass. Consequently, there is a threat that the glass doors and windows can be broken. The showroom owners should contemplate the risk, i.e. the likelihood that a glass door or window gets broken and the resulting impact on the business.
+
+Consider another example directly related to information systems. You work for a hospital that uses a particular database system to store all the medical records. One day, you are following the latest security news, and you learn that the used database system is not only vulnerable but also a proof-of-concept working exploit code has been released; the released exploit code indicates that the threat is real. With this knowledge, you must consider the resulting risk and decide the next steps.
+
+We will cover threats and risks in detail in a separate room.
+
 ---
 
 ## Task 9  Conclusion
+
+This room covered various principles and concepts related to security. By now, you should be very familiar with CIA and DAD and other terms such as authenticity, repudiation, vulnerability, threat, and risk. We visited three security models and the ISO/IEC 19249. We have covered different security principles such as defence in depth, trust but verify, and zero trust.
+
+Finally, the Shared Responsibility Model is worth mentioning, especially with the increased reliance on cloud services. Various aspects are required to ensure proper security. They include hardware, network infrastructure, operating systems, applications, etc. However, customers using cloud services have different access levels depending on the cloud services they use. For example, an Infrastructure as a Service (IaaS) user has complete control (and responsibility) over the operating system.
+
+On the other hand, a Software as a Service (SaaS) user has no direct access to the underlying operating system. Consequently, achieving security in a cloud environment necessitates both the cloud service provider and the user to do their parts. The Shared Responsibility Model is a cloud security framework to ensure that each party is aware of its responsibility.
+
+Having finished the Security Principles room, you may proceed to the Intro to Cryptography room.
