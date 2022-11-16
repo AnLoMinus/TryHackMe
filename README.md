@@ -34,7 +34,7 @@
 - [X] ✅ [PRE SECURITY](#-pre-security) `40 Hours`
 - [X] ✅ [COMPLETE BEGINNER](#-complete-beginner) `64 Hours`
 - [X] ✅ [WEB FUNDAMENTALS](#-web-fundamentals) `32 Hours`
-- [x] ✅ [COMPTIA PENTEST+](#comptia-pentest) `51 Hours`
+- [x] ✅ [COMPTIA PENTEST+](#-comptia-pentest) `51 Hours`
 - [ ] [OFFENSIVE PENTESTING](#offensive-pentesting) `47 Hours`
 - [ ] [CYBER DEFENSE](#cyber-defense) `48 Hours`
 - [ ] [RED TEAMING](#red-teaming) `48 Hours`
@@ -135,6 +135,8 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/TryHackMe; chmod
     - `32 Hours`
 
 ---
+
+![image](https://user-images.githubusercontent.com/51442719/202055092-69060a44-47e1-4a30-b03b-6f8168ceab65.png)
 
 - # ✅ [COMPTIA PENTEST+](https://github.com/Anlominus/TryHackMe/tree/main/Learning%20Path/CompTIA%20Pentest%2B)
   > <img width="400" src="https://user-images.githubusercontent.com/51442719/186541003-9c51d14b-a0e4-4729-8565-4ed759221705.png"> <br>
