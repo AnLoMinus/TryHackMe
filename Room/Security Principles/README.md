@@ -133,18 +133,97 @@ Protecting against disclosure, alteration, and destruction/denial is of utter si
 
 Protecting confidentiality and integrity to an extreme can restrict availability, and increasing availability to an extreme can result in losing confidentiality and integrity. Good security principles implementation requires a balance between the three.
 
-
 ---
 
 ## Task 4  Fundamental Concepts of Security Models
+
+We have learned that the security triad is represented by Confidentiality, Integrity, and Availability (CIA). One might ask, how can we create a system that ensures one or more security functions? The answer would be in using security models. In this task, we will introduce three foundational security models:
+
+Bell-LaPadula Model
+The Biba Integrity Model
+The Clark-Wilson Model
+
+
+### Bell-LaPadula Model
+The Bell-LaPadula Model aims to achieve confidentiality by specifying three rules:
+
+- `Simple Security Property`: 
+  - This property is referred to as “no read up”; it states that a subject at a lower security level cannot read an object at a higher security level. This rule prevents access to sensitive information above the authorized level.
+- `Star Security Property`: 
+  - This property is referred to as “no write down”; it states that a subject at a higher security level cannot write to an object at a lower security level. This rule prevents the disclosure of sensitive information to a subject of lower security level.
+- `Discretionary-Security Property`: 
+  - This property uses an access matrix to allow read and write operations. An example access matrix is shown in the table below and used in conjunction with the first two properties.
+
+### Biba Model
+The Biba Model aims to achieve integrity by specifying two main rules:
+
+- `Simple Integrity Property`: 
+  - This property is referred to as “no read down”; a higher integrity subject should not read from a lower integrity object.
+- `Start Integrity Property`: 
+  - This property is referred to as “no write up”; a lower integrity subject should not write to a higher integrity object.
+
+These two properties can be summarized as “read up, write down.” This rule is in contrast with the Bell-LaPadula Model, and this should not be surprising as one is concerned with confidentiality while the other is with integrity.
+
+Biba Model suffers from various limitations. One example is that it does not handle internal threats (insider threat).
+
+### Clark-Wilson Model
+The Clark-Wilson Model also aims to achieve integrity by using the following concepts:
+
+- Constrained Data Item (CDI): This refers to the data type whose integrity we want to preserve.
+- Unconstrained Data Item (UDI): This refers to all data types beyond CDI, such as user and system input.
+- Transformation Procedures (TPs): These procedures are programmed operations, such as read and write, and should maintain the integrity of CDIs.
+- Integrity Verification Procedures (IVPs): These procedures check and ensure the validity of CDIs.
+
+We covered only three security models. The reader can explore many additional security models. Examples include:
+
+- Brewer and Nash model
+- Goguen-Meseguer model
+- Sutherland model
+- Graham-Denning model
+- Harrison-Ruzzo-Ullman model
 
 ---
 
 ## Task 5  Defence-in-Depth
 
+![image](https://user-images.githubusercontent.com/51442719/202057859-041d48d8-7fe0-4a68-837d-22a94ea1c243.png)
+
+`Defence-in-Depth` refers to creating a security system of multiple levels; hence it is also called Multi-Level Security.
+
+Consider the following analogy: you have a locked drawer where you keep your important documents and pricey stuff. The drawer is locked; however, do you want this drawer lock to be the only thing standing between a thief and your expensive items? If we think of multi-level security, we would prefer that the drawer be locked, the relevant room be locked, the main door of the apartment be locked, the building gate be locked, and you might even want to throw in a few security cameras along the way. Although these multiple levels of security cannot stop every thief, they would block most of them and slow down the others.
+
 ---
 
 ## Task 6  ISO/IEC 19249
+
+The International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) have created the ISO/IEC 19249. In this task, we will brush briefly upon ISO/IEC 19249:2017 Information technology - Security techniques - Catalogue of architectural and design principles for secure products, systems and applications. The purpose is to have a better idea of what international organizations would teach regarding security principles.
+
+### ISO/IEC 19249 lists five architectural principles:
+
+- `Domain Separation`: 
+  - Every set of related components is grouped as a single entity; components can be applications, data, or other resources. Each entity will have its own domain and be assigned a common set of security attributes. For example, consider the x86 processor privilege levels: the operating system kernel can run in ring 0 (the most privileged level). In contrast, user-mode applications can run in ring 3 (the least privileged level). Domain separation is included in the Goguen-Meseguer Model.
+- `Layering`: 
+  - When a system is structured into many abstract levels or layers, it becomes possible to impose security policies at different levels; moreover, it would be feasible to validate the operation. Let’s consider the OSI (Open Systems Interconnection) model with its seven layers in networking. Each layer in the OSI model provides specific services to the layer above it. This layering makes it possible to impose security policies and easily validate that the system is working as intended. Another example from the programming world is disk operations; a programmer usually uses the disk read and write functions provided by the chosen high-level programming language. The programming language hides the low-level system calls and presents them as more user-friendly methods. Layering relates to Defence in Depth.
+- `Encapsulation`: 
+  - In object-oriented programming (OOP), we hide low-level implementations and prevent direct manipulation of the data in an object by providing specific methods for that purpose. For example, if you have a clock object, you would provide a method increment() instead of giving the user direct access to the seconds variable. The aim is to prevent invalid values for your variables. Similarly, in larger systems, you would use (or even design) a proper Application Programming Interface (API) that your application would use to access the database.
+- `Redundancy`: 
+  - This principle ensures availability and integrity. There are many examples related to redundancy. Consider the case of a hardware server with two built-in power supplies: if one power supply fails, the system continues to function. Consider a RAID 5 configuration with three drives: if one drive fails, data remains available using the remaining two drives. Moreover, if data is improperly changed on one of the disks, it would be detected via the parity, ensuring the data’s integrity.
+- `Virtualization`: 
+  - With the advent of cloud services, virtualization has become more common and popular. The concept of virtualization is sharing a single set of hardware among multiple operating systems. Virtualization provides sandboxing capabilities that improve security boundaries, secure detonation, and observance of malicious programs.
+
+### ISO/IEC 19249 teaches five design principles:
+
+- `Least Privilege`: 
+  - You can also phrase it informally as “need-to basis” or “need-to-know basis” as you answer the question, “who can access what?” The principle of least privilege teaches that you should provide the least amount of permissions for someone to carry out their task and nothing more. For example, if a user needs to be able to view a document, you should give them read rights without write rights.
+- `Attack Surface Minimisation`: 
+  - Every system has vulnerabilities that an attacker might use to compromise a system. Some vulnerabilities are known, while others are yet to be discovered. These vulnerabilities represent risks that we should aim to minimize. For example, in one of the steps to harden a Linux system, we would disable any service we don’t need.
+- `Centralized Parameter Validation`: 
+  - Many threats are due to the system receiving input, especially from users. Invalid inputs can be used to exploit vulnerabilities in the system, such as denial of service and remote code execution. Therefore, parameter validation is a necessary step to ensure the correct system state. Considering the number of parameters a system handles, the validation of the parameters should be centralized within one library or system.
+- `Centralized General Security Services`: 
+  - As a security principle, we should aim to centralize all security services. For example, we would create a centralized server for authentication. Of course, you might take proper measures to ensure availability and prevent creating a single point of failure.
+- `Preparing for Error and Exception Handling`: 
+  - Whenever we build a system, we should take into account that errors and exceptions do and will occur. For instance, in a shopping application, a customer might try to place an order for an out-of-stock item. A database might get overloaded and stop responding to a web application. This principle teaches that the systems should be designed to fail safe; for example, if a firewall crashes, it should block all traffic instead of allowing all traffic. Moreover, we should be careful that error messages don’t leak information that we consider confidential, such as dumping memory content that contains information related to other customers.
+In the following questions, refer to the ISO/IEC 19249 five design principles above. Answer with a number between 1 and 5, depending on the number of the design principle.
 
 ---
 
