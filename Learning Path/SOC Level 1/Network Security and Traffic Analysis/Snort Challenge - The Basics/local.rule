@@ -1,0 +1,10 @@
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+
+# Rules for Completing Task-2
+alert tcp any any -> any 80 (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
+alert tcp any any -> any 80 (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
+
