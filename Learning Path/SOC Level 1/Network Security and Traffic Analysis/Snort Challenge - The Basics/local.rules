@@ -5,6 +5,9 @@
 # additions here.
 
 # Rules for Completing Task-2
-alert tcp any any -> any 80 (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
-alert tcp any 80 -> any any (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
+alert tcp any 80 -> any 80 (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
+# alert tcp any any -> any 80 (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
+# alert tcp any 80 -> any any (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
+
+# Rules for Completing Task-2
 
