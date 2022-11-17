@@ -1181,6 +1181,19 @@ This section manages the outputs of the IDS/IPS actions, such as logging and ale
 
 ## Task 11  Conclusion
 
+In this room, we covered Snort, what it is, how it operates, and how to create and use the rules to investigate threats.
+
+- Understanding and practising the fundamentals is crucial before creating advanced rules and using additional options.
+- Do not create complex rules at once; try to add options step by step to notice possible syntax errors or any other problem easily.
+- Do not reinvent the wheel; use it or modify/enhance it if there is a smooth rule.
+- Take a backup of the configuration files before making any change.
+- Never delete a rule that works properly. Comment it if you don't need it.
+- Test newly created rules before migrating them to production.
+
+Now, we invite you to complete the snort challenge room: [Snort Challenge - Live Attacks](https://tryhackme.com/room/snortchallenges1)
+
+A great way to quickly recall snort rules and commands is to download and refer to the TryHackMe snort cheatsheet.
+
 > - https://assets.tryhackme.com/cheatsheets/Snort%20Cheatsheet%20-%20TryHackMe.pdf
 
 
