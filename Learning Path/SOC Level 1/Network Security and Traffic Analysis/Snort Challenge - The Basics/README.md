@@ -19,6 +19,21 @@
 
 ## Task 1  Introduction
 
+![image](https://user-images.githubusercontent.com/51442719/202338331-b3606671-0eed-4750-b383-660f2f9c3bde.png)
+
+The room invites you a challenge to investigate a series of traffic data and stop malicious activity under two different scenarios. Let's start working with Snort to analyse live and captured traffic.
+
+We recommend completing the [Snort room](https://tryhackme.com/room/snort) first, which will teach you how to use the tool in depth.
+
+![image](https://user-images.githubusercontent.com/51442719/202338484-309a358b-1f8b-4d59-8152-147f7f9607ee.png)
+
+Exercise files for each task are located on the desktop as follows;
+
+![image](https://user-images.githubusercontent.com/51442719/202338506-043d1751-658a-4d8c-95e0-563d6914b028.png)
+
+
+
+
 ---
 
 ## Task 2  Writing IDS Rules (HTTP)
