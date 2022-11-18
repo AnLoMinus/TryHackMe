@@ -9,5 +9,6 @@ alert tcp any 80 -> any 80 (msg: "HTTP Packet Found"; sid: 100001; rev:1;)
 # alert tcp any any -> any 80 (msg: "HTTP Packet Found"; sid: 100001; rev:1;) 
 # alert tcp any 80 -> any any (msg: "HTTP Packet Found"; sid: 100002; rev:2;) 
 
-# Rules for Completing Task-2
-
+# Rules for Completing Task-3
+alert tcp any 21 -> any any (msg: "Found FTP 21"; sid: 100001; rev:1; )
+alert tcp any any -> any 21 (msg: "Found FTP 21"; sid: 100002; rev:2; )
