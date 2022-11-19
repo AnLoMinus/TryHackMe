@@ -250,6 +250,16 @@ As shown in the above output, the "zeek-cut" auxiliary provides massive help to 
 
 ## Task 4  CLI Kung-Fu Recall: Processing Zeek Logs
 
+![image](https://user-images.githubusercontent.com/51442719/202875587-19fcf48b-f746-4c26-9a8f-40ef6ece3a7a.png)
+
+### CLI Kung-Fu Recall: Processing Zeek Logs
+
+Graphical User Interfaces (GUI) are handy and good for accomplishing tasks and processing information quickly. There are multiple advantages of GUIs, especially when processing the information visually. However, when processing massive amounts of data, GUIs are not stable and as effective as the CLI (Command Line Interface) tools.
+
+The critical point is: What if there is no "function/button/feature" for what you want to find/view/extract?
+
+Having the power to manipulate the data at the command line is a crucial skill for analysts. Not only in this room but each time you deal with packets, you will need to use command-line tools, Berkeley Packet Filters (BPF) and regular expressions to find/view/extract the data you are looking for. This task provides quick cheat-sheet like information to help you write CLI queries for your event of interest.
+
 ---
 
 ## Task 5  Zeek Signatures
