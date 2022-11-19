@@ -10,7 +10,19 @@
 # alert tcp any 80 -> any any (msg: "HTTP Packet Found"; sid: 100002; rev:2;) 
 
 # Rules for Completing Task-3
-alert tcp any 21 -> any any (msg: "Found FTP 21"; sid: 100001; rev:1; )
-alert tcp any any -> any 21 (msg: "Found FTP 21"; sid: 100002; rev:2; )
-alert tcp any 20 -> any any (msg: "Found FTP ON Port 20"; sid: 100003; rev3;)
-alert tcp any any -> any 20 (msg: "Found FTP ON Port 20"; sid: 100004; rev4;)
+# alert tcp any 21 -> any any (msg: "Found FTP 21"; sid: 100001; rev:1; )
+# alert tcp any any -> any 21 (msg: "Found FTP 21"; sid: 100002; rev:2; )
+#
+# alert tcp any 20 -> any any (msg: "Found FTP ON Port 20"; sid: 100003; rev3;)
+# alert tcp any any -> any 20 (msg: "Found FTP ON Port 20"; sid: 100004; rev4;)
+#
+# alert tcp any 21 <> any any (msg: "Src: Successful FTP login"; content: "230 Successful"; content: "Administrator"; sid: 100001; rev:1; );
+# alert tcp any any <> any 21 (msg: "Dst: Successful FTP login"; content: "230 Successful"; content: "Administrator"; sid: 100002; rev:2; );
+# alert tcp any any <> any 21 (msg: "FTP Login Success !"; content:"230"; sid:1000001;rev:1;);
+#
+# alert tcp any 21 <> any any (msg: "FTP Login Success !"; content:"230"; sid:1000001;rev:1;);
+# alert tcp any any <> any 21 (msg:"FTP Successful Login";content:"230"; sid:1000001;rev:1;)
+#
+# alert tcp any any <> any 21 (msg:"FTP Bad Password";content:"331"; sid:1000001;rev:1;)
+# alert tcp any any <> any 21 (msg:"FTP Bad Password";content:"331";content:"Administrator"; sid:1000001;rev:1;)
+
