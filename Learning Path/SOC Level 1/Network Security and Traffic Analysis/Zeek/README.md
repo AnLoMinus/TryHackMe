@@ -1,9 +1,9 @@
-![image](https://user-images.githubusercontent.com/51442719/202874615-a3b4a03e-ac1e-4e09-b58e-966b6867517a.png)
-
 ![image](https://user-images.githubusercontent.com/51442719/202874753-af704bef-2f7d-4b34-bba5-2f8ab1f0b7a9.png)
 
 # [Zeek](https://tryhackme.com/room/zeekbro)
 ### Introduction to hands-on network monitoring and threat detection with Zeek (formerly Bro).
+
+![image](https://user-images.githubusercontent.com/51442719/202874615-a3b4a03e-ac1e-4e09-b58e-966b6867517a.png)
 
 ---
 
