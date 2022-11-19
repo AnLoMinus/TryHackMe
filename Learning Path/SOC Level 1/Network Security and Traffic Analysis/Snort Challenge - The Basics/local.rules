@@ -100,4 +100,11 @@ alert tcp any any <> any 80 (msg:”GET Request Found”; content:”GET”; sid
 
 alert tcp any any <> any 80 (msg:”Found it”;content:”|2E 68 74 6D 6C|”; sid: 100001; rev:1;)
 
+# Task 7 |
+alert tcp any any -> any 445 (msg: “Exploit Detected!”; content: “IPC$”; sid:100001; rev: 1;)
+alert tcp any any -> any 445 (msg: “Exploit Detected!”; flow: to_server, established; content: “IPC$”; sid:2094285; rev: 3;)
+
+
+# Task 8 |
+alert tcp any any <> any any (msg:”Packet size 855 or less”; dsize:770<>855; sid:1000001;)
 
