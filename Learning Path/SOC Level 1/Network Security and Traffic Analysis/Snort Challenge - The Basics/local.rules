@@ -42,7 +42,7 @@
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 
-alert tcp any 3372 -> any any (msg:"Troubleshooting 1"; sid:1000001; rev:1;)
+alert tcp any 3372 -> any any (msg:“Troubleshooting 1”; sid:1000001; rev:1;)
 
 # ----------------
 # LOCAL RULES | 2
@@ -50,7 +50,7 @@ alert tcp any 3372 -> any any (msg:"Troubleshooting 1"; sid:1000001; rev:1;)
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 
-alert tcp any any -> any any (msg:"Troubleshooting 2";sid:1000001;rev:1;)
+alert icmp any any-> any any (msg: “Troubleshooting 2”; sid:1000001; rev:1;)
 
 # ----------------
 # LOCAL RULES | 3
@@ -58,8 +58,8 @@ alert tcp any any -> any any (msg:"Troubleshooting 2";sid:1000001;rev:1;)
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 
-alert ICMP any any -> any any (msg: "ICMP Packet Found"; sid:1000001; rev:1;)
-alert tcp any any -> any 80,443 (msg: "HTTPX Packet Found"; sid:1000002; rev:2;)
+alert icmp any any -> any any (msg: “ICMP Packet Found”; sid:1000001; rev:1;)
+alert tcp any any -> any 80,443 (msg: “HTTPX Packet Found”; sid:1000002; rev:1;)
 
 # ----------------
 # LOCAL RULES | 4
@@ -67,8 +67,8 @@ alert tcp any any -> any 80,443 (msg: "HTTPX Packet Found"; sid:1000002; rev:2;)
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 
-alert icmp any any -> any any (msg:"ICMP Packet Found"; sid:1000001; rev:1;) 
-alert tcp any 80,443 -> any any (msg:"HTTPX Packet Found"; sid:1000002; rev:2;)
+alert icmp any any -> any any (msg:”ICMP Packet Found”; sid:1000001; rev:1;)
+alert tcp any 80,443 -> any any (msg:”HTTPX Packet Found”; sid:1000002; rev:1;)
 
 # ----------------
 # LOCAL RULES | 5
@@ -80,13 +80,17 @@ alert icmp any any <> any any (msg: "ICMP Packet Found"; sid:1000001; rev:1;)
 alert icmp any any <> any any (msg: "Inbound ICMP Packet Found"; sid;1000002; rev:2;)
 alert tcp any any -> any 80,443 (msg: "HTTPX Packet Found": sid:1000003; rev:3;)
 
+alert icmp any any <> any any (msg:”ICMP Packet Found”; sid:1000001; rev:1;)
+alert icmp any any -> any any (msg:”Inbound ICMP Packet Found”; sid:1000002; rev:2;)
+alert tcp any any -> any 80,443 (msg:”HTTPX Packet Found”; sid:1000003; rev:3;)
+
 # -------------------
 # LOCAL RULES | 6 
 # -------------------
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 
-alert tcp any any <> any 80  (msg: "GET Request Found"; content:"|67 65 74|"; sid: 100001; rev:1;)
+alert tcp any any <> any 80 (msg:”GET Request Found”; content:”GET”; sid: 100001; rev:1;)
 
 # ----------------
 # LOCAL RULES | 7
@@ -94,5 +98,6 @@ alert tcp any any <> any 80  (msg: "GET Request Found"; content:"|67 65 74|"; si
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 
-alert tcp any any <> any 80  (content:"|2E 68 74 6D 6C|"; sid: 100001; rev:1;)
+alert tcp any any <> any 80 (msg:”Found it”;content:”|2E 68 74 6D 6C|”; sid: 100001; rev:1;)
+
 
