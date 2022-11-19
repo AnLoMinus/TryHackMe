@@ -260,6 +260,78 @@ The critical point is: What if there is no "function/button/feature" for what yo
 
 Having the power to manipulate the data at the command line is a crucial skill for analysts. Not only in this room but each time you deal with packets, you will need to use command-line tools, Berkeley Packet Filters (BPF) and regular expressions to find/view/extract the data you are looking for. This task provides quick cheat-sheet like information to help you write CLI queries for your event of interest.
 
+<table>
+<thead>
+  <tr>
+    <th>Category<br></th>
+    <th>Command Purpose and Usage <br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Basics<br></td>
+    <td>View the command history:<br>ubuntu@ubuntu$ history<br><br>Execute the 10th command in history:<br>ubuntu@ubuntu$ !10<br><br>Execute the previous command:<br>ubuntu@ubuntu$ !!</td>
+  </tr>
+  <tr>
+    <td>Read File</td>
+    <td><br>Read sample.txt file:<br>ubuntu@ubuntu$ cat sample.txt<br><br>Read the first 10 lines of the file:<br>ubuntu@ubuntu$ head sample.txt<br><br>Read the last 10 lines of the file:<br>ubuntu@ubuntu$ tail sample.txt</td>
+  </tr>
+  <tr>
+    <td>Advanced<br></td>
+    <td><br>Print line 11:<br>ubuntu@ubuntu$ cat test.txt | sed -n '11p'<br><br>Print lines between 10-15:<br>ubuntu@ubuntu$ cat test.txt | sed -n '10,15p'<br><br>Print lines below 11:<br>ubuntu@ubuntu$ cat test.txt | awk 'NR &lt; 11 {print $0}'<br><br>Print line 11:<br>ubuntu@ubuntu$ cat test.txt | awk 'NR == 11 {print $0}'</td>
+  </tr>
+  <tr>
+    <td>Special</td>
+    <td>Filter specific fields of Zeek logs:<br>ubuntu@ubuntu$ cat signatures.log | zeek-cut uid src_addr dst_addr</td>
+  </tr>
+  <tr>
+    <td>Use Case</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>sort | uniq</td>
+    <td>Remove duplicate values.<br></td>
+  </tr>
+  <tr>
+    <td>sort | uniq -c </td>
+    <td>Remove duplicates and count the number of occurrences for each value.<br></td>
+  </tr>
+  <tr>
+    <td>sort -nr</td>
+    <td>Sort values numerically and recursively.</td>
+  </tr>
+  <tr>
+    <td>rev</td>
+    <td>Reverse string characters.</td>
+  </tr>
+  <tr>
+    <td>cut -f 1</td>
+    <td>Cut field 1.</td>
+  </tr>
+  <tr>
+    <td>cut -d '.' -f 1-2</td>
+    <td>Split the string on every dot and print keep the first two fields.</td>
+  </tr>
+  <tr>
+    <td>grep -v 'test'</td>
+    <td>Display lines that  don't match the "test" string.</td>
+  </tr>
+  <tr>
+    <td>grep -v -e 'test1' -e 'test2'</td>
+    <td>Display lines that don't match one or both "test1" and "test2" strings.</td>
+  </tr>
+  <tr>
+    <td>file </td>
+    <td>View file information.</td>
+  </tr>
+  <tr>
+    <td>grep -rin Testvalue1 * | column -t | less -S</td>
+    <td>Search the "Testvalue1" string everywhere, organise column spaces and view the output with less.</td>
+  </tr>
+</tbody>
+</table>
+
+
 ---
 
 ## Task 5  Zeek Signatures
