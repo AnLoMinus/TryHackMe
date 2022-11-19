@@ -26,3 +26,14 @@
 # alert tcp any any <> any 21 (msg:"FTP Bad Password";content:"331"; sid:1000001;rev:1;)
 # alert tcp any any <> any 21 (msg:"FTP Bad Password";content:"331";content:"Administrator"; sid:1000001;rev:1;)
 
+# Task 4 | 
+# Let's create IDS Rules for PNG files in the traffic!
+# alert tcp any any <> any any (msg:"PNG Found";content:"PNG"; sid: 100001; rev:1;)
+# alert tcp any any <> any any (msg:"GIF Found";content:"GIF"; sid: 100001; rev:1;)
+
+# Task 5 |
+# alert tcp any any <> any any (msg:"Torrent is Here";content:".torrent";sid:100001;rev:1;)
+
+
+
+
