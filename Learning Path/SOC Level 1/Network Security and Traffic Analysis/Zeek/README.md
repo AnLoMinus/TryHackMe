@@ -549,3 +549,7 @@ While Zeek was known as Bro, it supported Snort rules with a script called snort
 ---
 
 ## Task 10  Conclusion
+
+---
+---
+- [ZEEK TryHackMe writeup](https://medium.com/@WriteupsTHM_HTB_CTF/zeek-tryhackme-writeup-2e75a09f780a)
