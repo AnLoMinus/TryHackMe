@@ -534,6 +534,101 @@ While Zeek was known as Bro, it supported Snort rules with a script called snort
 
 ## Task 6  Zeek Scripts | Fundamentals
 
+![image](https://user-images.githubusercontent.com/51442719/202932573-dc9d6bca-f2d9-480a-8023-78f062af4700.png)
+
+### Zeek Scripts
+
+Zeek has its own event-driven scripting language, which is as powerful as high-level languages and allows us to investigate and correlate the detected events. Since it is as capable as high-level programming languages, you will need to spend time on Zeek scripting language in order to become proficient. In this room, we will cover the basics of Zeek scripting to help you understand, modify and create basic scripts. Note that scripts can be used to apply a policy and in this case, they are called policy scripts.
+
+<table>
+<thead>
+  <tr>
+    <th>Zeek has base scripts installed by default, and these are not intended to be modified.<br></th>
+    <th>These scripts are located in<br> "/opt/zeek/share/zeek/base".<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>User-generated or modified scripts should be located in a specific path. </td>
+    <td>These scripts are located in<br>"/opt/zeek/share/zeek/site".<br></td>
+  </tr>
+  <tr>
+    <td>Policy scripts are located in a specific path. </td>
+    <td>These scripts are located in<br> "/opt/zeek/share/zeek/policy".<br></td>
+  </tr>
+  <tr>
+    <td>Like Snort, to automatically load/use a script in live sniffing mode, you must identify the script in the Zeek configuration file. You can also use a script for a single run, just like the signatures. </td>
+    <td>The configuration file is located in<br> "/opt/zeek/share/zeek/site/local.zeek".<br></td>
+  </tr>
+</tbody>
+</table>
+
+- Zeek scripts use the ".zeek" extension.
+- Do not modify anything under the "zeek/base" directory. User-generated and modified scripts should be in the "zeek/site" directory.
+- You can call scripts in live monitoring mode by loading them with the command `load @/script/path` or `load @script-name`1 in local.zeek file. 
+- Zeek is event-oriented, not packet-oriented! We need to use/write scripts to handle the event of interest.
+
+running Zeek with signature
+```cmd
+ubuntu@ubuntu$ zeek -C -r sample.pcap -s sample.sig
+```
+
+### GUI vs Scripts
+
+![image](https://user-images.githubusercontent.com/51442719/202932662-047b6676-3f64-4b3b-a557-b8a47b8e141b.png)
+
+Have you ever thought about automating tasks in Wireshark, tshark or tcpdump? Zeek provides that chance to us with its scripting power. Let's say we need to extract all available DHCP hostnames from a pcap file. In that case, we have several options like using tcpdump, Wireshark, tshark or Zeek. 
+
+Zeek room - Wireshark hostnameLet's see Wireshark on the stage first. You can have the same information with Wireshark. However, while this information can be extracted using Wireshark is not easy to transfer the data to another tool for processing. Tcpdump and tshark are command-line tools, and it is easy to extract and transfer the data to another tool for processing and correlating.
+
+extracting hostnames with tcpdump and tshark
+```cmd
+ubuntu@ubuntu$ sudo tcpdump -ntr smallFlows.pcap port 67 or port 68 -e -vv | grep 'Hostname Option' | awk -F: '{print $2}' | sort -nr | uniq | nl
+     1	 "vinlap01"
+     2	 "student01-PC"
+ubuntu@ubuntu$ tshark -V -r smallFlows.pcap -Y "udp.port==67 or udp.port==68" -T fields -e dhcp.option.hostname | nl | awk NF
+     1	student01-PC
+     2	vinlap01
+```     
+
+Now let's see Zeek scripts in action. First, let's look at the components of the Zeek script. Here the first, second and fourth lines are the predefined syntaxes of the scripting language. The only part we created is the third line which tells Zeek to extract DHCP hostnames. Now compare this automation ease with the rest of the methods. Obviously, this four-line script is easier to create and use. While tcpdump and tshark can provide similar results, transferring uncontrolled data through multiple pipelines is not much preferred.
+
+Sample Script
+```zeek
+event dhcp_message (c: connection, is_orig: bool, msg: DHCP::Msg, options: DHCP::Options)
+{
+print options$host_name;
+}
+```
+
+Now let's use the Zeek script and see the output.  
+
+extracting hostnames with tcpdump and tshark
+```cmd
+ubuntu@ubuntu$ zeek -C -r smallFlows.pcap dhcp-hostname.zeek 
+student01-PC
+vinlap01
+```
+The provided outputs show that our script works fine and can extract the requested information. This should show why Zeek is helpful in data extraction and correlation. Note that Zeek scripting is a programming language itself, and we are not covering the fundamentals of Zeek scripting. In this room, we will cover the logic of Zeek scripting and how to use Zeek scripts. You can learn and practice the Zeek scripting language by using [Zeek's official training platform](https://try.bro.org/#/?example=hello) for free.  
+
+There are multiple options to trigger conditions in Zeek. Zeek can use "Built-In Function" (Bif) and protocols to extract information from traffic data. You can find supported protocols and Bif either by looking in your setup or visiting the [Zeek repo](https://docs.zeek.org/en/master/script-reference/scripts.html).  
+
+<table>
+<thead>
+  <tr>
+    <th>Customized script locations</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>/opt/zeek/share/zeek/base/bif<br>/opt/zeek/share/zeek/base/bif/plugins<br>/opt/zeek/share/zeek/base/protocols</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
 ---
 
 ## Task 7  Zeek Scripts | Scripts and Signatures
