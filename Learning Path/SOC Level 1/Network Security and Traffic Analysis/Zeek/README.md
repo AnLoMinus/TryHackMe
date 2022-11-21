@@ -937,3 +937,5 @@ The above output shows that Zeek detected the listed domain and created the inte
 ---
 ---
 - [ZEEK TryHackMe writeup](https://medium.com/@WriteupsTHM_HTB_CTF/zeek-tryhackme-writeup-2e75a09f780a)
+- You can explore Rules Example on [try.zeek.org](https://try.zeek.org/#/?example=hello).
+- 
