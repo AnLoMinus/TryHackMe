@@ -923,16 +923,103 @@ C044Ot1OxBt8qCk7f2	10.6.27.102	107.180.50.162	smart-fax.com	Intel::DOMAIN
 
 The above output shows that Zeek detected the listed domain and created the intel.log file. This is one of the easiest ways of using the intelligence framework. You can read more on the intelligence framework [here](https://docs.zeek.org/en/master/frameworks/intel.html) and [here](https://docs.zeek.org/en/current/scripts/base/frameworks/intel/main.zeek.html#type-Intel::Type).
 
-
-
-
 ---
 
 ## Task 9  Zeek Scripts | Packages
 
+![image](https://user-images.githubusercontent.com/51442719/202951978-1bb38ea6-82d6-4572-8f5c-6d067fd8d7d3.png)
+
+#### Scripts 204 | Package Manager
+
+Zeek Package Manager helps users install third-party scripts and plugins to extend Zeek functionalities with ease. The package manager is installed with Zeek and available with the `zkg` command. Users can install, load, remove, update and create packages with the "`zkg`" tool. You can read more on and view available packages [here](https://packages.zeek.org/) and [here](https://github.com/zeek/packages). Please note that you need root privileges to use the "zkg" tool.
+
+Basic usage of `zkg`;
+
+| Command | Description |
+|:---:|:---:|
+| zkg install package_path | Install a package. Example (zkg install zeek/j-gras/zeek-af_packet-plugin). |
+| zkg install git_url | Install package. Example (zkg install https://github.com/corelight/ztest). |
+| zkg list | List installed package. |
+| zkg remove | Remove installed package. |
+| zkg refresh | Check version updates for installed packages. |
+| zkg upgrade | Update installed packages. |
+
+
+There are multiple ways of using packages. The first approach is using them as frameworks and calling specific package path/directory per usage. The second and most common approach is calling packages from a script with the "@load" method. The third and final approach to using packages is calling their package names; note that this method works only for packages installed with the "zkg" install method. 
+
+#### Packages | Cleartext Submission of Password
+
+Let's install a package first and then demonstrate the usage in different approaches. 
+> `Note`: The package is installed in the given VM.
+
+Install package with zkg
+```cmd
+ubuntu@ubuntu$ zkg install zeek/cybera/zeek-sniffpass
+The following packages will be INSTALLED:
+  zeek/cybera/zeek-sniffpass (master)
+Proceed? [Y/n] Y
+Installing "zeek/cybera/zeek-sniffpass"
+Installed "zeek/cybera/zeek-sniffpass" (master)
+Loaded "zeek/cybera/zeek-sniffpass"
+
+ubuntu@ubuntu$ zkg list
+zeek/cybera/zeek-sniffpass (installed: master) - Sniffpass will alert on cleartext passwords discovered in HTTP POST requests
+```
+
+The above output shows how to install and list the installed packages. Now we successfully installed a package. As the description mentions on the above terminal, this package creates alerts for cleartext passwords found in HTTP traffic. Let's use this package in three different ways!
+
+
+Execute/load package
+```cmd
+### Calling with script
+ubuntu@ubuntu$ zeek -Cr http.pcap sniff-demo.zeek 
+
+### View script contents
+ubuntu@ubuntu$ cat sniff-demo.zeek 
+@load /opt/zeek/share/zeek/site/zeek-sniffpass
+
+### Calling from path
+ubuntu@ubuntu$ zeek -Cr http.pcap /opt/zeek/share/zeek/site/zeek-sniffpass
+
+### Calling with package name
+ubuntu@ubuntu$ zeek -Cr http.pcap zeek-sniffpass 
+```
+
+The above output demonstrates how to execute/load packages against a pcap. You can use the best one for your case. The "zeek-sniffpass" package provides additional information in the notice.log file. Now let's review the logs and discover the obtained data using the specific package.
+
+
+Investigate log files
+```cmd
+ubuntu@ubuntu$ cat notice.log | zeek-cut id.orig_h id.resp_h proto note msg
+10.10.57.178	44.228.249.3	tcp	SNIFFPASS::HTTP_POST_Password_Seen	Password found for user BroZeek
+10.10.57.178	44.228.249.3	tcp	SNIFFPASS::HTTP_POST_Password_Seen	Password found for user ZeekBro
+```
+
+The above output shows that the package found cleartext password submissions, provided notice, and grabbed the usernames. Remember, in TASK-5 we created a signature to do the same action. Now we can do the same activity without using a signature file. This is a simple demonstration of the benefit and flexibility of the Zeek scripts.
+
+#### Packages | Geolocation Data
+
+Let's use another helpful package called "geoip-conn". This package provides geolocation information for the IP addresses in the conn.log file. It depends on "GeoLite2-City.mmdb" database created by MaxMind. This package provides location information for only matched IP addresses from the internal database.
+
+Execute/load package
+```cmd
+ubuntu@ubuntu$ zeek -Cr case1.pcap geoip-conn
+
+ubuntu@ubuntu$ cat conn.log | zeek-cut uid id.orig_h id.resp_h geo.orig.country_code geo.orig.region geo.orig.city geo.orig.latitude geo.orig.longitude geo.resp.country_code geo.resp.region geo.resp.city                                                  
+Cbk46G2zXi2i73FOU6	10.6.27.102	23.63.254.163	-	-	-	-	-	US	CA	Los Angeles
+```
+
+Up to now, we've covered what the Zeek packages are and how to use them. There are much more packages and scripts available for Zeek in the wild. You can try ready or third party packages and scripts or learn Zeek scripting language and create new ones.
+
+
 ---
 
 ## Task 10  Conclusion
+
+Congratulations! You just finished the Zeek room. In this room, we covered Zeek, what it is, how it operates, and how to use it to investigate threats. 
+
+Now, we invite you to complete the Zeek Exercise room: [ZeekExercises](https://tryhackme.com/room/zeekbroexercises)
+
 
 ---
 ---
