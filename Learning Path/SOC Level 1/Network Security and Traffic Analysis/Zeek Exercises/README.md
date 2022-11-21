@@ -37,6 +37,27 @@ A VM is attached to this room. You don't need SSH or RDP; the room provides a "S
 
 ## Task 3  Phishing
 
+### Answer the questions below
+Investigate the logs. What is the suspicious source address? Enter your answer in defanged format.
+- Answer format: `10[.]6[.]27[.]102`
+
+Investigate the http.log file. Which domain address were the malicious files downloaded from? Enter your answer in defanged format.
+- Answer format: `smart-fax[.]com`
+
+Investigate the malicious document in VirusTotal. What kind of file is associated with the malicious document?
+>
+- Answer format: `Answer format: ***`
+
+Investigate the extracted malicious .exe file. What is the given file name in Virustotal?
+- Answer format: ****************.***
+
+Investigate the malicious .exe file in VirusTotal. What is the contacted domain name? Enter your answer in defanged format.
+- Answer format: ******.****
+
+Investigate the http.log file. What is the request name of the downloaded malicious .exe file?
+- Answer format: `***.***`
+
+
 ---
 
 ## Task 4  Log4J
