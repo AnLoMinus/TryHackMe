@@ -626,12 +626,164 @@ There are multiple options to trigger conditions in Zeek. Zeek can use "Built-In
 </tbody>
 </table>
 
-
-
-
 ---
 
 ## Task 7  Zeek Scripts | Scripts and Signatures
+
+![image](https://user-images.githubusercontent.com/51442719/202938769-a2ad4ca7-f759-4d52-9b89-1f536999c9af.png)
+
+
+### Scripts 101 | Write Basic Scripts
+
+Scripts contain operators, types, attributes, declarations and statements, and directives. Let's look at a simple example event called "zeek_init" and "zeek_done". These events work once the Zeek process starts and stops. Note that these events don't have parameters, and some events will require parameters.
+
+
+Sample Script
+```zeek
+event zeek_init()
+    {
+     print ("Started Zeek!");
+    }
+event zeek_done()
+    {
+    print ("Stopped Zeek!");
+    }
+
+# zeek_init: Do actions once Zeek starts its process.
+# zeek_done: Do activities once Zeek finishes its process.
+# print: Prompt a message on the terminal.
+```
+
+Run Zeek with a script
+```cmd
+ubuntu@ubuntu$ zeek -C -r sample.pcap 101.zeek 
+Started Zeek!
+Stopped Zeek!
+```
+
+The above output shows how the script works and provides messages on the terminal. Zeek will create logs in the working directory separately from the scripts tasks.
+
+Let's print the packet data to the terminal and see the raw data. In this script, we are requesting details of a connection and extracting them without any filtering or sorting of the data. To accomplish this, we are using the "new_connection" event. This event is automatically generated for each new connection. This script provides bulk information on the terminal. We need to get familiar with Zeek's data structure to reduce the amount of information and focus on the event of interest. To do so, we need to investigate the bulk data.
+
+Sample Script
+```zeek
+event new_connection(c: connection)
+{
+	print c;
+}
+```
+
+Run Zeek with the script
+```cmd
+ubuntu@ubuntu$ zeek -C -r sample.pcap 102.zeek 
+[id=[orig_h=192.168.121.40, orig_p=123/udp, resp_h=212.227.54.68, resp_p=123/udp], orig=[size=48, state=1, num_pkts=0, num_bytes_ip=0, flow_label=0, l2_addr=00:16:47:df:e7:c1], resp=[size=0, state=0, num_pkts=0, num_bytes_ip=0, flow_label=0, l2_addr=00:00:0c:9f:f0:79], start_time=1488571365.706238, duration=0 secs, service={}, history=D, uid=CajwDY2vSUtLkztAc, tunnel=, vlan=121, inner_vlan=, dpd=, dpd_state=, removal_hooks=, conn=, extract_orig=F, extract_resp=F, thresholds=, dce_rpc=, dce_rpc_state=, dce_rpc_backing=, dhcp=, dnp3=, dns=, dns_state=, ftp=, ftp_data_reuse=F, ssl=, http=, http_state=, irc=, krb=, modbus=, mysql=, ntlm=, ntp=, radius=, rdp=, rfb=, sip=, sip_state=, snmp=, smb_state=, smtp=, smtp_state=, socks=, ssh=, syslog=]
+```
+
+The above terminal provides bulk data for each connection. This style is not the best usage, and in real life, we will need to filter the information for specific purposes. If you look closely at the output, you can see an ID and field value for each part.
+
+To filter the event of interest, we will use the primary tag (in this case, it is c --comes from "c: connection"--), id value (id=), and field name. You should notice that the fields are the same as the fields in the log files.
+
+Sample Script
+```zeek
+event new_connection(c: connection)
+{
+	print ("###########################################################");
+	print ("");
+	print ("New Connection Found!");
+	print ("");
+	print fmt ("Source Host: %s # %s --->", c$id$orig_h, c$id$orig_p);
+	print fmt ("Destination Host: resp: %s # %s <---", c$id$resp_h, c$id$resp_p);
+	print ("");
+}
+
+# %s: Identifies string output for the source.
+# c$id: Source reference field for the identifier.
+```
+
+Now you have a general idea of running a script and following the provided output on the console. Let's look closer to another script that extracts specific information from packets. The script above creates logs and prompts each source and destination address for each connection. 
+
+Let's see this script in action.
+
+```cmd
+ubuntu@ubuntu$ zeek -C -r sample.pcap 103.zeek 
+###########################################################
+New Connection Found! Source Host: 192.168.121.2 # 58304/udp ---> 
+Destination Host: resp: 192.168.120.22 # 53/udp <--- 
+###########################################################
+```
+
+The above output shows that we successfully extract specific information from the events. Remember that this script extracts the event of interest (in this example, a new connection), and we still have logs in the working directory. We can always modify and optimise the scripts at any time.
+
+### Scripts 201 | Use Scripts and Signatures Together
+
+Up to here, we covered the basics of Zeek scripts. Now it is time to use scripts collaboratively with other scripts and signatures to get one step closer to event correlation. Zeek scripts can refer to signatures and other Zeek scripts as well. This flexibility provides a massive advantage in event correlation.
+
+Let's demonstrate this concept with an example. We will create a script that detects if our previously created "ftp-admin" rule has a hit. 
+
+
+Sample Script
+```zeek
+event signature_match (state: signature_state, msg: string, data: string)
+{
+if (state$sig_id == "ftp-admin")
+    {
+    print ("Signature hit! --> #FTP-Admin ");
+    }
+}
+```
+
+This basic script quickly checks if there is a signature hit and provides terminal output to notify us. We are using the "signature_match" event to accomplish this. You can read more about events [here](https://docs.zeek.org/en/master/scripts/base/bif/event.bif.zeek.html?highlight=signature_match). Note that we are looking only for "ftp-admin" signature hits. The signature is shown below. 
+
+
+Sample Script
+```zeek
+signature ftp-admin {
+    ip-proto == tcp
+    ftp /.*USER.*admin.*/
+    event "FTP Username Input Found!"
+}
+```
+
+ Let's see this script in action.
+
+Run Zeek with signature and script
+```zeek
+ubuntu@ubuntu$ zeek -C -r ftp.pcap -s ftp-admin.sig 201.zeek 
+Signature hit! --> #FTP-Admin Signature hit! --> #FTP-Admin
+Signature hit! --> #FTP-Admin Signature hit! --> #FTP-Admin
+```
+
+The above output shows that we successfully combined the signature and script. Zeek processed the signature and logs then the script controlled the outputs and provided a terminal output for each rule hit.
+
+### Scripts 202 | Load Local Scripts
+
+Load all local scripts
+
+We mentioned that Zeek has base scripts located in "/opt/zeek/share/zeek/base". You can load all local scripts identified in your "local.zeek" file. Note that base scripts cover multiple framework functionalities. You can load all base scripts by easily running the `local` command.
+
+Load local scripts
+```cmd
+ubuntu@ubuntu$ zeek -C -r ftp.pcap local 
+ubuntu@ubuntu$ ls
+101.zeek  103.zeek          clear-logs.sh  ftp.pcap            packet_filter.log  stats.log
+102.zeek  capture_loss.log  conn.log       loaded_scripts.log  sample.pcap        weird.log 
+```
+
+The above output demonstrates how to run all base scripts using the "local" command. Look at the above terminal output; Zeek provided additional log files this time. Loaded scripts generated loaded_scripts.log, capture_loss.log, notice.log, stats.log files. Note that, in our instance, 465 scripts loaded and used by using the "local" command. However, Zeek doesn't provide log files for the scripts doesn't have hits or results.
+
+#### Load Specific Scripts
+
+Another way to load scripts is by identifying the script path. In that case, you have the opportunity of loading a specific script or framework. Let's go back to FTP brute-forcing case. We created a script that detects multiple admin login failures in previous steps. Zeek has an FTP brute-force detection script as well. Now let's use the default script and identify the differences. 
+
+Load local scripts
+```cmd
+ubuntu@ubuntu$ zeek -C -r ftp.pcap /opt/zeek/share/zeek/policy/protocols/ftp/detect-bruteforcing.zeek 
+
+ubuntu@ubuntu$ cat notice.log | zeek-cut ts note msg 
+1024380732.223481	FTP::Bruteforcing	10.234.125.254 had 20 failed logins on 1 FTP server in 0m1s
+```
+
+The above output shows how to load a specific script. This script provides much more information than the one we created. It provides one single line output and a connection summary for the suspicious incident. You can find and read more on the prebuilt scripts and frameworks by visiting Zeek's online book here.
 
 ---
 
