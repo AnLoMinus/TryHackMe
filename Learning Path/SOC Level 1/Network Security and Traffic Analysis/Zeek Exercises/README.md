@@ -1,8 +1,8 @@
-![image](https://user-images.githubusercontent.com/51442719/202955267-f21bcf55-9c72-4740-9f3c-ffc212cb2da3.png)
+![image](https://user-images.githubusercontent.com/51442719/202955252-74b0159b-d99d-492b-a132-ec124e60d24a.png)
 
 # [Zeek Exercises](https://tryhackme.com/room/zeekbroexercises)
 
-![image](https://user-images.githubusercontent.com/51442719/202955252-74b0159b-d99d-492b-a132-ec124e60d24a.png)
+![image](https://user-images.githubusercontent.com/51442719/202955267-f21bcf55-9c72-4740-9f3c-ffc212cb2da3.png)
 
 ### Put your Zeek skills into practice and analyse network traffic.
 
@@ -31,6 +31,7 @@ A VM is attached to this room. You don't need SSH or RDP; the room provides a "S
 ---
 
 ## Task 2  Anomalous DNS
+
 
 ---
 
