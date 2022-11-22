@@ -199,3 +199,7 @@ These queries provide information based on Suricata rule results. Three differen
 ## Task 8  Conclusion
 
 
+---
+---
+
+- [Brim TryHackMe](https://medium.com/@WriteupsTHM_HTB_CTF/brim-tryhackme-28f7da657419)
