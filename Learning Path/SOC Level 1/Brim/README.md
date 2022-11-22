@@ -129,11 +129,58 @@ Brim has 12 premade queries listed under the "Brim" folder. These queries help u
 ![image](https://user-images.githubusercontent.com/51442719/203182054-402238ca-5ba1-493c-b633-ccbc108cc4b1.png)
 
 
-
-
 --- 
 
 ## Task 4  Default Queries
+
+### Default Queries
+
+We mentioned that Brim had 12 premade queries in the previous task. Let's see them in action! Now, open Brim, import the sample pcap and go through the walkthrough.
+
+![image](https://user-images.githubusercontent.com/51442719/203185696-d19d83fc-b5af-4742-9f06-687e0e19ffb7.png)
+
+### Reviewing Overall Activity
+This query provides general information on the pcap file. The provided information is valuable for accomplishing further investigation and creating custom queries. It is impossible to create advanced or case-specific queries without knowing the available log files.
+
+The image on the left shows that there are 20 logs generated for the provided pcap file. 
+
+#### Windows Specific Networking Activity
+
+This query focuses on Windows networking activity and details the source and destination addresses and named pipe, endpoint and operation detection. The provided information helps investigate and understand specific Windows eve
+
+![image](https://user-images.githubusercontent.com/51442719/203185853-2880a7fe-d910-444f-9f43-9c0ca0282361.png)
+
+#### Unique Network Connections and Transferred Data
+
+These two queries provide information on unique connections and connection-data correlation. The provided info helps analysts detect weird and malicious connections and suspicious and beaconing activities. The uniq list provides a clear list of unique connections that help identify anomalies. The data list summarises the data transfer rate that supports the anomaly investigation hypothesis.
+
+![image](https://user-images.githubusercontent.com/51442719/203185908-7beb6fa0-68ab-4c84-87b7-7a73e6383caa.png)
+
+#### DNS and HTTP Methods
+
+These queries provide the list of the DNS queries and HTTP methods. The provided information helps analysts to detect anomalous DNS and HTTP traffic. You can also narrow the search by viewing the "HTTP POST" requests with the available query and modifying it to view the "HTTP GET" methods.
+
+![image](https://user-images.githubusercontent.com/51442719/203185980-cce63d0e-a72b-43cd-b020-2fc5620e4d19.png)
+
+#### File Activity
+
+This query provides the list of the available files. It helps analysts to detect possible data leakage attempts and suspicious file activity. The query provides info on the detected file MIME and file name and hash values (MD5, SHA1).
+
+![image](https://user-images.githubusercontent.com/51442719/203186012-a2257f42-78ba-4d4a-9385-2c408f5c1dd6.png)
+
+#### IP Subnet Statistics
+
+This query provides the list of the available IP subnets. It helps analysts detect possible communications outside the scope and identify out of ordinary IP addresses. 
+
+![image](https://user-images.githubusercontent.com/51442719/203186041-82fa65b5-8f2b-45d5-aa99-594ed6b044cf.png)
+
+#### Suricata Alerts
+
+These queries provide information based on Suricata rule results. Three different queries are available to view the available logs in different formats (category-based, source and destination-based, and subnet based). 
+
+> `Note`: Suricata is an open-source threat detection engine that can act as a rule-based Intrusion Detection and Prevention System. It is developed by the Open Information Security Foundation (OISF). Suricata works and detects anomalies in a similar way to Snort and can use the same signatures. 
+
+![image](https://user-images.githubusercontent.com/51442719/203186078-784f102b-b640-445e-930f-de87a87fa085.png)
 
 --- 
 
