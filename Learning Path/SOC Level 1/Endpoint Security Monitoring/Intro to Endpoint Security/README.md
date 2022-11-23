@@ -8,6 +8,10 @@
 
 ---
 
+- `EDR` - Endpoint detection and response 
+
+---
+
 - [Task 1  Room Introduction](#)
 - [Task 2  Endpoint Security Fundamentals](#)
 - [Task 3  Endpoint Logging and Monitoring](#)
@@ -104,10 +108,92 @@ Process Explorer enables you to inspect the details of a running process, such a
 
 To learn more about Sysinternals, you may refer to the [Sysinternals Room](https://tryhackme.com/room/btsysinternalssg).
  
-
 ---
 
 ## Task 3  Endpoint Logging and Monitoring
+
+From the previous task, we have learned basic knowledge about the Windows Operating system﻿ in terms of baseline processes and essential tools to analyze events and artefacts running on the machine. However, this only limits us from observing real-time events. With this, we will introduce the importance of endpoint logging, which enables us to audit significant events across different endpoints, collect and aggregate them for searching capabilities, and better automate the detection of anomalies.
+
+### Windows Event Logs
+
+The Windows Event Logs are not text files that can be viewed using a text editor. However, the raw data can be translated into XML using the Windows API. The events in these log files are stored in a proprietary binary format with a .evt or .evtx extension. The log files with the .evtx file extension typically reside in `C:\Windows\System32\winevt\Logs`.
+
+There are three main ways of accessing these event logs within a Windows system:
+
+- Event Viewer (GUI-based application)
+- Wevtutil.exe (command-line tool)
+- Get-WinEvent (PowerShell cmdlet)
+
+An example image of logs viewed using the Event Viewer tool is shown below.
+
+![image](https://user-images.githubusercontent.com/51442719/203474171-4e144edd-a733-4f31-b9d2-00ae6948c6a6.png)
+
+You may refer to the [Windows Event Logs Room](https://tryhackme.com/room/windowseventlogs) to learn more about Windows Event Logs. 
+
+### Sysmon
+
+Sysmon, a tool used to monitor and log events on Windows, is commonly used by enterprises as part of their monitoring and logging solutions. As part of the Windows Sysinternals package, Sysmon is similar to Windows Event Logs with further detail and granular control.
+
+Sysmon gathers detailed and high-quality logs as well as event tracing that assists in identifying anomalies in your environment. It is commonly used with a security information and event management (SIEM) system or other log parsing solutions that aggregate, filter, and visualize events. 
+
+Lastly, Sysmon includes 27 types of Event IDs, all of which can be used within the required configuration file to specify how the events should be handled and analyzed. An excellent example of a configuration file auditing different Event IDs created by SwiftOnSecurity is linked [here](https://github.com/SwiftOnSecurity/sysmon-config).
+
+The image below shows a sample set of Sysmon logs viewed using an Event Viewer.
+
+![image](https://user-images.githubusercontent.com/51442719/203474243-5a7a93fe-39d4-4392-8f83-b0ecbbf9a404.png)
+
+To learn more about Sysmon, you may refer to the [Sysmon Room](https://tryhackme.com/room/sysmon).
+
+### OSQuery
+
+Osquery is an open-source tool created by Facebook. With Osquery, Security Analysts, Incident Responders, and Threat Hunters can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on various platforms: Windows, Linux, macOS, and FreeBSD.
+
+To interact with the Osquery interactive console/shell, open CMD (or PowerShell) and run `osqueryi`. You'll know that you've successfully entered into the interactive shell by the new command prompt.
+
+##### cmd.exe
+```cmd
+C:\Users\Administrator\> osqueryi
+Using a virtual database. Need help, type 'help'
+osquery> 
+```
+
+A sample use case for using OSQuery is to list important process information by its process name. 
+
+##### osqueryi
+```cmd
+osquery> select pid,name,path from processes where name='lsass.exe';
++-----+-----------+-------------------------------+
+| pid | name      | path                          |
++-----+-----------+-------------------------------+
+| 748 | lsass.exe | C:\Windows\System32\lsass.exe |
++-----+-----------+-------------------------------+
+osquery> 
+```
+Osquery only allows you to query events inside the machine. But with Kolide Fleet, you can query multiple endpoints from the Kolide Fleet UI instead of using Osquery locally to query an endpoint. A sample of Kolide Fleet in action below shows a result of a query listing the machines with the `lsass` process running.
+
+![image](https://user-images.githubusercontent.com/51442719/203474392-9d0c8b36-f9db-4b35-8111-769049ec57db.png)
+
+To learn more about OSQuery, you may refer to the [OSQuery Room](https://tryhackme.com/room/osqueryf8). 
+
+### Wazuh
+
+﻿Wazuh is an open-source, freely available, and extensive EDR solution, which Security Engineers can deploy in all scales of environments.
+
+Wazuh operates on a management and agent model where a dedicated manager device is responsible for managing agents installed on the devices you'd like to monitor.
+
+As mentioned, Wazuh is an EDR; let's briefly run through what an EDR is. Endpoint detection and response (EDR) are tools and applications that monitor devices for an activity that could indicate a threat or security breach. These tools and applications have features that include:
+
+- Auditing a device for common vulnerabilities
+- Proactively monitoring a device for suspicious activity such as unauthorized logins, brute-force attacks, or privilege escalations.
+- Visualizing complex data and events into neat and trendy graphs
+- Recording a device's normal operating behaviour to help with detecting anomalies
+
+A sample view of how Wazuh works is shown below.
+
+![image](https://user-images.githubusercontent.com/51442719/203474554-7f16bfce-0e79-4935-a5ec-1e37634ed4df.png)
+
+To experience Wazuh in action, you may refer to the [Wazuh Room](https://tryhackme.com/room/wazuhct).
+
 
 ---
 
