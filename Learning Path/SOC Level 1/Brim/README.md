@@ -297,11 +297,61 @@ There are a variety of use case examples in traffic analysis. For a security ana
 </tbody>
 </table>
 
-
-
 --- 
 
 ## Task 6  Exercise: Threat Hunting with Brim | Malware C2 Detection
+
+### Threat Hunting with Brim | Malware C2 Detection
+
+It is just another malware campaign spread with CobaltStrike. We know an employee clicks on a link, downloads a file, and then network speed issues and anomalous traffic activity arises. Now, open Brim, import the sample pcap and go through the walkthrough.
+
+#### Let's investigate the traffic sample to detect malicious C2 activities!
+ 
+![image](https://user-images.githubusercontent.com/51442719/203445477-3b95e4fd-82fb-4fed-af93-7728bc387a72.png)
+
+Let's look at the available logfiles first to see what kind of data artefact we could have. The image on the left shows that we have many alternative log files we could rely on. Let's review the frequently communicated hosts before starting to investigate individual logs.
+
+- Query: - `cut id.orig_h, id.resp_p, id.resp_h | sort  | uniq -c | sort -r count`
+
+![image](https://user-images.githubusercontent.com/51442719/203445680-3413ecf8-783b-4611-9fa4-b042c01f27de.png)
+
+This query provides sufficient data that helped us decide where to focus. The IP addresses "10.22.xx" and "104.168.xx" draw attention in the first place. Let's look at the port numbers and available services before focusing on the suspicious IP address and narrowing our search.
+
+- Query: - `_path=="conn" | cut id.resp_p, service | sort | uniq -c | sort -r count`
+
+![image](https://user-images.githubusercontent.com/51442719/203445867-6f6ffb46-b25a-4f8a-af01-52440a15492a.png)
+
+Nothing extremely odd in port numbers, but there is a massive DNS record available. Let's have a closer look.
+
+- Query: - `_path=="dns" | count() by query | sort -r`
+
+![image](https://user-images.githubusercontent.com/51442719/203445950-a2499e05-3c13-48b9-828c-704ca1319a6d.png)
+
+There are out of ordinary DNS queries. Let's enrich our findings by using VirusTotal to identify possible malicious domains.
+
+![image](https://user-images.githubusercontent.com/51442719/203446037-5bfda7b4-38b4-4411-bd82-d77455231dc2.png)
+
+We have detected two additional malicious IP addresses (we have the IP 45.147.xx from the log files and gathered the 68.138.xx and 185.70.xx from VirusTotal) linked with suspicious DNS queries with the help of external research. Let's look at the HTTP requests before narrowing down our investigation with the found malicious IP addresses.
+
+- Query:  `_path=="http" | cut id.orig_h, id.resp_h, id.resp_p, method, host, uri | uniq -c | sort value.uri`
+
+![image](https://user-images.githubusercontent.com/51442719/203446086-88efec0d-6b6d-412c-8cf9-1da729d9e120.png)
+
+We detect a file download request from the IP address we assumed as malicious. Let's validate this idea with VirusTotal and validate our hypothesis. 
+
+![image](https://user-images.githubusercontent.com/51442719/203446163-f8c14f0c-5360-491e-b69d-2a668caccc76.png)
+
+VirusTotal results show that the IP address "104.xx" is linked with a file. Once we investigate that file, we discover that these two findings are associated with CobaltStrike. Up to here, we've followed the abnormal activity and found the malicious IP addresses. Our findings represent the C2 communication. Now let's conclude our hunt by gathering the low hanging fruits with Suricata logs.
+
+- Query: - `event_type=="alert" | count() by alert.severity,alert.category | sort count`
+
+![image](https://user-images.githubusercontent.com/51442719/203446210-e7918caf-5a4c-4bb8-8458-8f1ad04b4b9a.png)
+
+Now we can see the overall malicious activities detected by Suricata. Note that you can investigate the rest of the IP addresses to identify the secondary C2 traffic anomaly without using the Suricata logs. This task demonstrates two different approaches to detecting anomalies. 
+
+Investigating each alarm category and signature to enhance the threat hunting activities and post-hunting system hardening operations is suggested. Please note, Adversaries using CobaltStrike are usually skilled threats and don't rely on a single C2 channel. Common experience and use cases recommend digging and keeping the investigation by looking at additional C2 channels.
+
+This concludes our hunt for the given case. Now, repeat this exercise in the attached VM and ask the questions below.
 
 --- 
 
