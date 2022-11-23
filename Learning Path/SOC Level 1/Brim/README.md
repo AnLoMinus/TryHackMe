@@ -361,6 +361,11 @@ This concludes our hunt for the given case. Now, repeat this exercise in the att
 
 ## Task 8  Conclusion
 
+**Congratulations!** You just finished the Brim room.
+
+In this room, we covered Brim, what it is, how it operates, and how to use it to investigate threats. 
+
+Now, we invite you to complete the Brim challenge room: Masterminds
 
 ---
 ---
