@@ -357,6 +357,65 @@ This concludes our hunt for the given case. Now, repeat this exercise in the att
 
 ## Task 7  Exercise: Threat Hunting with Brim | Crypto Mining
 
+### Threat Hunting with Brim | Crypto Mining
+
+Cryptocurrencies are frequently on the agenda with their constantly rising value and legal aspect. The ability to obtain cryptocurrencies by mining other than purchasing is becoming one of the biggest problems in today's corporate environments. Attackers not only compromise the systems and ask for a ransom, but sometimes they also install mining tools (cryptojacking). Other than the attackers and threat actors, sometimes internal threats and misuse of trust and privileges end up installing coin miners in the corporate environment.
+
+Usually, mining cases are slightly different from traditional compromising activities. Internal attacks don't typically contain major malware samples. However, this doesn't mean they aren't malicious as they are exploiting essential corporate resources like computing power, internet, and electricity. Also, crypto mining activities require third party applications and tool installations which could be vulnerable or create backdoors. Lastly, mining activities are causing network performance and stability problems. Due to these known facts, coin mining is becoming one of the common use cases of threat hunters.
+
+Now, open Brim, import the sample pcap and go through the walkthrough.
+
+Let's investigate a traffic sample to detect a coin mining activity!
+
+![image](https://user-images.githubusercontent.com/51442719/203620875-8e2e0a4c-dc86-4dba-b626-7b5f33f5dbe3.png)
+
+
+Let's look at the available logfiles first to see what kind of data artefact we could have. The image on the left shows that we don't have many alternative log files we could rely on. Let's review the frequently communicated hosts to see if there is an anomaly indicator. 
+
+- Query:  `cut id.orig_h, id.resp_p, id.resp_h | sort  | uniq -c | sort -r`
+
+![image](https://user-images.githubusercontent.com/51442719/203620961-9a414504-39b6-4268-a78f-d3d65cde8d98.png)
+
+This query provided sufficient data that helped us decide where to focus. The IP address "192.168.xx" draws attention in the first place. Let's look at the port numbers and available services before focusing on the suspicious IP address and narrowing our search.
+
+- Query: `_path=="conn" | cut id.resp_p, service | sort | uniq -c | sort -r count`
+
+![image](https://user-images.githubusercontent.com/51442719/203621018-08a2a096-902c-423c-9f70-8c983b1935ff.png)
+
+There is multiple weird port usage, and this is not usual. Now, we are one step closer to the identification of the anomaly. Let's look at the transferred data bytes to support our findings and find more indicators.
+
+- Query: `_path=="conn" | put total_bytes := orig_bytes + resp_bytes | sort -r total_bytes | cut uid, id, orig_bytes, resp_bytes, total_bytes`
+
+![image](https://user-images.githubusercontent.com/51442719/203621090-1013f5f9-bb78-4e74-88b8-c16893780b4f.png)
+
+The query result proves massive traffic originating from the suspicious IP address. The detected IP address is suspicious. However, we don't have many supportive log files to correlate our findings and detect accompanying activities. At this point, we will hunt the low hanging fruits with the help of Suricata rules. Let's investigate the Suricata logs.
+
+- Query: `event_type=="alert" | count() by alert.severity,alert.category | sort count`
+
+![image](https://user-images.githubusercontent.com/51442719/203621155-040da6a1-3573-4c3f-a8c6-eb5babc61397.png)
+
+Suricata rules have helped us conclude our hunt quickly, as the alerts tell us we are investigating a "Crypto Currency Mining" activity. Let's dig deeper and discover which data pool is used for the mining activity. First, we will list the associated connection logs with the suspicious IP, and then we will run a VirusTotal search against the destination IP.
+
+- Query: `_path=="conn" | 192.168.1.100`
+
+![image](https://user-images.githubusercontent.com/51442719/203621211-14cb68fa-afb8-435c-976c-c183998df61d.png)
+
+![image](https://user-images.githubusercontent.com/51442719/203621221-fd345c61-d7d8-4890-b753-75de05e7386a.png)
+
+We investigated the first destination IP address and successfully identified the mining server. In real-life cases, you may need to investigate multiple IP addresses to find the event of interest.
+
+Lastly, let's use Suricata logs to discover mapped out MITRE ATT&CK techniques.
+
+- Query: `event_type=="alert" | cut alert.category, alert.metadata.mitre_technique_name, alert.metadata.mitre_technique_id, alert.metadata.mitre_tactic_name | sort | uniq -c`
+
+![image](https://user-images.githubusercontent.com/51442719/203621304-019748ea-2a07-484b-9704-c76129309382.png)
+
+Now we can identify the mapped out MITRE ATT&CK details as shown in the table below.
+
+| Suricata Category | MITRE Technique Name | MITRE Technique Id | MITRE Tactic Name |
+|:---:|:---:|:---:|:---:|
+| Crypto Currency Mining | Resource_Hijacking | T1496 | Impact |
+
 --- 
 
 ## Task 8  Conclusion
