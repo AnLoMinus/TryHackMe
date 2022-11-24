@@ -266,11 +266,102 @@ It is impossible to memorise all details of the display filters for each protoco
 
 > `Note`: The first room introduced the "Colouring Rules" (Task-2). Now you know how to create display filters and filter the event of interest. You can use the "View --> Coloring Rules" menu to assign colours to highlight your display filter results.
 
-
-
 ---
 
 ## Task 6  Advanced Filtering
+
+### Advanced Filtering
+
+So far, you have learned the basics of packet filtering operations. Now it is time to focus on specific packet details for the event of interest. Besides the operators and expressions covered in the previous room, Wireshark has advanced operators and functions. These advanced filtering options help the analyst conduct an in-depth analysis of an event of interest.
+
+### Filter: "contains"
+
+| Filter | contains |
+|:---:|:---:|
+| Type | Comparison Operator |
+| Description | Search a value inside packets. It is case-sensitive and provides similar functionality to the "Find" option by focusing on a specific field. |
+| Example | Find all "Apache" servers. |
+| Workflow | List all HTTP packets where packets' "server" field contains the "Apache" keyword. |
+| Usage | http.server contains "Apache" |
+
+![image](https://user-images.githubusercontent.com/51442719/203679600-bde6bbe2-c196-48d5-9a55-0839bda35456.png)
+
+### Filter: "matches"
+
+| Filter | matches |
+|:---:|:---:|
+| Type | Comparison Operator |
+| Description | Search a pattern of a regular expression. It is case insensitive, and complex queries have a margin of error. |
+| Example | Find all .php and .html pages. |
+| Workflow | List all HTTP packets where packets' "host" fields match keywords ".php" or ".html". |
+| Usage | http.host matches "\.(php\|html)" |
+
+![image](https://user-images.githubusercontent.com/51442719/203679641-7577c7ae-458c-402a-8e39-5447828fc99e.png)
+
+### Filter: "in"
+
+| Filter | in |
+|:---:|:---:|
+| Type |  Set Membership |
+| Description | Search a value or field inside of a specific scope/range. |
+| Example | Find all packets that use ports 80, 443 or 8080. |
+| Workflow | List all TCP packets where packets' "port" fields have values 80, 443 or 8080. |
+| Usage | tcp.port in {80 443 8080} |
+
+![image](https://user-images.githubusercontent.com/51442719/203679696-6d699c92-76c6-4215-94a8-6a71bc1372a9.png)
+
+### Filter: "upper"
+
+| Filter | upper |
+|:---:|:---:|
+| Type | Function |
+| Description | Convert a string value to uppercase. |
+| Example | Find all "APACHE" servers. |
+| Workflow | Convert all HTTP packets' "server" fields to uppercase and list packets that contain the "APACHE" keyword. |
+| Usage | upper(http.server) contains "APACHE" |
+
+![image](https://user-images.githubusercontent.com/51442719/203679750-9c041dd5-c179-4925-a9f1-c65f56f7d539.png)
+
+### Filter: "lower"
+
+| Filter | lower |
+|:---:|:---:|
+| Type | Function |
+| Description | Convert a string value to lowercase. |
+| Example | Find all "apache" servers. |
+| Workflow | Convert all HTTP packets' "server" fields info to lowercase and list packets that contain the "apache" keyword. |
+| Usage | lower(http.server) contains "apache" |
+
+![image](https://user-images.githubusercontent.com/51442719/203679798-2b695633-ce60-448b-a74f-5f4b5e0ec062.png)
+
+### Filter: "string"
+
+| Filter | string |
+|:---:|:---:|
+| Type | Function |
+| Description | Convert a non-string value to a string. |
+| Example | Find all frames with odd numbers. |
+| Workflow | Convert all "frame number" fields to string values, and list frames end with odd values. |
+| Usage | string(frame.number) matches "[13579]$" |
+
+![image](https://user-images.githubusercontent.com/51442719/203679836-50ad6a75-7ded-4a5d-8ca7-3ca5ef578b77.png)
+
+### Bookmarks and Filtering Buttons
+
+We've covered different types of filtering options, operators and functions. It is time to create filters and save them as bookmarks and buttons for later usage. As mentioned in the previous task, the filter toolbar has a filter bookmark section to save user-created filters, which helps analysts re-use favourite/complex filters with a couple of clicks. Similar to bookmarks, you can create filter buttons ready to apply with a single click. 
+
+Creating and using bookmarks.
+
+![image](https://user-images.githubusercontent.com/51442719/203679857-d04a7cfa-43dc-41fe-87da-0c7c4f118ab2.png)
+
+Creating and using display filter buttons.
+
+![image](https://user-images.githubusercontent.com/51442719/203679883-619d9df1-93cd-49e2-a7f9-2939a18104e9.png)
+
+### Profiles
+Wireshark is a multifunctional tool that helps analysts to accomplish in-depth packet analysis. As we covered during the room, multiple preferences need to be configured to analyse a specific event of interest. It is cumbersome to re-change the configuration for each investigation case, which requires a different set of colouring rules and filtering buttons. This is where Wireshark profiles come into play. You can create multiple profiles for different investigation cases and use them accordingly. You can use the "Edit --> Configuration Profiles" menu or the "lower right bottom of the status bar --> Profile" section to create, modify and change the profile configuration.
+
+![image](https://user-images.githubusercontent.com/51442719/203679914-74acb3db-9973-4c29-9fd3-a17f5e6e21f4.png)
 
 ---
 
