@@ -102,6 +102,55 @@ This option breaks down all HTTP packets from the capture file and helps analyst
 
 ## Task 4  Packet Filtering | Principles
 
+### Packet Filtering
+
+In the previous room ([Wireshark | The Basics](https://tryhackme.com/room/wiresharkthebasics)), we covered packet filtering and how to filter packets without using queries. In this room, we will use queries to filter packets. As mentioned earlier, there are two types of filters in Wireshark. While both use similar syntax, they are used for different purposes. Let's remember the difference between these two categories.
+
+| Capture Filters | This type of filter is used to save only a specific part of the traffic. It is set before capturing traffic and not changeable during the capture.  |
+|:---:|---|
+| Display Filters | This type of filter is used to investigate packets by reducing the number of visible packets, and it is changeable during the capture.  |
+
+> `Note`: You cannot use the display filter expressions for capturing traffic and vice versa.
+
+The typical use case is capturing everything and filtering the packets according to the event of interest. Only experienced professionals use capture filters and sniff traffic. This is why Wireshark supports more protocol types in display filters. Please ensure you thoroughly learn how to use capture filters before using them in a live environment. Remember, you cannot capture the event of interest if your capture filter is not matching the specific traffic pattern you are looking for.
+
+Capture Filter Syntax
+
+These filters use byte offsets hex values and masks with boolean operators, and it is not easy to understand/predict the filter's purpose at first glance. The base syntax is explained below:
+
+- Scope: host, net, port and portrange.
+- Direction: src, dst, src or dst, src and dst,
+- Protocol: ether, wlan, ip, ip6, arp, rarp, tcp and udp.
+- Sample filter to capture port 80 traffic: `tcp port 80`
+
+You can read more on capture filter syntax from [here](https://www.wireshark.org/docs/man-pages/pcap-filter.html) and [here](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters#useful-filters). A quick reference is available under the "Capture --> Capture Filters" menu.
+
+![image](https://user-images.githubusercontent.com/51442719/203676174-54d25674-e83a-4cfb-9914-9ab987a36334.png)
+
+### Display Filter Syntax
+
+This is Wireshark's most powerful feature. It supports 3000 protocols and allows conducting packet-level searches under the protocol breakdown. The official "[Display Filter Reference](https://www.wireshark.org/docs/dfref/)" provides all supported protocols breakdown for filtering.
+
+- Sample filter to capture port 80 traffic: `tcp.port == 80`
+
+Wireshark has a built-in option (Display Filter Expression) that stores all supported protocol structures to help analysts create display filters. We will cover the "Display Filter Expression" menu later. Now let's understand the fundamentals of the display filter operations. A quick reference is available under the "Analyse --> Display Filters" menu.\
+
+![image](https://user-images.githubusercontent.com/51442719/203676257-32f3ea93-b089-4a5e-bfb7-56a3d19deb1f.png)
+
+### Comparison Operators
+
+You can create display filters by using different comparison operators to find the event of interest. The primary operators are shown in the table below.
+
+
+| English | C-Like | Description | Example |
+|:---:|:---:|:---:|:---:|
+| eq | == | Equal | ip.src == 10.10.10.100 |
+| ne | != | Not equal | ip.src != 10.10.10.100 |
+| gt | > | Greater than | ip.ttl > 250 |
+| lt | < | Less Than | ip.ttl < 10 |
+| ge | >= | Greater than or equal to | ip.ttl >= 0xFA |
+| le | <= | Less than or equal to | ip.ttl <= 0xA |
+
 ---
 
 ## Task 5  Packet Filtering | Protocol Filters
