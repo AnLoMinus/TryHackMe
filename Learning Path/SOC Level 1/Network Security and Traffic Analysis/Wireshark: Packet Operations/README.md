@@ -151,6 +151,67 @@ You can create display filters by using different comparison operators to find t
 | ge | >= | Greater than or equal to | ip.ttl >= 0xFA |
 | le | <= | Less than or equal to | ip.ttl <= 0xA |
 
+> `Note`: Wireshark supports decimal and hexadecimal values in filtering. You can use any format you want according to the search you will conduct.
+
+### Logical Expressions
+Wireshark supports boolean syntax. You can create display filters by using logical operators as well.
+
+<table>
+<thead>
+  <tr>
+    <th>English  </th>
+    <th>C-Like</th>
+    <th>Description  </th>
+    <th>Example</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>and</td>
+    <td>&amp;&amp;</td>
+    <td>Logical AND</td>
+    <td>(ip.src == 10.10.10.100) AND (ip.src == 10.10.10.111)</td>
+  </tr>
+  <tr>
+    <td>or</td>
+    <td>||</td>
+    <td>Logical OR</td>
+    <td>(ip.src == 10.10.10.100) OR (ip.src == 10.10.10.111)</td>
+  </tr>
+  <tr>
+    <td>not</td>
+    <td>!</td>
+    <td>Logical NOT</td>
+    <td>!(ip.src == 10.10.10.222)<br>Note: Usage of !=value is deprecated; using it could provide inconsistent results. Using the !(value) style is suggested for more consistent results.</td>
+  </tr>
+</tbody>
+</table>
+
+Packet Filter Toolbar
+
+The filter toolbar is where you create and apply your display filters. It is a smart toolbar that helps you create valid display filters with ease. Before starting to filter packets, here are a few tips:
+
+- Packet filters are defined in lowercase.
+- Packet filters have an autocomplete feature to break down protocol details, and each detail is represented by a "dot".
+- Packet filters have a three-colour representation explained below.
+
+| Green | Valid filter |
+|:---:|---|
+| Red | Invalid filter |
+| Yellow | Warning filter. This filter works, but it is unreliable, and it is suggested to change it with a valid filter. |
+
+![image](https://user-images.githubusercontent.com/51442719/203677155-5b6d0c71-a6ca-44c7-b2fb-eed302034966.png)
+
+Filter toolbar features are shown below.
+
+![image](https://user-images.githubusercontent.com/51442719/203677177-b976069b-e6f9-4086-a75f-ff627e0dd18e.png)
+
+We've covered lots of principles and syntax. Let's put these into practice and start filtering packets in the next task.
+
+
+
+
+
 ---
 
 ## Task 5  Packet Filtering | Protocol Filters
