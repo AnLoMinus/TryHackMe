@@ -50,6 +50,17 @@ It is essential to know how Nmap scans work to spot scan activity on the network
 
 TCP flags in a nutshell.
 
+- `Synchronization` (`SYN`) – It is used in first step of connection establishment phase or 3-way handshake process between the two hosts. Only the first packet from sender as well as receiver should have this flag set. This is used for synchronizing sequence number i.e. to tell the other end which sequence number they should accept.
+
+- `Acknowledgement` (`ACK`) – It is used to acknowledge packets which are successful received by the host. The flag is set if the acknowledgement number field contains a valid acknowledgement number. 
+In given below diagram, the receiver sends an ACK = 1 as well as SYN = 1 in the second step of connection establishment to tell sender that it received its initial packet. 
+ 
+- `Finish` (`FIN`) – It is used to request for connection termination i.e. when there is no more data from the sender, it requests for connection termination. This is the last packet sent by sender. It frees the reserved resources and gracefully terminate the connection. 
+ 
+- `Reset` (`RST`) – It is used to terminate the connection if the RST sender feels something is wrong with the TCP connection or that the conversation should not exist. It can get send from receiver side when packet is send to particular host that was not expecting it. 
+
+
+
 <table>
 <thead>
   <tr>
