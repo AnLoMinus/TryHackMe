@@ -30,6 +30,55 @@ Note: A VM is attached to this room. You don't need SSH or RDP; the room provide
 
 ## Task 2  Statistics | Summary
 
+### Statistics
+
+This menu provides multiple statistics options ready to investigate to help users see the big picture in terms of the scope of the traffic, available protocols, endpoints and conversations, and some protocol-specific details like DHCP, DNS and HTTP/2. For a security analyst, it is crucial to know how to utilise the statical information. This section provides a quick summary of the processed pcap, which will help analysts create a hypothesis for an investigation. You can use the "Statistics" menu to view all available options. Now start the given VM, open the Wireshark, load the "Exercise.pcapng" file and go through the walkthrough.
+
+### Resolved Addresses
+
+This option helps analysts identify IP addresses and DNS names available in the capture file by providing the list of the resolved addresses and their hostnames. Note that the hostname information is taken from DNS answers in the capture file. Analysts can quickly identify the accessed resources by using this menu. Thus they can spot accessed resources and evaluate them according to the event of interest. You can use the "Statistics --> Resolved Addresses" menu to view all resolved addresses by Wireshark.
+
+![image](https://user-images.githubusercontent.com/51442719/203673119-74084340-559c-4770-938b-b15a7d582e34.png)
+
+### Protocol Hierarchy
+
+This option breaks down all available protocols from the capture file and helps analysts view the protocols in a tree view based on packet counters and percentages. Thus analysts can view the overall usage of the ports and services and focus on the event of interest. The golden rule mentioned in the previous room is valid in this section; you can right-click and filter the event of interest. You can use the "Statistics --> Protocol Hierarchy" menu to view this info.
+
+![image](https://user-images.githubusercontent.com/51442719/203673148-9df055cd-8f1d-4c80-875d-88e741eefe53.png)
+
+### Conversations
+
+Conversation represents traffic between two specific endpoints. This option provides the list of the conversations in five base formats; ethernet, IPv4, IPv6, TCP and UDP. Thus analysts can identify all conversations and contact endpoints for the event of interest. You can use the "Statistic --> Conversations" menu to view this info.
+
+![image](https://user-images.githubusercontent.com/51442719/203673180-89243719-f0a2-430e-b046-d2548b10b129.png)
+
+### Endpoints
+
+The endpoints option is similar to the conversations option. The only difference is that this option provides unique information for a single information field (Ethernet, IPv4, IPv6, TCP and UDP ). Thus analysts can identify the unique endpoints in the capture file and use it for the event of interest. You can use the "Statistics --> Endpoints" menu to view this info.
+
+Wireshark also supports resolving MAC addresses to human-readable format using the manufacturer name assigned by IEEE. Note that this conversion is done through the first three bytes of the MAC address and only works for the known manufacturers. When you review the ethernet endpoints, you can activate this option with the "Name resolution" button in the lower-left corner of the endpoints window.
+
+![image](https://user-images.githubusercontent.com/51442719/203673208-103ad76f-d345-4bd5-8cff-fdc4c8b88e5c.png)
+
+Name resolution is not limited only to MAC addresses. Wireshark provides IP and port name resolution options as well. However, these options are not enabled by default. If you want to use these functionalities, you need to activate them through the "Edit --> Preferences --> Name Resolution" menu. Once you enable IP and port name resolution, you will see the resolved IP address and port names in the packet list pane and also will be able to view resolved names in the "Conversations" and "Endpoints" menus as well.
+
+![image](https://user-images.githubusercontent.com/51442719/203673231-59ea89a8-e0dc-4da6-abe9-ae266d194624.png)
+
+Endpoint menu view with name resolution:
+
+![image](https://user-images.githubusercontent.com/51442719/203673253-61c0f968-d7b2-43d2-a63e-e34727290b85.png)
+
+Besides name resolution, Wireshark also provides an IP geolocation mapping that helps analysts identify the map's source and destination addresses. But this feature is not activated by default and needs supplementary data like the GeoIP database. Currently, Wireshark supports MaxMind databases, and the latest versions of the Wireshark come configured MaxMind DB resolver. However, you still need MaxMind DB files and provide the database path to Wireshark by using the "Edit --> Preferences --> Name Resolution --> MaxMind database directories" menu. Once you download and indicate the path, Wireshark will automatically provide GeoIP information under the IP protocol details for the matched IP addresses.
+
+![image](https://user-images.githubusercontent.com/51442719/203673296-1d64af2b-257d-438a-ba9f-abf8cc6682c1.png)
+
+Endpoints and GeoIP view.
+
+![image](https://user-images.githubusercontent.com/51442719/203673324-a6647bf4-d664-445f-bf3f-507c3e3d16ad.png)
+
+> `Note`: You need an active internet connection to view the GeoIP map. The lab machine doesn't have an active internet connection!
+
+
 ---
 
 ## Task 3  Statistics | Protocol Details
