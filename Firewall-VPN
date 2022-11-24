@@ -1,0 +1,76 @@
+#!/bin/sh
+#!/bin/bash
+#!/usr/bin/sh
+#!/usr/bin/bash
+#!/usr/bin/env sh
+#!/usr/bin/env bash
+#!/data/data/com.termux/files/usr/bin/sh
+#!/data/data/com.termux/files/usr/bin/bash
+###############################################################
+#                       Firewall-VPN                          #
+#-Info--------------------------------------------------------#
+#             Deleting and Adding IpTables Rules              #
+#-About-------------------------------------------------------#
+#--╼▰[ Skils ]-╼▰[ MultiMan ]                                 #
+#--╼▰[ Part of ]-╼▰[ HacKingPro ]                             #
+#--╼▰[ Script Name ]-╼▰[ HacKingPro-Firewall-VPN ]            #
+#--╼▰[ Author ]-╼▰[ AnLoMinus ]-╼▰[ Leon Yaakobov ]           #
+###############################################################
+# CREDIT: To All World Creators free Scripts & Tools          #
+# BIG THANX TO ALL COMUNITY THAT SHARE ALL THAT FREE          #
+# GREAT SCRIPTS                                               #
+# Location: Made With LOVE IN ISRAEL !                        #
+###############################################################
+#-Metadata----------------------------------------------------#
+#--╼▰[ Version ]-╼▰[ 1.0.0 ]                                  #
+#--╼▰[ Source ]-╼▰[ https://github.com/AnLoMinus/HacKingPro ] #
+#--╼▰[ Created ]-╼▰[ 24-11-2022 ]                             #
+#--╼▰[ Update ]-╼▰[ 24-11-2022 ]                              #
+###############################################################
+
+#--╼▰[ Main Menu ]--╼▰ [ FireWall Rules ]
+####### Table of contents
+# 1 - IPv4 flush
+# 2 - IPv6 flush
+# 3 - Ping machine
+# 4 - Allow VPN connection only from machine
+
+# IPv4 flush
+  iptables -P INPUT ACCEPT
+  iptables -P FORWARD ACCEPT
+  iptables -P OUTPUT ACCEPT
+  iptables -t nat -F
+  iptables -t mangle -F
+  iptables -F
+  iptables -X
+  iptables -Z
+
+  
+# IPv6 flush
+  ip6tables -P INPUT DROP
+  ip6tables -P FORWARD DROP
+  ip6tables -P OUTPUT DROP
+  ip6tables -t nat -F
+  ip6tables -t mangle -F
+  ip6tables -F
+  ip6tables -X
+  ip6tables -Z
+
+# Ping machine
+  iptables -A INPUT -p icmp -i tun0 -s $1 --icmp-type echo-request -j ACCEPT
+  iptables -A INPUT -p icmp -i tun0 -s $1 --icmp-type echo-reply -j ACCEPT
+  iptables -A INPUT -p icmp -i tun0 --icmp-type echo-request -j DROP  
+  iptables -A INPUT -p icmp -i tun0 --icmp-type echo-reply -j DROP
+  iptables -A OUTPUT -p icmp -o tun0 -d $1 --icmp-type echo-reply -j ACCEPT
+  iptables -A OUTPUT -p icmp -o tun0 -d $1 --icmp-type echo-request -j ACCEPT
+  iptables -A OUTPUT -p icmp -o tun0 --icmp-type echo-request -j DROP
+  iptables -A OUTPUT -p icmp -o tun0 --icmp-type echo-reply -j DROP
+
+# Allow VPN connection only from machine
+  iptables -A INPUT -i tun0 -p tcp -s $1 -j ACCEPT
+  iptables -A OUTPUT -o tun0 -p tcp -d $1 -j ACCEPT
+  iptables -A INPUT -i tun0 -p udp -s $1 -j ACCEPT
+  iptables -A OUTPUT -o tun0 -p udp -d $1 -j ACCEPT
+  iptables -A INPUT -i tun0 -j DROP
+  iptables -A OUTPUT -o tun0 -j DROP
+  
