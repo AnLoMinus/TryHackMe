@@ -366,3 +366,14 @@ Wireshark is a multifunctional tool that helps analysts to accomplish in-depth p
 ---
 
 ## Task 7  Conclusion
+
+Congratulations! 
+
+You just finished the "Wireshark: Packet Operations" room. In this room, we covered Wireshark statistics, filters, operators and functions. 
+
+Want to learn more? We invite you to complete the [Wireshark: Traffic Analysis room](https://tryhackme.com/jr/wiresharktrafficanalysis) to improve your Wireshark skills by investigating suspicious traffic activities. 
+
+---
+---
+- [TryHackMe | Wireshark: Packet Operations Writeup](https://medium.com/@CarsonS/tryhackme-wireshark-packet-operations-writeup-30b130ee1f06)
+
