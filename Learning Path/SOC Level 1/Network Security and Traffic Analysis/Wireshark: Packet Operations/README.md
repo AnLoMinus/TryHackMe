@@ -208,13 +208,65 @@ Filter toolbar features are shown below.
 
 We've covered lots of principles and syntax. Let's put these into practice and start filtering packets in the next task.
 
-
-
-
-
 ---
 
 ## Task 5  Packet Filtering | Protocol Filters
+
+### Protocol Filters
+
+As mentioned in the previous task, Wireshark supports 3000 protocols and allows packet-level investigation by filtering the protocol fields. This task shows the creation and usage of filters against different protocol fields. 
+
+### IP Filters
+
+IP filters help analysts filter the traffic according to the IP level information from the packets (Network layer of the OSI model). This is one of the most commonly used filters in Wireshark. These filters filter network-level information like IP addresses, version, time to live, type of service, flags, and checksum values.
+
+The common filters are shown in the given table.
+
+| Filter | Description |
+|:---:|:---:|
+| ip | Show all IP packets. |
+| ip.addr == 10.10.10.111 | Show all packets containing IP address 10.10.10.111. |
+| ip.addr == 10.10.10.0/24 | Show all packets containing IP addresses from 10.10.10.0/24 subnet. |
+| ip.src == 10.10.10.111 | Show all packets originated from 10.10.10.111 |
+| ip.dst == 10.10.10.111 | Show all packets sent to 10.10.10.111 |
+| ip.addr vs ip.src/ip.dst | Note: The ip.addr filters the traffic without considering the packet direction. The ip.src/ip.dst filters the packet depending on the packet direction. |
+
+![image](https://user-images.githubusercontent.com/51442719/203679114-c6e890d8-6eef-4c9a-b817-81908ca0b84f.png)
+
+### TCP and UDP Filters
+TCP filters help analysts filter the traffic according to protocol-level information from the packets (Transport layer of the OSI model). These filters filter transport protocol level information like source and destination ports, sequence number, acknowledgement number, windows size, timestamps, flags, length and protocol errors.
+
+| Filter | Description | Filter | Expression |
+|:---:|:---:|:---:|:---:|
+| tcp.port == 80 | Show all TCP packets with port 80  | udp.port == 53 | Show all UDP packets with port 53 |
+| tcp.srcport == 1234 | Show all TCP packets originating from port 1234 | udp.srcport == 1234 | Show all UDP packets originating from port 1234 |
+| tcp.dstport == 80 | Show all TCP packets sent to port 80 | udp.dstport == 5353 | Show all UDP packets sent to port 5353 |
+
+![image](https://user-images.githubusercontent.com/51442719/203679220-42aadf55-ec90-457f-bcf4-c550cacdfc9f.png)
+
+### Application Level Protocol Filters | HTTP and DNS
+Application-level protocol filters help analysts filter the traffic according to application protocol level information from the packets (Application layer of the OSI model ). These filters filter application-specific information, like payload and linked data, depending on the protocol type.
+
+| Filter | Description | Filter | Description |
+|:---:|:---:|:---:|:---:|
+| http | Show all HTTP packets | dns | Show all DNS packets |
+| http.response.code == 200 | Show all packets with HTTP response code "200" | dns.flags.response == 0 | Show all DNS requests |
+| http.request.method == "GET" | Show all HTTP GET requests | dns.flags.response == 1 | Show all DNS responses |
+| http.request.method == "POST" | Show all HTTP POST requests | dns.qry.type == 1 | Show all DNS "A" records |
+
+![image](https://user-images.githubusercontent.com/51442719/203679322-fadf5fc5-8c04-42e1-ba22-0b96efb1c503.png)
+
+### Display Filter Expressions
+
+As mentioned earlier, Wireshark has a built-in option (Display Filter Expression) that stores all supported protocol structures to help analysts create display filters. When an analyst can't recall the required filter for a specific protocol or is unsure about the assignable values for a filter, the Display Filter Expressions menu provides an easy-to-use display filter builder guide. It is available under the "Analyse --> Display Filter Expression" menu.
+
+It is impossible to memorise all details of the display filters for each protocol. Each protocol can have different fields and can accept various types of values. The Display Filter Expressions menu shows all protocol fields, accepted value types (integer or string) and predefined values (if any). Note that it will take time and require practice to master creating filters and learning the protocol filter fields.
+
+![image](https://user-images.githubusercontent.com/51442719/203679374-528ecf9d-efd9-43ba-94b5-79216f0bfa4a.png)
+
+> `Note`: The first room introduced the "Colouring Rules" (Task-2). Now you know how to create display filters and filter the event of interest. You can use the "View --> Coloring Rules" menu to assign colours to highlight your display filter results.
+
+
 
 ---
 
