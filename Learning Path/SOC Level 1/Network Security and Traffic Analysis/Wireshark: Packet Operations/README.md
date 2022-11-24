@@ -78,10 +78,25 @@ Endpoints and GeoIP view.
 
 > `Note`: You need an active internet connection to view the GeoIP map. The lab machine doesn't have an active internet connection!
 
-
 ---
 
 ## Task 3  Statistics | Protocol Details
+
+### IPv4 and IPv6
+
+Up to here, almost all options provided information that contained both versions of the IP addresses. The statistics menu has two options for narrowing the statistics on packets containing a specific IP version. Thus, analysts can identify and list all events linked to specific IP versions in a single window and use it for the event of interest. You can use the "Statistics --> IPvX Statistics" menu to view this info.
+
+![image](https://user-images.githubusercontent.com/51442719/203675825-adf4a3e4-f781-4af9-88fd-0c4acd770dc3.png)
+
+### DNS
+This option breaks down all DNS packets from the capture file and helps analysts view the findings in a tree view based on packet counters and percentages of the DNS protocol. Thus analysts can view the DNS service's overall usage, including rcode, opcode, class, query type, service and query stats and use it for the event of interest. You can use the "Statistics --> DNS" menu to view this info.
+
+![image](https://user-images.githubusercontent.com/51442719/203675852-3a636be6-2e1c-47b1-b3db-a62e5b531fef.png)
+
+### HTTP
+This option breaks down all HTTP packets from the capture file and helps analysts view the findings in a tree view based on packet counters and percentages of the HTTP protocol. Thus analysts can view the HTTP service's overall usage, including request and response codes and the original requests. You can use the "Statistics --> HTTP" menu to view this info.
+
+![image](https://user-images.githubusercontent.com/51442719/203675882-029dc9af-c656-4569-beb8-0119ca27ae2e.png)
 
 ---
 
