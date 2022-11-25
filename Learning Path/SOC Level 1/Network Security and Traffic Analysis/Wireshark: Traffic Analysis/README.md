@@ -489,3 +489,8 @@ Detecting suspicious activities in chunked files is easy and a great way to lear
 ---
 
 ## Task 11  Conclusion
+
+---
+---
+
+- [Wireshark: Traffic Analysis - Tryhackme](https://www.youtube.com/watch?v=SObjAYjOzAg)
