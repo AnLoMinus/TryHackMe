@@ -268,3 +268,8 @@ What is unusual?
 ---
 
 ## Task 12  Conclusion
+
+---
+---
+
+- https://www.cyb3rm3.com/btwindowsinternals
