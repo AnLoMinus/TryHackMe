@@ -345,13 +345,122 @@ One more anomaly! The MAC address that ends with "b4" is the destination of all 
 
 Detecting these bits and pieces of information in a big capture file is challenging. However, in real-life cases, you will not have "tailored data" ready for investigation. Therefore you need to have the analyst mindset, knowledge and tool skills to filter and detect the anomalies. 
 
-Note: In traffic analysis, there are always alternative solutions available. The solution type and the approach depend on the analyst's knowledge and skill level and the available data sources. 
+> `Note`: In traffic analysis, there are always alternative solutions available. The solution type and the approach depend on the analyst's knowledge and skill level and the available data sources. 
 
 Detecting suspicious activities in chunked files is easy and a great way to learn how to focus on the details. Now use the exercise files to put your skills into practice against a single capture file and answer the questions below!
 
 ---
 
 ## Task 4  Identifying Hosts: DHCP, NetBIOS and Kerberos
+
+### Identifying Hosts
+When investigating a compromise or malware infection activity, a security analyst should know how to identify the hosts on the network apart from IP to MAC address match. One of the best methods is identifying the hosts and users on the network to decide the investigation's starting point and list the hosts and users associated with the malicious traffic/activity.
+
+Usually, enterprise networks use a predefined pattern to name users and hosts. While this makes knowing and following the inventory easier, it has good and bad sides. The good side is that it will be easy to identify a user or host by looking at the name. The bad side is that it will be easy to clone that pattern and live in the enterprise network for adversaries. There are multiple solutions to avoid these kinds of activities, but for a security analyst, it is still essential to have host and user identification skills.
+
+Protocols that can be used in Host and User identification:
+
+- Dynamic Host Configuration Protocol (DHCP) traffic
+- NetBIOS (NBNS) traffic 
+- Kerberos traffic
+
+### DHCP Analysis
+DHCP protocol, or Dynamic Host Configuration Protocol (DHCP), is the technology responsible for managing automatic IP address and required communication parameters assignment.
+
+DHCP investigation in a nutshell:
+
+<table>
+<thead>
+  <tr>
+    <th>Notes</th>
+    <th>Wireshark Filter</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Global search.</td>
+    <td>dhcp or bootp</td>
+  </tr>
+  <tr>
+    <td>Filtering the proper DHCP packet options is vital to finding an event of interest. <br><br><br>"DHCP Request" packets contain the hostname information<br>"DHCP ACK" packets represent the accepted requests<br>"DHCP NAK" packets represent denied requests<br>Due to the nature of the protocol, only "Option 53" ( request type) has predefined static values. You should filter the packet type first, and then you can filter the rest of the options by "applying as column" or use the advanced filters like "contains" and "matches".<br></td>
+    <td> <br><br> Request: dhcp.option.dhcp == 3 <br> ACK: dhcp.option.dhcp == 5 <br> NAK: dhcp.option.dhcp == 6 <br> </td>
+  </tr>
+  <tr>
+    <td><br>"DHCP Request" options for grabbing the low-hanging fruits:<br>Option 12: Hostname.<br>Option 50: Requested IP address.<br>Option 51: Requested IP lease time.<br>Option 61: Client's MAC address.</td>
+    <td>dhcp.option.hostname contains "keyword"</td>
+  </tr>
+  <tr>
+    <td><br>"DHCP ACK" options for grabbing the low-hanging fruits:<br>Option 15: Domain name.<br>Option 51: Assigned IP lease time.</td>
+    <td>dhcp.option.domain_name contains "keyword"</td>
+  </tr>
+  <tr>
+    <td><br>"DHCP NAK" options for grabbing the low-hanging fruits:<br>Option 56: Message (rejection details/reason).</td>
+    <td>As the message could be unique according to the case/situation, It is suggested to read the message instead of filtering it. Thus, the analyst could create a more reliable hypothesis/result by understanding the event circumstances.</td>
+  </tr>
+</tbody>
+</table>
+
+![image](https://user-images.githubusercontent.com/51442719/203883379-e5f0ba48-b4d3-4d87-8838-cae71831a945.png)
+
+### NetBIOS (NBNS) Analysis
+
+NetBIOS or Network Basic Input/Output System is the technology responsible for allowing applications on different hosts to communicate with each other. 
+
+NBNS investigation in a nutshell:
+
+<table>
+<thead>
+  <tr>
+    <th>Notes</th>
+    <th>Wireshark Filter</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Global search.</td>
+    <td>nbns</td>
+  </tr>
+  <tr>
+    <td>"NBNS" options for grabbing the low-hanging fruits:<br><br>Queries: Query details.<br>Query details could contain "name, Time to live (TTL) and IP address details"</td>
+    <td>nbns.name contains "keyword"</td>
+  </tr>
+</tbody>
+</table>
+
+![image](https://user-images.githubusercontent.com/51442719/203883459-ff263cc9-821d-4700-bb43-4761ac97c866.png)
+
+### Kerberos Analysis
+
+Kerberos is the default authentication service for Microsoft Windows domains. It is responsible for authenticating service requests between two or more computers over the untrusted network. The ultimate aim is to prove identity securely.
+
+Kerberos investigation in a nutshell:
+
+<table>
+<thead>
+  <tr>
+    <th>Notes</th>
+    <th>Wireshark Filter</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Global search.</td>
+    <td>kerberos</td>
+  </tr>
+  <tr>
+    <td>User account search:<br>CNameString: The username.<br>Note: Some packets could provide hostname information in this field. To avoid this confusion, filter the "$" value. The values end with "$" are hostnames, and the ones without it are user names.<br></td>
+    <td>kerberos.CNameString contains "keyword" <br>kerberos.CNameString and !(kerberos.CNameString contains "$" )</td>
+  </tr>
+  <tr>
+    <td>"Kerberos" options for grabbing the low-hanging fruits:<br>pvno: Protocol version.<br>realm: Domain name for the generated ticket.<br><br>sname: Service and domain name for the generated ticket.<br>addresses: Client IP address and NetBIOS name.<br><br>Note: the "addresses" information is only available in request packets.</td>
+    <td>kerberos.pvno == 5<br>kerberos.realm contains ".org" <br>kerberos.SNameString == "krbtg"</td>
+  </tr>
+</tbody>
+</table>
+
+![image](https://user-images.githubusercontent.com/51442719/203883506-b7bbae3b-aab1-4950-9d99-2701da5a02fb.png)
+
+Detecting suspicious activities in chunked files is easy and a great way to learn how to focus on the details. Now use the exercise files to put your skills into practice against a single capture file and answer the questions below!
 
 ---
 
