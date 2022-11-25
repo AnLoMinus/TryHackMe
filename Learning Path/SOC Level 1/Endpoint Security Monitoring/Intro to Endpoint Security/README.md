@@ -238,3 +238,28 @@ We have tackled the foundations of endpoint security monitoring from previous ta
 
 ## Task 5  Conclusion
 
+Congratulations! You have completed the investigation task. 
+
+In the simulated threat investigation activity, we have learned the following:
+
+- Having a baseline document aids you in differentiating malicious events from benign ones.
+- Event correlation provides a deeper understanding of the concurrent events triggered by the malicious activity.
+- Taking note of each significant artefact is crucial in the investigation.
+- Other potentially affected assets should be inspected and remediated using the collected malicious artefacts. 
+
+In conclusion, we covered the basic concepts of Endpoint Security Monitoring:
+
+- Endpoint Security Fundamentals tackled Core Windows Processes and Sysinternals.
+- Endpoint Logging and Monitoring introduced logging functionalities such as Windows Event Logging and Sysmon and monitoring/investigation tools such as OSQuery and Wazuh.
+- Endpoint Log Analysis highlighted the importance of having a methodology such as baselining and event correlation.
+
+You are now ready to deep-dive into the Endpoint Security Monitoring Module. To continue this path, you may refer to the list of rooms mentioned in the previous tasks:
+
+- [Core Windows Processes](https://tryhackme.com/room/btwindowsinternals)
+- [Sysinternals](https://tryhackme.com/room/btsysinternalssg)
+- [Windows Event Logs](https://tryhackme.com/room/windowseventlogs)
+- [Sysmon](https://tryhackme.com/room/sysmon)
+- [OSQuery](https://tryhackme.com/room/osqueryf8)
+- [Wazuh](https://tryhackme.com/room/wazuhct)
+
+
