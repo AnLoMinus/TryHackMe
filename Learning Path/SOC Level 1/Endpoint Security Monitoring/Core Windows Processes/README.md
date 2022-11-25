@@ -164,6 +164,48 @@ What is unusual behaviour for this process?
 
 ## Task 4  System > smss.exe
 
+The next process is smss.exe (Session Manager Subsystem). This process, also known as the Windows Session Manager, is responsible for creating new sessions. It is the first user-mode process started by the kernel.
+
+This process starts the kernel and user modes of the Windows subsystem (you can read more about the NT Architecture [here](https://en.wikipedia.org/wiki/Architecture_of_Windows_NT)). This subsystem includes win32k.sys (kernel mode), winsrv.dll (user mode), and csrss.exe (user mode). 
+
+Smss.exe starts csrss.exe (Windows subsystem) and wininit.exe in Session 0, an isolated Windows session for the operating system, and csrss.exe and winlogon.exe for Session 1, which is the user session. The first child instance creates child instances in new sessions, done by smss.exe copying itself into the new session and self-terminating. You can read more about this process [here](https://en.wikipedia.org/wiki/Session_Manager_Subsystem).
+
+Session 0 (csrss.exe & wininit.exe)
+
+![image](https://user-images.githubusercontent.com/51442719/203888991-cfed26d3-8a43-4f11-8aeb-664c40ee39c6.png)
+
+![image](https://user-images.githubusercontent.com/51442719/203889001-edfff677-b9c4-4757-bb8a-4bf79b1680a8.png)
+
+Session 1 (csrss.exe & winlogon.exe)
+
+![image](https://user-images.githubusercontent.com/51442719/203889026-8c4f2485-f0e1-4b0f-8132-b4a9a1515dce.png)
+
+![image](https://user-images.githubusercontent.com/51442719/203889034-40e700a4-7d60-414a-9e0f-ba3a68705162.png)
+
+ Any other subsystem listed in the `Required` value of `HKLM\System\CurrentControlSet\Control\Session Manager\Subsystems` is also launched.
+
+![image](https://user-images.githubusercontent.com/51442719/203889079-ebd3a1cf-8a05-4a7c-8393-6b6a702f9b22.png)
+
+SMSS is also responsible for creating environment variables, virtual memory paging files and starts winlogon.exe (the Windows Logon Manager).
+
+What is normal?
+
+![image](https://user-images.githubusercontent.com/51442719/203889115-f4e657a7-aafa-4f1a-97c1-f4e850d7b267.png)
+
+- `Image Path`:  %SystemRoot%\System32\smss.exe
+- `Parent Process`:  System
+- `Number of Instances`:  One master instance and child instance per session. The child instance exits after creating the session.
+- `User Account`:  Local System
+- `Start Time`:  Within seconds of boot time for the master instance
+
+What is unusual?
+- A different parent process other than System (4)
+- The image path is different from C:\Windows\System32
+- More than one running process. (children self-terminate and exit after each new session)
+- The running User is not the SYSTEM user
+- Unexpected registry entries for Subsystem
+
+
 ---
 
 ## Task 5  csrss.exe
