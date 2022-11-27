@@ -273,6 +273,50 @@ What is unusual?
 ## Task 7  wininit.exe > services.exe
 
 The next process is the Service Control Manager (SCM) or services.exe. Its primary responsibility is to handle system services: loading services, interacting with services and starting or ending services. It maintains a database that can be queried using a Windows built-in utility, sc.exe. 
+
+cmd.exe
+```cmd
+C:\Users\Administrator> sc.exe
+DESCRIPTION:
+        SC is a command line program used for communicating with the
+        Service Control Manager and services.
+USAGE:
+        sc <server> [command] [service name] <option1> <option2>...
+```
+- Information regarding services is stored in the registry, `HKLM\System\CurrentControlSet\Services`. 
+
+![image](https://user-images.githubusercontent.com/51442719/204154866-02167030-8752-411c-9d85-9704b77c51f3.png)
+
+This process also loads device drivers marked as auto-start into memory. 
+
+When a user logs into a machine successfully, this process is responsible for setting the value of the Last Known Good control set (Last Known Good Configuration), `HKLM\System\Select\LastKnownGood`, to that of the CurrentControlSet. 
+
+![image](https://user-images.githubusercontent.com/51442719/204154880-2220cff6-d1bb-44ac-ba23-f28a5e41b4c7.png)
+
+This process is the parent to several other key processes: svchost.exe, spoolsv.exe, msmpeng.exe, and dllhost.exe, to name a few. You can read more about this process [here](https://en.wikipedia.org/wiki/Service_Control_Manager).
+
+![image](https://user-images.githubusercontent.com/51442719/204154896-e20e0926-080c-44f9-974b-8b70602921b9.png)
+
+What is normal?
+
+![image](https://user-images.githubusercontent.com/51442719/204154902-a6dc6d60-84d0-450e-9d2b-106c740136dd.png)
+
+![image](https://user-images.githubusercontent.com/51442719/204154908-cd2f06f3-975d-4362-a09f-28b5758ea523.png)
+
+- Image Path:  %SystemRoot%\System32\services.exe
+- Parent Process:  wininit.exe
+- Number of Instances:  One
+- User Account:  Local System
+- Start Time:  Within seconds of boot time
+
+What is unusual?
+- A parent process other than wininit.exe
+- Image file path other than C:\Windows\System32
+- Subtle misspellings to hide rogue processes in plain sight
+- Multiple running instances
+- Not running as SYSTEM
+
+
 ---
 
 ## Task 8  wininit.exe > services.exe > svchost.exe
