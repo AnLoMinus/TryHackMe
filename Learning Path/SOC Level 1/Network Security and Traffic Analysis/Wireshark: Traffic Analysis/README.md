@@ -649,13 +649,56 @@ Detecting suspicious activities in chunked files is easy and a great way to lear
 
 ## Task 9  Bonus: Hunt Cleartext Credentials!
 
+### Bonus: Hunt Cleartext Credentials!
+
+Up to here, we discussed how to inspect the packets for specific conditions and spot anomalies. As mentioned in the first room, Wireshark is not an IDS, but it provides suggestions for some cases under the expert info. However, sometimes anomalies replicate the legitimate traffic, so the detection becomes harder. For example, in a cleartext credential hunting case, it is not easy to spot the multiple credential inputs and decide if there is a brute-force attack or if it is a standard user who mistyped their credentials.
+
+As everything is presented at the packet level, it is hard to spot the multiple username/password entries at first glance. The detection time will decrease when an analyst can view the credential entries as a list. Wireshark has such a feature to help analysts who want to hunt cleartext credential entries.
+
+Some Wireshark dissectors (FTP, HTTP, IMAP, pop and SMTP) are programmed to extract cleartext passwords from the capture file. You can view detected credentials using the "Tools --> Credentials" menu. This feature works only after specific versions of Wireshark (v3.1 and later). Since the feature works only with particular protocols, it is suggested to have manual checks and not entirely rely on this feature to decide if there is a cleartext credential in the traffic.
+
+Once you use the feature, it will open a new window and provide detected credentials. It will show the packet number, protocol, username and additional information. This window is clickable; clicking on the packet number will select the packet containing the password, and clicking on the username will select the packet containing the username info. The additional part prompts the packet number that contains the username.
+
+![image](https://user-images.githubusercontent.com/51442719/204116897-7da766fd-0532-45e3-85dd-2dc76592e2a1.png)
+
+
 ---
 
 ## Task 10  Bonus: Actionable Results!
 
+### Bonus: Actionable Results!
+
+You have investigated the traffic, detected anomalies and created notes for further investigation. What is next? Not every case investigation is carried out by a crowd team. As a security analyst, there will be some cases you need to spot the anomaly, identify the source and take action. Wireshark is not all about packet details; it can help you to create firewall rules ready to implement with a couple of clicks. You can create firewall rules by using the "Tools --> Firewall ACL Rules" menu. Once you use this feature, it will open a new window and provide a combination of rules (IP, port and MAC address-based) for different purposes. Note that these rules are generated for implementation on an outside firewall interface.
+
+Currently, Wireshark can create rules for:
+
+- Netfilter (iptables)
+- Cisco IOS (standard/extended)
+- IP Filter (ipfilter)
+- IPFirewall (ipfw)
+- Packet filter (pf)
+- Windows Firewall (netsh new/old format)
+
+![image](https://user-images.githubusercontent.com/51442719/204117176-2f20978e-3bc9-4742-bc63-f15373a91264.png)
+
+
 ---
 
 ## Task 11  Conclusion
+
+#### Congratulations! You just finished the "Wireshark: The Traffic Analysis" room.
+
+In this room, we covered how to use the Wireshark to detect anomalies and investigate events of interest at the packet level. Now, we invite you to complete the Wireshark challenge room: [Carnage](https://tryhackme.com/room/c2carnage), Warzone 1 and Warzone 2.
+
+Wireshark is a good tool for starting a network security investigation. However, it is not enough to stop the threats. A security analyst should have IDS/IPS knowledge and extended tool skills to detect and prevent anomalies and threats. As the attacks are getting more sophisticated consistently, the use of multiple tools and detection strategies becomes a requirement. The following rooms will help you step forward in network traffic analysis and anomaly/threat detection.
+
+- NetworkMiner
+- Snort
+- Snort Challenge -  The Basics
+- Snort Challenge - Live Attacks
+- Zeek
+- Zeek Exercises
+- Brim
 
 ---
 ---
