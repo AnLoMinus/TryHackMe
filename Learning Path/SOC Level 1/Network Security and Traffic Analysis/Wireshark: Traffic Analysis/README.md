@@ -600,6 +600,51 @@ Detecting suspicious activities in chunked files is easy and a great way to lear
 
 ## Task 8  Encrypted Protocol Analysis: Decrypting HTTPS
 
+### Decrypting HTTPS Traffic
+
+When investigating web traffic, analysts often run across encrypted traffic. This is caused by using the Hypertext Transfer Protocol Secure (HTTPS) protocol for enhanced security against spoofing, sniffing and intercepting attacks. HTTPS uses TLS protocol to encrypt communications, so it is impossible to decrypt the traffic and view the transferred data without having the encryption/decryption key pairs. As this protocol provides a good level of security for transmitting sensitive data, attackers and malicious websites also use HTTPS. Therefore, a security analyst should know how to use key files to decrypt encrypted traffic and investigate the traffic activity.
+
+The packets will appear in different colours as the HTTP traffic is encrypted. Also, protocol and info details (actual URL address and data returned from the server) will not be fully visible. The first image below shows the HTTP packets encrypted with the TLS protocol. The second and third images demonstrate filtering HTTP packets without using a key log file.
+
+#### Additional information for HTTPS :
+  
+| Notes | Wireshark Filter |
+|:---:|:---:|
+| "HTTPS Parameters" for grabbing the low-hanging fruits:<br>Request: Listing all requests<br><br>TLS: Global TLS search<br>TLS Client Request<br>TLS Server response<br>Local Simple Service Discovery Protocol (SSDP)<br>Note: SSDP is a network protocol that provides advertisement and discovery of network services. | http.request<br>tls<br>tls.handshake.type == 1<br>tls.handshake.type == 2<br>ssdp |
+  
+![image](https://user-images.githubusercontent.com/51442719/204115836-18c855b0-242b-4acd-9379-b2c964255614.png)
+
+Similar to the TCP three-way handshake process, the TLS protocol has its handshake process. The first two steps contain "Client Hello" and "Server Hello" messages. The given filters show the initial hello packets in a capture file. These filters are helpful to spot which IP addresses are involved in the TLS handshake.
+
+- Client Hello: `(http.request or tls.handshake.type == 1) and !(ssdp)` 
+- Server Hello: `(http.request or tls.handshake.type == 2) and !(ssdp)`  
+  
+![image](https://user-images.githubusercontent.com/51442719/204116011-f79c2207-35e1-4db5-baf1-5a5439d90462.png)
+
+An encryption key log file is a text file that contains unique key pairs to decrypt the encrypted traffic session. These key pairs are automatically created (per session) when a connection is established with an SSL/TLS-enabled webpage. As these processes are all accomplished in the browser, you need to configure your system and use a suitable browser (Chrome and Firefox support this) to save these values as a key log file. To do this, you will need to set up an environment variable and create the SSLKEYLOGFILE, and the browser will dump the keys to this file as you browse the web. SSL/TLS key pairs are created per session at the connection time, so it is important to dump the keys during the traffic capture. Otherwise, it is not possible to create/generate a suitable key log file to decrypt captured traffic. You can use the "right-click" menu or "Edit --> Preferences --> Protocols --> TLS" menu to add/remove key log files.
+
+Adding key log files with the "right-click" menu:
+
+![image](https://user-images.githubusercontent.com/51442719/204116116-201e5047-6ae4-4e42-b0a3-6c353b0a260f.png)
+
+Adding key log files with the "Edit --> Preferences --> Protocols --> TLS" menu:
+
+![image](https://user-images.githubusercontent.com/51442719/204116121-d3ab6575-c965-4ab1-a762-96a5691c4e85.png)
+  
+Viewing the traffic with/without the key log files:
+
+![image](https://user-images.githubusercontent.com/51442719/204116128-59f7664e-5986-44df-b4a5-793ce6d90638.png)
+
+The above image shows that the traffic details are visible after using the key log file. Note that the packet details and bytes pane provides the data in different formats for investigation. Decompressed header info and HTTP2 packet details are available after decrypting the traffic. Depending on the packet details, you can also have the following data formats:
+
+- Frame
+- Decrypted TLS
+- Decompressed Header
+- Reassembled TCP
+- Reassembled SSL
+
+Detecting suspicious activities in chunked files is easy and a great way to learn how to focus on the details. Now use the exercise files to put your skills into practice against a single capture file and answer the questions below!
+  
 ---
 
 ## Task 9  Bonus: Hunt Cleartext Credentials!
