@@ -514,10 +514,44 @@ Detecting suspicious activities in chunked files is easy and a great way to lear
 
 ## Task 6  Cleartext Protocol Analysis: FTP
 
+### Cleartext Protocol Analysis
+
+Investigating cleartext protocol traces sounds easy, but when the time comes to investigate a big network trace for incident analysis and response, the game changes. Proper analysis is more than following the stream and reading the cleartext data. For a security analyst, it is important to create statistics and key results from the investigation process. As mentioned earlier at the beginning of the Wireshark room series, the analyst should have the required network knowledge and tool skills to accomplish this. Let's simulate a cleartext protocol investigation with Wireshark!
+
+### FTP Analysis 
+
+File Transfer Protocol (FTP) is designed to transfer files with ease, so it focuses on simplicity rather than security. As a result of this, using this protocol in unsecured environments could create security issues like:
+
+- MITM attacks
+- Credential stealing and unauthorised access
+- Phishing
+- Malware planting
+- Data exfiltration
+
+#### FTP analysis in a nutshell:
+
+| Notes | Wireshark Filter |
+|:---:|:---:|
+| Global search | ftp |
+| "FTP" options for grabbing the low-hanging fruits:<br>x1x series: Information request responses.<br>x2x series: Connection messages.<br>x3x series: Authentication messages.<br>Note: "200" means command successful. | --- |
+| "x1x" series options for grabbing the low-hanging fruits:<br>211: System status.<br>212: Directory status.<br>213: File status | ftp.response.code == 211  |
+| "x2x" series options for grabbing the low-hanging fruits:<br>220: Service ready.<br>227: Entering passive mode.<br>228: Long passive mode.<br>229: Extended passive mode. | ftp.response.code == 227 |
+| "x3x" series options for grabbing the low-hanging fruits:<br>230: User login.<br>231: User logout.<br>331: Valid username.<br>430: Invalid username or password<br>530: No login, invalid password. | ftp.response.code == 230 |
+| "FTP" commands for grabbing the low-hanging fruits:<br>USER: Username.<br>PASS: Password.<br>CWD: Current work directory.<br>LIST: List. | ftp.request.command == "USER"<br>ftp.request.command == "PASS"<br>ftp.request.arg == "password" |
+| Advanced usages examples for grabbing low-hanging fruits:<br>Bruteforce signal: List failed login attempts.<br>Bruteforce signal: List target username.<br>Password spray signal: List targets for a static password. | ftp.response.code == 530<br>(ftp.response.code == 530) and (ftp.response.arg contains "username")<br>(ftp.request.command == "PASS" ) and (ftp.request.arg == "password") |
+
+![image](https://user-images.githubusercontent.com/51442719/204114809-485a15a5-fb56-4919-83d8-ec0be0b6a42b.png)
+  
+Detecting suspicious activities in chunked files is easy and a great way to learn how to focus on the details. Now use the exercise files to put your skills into practice against a single capture file and answer the questions below!
+
+
+  
 ---
 
 ## Task 7  Cleartext Protocol Analysis: HTTP
 
+
+  
 ---
 
 ## Task 8  Encrypted Protocol Analysis: Decrypting HTTPS
