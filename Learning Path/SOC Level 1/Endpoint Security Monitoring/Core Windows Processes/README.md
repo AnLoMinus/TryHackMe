@@ -408,18 +408,92 @@ What is unusual?
 - Multiple running instances
 - Not running as SYSTEM
 
-
 ---
 
 ## Task 10  winlogon.exe
+
+The Windows Logon, winlogon.exe, is responsible for handling the Secure Attention Sequence (SAS). It is the ALT+CTRL+DELETE key combination users press to enter their username & password. 
+
+This process is also responsible for loading the user profile. It loads the user's NTUSER.DAT into HKCU, and userinit.exe loads the user's shell. Read more about this process [here](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc939862(v=technet.10)?redirectedfrom=MSDN).
+
+![image](https://user-images.githubusercontent.com/51442719/204155601-61ba0527-19d8-4808-afa0-03ffc9b887c6.png)
+
+It is also responsible for locking the screen and running the user's screensaver, among other functions. You can read more about this process here.
+
+Remember from earlier sections, smss.exe launches this process along with a copy of csrss.exe within Session 1. 
+
+![image](https://user-images.githubusercontent.com/51442719/204155618-ca86d3b9-3bb9-43e4-ae93-a444e169012b.png)
+
+What is normal?
+
+![image](https://user-images.githubusercontent.com/51442719/204155626-1f76ee9f-a56e-445f-8df6-394595d5da00.png)
+
+![image](https://user-images.githubusercontent.com/51442719/204155627-f18c1808-7819-4705-9703-cd0e2a873471.png)
+
+- Image Path:  %SystemRoot%\System32\winlogon.exe
+- Parent Process:  Created by an instance of smss.exe that exits, so analysis tools usually do not provide the parent process name.
+- Number of Instances:  One or more
+- User Account:  Local System
+- Start Time:  Within seconds of boot time for the first instance (for Session 1). Additional instances occur as new sessions are created, typically through Remote Desktop or Fast User Switching logons.
+
+What is unusual?
+- An actual parent process. (smss.exe calls this process and self-terminates)
+- Image file path other than C:\Windows\System32
+- Subtle misspellings to hide rogue processes in plain sight
+- Not running as SYSTEM
+- Shell value in the registry other than explorer.exe
 
 ---
 
 ## Task 11  explorer.exe
 
+The last process we'll look at is Windows Explorer, explorer.exe. This process gives the user access to their folders and files. It also provides functionality for other features, such as the Start Menu and Taskbar.
+
+As mentioned previously, the Winlogon process runs userinit.exe, which launches the value in `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell`. Userinit.exe exits after spawning explorer.exe. Because of this, the parent process is non-existent. 
+
+There will be many child processes for explorer.exe.
+
+![image](https://user-images.githubusercontent.com/51442719/204155664-4c3c3e51-5b5e-4513-84b5-abf248a54b8a.png)
+
+What is normal?
+
+![image](https://user-images.githubusercontent.com/51442719/204155673-05e021be-2114-44e0-a659-c898a0a8ec06.png)
+
+- Image Path:  %SystemRoot%\explorer.exe
+- Parent Process:  Created by userinit.exe and exits
+- Number of Instances:  One or more per interactively logged-in user
+- User Account:  Logged-in user(s)
+- Start Time:  First instance when the first interactive user logon session begins
+
+What is unusual?
+- An actual parent process. (userinit.exe calls this process and exits)
+- Image file path other than C:\Windows
+- Running as an unknown user
+- Subtle misspellings to hide rogue processes in plain sight
+- Outbound TCP/IP connections
+
+![image](https://user-images.githubusercontent.com/51442719/204155690-f8256e46-2cbc-4f95-b336-a1d86df8f159.png)
+
 ---
 
 ## Task 12  Conclusion
+
+
+Understanding how the Windows operating system functions as a defender is vital. The Windows processes discussed in this room are core processes, and understanding how they usually operate can aid a defender in identifying unusual activity on the endpoint. 
+
+With the introduction of Windows 10, new processes have been added to the list of core processes to know and understand normal behaviour.
+
+Earlier it was mentioned that if Credential Guard is enabled on the endpoint, an additional process will be running, which will be a child process to wininit.exe, and that process is lsaiso.exe. This process works with lsass.exe to enhance password protection on the endpoint. 
+
+Other processes with Windows 10 are RuntimeBroker.exe and taskhostw.exe (formerly taskhost.exe and taskhostex.exe). Please research these processes and any other processes you might be curious about to understand their purpose and their normal functionality. 
+
+The information for this room is derived from multiple sources.
+
+- https://www.threathunting.se/tag/windows-process/
+- https://www.sans.org/security-resources/posters/hunt-evil/165/download
+- https://docs.microsoft.com/en-us/sysinternals/resources/windows-internals
+
+Other links are provided throughout the room. Reading them at your own leisure to further your foundation and understanding of the core Windows processes is encouraged.
 
 ---
 ---
