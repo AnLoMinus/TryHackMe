@@ -545,11 +545,55 @@ File Transfer Protocol (FTP) is designed to transfer files with ease, so it focu
 Detecting suspicious activities in chunked files is easy and a great way to learn how to focus on the details. Now use the exercise files to put your skills into practice against a single capture file and answer the questions below!
 
 
-  
 ---
 
 ## Task 7  Cleartext Protocol Analysis: HTTP
 
+### HTTP Analysis 
+
+Hypertext Transfer Protocol (HTTP) is a cleartext-based, request-response and client-server protocol. It is the standard type of network activity to request/serve web pages, and by default, it is not blocked by any network perimeter. As a result of being unencrypted and the backbone of web traffic, HTTP is one of the must-to-know protocols in traffic analysis. Following attacks could be detected with the help of HTTP analysis:
+
+- Phishing pages
+- Web attacks
+- Data exfiltration
+- Command and control traffic (C2)
+
+#### HTTP analysis in a nutshell:
+
+| Notes | Wireshark Filter |
+|:---:|:---:|
+| Global search<br>Note: HTTP2 is a revision of the HTTP protocol for better performance and security. It supports binary data transfer and request&response multiplexing. | http<br>http2 |
+| "HTTP Request Methods" for grabbing the low-hanging fruits:<br>GET<br>POST<br>Request: Listing all requests | http.request.method == "GET"<br>http.request.method == "POST"<br>http.request |
+| "HTTP Response Status Codes" for grabbing the low-hanging fruits:<br>200 OK: Request successful.<br>301 Moved Permanently: Resource is moved to a new URL/path (permanently).<br>302 Moved Temporarily: Resource is moved to a new URL/path (temporarily).<br>400 Bad Request: Server didn't understand the request.<br>401 Unauthorised: URL needs authorisation (login, etc.).<br>403 Forbidden: No access to the requested URL. <br>404 Not Found: Server can't find the requested URL.<br>405 Method Not Allowed: Used method is not suitable or blocked.<br>408 Request Timeout:  Request look longer than server wait time.<br>500 Internal Server Error: Request not completed, unexpected error.<br>503 Service Unavailable: Request not completed server or service is down. | http.response.code == 200<br>http.response.code == 401<br>http.response.code == 403<br>http.response.code == 404<br>http.response.code == 405<br>http.response.code == 503 |
+| "HTTP Parameters" for grabbing the low-hanging fruits:<br>User agent: Browser and operating system identification to a web server application.<br>Request URI: Points the requested resource from the server.<br><br>Full *URI: Complete URI information.<br>*URI: Uniform Resource Identifier. | http.user_agent contains "nmap"<br>http.request.uri contains "admin"<br>http.request.full_uri contains "admin" |
+| "HTTP Parameters" for grabbing the low-hanging fruits:<br>Server: Server service name.<br><br>Host: Hostname of the server<br>Connection: Connection status.<br><br>Line-based text data: Cleartext data provided by the server.<br>HTML Form URL Encoded: Web form information. | http.server contains "apache"<br>http.host contains "keyword"<br>http.host == "keyword"<br>http.connection == "Keep-Alive"<br>data-text-lines contains "keyword" |  
+
+### User Agent Analysis 
+
+As the adversaries use sophisticated technics to accomplish attacks, they try to leave traces similar to natural traffic through the known and trusted protocols. For a security analyst, it is important to spot the anomaly signs on the bits and pieces of the packets. The "user-agent" field is one of the great resources for spotting anomalies in HTTP traffic. In some cases, adversaries successfully modify the user-agent data, which could look super natural. A security analyst cannot rely only on the user-agent field to spot an anomaly. Never whitelist a user agent, even if it looks natural. User agent-based anomaly/threat detection/hunting is an additional data source to check and is useful when there is an obvious anomaly. If you are unsure about a value, you can conduct a web search to validate your findings with the default and normal user-agent info ([example site](https://developers.whatismybrowser.com/useragents/explore/)).
+
+#### User Agent analysis in a nutshell:
+
+| Notes | Wireshark Filter |
+|:---:|:---:|
+| Global search. | http.user_agent |
+| Research outcomes for grabbing the low-hanging fruits:<br>Different user agent information from the same host in a short time notice.<br>Non-standard and custom user agent info.<br>Subtle spelling differences. ("Mozilla" is not the same as  "Mozlilla" or "Mozlila")<br>Audit tools info like Nmap, Nikto, Wfuzz and sqlmap in the user agent field.<br>Payload data in the user agent field. | (http.user_agent contains "sqlmap") or (http.user_agent contains "Nmap") or (http.user_agent contains "Wfuzz") or (http.user_agent contains "Nikto") |
+  
+![image](https://user-images.githubusercontent.com/51442719/204115203-3eb0172f-76e8-464d-917f-d340d3ddb9a3.png)
+
+### Log4j Analysis 
+
+A proper investigation starts with prior research on threats and anomalies going to be hunted. Let's review the knowns on the "Log4j" attack before launching Wireshark.
+
+#### Log4j vulnerability analysis in a nutshell:
+
+| Notes | Wireshark Filters |
+|:---:|:---:|
+| Research outcomes for grabbing the low-hanging fruits:<br>The attack starts with a "POST" request<br>There are known cleartext patterns: "jndi:ldap" and "Exploit.class". | http.request.method == "POST"<br>(ip contains "jndi") or ( ip contains "Exploit")<br>(frame contains "jndi") or ( frame contains "Exploit")<br>(http.user_agent contains "$") or (http.user_agent contains "==") |
+  
+![image](https://user-images.githubusercontent.com/51442719/204115216-2cffd33a-4bea-40e6-9382-b5a00b48d845.png)
+
+Detecting suspicious activities in chunked files is easy and a great way to learn how to focus on the details. Now use the exercise files to put your skills into practice against a single capture file and answer the questions below!
 
   
 ---
