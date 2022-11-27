@@ -245,10 +245,34 @@ What is unusual?
 
 ## Task 6  wininit.exe
 
+The Windows Initialization Process, wininit.exe, is responsible for launching services.exe (Service Control Manager), lsass.exe (Local Security Authority), and lsaiso.exe within Session 0. It is another critical Windows process that runs in the background, along with its child processes. 
+
+![image](https://user-images.githubusercontent.com/51442719/204154788-f36dae26-e6e0-4981-bda6-b04b939742cc.png)
+
+> `Note`: lsaiso.exe is a process associated with Credential Guard and KeyGuard. You will only see this process if Credential Guard is enabled. 
+
+What is normal?
+
+![image](https://user-images.githubusercontent.com/51442719/204154803-171b02b1-859f-4b9c-89c6-1bb943c8ff7d.png)
+
+- Image Path:  %SystemRoot%\System32\wininit.exe
+- Parent Process:  Created by an instance of smss.exe
+- Number of Instances:  One
+- User Account:  Local System
+- Start Time:  Within seconds of boot time
+
+What is unusual?
+- An actual parent process. (smss.exe calls this process and self-terminates)
+- Image file path other than C:\Windows\System32
+- Subtle misspellings to hide rogue processes in plain sight
+- Multiple running instances
+- Not running as SYSTEM
+
 ---
 
 ## Task 7  wininit.exe > services.exe
 
+The next process is the Service Control Manager (SCM) or services.exe. Its primary responsibility is to handle system services: loading services, interacting with services and starting or ending services. It maintains a database that can be queried using a Windows built-in utility, sc.exe. 
 ---
 
 ## Task 8  wininit.exe > services.exe > svchost.exe
