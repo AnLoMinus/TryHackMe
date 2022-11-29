@@ -119,11 +119,89 @@ Alternatively, a PowerShell module can download and install all of the Sysintern
 
 Now let's look at how to run the Sysinternals tools from the web. 
 
-
-
 ---
 
 ## Task 3  Using Sysinternals Live
+
+Per the Sysinternals website, "Sysinternals Live is a service that enables you to execute Sysinternals tools directly from the Web without hunting for and manually downloading them. Simply enter a tool's Sysinternals Live path into Windows Explorer or a command prompt as live.sysinternals.com/<toolname> or \\live.sysinternals.com\tools\<toolname>."
+
+Let's take a look at how we can do this.
+
+Based on the instructions, to launch Process Monitor from the web the syntax is `\\live.sysinternals.com\tools\procmon.exe`.
+
+And it fails.
+
+![image](https://user-images.githubusercontent.com/51442719/204412416-c3baf9a5-0e95-4917-b676-61eeb55eb558.png)
+
+To resolve this issue the WebDAV client must be installed and running on the machine. The WebDAV protocol is what allows a local machine to access a remote machine running a WebDAV share and perform actions in it.
+
+On a Windows 10 client, the WebDAV client is installed but the client is most likely not running. If you try to run a Sysinternals tool it will fail with a message "The network path was not found."
+
+![image](https://user-images.githubusercontent.com/51442719/204412594-fb18415b-3772-4cc2-945c-6d56e04b9588.png)
+
+The service needs to be started before attempting to call any Sysinternals tool in this fashion.
+
+![image](https://user-images.githubusercontent.com/51442719/204412667-30716275-59ec-4830-a12a-dbb9f428c20e.png)
+
+Verify it's running before proceeding.
+
+![image](https://user-images.githubusercontent.com/51442719/204412685-875fd93d-6b19-4ec8-945c-08761f0faac4.png)
+
+Also, Network Discovery needs to be enabled as well. This setting can be enabled in the Network and Sharing Center.
+
+There are a few ways to open the Network and Sharing Center. Here is a neat command line to launch it.
+
+![image](https://user-images.githubusercontent.com/51442719/204412706-890a45cc-3c6f-45a6-a356-4653e680abca.png)
+
+Click on `Change advanced sharing settings` and select `Turn on network discovery` for your current network profile.
+
+The attached VM is a Windows Server 2019 edition. The WebDAV client is not installed by default.
+
+The feature to install on Windows Server is WebDAV Redirector. This feature can be installed via Server Manager or using PowerShell.
+
+To install with PowerShell, `Install-WindowsFeature WebDAV-Redirector –Restart`. The server needs to reboot for the installation to complete.
+
+After reboot, the installation can be verified with the following PowerShell command, `Get-WindowsFeature WebDAV-Redirector | Format-Table –Autosize`.
+
+![image](https://user-images.githubusercontent.com/51442719/204412841-a4c604cd-bbe3-491c-b1f6-c72cbbcabaaa.png)
+
+The same process as with a Windows 10 client applies from this point:
+
+- Make sure the WebClient service is running
+- Make sure Network Discovery is enabled
+
+Now with all the necessary components installed and enabled the local machine is ready to run Sysinternals tools from the web. 
+
+There are 2 ways the tools can be run:
+
+- Run the tool from the command line (as shown above from the Windows 10 machine)
+- Create a network drive and run the tool from the mapped drive
+
+Method 1 - Run tool from command line
+
+![image](https://user-images.githubusercontent.com/51442719/204412904-c5895724-611a-4de3-b2b1-a2f34dd8baae.png)
+
+Method 2 - Run tool from a mapped drive
+
+![image](https://user-images.githubusercontent.com/51442719/204412918-d0b9f743-d89b-4f8d-8cd0-a5d4984fe7de.png)
+
+Note: The asterisk will auto-assign a drive letter. The asterick can be replaced with an actual drive letter instead.
+
+![image](https://user-images.githubusercontent.com/51442719/204412939-1adca69d-ee38-4900-9542-474322e7ec7f.png)
+
+The website is now browsable within the local machine.
+
+![image](https://user-images.githubusercontent.com/51442719/204413008-fec1766f-ee39-4411-b69b-93ce7a7a027c.png)
+
+![image](https://user-images.githubusercontent.com/51442719/204413089-41a56765-601d-46d5-a448-cb6c124cbda2.png)
+
+Now that we got that out of the way time to start exploring some of these tools.
+
+
+
+
+
+
 
 ---
 
@@ -153,3 +231,8 @@ Now let's look at how to run the Sysinternals tools from the web.
 
 ## Task 10  Conclusion
 
+
+---
+---
+
+- https://www.thedutchhacker.com/sysinternals-on-tryhackme/
