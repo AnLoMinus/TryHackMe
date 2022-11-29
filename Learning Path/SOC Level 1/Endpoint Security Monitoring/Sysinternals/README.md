@@ -123,7 +123,15 @@ Now let's look at how to run the Sysinternals tools from the web.
 
 ## Task 3  Using Sysinternals Live
 
-Per the Sysinternals website, "Sysinternals Live is a service that enables you to execute Sysinternals tools directly from the Web without hunting for and manually downloading them. Simply enter a tool's Sysinternals Live path into Windows Explorer or a command prompt as live.sysinternals.com/<toolname> or \\live.sysinternals.com\tools\<toolname>."
+Per the Sysinternals website, 
+"Sysinternals Live is a service that enables you to execute Sysinternals tools directly from the Web without hunting for and manually downloading them.
+Simply enter a tool's Sysinternals Live path into Windows Explorer or a command prompt as:
+
+- `live.sysinternals.com/<toolname>`
+
+or 
+
+-  `\\live.sysinternals.com\tools\<toolname>`
 
 Let's take a look at how we can do this.
 
@@ -268,6 +276,50 @@ Link: https://docs.microsoft.com/en-us/sysinternals/downloads/file-and-disk-util
 ---
 
 ## Task 5  Networking Utilities
+
+### TCPView
+
+"TCPView is a Windows program that will show you detailed listings of all TCP and UDP endpoints on your system, including the local and remote addresses and state of TCP connections. On Windows Server 2008, Vista, and XP, TCPView also reports the name of the process that owns the endpoint. TCPView provides a more informative and conveniently presented subset of the Netstat program that ships with Windows. The TCPView download includes Tcpvcon, a command-line version with the same functionality." (official definition)
+
+This is a good time to mention that Windows has a built-in utility that provides the same functionality. This tool is called Resource Monitor. There are many ways to open this tool. From the command line use `resmon`.
+
+![image](https://user-images.githubusercontent.com/51442719/204419121-5b6430d0-6087-4dcb-87b7-02c24d253b3c.png)
+
+Expand TCP Connections to view the Remote Address for each Process with an outbound connection.
+
+![image](https://user-images.githubusercontent.com/51442719/204419151-f03bd248-1d91-4a6e-8aec-d07b92b84109.png)
+
+This tool can also be called from the Performance tab within Task Manager. Look at the bottom left for the link to open Resource Monitor.
+
+![image](https://user-images.githubusercontent.com/51442719/204419178-956a5930-45ef-4fd0-9496-65b65549fa83.png)
+
+Now back to TCPView.
+
+![image](https://user-images.githubusercontent.com/51442719/204419207-405e2b5a-aba5-41ee-b68c-c90365b056ae.png)
+
+The below image shows the default view for TCPView.
+
+![image](https://user-images.githubusercontent.com/51442719/204419247-5aaaa55d-06b0-4ac3-96f7-41c675c06272.png)
+
+We can apply additional filtering by turning off TCP v4, TCP v6, UDP v4, and UDP v6 at the top toolbar, depending on which protocols we want to display. Moreover, we can click on the green flag to use the States Filter.
+
+![image](https://user-images.githubusercontent.com/51442719/204419338-4af99e7e-4a6e-45d6-9ba5-3b6ed912e221.png)
+
+Clicking the green flag opens the States Filter, which provides an extensive list of options to select which connection states we want to display. Most of the connection states available apply only to TCP connections. (UDP, being a connectionless protocol, cannot offer this flexibility in filtering.)
+
+![image](https://user-images.githubusercontent.com/51442719/204419354-162a89da-decb-4fbd-aee1-30c31c5c4e49.png)
+
+The list below shows all TCP v4 and TCP v6 connections in any state except in the "Listen" state. For instance, we notice that we have one TCP connection in an Established state and another connection in a Close Wait state.
+
+In the below image, I unselected Listen in the Connection States from the States Filter and turned off UDP v4 and UDP v6 from the top toolbar.
+
+![image](https://user-images.githubusercontent.com/51442719/204419377-a69219eb-9de8-46d4-8b4e-5cca26398d33.png)
+
+Now the output only displays processes with an established outbound connection.
+
+Other tools fall under the Networking Utilities category. I encourage you to explore these tools at your own leisure.
+
+> `Link`: https://docs.microsoft.com/en-us/sysinternals/downloads/networking-utilities
 
 ---
 
