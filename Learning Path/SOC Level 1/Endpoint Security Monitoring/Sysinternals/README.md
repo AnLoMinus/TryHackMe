@@ -325,6 +325,123 @@ Other tools fall under the Networking Utilities category. I encourage you to exp
 
 ## Task 6  Process Utilities
 
+> `Note`: Some of these tools require you to run as an administrator.
+
+### Autoruns
+
+"This utility, which has the most comprehensive knowledge of auto-starting locations of any startup monitor, shows you what programs are configured to run during system bootup or login, and when you start various built-in Windows applications like Internet Explorer, Explorer and media players. These programs and drivers include ones in your startup folder, Run, RunOnce, and other Registry keys. Autoruns reports Explorer shell extensions, toolbars, browser helper objects, Winlogon notifications, auto-start services, and much more. Autoruns goes way beyond other autostart utilities." (official definition)
+
+> `Note`: This is a good tool to search for any malicious entries created in the local machine to establish Persistence.
+
+Launch Autoruns.
+
+![image](https://user-images.githubusercontent.com/51442719/204656600-244bf2af-358a-4fe3-80b9-089411353a05.png)
+
+Below is a snapshot of Autoruns, showing the first couple of items from the Everything tab. Normally there are a lot of entries within this tab.
+
+![image](https://user-images.githubusercontent.com/51442719/204656640-3f83015e-848e-4eef-808b-b960f0c088a2.png)
+
+Notice all the tabs within the application. Click on each tab to inspect the items associated with each. 
+
+The below image is a snapshot of the Image Hijacks tab. (At this time there is only 1 item listed)
+
+![image](https://user-images.githubusercontent.com/51442719/204656694-13db293e-3c3d-4b08-95e0-6df208a8f02f.png)
+
+### ProcDump
+
+"ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator or developer can use to determine the cause of the spike." (official definition)
+
+![image](https://user-images.githubusercontent.com/51442719/204656845-9fdd9e3b-1e8f-4625-b583-67a333a298dc.png)
+
+Alternatively, you can use Process Explorer to do the same.
+
+Right-click on the process to create a Minidump or Full Dump of the process.
+
+![image](https://user-images.githubusercontent.com/51442719/204656865-bfabc8f7-ee61-40b8-a5aa-d63ba8ed142e.png)
+
+Please refer to the examples listed on the ProcDump [page](https://docs.microsoft.com/en-us/sysinternals/downloads/procdump) to learn about all the available options with running this tool.
+
+### Process Explorer
+
+"The Process Explorer display consists of two sub-windows. The top window always shows a list of the currently active processes, including the names of their owning accounts, whereas the information displayed in the bottom window depends on the mode that Process Explorer is in: if it is in handle mode you'll see the handles that the process selected in the top window has opened; if Process Explorer is in DLL mode you'll see the DLLs and memory-mapped files that the process has loaded." (official definition)
+
+![image](https://user-images.githubusercontent.com/51442719/204656955-313d534f-624f-44ce-8321-b7fae2e5b86c.png)
+
+This tool was touched on slightly within the Core Windows Processes room. Process Hacker was intentionally used in that room to broaden your exposure to various tools that essentially perform the same tasks with subtle differences. 
+
+Since much of the basic foundational information was discussed in the Core Windows Processes room, Process Explorer will be briefly touched.
+
+In the following images, let's look at svchost.exe PID 3636 more closely.
+
+![image](https://user-images.githubusercontent.com/51442719/204656980-b6a6be10-8a45-4418-8097-8a76fa738f9a.png)
+
+![image](https://user-images.githubusercontent.com/51442719/204657010-a7f91c8a-08ea-42c5-bf9e-04d872a1c1f3.png)
+
+This process is associated with the WebClient service that is needed to connect to live.sysinternals.com (WebDAV).
+
+There should be web traffic listed in the TCP/IP tab.
+
+![image](https://user-images.githubusercontent.com/51442719/204657045-22b89b7f-2da0-4f21-9923-5226c50492fe.png)
+
+Ideally, it would be wise to check if that IP is what we assume it is.
+
+Various online tools can be utilized to verify the authenticity of an IP address. For this demonstration, I'll use Talos Reputation Center.
+
+![image](https://user-images.githubusercontent.com/51442719/204657087-b1b2598c-f39d-461a-8ee7-60f6a73182b5.png)
+
+https://talosintelligence.com/reputation_center/lookup?search=52.154.170.73
+
+As mentioned in the ProcExp description, we can see open handles associated with the process within the bottom window.
+
+![image](https://user-images.githubusercontent.com/51442719/204657160-1113e568-2ef0-46ac-a78a-f53c463dfa61.png)
+
+Listed as an open handle is the connection to the remote WebDAV folder.
+
+There is an option within ProcExp to Verify Signatures. Once enabled, it shows up as a column within the Process view.
+
+![image](https://user-images.githubusercontent.com/51442719/204657221-9996cfec-a1f7-4ded-b5ad-03c6bb24fc28.png)
+
+Other options to note include Run at Logon and Replace Task Manager.
+
+You may have noticed that some of the processes within Process Explorer have different colors. Those colors have meaning.
+
+Below is a snippet from MalwareBytes explaining what each of those colors means.
+
+### Process Monitor
+
+"Process Monitor is an advanced monitoring tool for Windows that shows real-time file system, Registry and process/thread activity. It combines the features of two legacy Sysinternals utilities, Filemon and Regmon, and adds an extensive list of enhancements including rich and non-destructive filtering, comprehensive event properties such as session IDs and user names, reliable process information, full thread stacks with integrated symbol support for each operation, simultaneous logging to a file, and much more. Its uniquely powerful features will make Process Monitor a core utility in your system troubleshooting and malware hunting toolkit." (official definition)
+
+Launch ProcMon.
+
+![image](https://user-images.githubusercontent.com/51442719/204657285-3336f16f-eb63-4e53-a0f1-c7c3ab36f01d.png)
+
+In the below snapshot, I set a filter to capture all the events related to PID 3888, notepad.exe. You can see some of the file operations that were captured and the file path or registry path/key the action occurred on, and the operation result.
+
+![image](https://user-images.githubusercontent.com/51442719/204657321-0c43af5e-d148-41bc-9f1d-590a152044aa.png)
+
+ProcMon will capture thousands upon thousands of events occurring within the operating system.
+
+The option to capture events can be toggled on and off. 
+
+![image](https://user-images.githubusercontent.com/51442719/204657361-3602c15a-2283-4529-96d4-b6e4d7353e39.png)
+
+In this ProcMon example, the session captured events only for a few seconds. Look at how many events were captured in that short space of time!
+
+![image](https://user-images.githubusercontent.com/51442719/204657401-dd5e277d-d432-4fd1-b2b5-0c796859a888.png)
+
+To use ProcMon effectively you must use the Filter and must configure it properly.
+
+![image](https://user-images.githubusercontent.com/51442719/204657430-36e5091e-192d-4783-9f6f-c71cd8c2e464.png)
+
+In the above image, a filter was already set to capture events associated with PID 3888. Alternatively, a filter could have been set to capture events with the Process Name = notepad.exe. 
+
+Here is a useful guide on configuring ProcMon.
+
+> `Note`: To fully understand the output from some of these tools you need to understand some Windows concepts, such as Processes and Threads and Windows API calls.  
+
+
+
+
 ---
 
 ## Task 7  Security Utilities
