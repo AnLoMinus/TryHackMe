@@ -197,15 +197,73 @@ The website is now browsable within the local machine.
 
 Now that we got that out of the way time to start exploring some of these tools.
 
-
-
-
-
-
-
 ---
 
 ## Task 4  File and Disk Utilities
+
+Each task within this room will focus on 1 or 2 tools per section (maybe more).
+
+Again, the goal is to introduce you to the Sysinternals tools, but there are far too many tools to go into each tool in depth.
+
+### Sigcheck
+
+"Sigcheck is a command-line utility that shows file version number, timestamp information, and digital signature details, including certificate chains. It also includes an option to check a file’s status on VirusTotal, a site that performs automated file scanning against over 40 antivirus engines, and an option to upload a file for scanning." (official definition)
+
+![image](https://user-images.githubusercontent.com/51442719/204417001-9c45cc35-bff9-4622-a28a-40ada58d9833.png)
+
+From the official Sigcheck [page](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck), a use case is identified towards the bottom of the page.
+
+If you completed the Core Windows Processes room you should be aware that the location of all the executables is `C:\Windows\System32`, except for Explorer.exe (which is `C:\Windows`).
+
+Use Case: Check for unsigned files in C:\Windows\System32.
+
+Command: `sigcheck -u -e C:\Windows\System32`
+
+![image](https://user-images.githubusercontent.com/51442719/204417132-4ea8d33a-5972-4712-ab9a-c0ad27fb66ed.png)
+
+Parameter usage:
+
+- `-u` "If VirusTotal check is enabled, show files that are unknown by VirusTotal or have non-zero detection, otherwise show only unsigned files."
+- `-e` "Scan executable images only (regardless of their extension)"
+
+> `Note`: If the results were different it would warrant an investigation into any listed executables. 
+
+### Streams
+"The NTFS file system provides applications the ability to create alternate data streams of information. By default, all data is stored in a file's main unnamed data stream, but by using the syntax 'file:stream', you are able to read and write to alternates." (official definition)
+
+Alternate Data Streams (ADS) is a file attribute specific to Windows NTFS (New Technology File System). Every file has at least one data stream ($DATA) and ADS allows files to contain more than one stream of data. Natively Window Explorer doesn't display ADS to the user. There are 3rd party executables that can be used to view this data, but Powershell gives you the ability to view ADS for files.
+
+Malware writers have used ADS to hide data in an endpoint, but not all its uses are malicious. When you download a file from the Internet unto an endpoint, there are identifiers written to ADS to identify that it was downloaded from the Internet.
+
+![image](https://user-images.githubusercontent.com/51442719/204417344-022ca750-0c41-4347-ac6c-5bac66c96509.png)
+
+Example: A file downloaded from the Internet.
+
+![image](https://user-images.githubusercontent.com/51442719/204417371-a81d08b2-cdc9-41c8-8c88-51a0fc65271b.png)
+
+Since the file has this identifier, additional security measures are added to its properties.
+
+![image](https://user-images.githubusercontent.com/51442719/204417395-ed8d4fa7-cd6b-4b61-a7f6-21a118bef4ed.png)
+
+You can read more on streams [here](https://docs.microsoft.com/en-us/sysinternals/downloads/streams).
+
+### SDelete
+
+"SDelete is a command line utility that takes a number of options. In any given use, it allows you to delete one or more files and/or directories, or to cleanse the free space on a logical disk."
+
+As per the official documentation page, SDelete (Secure Delete) implemented the DOD 5220.22-M (Department of Defense clearing and sanitizing protocol).
+
+![image](https://user-images.githubusercontent.com/51442719/204417512-1c4df0a3-3cc9-46c2-aba2-420514418709.png)
+
+Source: https://www.lifewire.com/dod-5220-22-m-2625856
+
+SDelete has been used by adversaries and is associated with MITRE techniques T1485 (Data Destruction) and T1070.004 (Indicator Removal on Host: File Deletion). It's MITRE ID S0195.
+
+You can review this tool more in-depth by visiting its Sysinternals SDelete [page](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete). 
+
+Other tools fall under the File and Disk Utilities category. I encourage you to explore these tools at your own leisure.
+
+Link: https://docs.microsoft.com/en-us/sysinternals/downloads/file-and-disk-utilities 
 
 ---
 
