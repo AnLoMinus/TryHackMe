@@ -453,17 +453,63 @@ Other tools fall under the Process Utilities category. I encourage you to explor
 
 - Link: https://docs.microsoft.com/en-us/sysinternals/downloads/process-utilities
 
-
-
 ---
 
 ## Task 7  Security Utilities
 
+### Sysmon
 
+"System Monitor (Sysmon) is a Windows system service and device driver that, once installed on a system, remains resident across system reboots to monitor and log system activity to the Windows event log. It provides detailed information about process creations, network connections, and changes to file creation time. By collecting the events it generates using Windows Event Collection or SIEM agents and subsequently analyzing them, you can identify malicious or anomalous activity and understand how intruders and malware operate on your network." (official definition)
+
+Sysmon is a comprehensive tool, and it can't be summarized in just one section.
+
+Check out the Sysmon [room](https://tryhackme.com/room/sysmon) to further learn what Sysmon is and how to use it.  
+
+Screenshot of the Sysmon room card
+
+![image](https://user-images.githubusercontent.com/51442719/204862748-e5066c31-8575-404b-b151-2dac5a472b29.png)
+
+Other tools fall under the Security Utilities category. I encourage you to explore these tools at your own leisure.
+
+- Link: https://docs.microsoft.com/en-us/sysinternals/downloads/security-utilities
 
 ---
 
 ## Task 8  System Information
+
+### WinObj
+
+"WinObj is a 32-bit Windows NT program that uses the native Windows NT API (provided by NTDLL.DLL) to access and display information on the NT Object Manager's name space." (official definition)
+
+To showcase this tool, let's look into the concept of Session 0 and Session 1 that was mentioned in the Core Windows Processes room.
+
+Remember that Session 0 is the OS session and Session 1 is the User session. Also recall that there will be at least 2 csrss.exe processes running, one for each session. Note Session 1 will be for the first user logged into the system.  
+
+Launch WinObj.
+
+![image](https://user-images.githubusercontent.com/51442719/204862879-7b0435e1-5ccb-4a16-804e-8dcf6ed6b336.png)
+
+The below image shows the default view for WinObj.
+
+![image](https://user-images.githubusercontent.com/51442719/204862904-8f7b9ed8-45b9-49d9-9e36-0fc641d19386.png)
+
+Within Session 0, under `DosDevices`, there is an entry for the network drive I mounted in my local machine.
+
+![image](https://user-images.githubusercontent.com/51442719/204863011-8c4c449d-22f9-4ebd-8d02-93a29c5f3d9b.png)
+
+Let's look at `WindowStations` value for Session 1. 
+
+![image](https://user-images.githubusercontent.com/51442719/204863077-3ffb3848-9756-4a4c-b948-b8ecdb74833e.png)
+
+Let's compare this information with Process Explorer. The below image is for csrss.exe, which was launched along with winlogon.exe by smss.exe.
+
+![image](https://user-images.githubusercontent.com/51442719/204863125-fce8f4e4-eca5-4971-884d-63de53ca91f0.png)
+
+> `Note`: This is a high-level exposure for this tool.
+
+Other tools fall under the System Information category. I encourage you to explore these tools at your own leisure.
+
+- Link: https://docs.microsoft.com/en-us/sysinternals/downloads/system-information
 
 ---
 
