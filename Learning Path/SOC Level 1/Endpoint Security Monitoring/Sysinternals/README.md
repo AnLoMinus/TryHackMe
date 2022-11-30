@@ -437,14 +437,29 @@ In the above image, a filter was already set to capture events associated with P
 
 Here is a useful guide on configuring ProcMon.
 
-> `Note`: To fully understand the output from some of these tools you need to understand some Windows concepts, such as Processes and Threads and Windows API calls.  
+> `Note`: To fully understand the output from some of these tools you need to understand some Windows concepts, such as [Processes and Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads) and [Windows API](https://docs.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) calls.  
 
+### PsExec
+
+"PsExec is a light-weight telnet-replacement that lets you execute processes on other systems, complete with full interactivity for console applications, without having to manually install client software. PsExec's most powerful uses include launching interactive command-prompts on remote systems and remote-enabling tools like IpConfig that otherwise do not have the ability to show information about remote systems." (official definition)
+
+![image](https://user-images.githubusercontent.com/51442719/204858742-31bbef02-b4c4-4003-908f-760c784d6c0f.png)
+
+PsExec is another tool that is utilized by adversaries. This tool is associated with MITRE techniques T1570 (Lateral Tool Transfer), T1021.002 (Remote Services: SMB/Windows Admin Shares), and T1569.002 (System Services: Service Execution). It's MITRE ID is S0029.
+
+You can review this tool more in-depth by visiting its Sysinternals [PsExec](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec) page. You can also check out this resource [page](https://adamtheautomator.com/psexec-ultimate-guide/).
+
+Other tools fall under the Process Utilities category. I encourage you to explore these tools at your own leisure.
+
+- Link: https://docs.microsoft.com/en-us/sysinternals/downloads/process-utilities
 
 
 
 ---
 
 ## Task 7  Security Utilities
+
+
 
 ---
 
