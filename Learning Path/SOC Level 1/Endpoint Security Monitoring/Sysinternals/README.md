@@ -515,10 +515,73 @@ Other tools fall under the System Information category. I encourage you to explo
 
 ## Task 9  Miscellaneous
 
+### BgInfo
+
+"It automatically displays relevant information about a Windows computer on the desktop's background, such as the computer name, IP address, service pack version, and more." (official definition)
+
+![image](https://user-images.githubusercontent.com/51442719/204863369-f347873e-b220-4619-bd85-88f6262dcee6.png)
+
+This is a handy utility if you manage multiple machines. This tool, or similar tools, are typically utilized on servers. When a user RDPs into a server, the system information is displayed on the wallpaper to provide quick information about the server, such as the server's name.
+
+![image](https://user-images.githubusercontent.com/51442719/204863402-46ce1c1b-01b0-4da7-8680-b387a8ef9ded.png)
+
+Refer to the Sysinternals BgInfo [page](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo) for more information on installation and usage.
+
+### RegJump
+
+"This little command-line applet takes a registry path and makes Regedit open to that path. It accepts root keys in standard (e.g. HKEY_LOCAL_MACHINE) and abbreviated form (e.g. HKLM)." (official definition)
+
+When navigating through the registry using the Registry Editor, one must manually drill down to the key you wish to inspect.
+
+![image](https://user-images.githubusercontent.com/51442719/204863508-4fb6bc3f-fd68-4479-900d-081e8c5a081a.png)
+
+There are multiple ways to query the Windows Registry without using the Registry Editor, such as via the command line (`reg query`) and PowerShell (`Get-Item`/`Get-ItemProperty`).
+
+Using Regjump will open the Registry Editor and automatically open the editor directly at the path, so one doesn't need to navigate it manually.
+
+![image](https://user-images.githubusercontent.com/51442719/204863625-e64bd3ec-3373-4c68-8c3e-914ab144f6cf.png)
+
+![image](https://user-images.githubusercontent.com/51442719/204863640-5cf419d4-503c-4502-8940-f14d3845c1be.png)
+
+### Strings
+
+"Strings just scans the file you pass it for UNICODE (or ASCII) strings of a default length of 3 or more UNICODE (or ASCII) characters. Note that it works under Windows 95 as well." (official definition)
+
+This is the tool that was used on Day 21 of AoC2 to inspect a mysterious binary.
+
+The example below strings is used to search within the ZoomIt binary for any string containing the word 'zoom'.
+
+![image](https://user-images.githubusercontent.com/51442719/204863725-b916ae42-22e8-452a-9421-bb6fc2d3b1c3.png)
+
+Other tools fall under the Miscellaneous category. I encourage you to explore these tools at your own leisure.
+
+- Link: https://docs.microsoft.com/en-us/sysinternals/downloads/misc-utilities
+
 ---
 
 ## Task 10  Conclusion
 
+When you read the Sysinternals documentation, it might hint these tools are for troubleshooting purposes only, but that is not entirely the case.
+You should know or be familiar with the Sysinternals tools whether you're a Desktop Engineer, Systems Analyst, or Security Engineer.
+
+`Real-world scenario`: As a security engineer, I had to work with vendors to troubleshoot why an agent wasn't responding on an endpoint—the tools used were ProcExp, ProcMon, and ProcDump.
+
+- `ProcExp` = to inspect the agent process, its properties, and associated threads and handles.
+- `ProcMon` = to investigate if there were any indicators on why the agent was not operating as it should.
+- `ProcDump` = to create a dump of the agent process to send to the vendor for further analysis.
+
+And guess what? Asking questions about Sysinternals became part of the interview questions when hiring additional staff.
+
+Remember, red teamers and adversaries even use these tools.
+
+Below are some additional links to further your knowledge on how to use these tools as a Security Analyst, Security Engineer, or even an Incident Responder:
+
+- Mark's Blog - https://docs.microsoft.com/en-us/archive/blogs/markrussinovich/
+- Windows Blog Archive - https://techcommunity.microsoft.com/t5/windows-blog-archive/bg-p/Windows-Blog-Archive/label-name/Mark%20Russinovich
+- License to Kill: Malware Hunting with Sysinternals Tools - https://www.youtube.com/watch?v=A_TPZxuTzBU
+- Malware Hunting with Mark Russinovich and the Sysinternals Tools - https://www.youtube.com/watch?v=vW8eAqZyWeo
+
+> `Note`: Some of the videos/blogs are a bit outdated, but they're still good to review as it showcases how to use these tools extensively. This will build your foundation on the tools covered, along with the tools that weren't covered in this room.
 
 ---
 ---
