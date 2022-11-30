@@ -445,7 +445,7 @@ Here is a useful guide on configuring ProcMon.
 
 ![image](https://user-images.githubusercontent.com/51442719/204858742-31bbef02-b4c4-4003-908f-760c784d6c0f.png)
 
-PsExec is another tool that is utilized by adversaries. This tool is associated with MITRE techniques T1570 (Lateral Tool Transfer), T1021.002 (Remote Services: SMB/Windows Admin Shares), and T1569.002 (System Services: Service Execution). It's MITRE ID is S0029.
+PsExec is another tool that is utilized by adversaries. This tool is associated with MITRE techniques [T1570](https://attack.mitre.org/techniques/T1570) (Lateral Tool Transfer), [T1021.002](https://attack.mitre.org/techniques/T1021/002) (Remote Services: SMB/Windows Admin Shares), and [T1569.002](https://attack.mitre.org/techniques/T1569/002) (System Services: Service Execution). It's MITRE ID is [S0029](https://attack.mitre.org/software/S0029/).
 
 You can review this tool more in-depth by visiting its Sysinternals [PsExec](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec) page. You can also check out this resource [page](https://adamtheautomator.com/psexec-ultimate-guide/).
 
